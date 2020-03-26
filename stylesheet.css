@@ -1,0 +1,60 @@
+
+.navbar-brand.abs
+    {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+      /*  margin-left: 6rem;*/
+    }
+
+.navbar-brand {
+	/*width: 10%;*/
+	text-decoration: none;
+	color: white;
+	font-size: 2.5rem;
+	height: 100%;
+	padding: 0;
+}
+
+* {
+	font-size: 100%;
+	font-family: 'Lato', sans-serif;
+	/*color: white;*/
+}
+
+
+.navbar {
+	background-color: black;
+}
+
+.navbar-nav {
+	margin-left: 1rem;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+.bg-dark {
+	background-color: black !important;
+}
+
+
+.article {
+	text-align: left;
+	margin-top: 1rem;
+}
+
+.article-body {
+	text-align: justify;
+}
