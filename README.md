@@ -1,6 +1,8 @@
 # multiplicity
 
-[multiplicity](http://multiplicitytech.github.io) is an online publication examining the impact of tech on our youth & societies. For any inqueries please contact multiplicitytech@gmail.com
+Alia ElKattan (aae322) and Heorhii Skovorodnikov (hs3470)
+
+[multiplicity](http://multiplicitytech.github.io) is an online publication examining the impact of tech on our youth & societies. 
 
 ### Usage
 
