@@ -1,4 +1,6 @@
 
+@import url("https://use.typekit.net/grm6kxy.css");
+
 .navbar-brand.abs
     {
         position: absolute;
@@ -8,28 +10,70 @@
       /*  margin-left: 6rem;*/
     }
 
+.navbar {
+/*background-color: black;*/
+}
+
+body{
+	background-color: #00FFCE12;
+}
+
+.navbar-toggler-icon {
+
+ background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+	height: 100%;
+}
+
+.navbar-collapse {
+	height: 100%;
+}
+
+.nav-link {
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+
 .navbar-brand {
 	/*width: 10%;*/
 	text-decoration: none;
-	color: white;
-	font-size: 2.5rem;
+	font-size: 2.6rem;
 	height: 100%;
 	padding: 0;
+	font-family: 'ministry';
+	font-weight: 700;
+	color: #FFA300;
+	/*color: #10DD00;*/
+	/*color: #0600FF;*/
+
 }
 
-* {
+h1 {
+	font-family: 'stenciletta-solid';
+	font-weight: 700;
+}
+
+p, a {
 	font-size: 100%;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Ministry';
+	font-weight: 300;
 	/*color: white;*/
-}
-
-
-.navbar {
-	background-color: black;
 }
 
 .navbar-nav {
 	margin-left: 1rem;
+
+}
+
+a {
+	color: #0600FF;
+}
+
+.nav-item {
+	margin-right: 2rem;
+
 }
 
 html,
@@ -43,6 +87,7 @@ body {
 
 #sticky-footer {
   flex-shrink: none;
+  /*background-color: #00FFCED1 !important;*/
 }
 
 .bg-dark {
