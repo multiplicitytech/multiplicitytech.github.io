@@ -11,11 +11,13 @@
     }
 
 .navbar {
-/*background-color: black;*/
+
 }
 
 body{
-	background-color: #00FFCE12;
+	/*background-color: #00FFCE12;*/
+	/*background-color: #F3FDF2;*/
+	/*background-color: #EDFFFC;*/
 }
 
 .navbar-toggler-icon {
@@ -34,25 +36,42 @@ body{
 .nav-link {
 	font-weight: 500;
 	font-size: 1.2rem;
+	color: #010033
+
 }
 
 .navbar-brand {
 	/*width: 10%;*/
 	text-decoration: none;
-	font-size: 2.6rem;
+	font-size: 2.5rem;
 	height: 100%;
 	padding: 0;
 	font-family: 'ministry';
 	font-weight: 700;
-	color: #FFA300;
-	/*color: #10DD00;*/
-	/*color: #0600FF;*/
+	flex-shrink: 2;
+	/*teal*/
+	/*color: #00CCA4; */
+	
+	/*orange*/
+	/*color: #CC8200;*/
+	
+	/*blue*/
+	/*color: #0500CC;*/
+
+	color: #0600FF;
+
+	/*navy*/
+	/*color: #020066;*/
+
+	/*green*/
+	/*color: #0DB000;*/
+
 
 }
 
-h1 {
-	font-family: 'stenciletta-solid';
-	font-weight: 700;
+#sublogo {
+	/*orange*/
+	color: #FFA300;
 }
 
 p, a {
@@ -87,7 +106,7 @@ body {
 
 #sticky-footer {
   flex-shrink: none;
-  /*background-color: #00FFCED1 !important;*/
+  background-color: #010033 !important;
 }
 
 .bg-dark {
@@ -102,4 +121,47 @@ body {
 
 .article-body {
 	text-align: justify;
+}
+.article-placeholder {
+	margin-top: 1rem;
+	margin-left: 1.7rem;
+	margin-right: 1.7rem;
+}
+
+
+.articleTitle, h1 {
+	font-family: 'stenciletta-solid';
+	font-weight: 700;
+	color: #010033;
+}
+
+.byline {
+	font-weight: 400;
+	color: #010033;
+}
+
+.author {
+	font-weight: 400;
+	color: #0500CC;
+}
+
+.date {
+	font-weight: 400;
+	color: #010033;
+
+}
+
+a .no-span {
+    display: table;
+    white-space: nowrap;
+    &:before, &:after {
+      border-top: 1px solid green;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.5em;
+      width: 45%;
+    }
+    &:before { right: 1.5%; }
+    &:after { left: 1.5%; }
 }

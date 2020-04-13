@@ -59,7 +59,7 @@
 
 </head>
 
-<body class="d-flex flex-column">
+<body onload="Timer()" class="d-flex flex-column">
 
 
   <!-- Header & Nav -->
@@ -70,8 +70,27 @@
       <span class="w-100 d-block"><!-- hidden spacer to center brand on mobile --></span>
 
       <a class="navbar-brand" href="/index.html">
-        multiplicity
+        multiplicity.<span id="sublogo">privacy</span>
       </a>
+
+<!-- <script>
+function Timer() {
+  setTimeout(myTimeout1, 2000) 
+  setTimeout(myTimeout2, 4000) 
+  setTimeout(myTimeout3, 6000) 
+}
+
+function myTimeout1() {
+  document.getElementById("sublogo").innerHTML = "politics";
+}
+function myTimeout2() {
+  document.getElementById("sublogo").innerHTML = "community";
+}
+function myTimeout3() {
+ document.getElementById("sublogo").innerHTML = "gaming";
+}
+
+</script> -->
 
       <!-- d-lg-none -->
       <div class="w-100 text-right">
@@ -109,10 +128,11 @@
 
             <h1 class="articeTitle"> {{article.title}}</h1>
             <p class="byline">{{article.byline}}</p>
-            <p class="author">{{article.author}}</p> 
+            <p><span class="author">{{article.author}}</span> | <span class="date"> {{article.date}}</span> </p> 
             <p class="article-body">{{{article.body}}}</p>
 
           </script>
+
 
           <!--Article will be displayed here-->
           <div class="article-placeholder"></div>
@@ -125,7 +145,7 @@
 
   <!-- Footer -->
 
-  <footer id="sticky-footer" class="py-4 bg-dark text-white">
+  <footer id="sticky-footer" class="py-1 bg-dark text-white">
     <div class="container text-center">
       <small>&copy; multiplicity, 2020</small>
     </div>
