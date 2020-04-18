@@ -151,17 +151,7 @@ body {
 
 }
 
-a .no-span {
-    display: table;
-    white-space: nowrap;
-    &:before, &:after {
-      border-top: 1px solid green;
-      content: '';
-      display: table-cell;
-      position: relative;
-      top: 0.5em;
-      width: 45%;
-    }
-    &:before { right: 1.5%; }
-    &:after { left: 1.5%; }
+.lead {
+	font-size: 1.1rem;
+	font-weight: 300;
 }

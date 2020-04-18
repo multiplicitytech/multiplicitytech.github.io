@@ -4,7 +4,6 @@
 <!-- HEADER -->
 <head>
 
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161931112-1"></script>
   <script>
@@ -51,7 +50,6 @@
 
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
 
-
   <!-- Include Handlebars.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -61,34 +59,52 @@
 
 </head>
 
-<!-- BODY -->
+<body onload="Timer()" class="d-flex flex-column">
 
-<body class="d-flex flex-column">
 
- <!-- Header & Nav -->
- <nav class="navbar navbar-expand-lg navbar-dark">
+  <!-- Header & Nav -->
+  <nav class="navbar navbar-expand-lg">
 
-  <div class="d-flex flex-grow-1">
+    <div class="d-flex flex-grow-1">
 
-    <span class="w-100 d-block"><!-- hidden spacer to center brand on mobile --></span>
+      <span class="w-100 d-block"><!-- hidden spacer to center brand on mobile --></span>
 
-    <a class="navbar-brand" href="/index.html">
-      Multiplicity
-    </a>
+      <a class="navbar-brand" href="/index.html">
+        multiplicity.<span id="sublogo">..?</span>
+      </a>
 
-    <!-- d-lg-none -->
-    <div class="w-100 text-right">
-      <button class="navbar-toggler flex-fill" type="button" data-toggle="collapse" data-target="#myNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<!-- <script>
+function Timer() {
+  setTimeout(myTimeout1, 2000) 
+  setTimeout(myTimeout2, 4000) 
+  setTimeout(myTimeout3, 6000) 
+}
 
-      <div class="collapse navbar-collapse text-right w-100" id="myNavbar">
-        <ul class="navbar-nav ml-auto flex-nowrap">
-          <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
-          </li>
+function myTimeout1() {
+  document.getElementById("sublogo").innerHTML = "politics";
+}
+function myTimeout2() {
+  document.getElementById("sublogo").innerHTML = "community";
+}
+function myTimeout3() {
+ document.getElementById("sublogo").innerHTML = "gaming";
+}
+
+</script> -->
+
+      <!-- d-lg-none -->
+      <div class="w-100 text-right">
+        <button class="navbar-toggler flex-fill" type="button" data-toggle="collapse" data-target="#myNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-right w-100" id="myNavbar">
+          <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
           <!--   <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
+              <a href="#" class="nav-link">Archive</a>
             </li> -->
           </ul>
         </div>
@@ -107,8 +123,11 @@
 
         <div class="col-md-7">
 
-          <h1 class="mt-5">about us</h1>
-          <p class="lead">global examinations of tech, youth, and our societies</p>
+          <h1 class="mt-5">about</h1>
+          <p class="lead">Multiplicity is a curation of a series of articles reflecting global examinations of the impact of the internet on the experiences of our generation growing up from a political, social, or economic lens. Multiplicity is a curation of a series of articles reflecting global examinations of the impact of the internet on the experiences of our generation growing up from a political, social, or economic</p>
+
+            <h1 class="mt-5">team</h1>
+
 
 
         </div>
@@ -117,7 +136,7 @@
   </div>
 
 
-  <footer id="sticky-footer" class="py-4 bg-dark text-white">
+  <footer id="sticky-footer" class="py-1 bg-dark text-white">
     <div class="container text-center">
       <small>&copy; multiplicity, 2020</small>
     </div>
