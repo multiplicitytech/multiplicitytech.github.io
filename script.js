@@ -64,7 +64,7 @@ article5: {
 },
 
 article6: {
-    "title": "PNature and the Fight To Preserve It",
+    "title": "Nature and the Fight To Preserve It",
     "byline": "Digital privacy in Indonesia has been uniquely shaped by cultural context and gendered perspectives.",
     "author": "Rastra Raj Bhandari",
     "date": "April 20, 2020",

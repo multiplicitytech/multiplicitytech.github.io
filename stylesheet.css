@@ -93,10 +93,9 @@ body{
 .sublogo {
 	/*orange*/
 	color: #FFA300;
-	margin: 0 0 0 0 ;
-	padding: 0 0 0 0;
+/*	margin: 0 0 0 0 ;
+	padding: 0 0 0 0;*/
 	text-align: left;
-	width: 100%;
 }
 
 p, a {
@@ -181,6 +180,9 @@ body {
 	font-weight: 300;
 }
 
+#page-content {
+	margin-right: 2px;
+}
 
 .article-card {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -189,7 +191,6 @@ body {
   height: 30%;
   margin-right: 5px;
   position: relative;
-  width: 50%;
   max-width: 300px;
   /*background-color: rgb(255,0,0);*/
 }
@@ -209,10 +210,13 @@ body {
   transition: .5s ease;
   opacity:.6;
   color: black;
-  font-size: 20px;
+  font-size: 2rem;
   padding: 20px;
   text-align: center;
 }
+
+
+
 
 .article-card:hover .overlay {
   opacity: .8;
@@ -221,7 +225,69 @@ body {
 }
 
 .overlay h4 {
-	margin-top: 9%;
+	margin-top: 8%;
+}
+
+/*@media screen and (min-width: 290px) {
+  .navbar-brand {
+    font-size: 2.5rem;
+  }
+}
+*/
+
+@media screen and (max-width: 767px) {
+  .overlay h4 {
+  	margin-top: 3%;
+    /*font-size: 10px !important;*/
+  }
+}
+
+@media screen and (max-width: 505px) {
+   .overlay h4 {
+  	margin-top: 6%;
+    font-size: 1.2rem;
+  }
+
+  .overlay h6 {
+  	font-size: .9rem;
+  }
+
+  .article-card {
+  	margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+   .overlay h4 {
+  	margin-top: 1%;
+    font-size: 1.1rem;
+  }
+
+  .overlay h6 {
+  	font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 383px) {
+   .overlay h4 {
+  	margin-top: 0%;
+    font-size: .95rem;
+  }
+
+  .overlay h6 {
+  	font-size: .7rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+   .overlay h4 {
+  	margin-top: 0%;
+    font-size: .8rem;
+  }
+
+  .overlay h6 {
+  	font-size: .7rem;
+  }
 }
 
 .article-card {
