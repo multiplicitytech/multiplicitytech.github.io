@@ -40,10 +40,31 @@ body{
 
 }
 
+
+@media screen and (min-width: 290px) {
+  .navbar-brand {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 90px) {
+  .navbar-brand {
+    font-size: .7rem;
+  }
+}
+
+
+
 .navbar-brand {
 	/*width: 10%;*/
 	text-decoration: none;
-	font-size: 2.5rem;
+	/*font-size: 3vw;*/
 	height: 100%;
 	padding: 0;
 	font-family: 'ministry';
@@ -69,9 +90,13 @@ body{
 
 }
 
-#sublogo {
+.sublogo {
 	/*orange*/
 	color: #FFA300;
+	margin: 0 0 0 0 ;
+	padding: 0 0 0 0;
+	text-align: left;
+	width: 100%;
 }
 
 p, a {
@@ -155,3 +180,64 @@ body {
 	font-size: 1.1rem;
 	font-weight: 300;
 }
+
+
+.article-card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  height: 30%;
+  margin-right: 5px;
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  /*background-color: rgb(255,0,0);*/
+}
+
+.article-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(255,255,255);
+  /*background: rgba(0, 0, 0, 0.5); /* Black see-through */*/
+  color: #f1f1f1; 
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  opacity:.6;
+  color: black;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.article-card:hover .overlay {
+  opacity: .8;
+  background: rgb(0,0,0);
+  color: white;
+}
+
+.overlay h4 {
+	margin-top: 9%;
+}
+
+.article-card {
+  position: relative;
+  width: 50%;
+  max-width: 320px;
+  margin-top: 3%;
+  margin-left: 2%;
+}
+
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/** {box-sizing: border-box;}*/

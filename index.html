@@ -15,6 +15,12 @@
     gtag('config', 'UA-161931112-1');
   </script>
 
+    <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -75,7 +81,7 @@
       <span class="w-100 d-block"><!-- hidden spacer to center brand on mobile --></span>
 
       <a class="navbar-brand" href="#">
-        multiplicity.
+        multiplicity
       </a>
 
       <!-- d-lg-none -->
@@ -85,16 +91,16 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-
         <div class="collapse navbar-collapse text-right w-100" id="myNavbar">
           <ul class="navbar-nav ml-auto flex-nowrap">
             <li class="nav-item">
               <a href="/about.html" class="nav-link">About</a>
             </li>
-          <!--   <li class="nav-item">
+            <!-- <li class="nav-item">
               <a href="#" class="nav-link">Archive</a>
             </li> -->
           </ul>
+        
         </div>
 
 
@@ -102,8 +108,6 @@
 
 
     </div>
-
-
 
   </nav>
 
@@ -114,6 +118,99 @@
   <div id="page-content">
     <div class="container text-center">
       <div class="row justify-content-center">
+
+
+<!--         <div class="article-card" id="article1">
+        <img src="img/unnamed.jpg" alt="header" style="width:100%">
+           <div class="container">
+          <h4><b>This is an Article Title</b></h4> 
+          <p>Alia ElKattan</p> 
+          </div>
+
+        </div>
+ -->
+
+<div class="article-card">
+  <a href="articles/article-1.html">
+  <img src="img/sample-header-1.png" alt="header" class="image">
+  <div class="overlay">
+
+    <h4> Perspectives on Digital Privacy in Indonesia </h4>
+
+    <h6> by Lama Ahmad </h6>
+
+    </div>
+  </a>
+</div>
+
+<div class="article-card">
+  <a href="articles/article-2.html">
+  <img src="img/sample-header-2.png" alt="header" class="image">
+  <div class="overlay">
+    <h4> The South Korean Tech Echosystem </h4>
+
+    <h6> by Jihyun Kim </h6>
+  </div>
+</a>
+</div>
+
+<div class="article-card">
+    <a href="articles/article-3.html">
+  <img src="img/sample-header-3.png" alt="header" class="image">
+  <div class="overlay">
+    <h4> The Impact of Tech Exploitation on Nigeria </h4>
+
+    <h6> by Tona Campbell </h6>
+  </div>
+</a>
+</div>
+
+<div class="article-card">
+    <a href="articles/article-4.html">
+  <img src="img/sample-header-4.png" alt="header" class="image">
+  <div class="overlay">
+    
+    <h4> Remembering our Internet Flash History </h4>
+
+    <h6> by Grace Huang </h6>
+  </div>
+</a>
+</div>
+
+<div class="article-card">
+    <a href="articles/article-5.html">
+  <img src="img/sample-header-5.png" alt="header" class="image">
+  <div class="overlay">
+    <h4> Digital Communities in Exile </h4>
+
+    <h6> by Lujain Ibrahim </h6>
+
+  </div>
+</a>
+</div>
+
+<div class="article-card">
+    <a href="articles/article-6.html">
+  <img src="img/sample-header-6.png" alt="header" class="image">
+  <div class="overlay">
+    
+    <h4> Nature and the Fight To Preserve It </h4>
+
+    <h6> by Rastra Raj Bhandari</h6>
+  </div>
+</a>
+</div>
+
+<script>
+
+var cards = $(".article-card");
+for(var i = 0; i < cards.length; i++){
+    var target = Math.floor(Math.random() * cards.length -1) + 1;
+    var target2 = Math.floor(Math.random() * cards.length -1) +1;
+    cards.eq(target).before(cards.eq(target2));
+}
+
+  </script>
 
 
  <!--        <div class="col-md-7">
@@ -154,7 +251,7 @@
 
   <!-- Footer -->
 
-  <footer id="sticky-footer" class="py-1 bg-dark text-white">
+  <footer id="sticky-footer" style="margin-top: 5%;" class="py-1 bg-dark text-white">
 
     <div class="container text-center">
       <small>&copy; multiplicity, 2020</small>
@@ -164,10 +261,6 @@
   </footer>
 
 
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.slim.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
 </body>
