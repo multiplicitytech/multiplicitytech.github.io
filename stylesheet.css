@@ -306,4 +306,33 @@ body {
   height: auto;
 }
 
+
+.sorting-button {
+	color: #020066;
+	background-color: white; 
+	box-shadow: none;
+	margin-bottom: 1%;
+	font-family: 'Ministry';
+	font-weight: 500;
+}
+
+.sorting-button:hover {
+	color: white;
+	background-color: #020066;
+}
+
+#article-list li {
+	margin-top: 2%;
+	list-style-type: none;
+
+}
+
+#article-list a {
+	/*navy*/
+	color: #020066;
+}
+
+#article-list h6 {
+	font-weight: 400;
+}
 /** {box-sizing: border-box;}*/

@@ -116,9 +116,9 @@
   <!-- Cover Page Content -->
 
   <div id="page-content">
-    <div class="container text-center">
+    <!-- <div class="container text-center">
       <div class="row justify-content-center">
-
+ -->
 
 <!--         <div class="article-card" id="article1">
         <img src="img/unnamed.jpg" alt="header" style="width:100%">
@@ -130,101 +130,91 @@
         </div>
  -->
 
-<div class="article-card">
-  <a href="articles/article-1.html">
-  <img src="img/sample-header-1.png" alt="header" class="image">
-  <div class="overlay">
 
-    <h4> Perspectives on Digital Privacy in Indonesia </h4>
 
+
+
+
+<ul id="article-list" style="text-align: left; margin-left: 10%; margin-top: 2%; clear: right;">
+
+<button class="sorting-button" onclick="sortList()">A to Z</button>
+
+  <li>
+    <h4> <a href="articles/article-1.html">Perspectives on Digital Privacy in Indonesia</a> </h4>
     <h6> by Lama Ahmad </h6>
+</li>
 
-    </div>
-  </a>
-</div>
-
-<div class="article-card">
-  <a href="articles/article-2.html">
-  <img src="img/sample-header-2.png" alt="header" class="image">
-  <div class="overlay">
-    <h4> The South Korean Tech Echosystem </h4>
-
+<li>
+    <h4> <a href="articles/article-2.html"> The South Korean Tech Echosystem </a></h4>
     <h6> by Jihyun Kim </h6>
-  </div>
-</a>
-</div>
+</li>
 
-<div class="article-card">
-    <a href="articles/article-3.html">
-  <img src="img/sample-header-3.png" alt="header" class="image">
-  <div class="overlay">
-    <h4> The Impact of Tech Exploitation on Nigeria </h4>
+<li>
 
+    <h4> <a href="articles/article-3.html"> The Impact of Tech Exploitation on Nigeria </a></h4>
     <h6> by Tona Campbell </h6>
-  </div>
-</a>
-</div>
+</li>
 
-<div class="article-card">
-    <a href="articles/article-4.html">
-  <img src="img/sample-header-4.png" alt="header" class="image">
-  <div class="overlay">
+<li>
     
-    <h4> Remembering our Internet Flash History </h4>
-
+    <h4> <a href="articles/article-4.html"> Remembering our Internet Flash History </a></h4>
     <h6> by Grace Huang </h6>
-  </div>
-</a>
-</div>
 
-<div class="article-card">
-    <a href="articles/article-5.html">
-  <img src="img/sample-header-5.png" alt="header" class="image">
-  <div class="overlay">
-    <h4> Digital Communities in Exile </h4>
+</li>
 
+<li>
+    <h4> <a href="articles/article-5.html">Digital Communities in Exile </a></h4>
     <h6> by Lujain Ibrahim </h6>
 
-  </div>
-</a>
-</div>
+</li>
 
-<div class="article-card">
-    <a href="articles/article-6.html">
-  <img src="img/sample-header-6.png" alt="header" class="image">
-  <div class="overlay">
-    
-    <h4> Nature and the Fight To Preserve It </h4>
-
+<li>
+    <h4> <a href="articles/article-6.html">Nature and the Fight To Preserve It </a></h4>
     <h6> by Rastra Raj Bhandari</h6>
-  </div>
-</a>
-</div>
+</li>
+
+
+</ul>
+
 
 <script>
+function sortList() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("article-list");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
 
-var cards = $(".article-card");
-
-for(var i = 0; i < cards.length; i++){
-    var target = Math.floor(Math.random() * cards.length -1) + 1;
-    var target2 = Math.floor(Math.random() * cards.length -1) +1;
-    cards.eq(target).before(cards.eq(target2));
+      if (b[i].getElementsByTagName("H4")[0].innerHTML.toLowerCase() > b[i + 1].getElementsByTagName("H4")[0].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
 }
+</script>
 
 
 
-  </script>
-
-
- <!--        <div class="col-md-7">
-
-          <h1 class="mt-5">Coming soon...</h1>
-          <p class="lead">global examinations of tech, youth, and our societies</p>
-          <a href="/sample-article.html"> sample article </a>
-        </div> -->
-      </div>
-
-    </div>
   </div>
 
 
