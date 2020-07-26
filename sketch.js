@@ -127,7 +127,7 @@ function draw() {
   logox += xspeed;
   logoy += yspeed;
 
-  if (logox < 0 || logox > canvas.width - textWidth(logo)) {
+  if (logox < 0 || logox > canvas.width - (textWidth(logo)+textWidth(extension))) {
     ext_size = textWidth(extension);
     xspeed = xspeed * -1;
     text_color = random(colors);
