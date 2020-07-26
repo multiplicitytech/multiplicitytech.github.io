@@ -4,7 +4,7 @@ var logox, logoy;
 // var xspeed = 2.5;
 // var yspeed = 2.5;
 var xspeed, yspeed;
-var colors = ['#CC1B2C', '#0DB000', '#00CCA4', '#CC8200', '#C2C00CC', '#0500CC', '#B8CC00'];
+var colors = ['#CC1B2C', '#0DB000', '#00CCA4', '#CC8200', '#C200CC', '#0500CC', '#B8CC00'];
 var text_color, text_width;
 var speeds, speeds_tab, speeds_mob;
 var mode;
@@ -130,7 +130,7 @@ function draw() {
     extension = random(extensions);
 
     if (logox > canvas.width - textWidth(logo)) {
-      if (textWidth(extension) > ext_size) logox -= (textWidth(extension)/2);
+      if (textWidth(extension) > ext_size) logox -= (textWidth(extension)-ext_size);
     }
   }
 
