@@ -340,7 +340,7 @@ body {
 }
 
 
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 767px) {
 
 }
 
@@ -360,7 +360,7 @@ body {
 @media screen and (max-width: 350px) {
 
 }
-
+*/
 
 
 .sorting-button {
@@ -392,3 +392,49 @@ body {
 	font-weight: 400;
 }
 /** {box-sizing: border-box;}*/
+
+#mc_embed_signup input{
+  font-family: 'Ministry';
+}
+
+#mc_embed_signup .clear input {
+  color: white !important;
+  background-color: #0500CC !important;
+}
+
+#mc_embed_signup .clear input:hover {
+  color: white !important;
+  background-color: #0DB000 !important;
+}
+
+
+#coming_soon {
+  width: 100%; text-align: center; font-family: 'Ministry'; margin-top: 15%;
+}
+@media (max-width: 769px) {
+#mc_embed_signup form {
+  width: 70% !important;
+  margin-left: 15%;
+}
+
+#coming_soon {
+  margin-top: 60% !important;
+}
+}
+
+/*@media screen and (max-width: 505px) {
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+}
+
+@media screen and (max-width: 383px) {
+
+}
+
+@media screen and (max-width: 350px) {
+
+}*/
