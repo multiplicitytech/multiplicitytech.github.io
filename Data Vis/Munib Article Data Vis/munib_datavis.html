@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width">
+	<title>Unheard Voices: Digital Privacy in European Post-Communist Democracies (EPCDs)</title> 
+
+
+
+
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+	integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+	crossorigin=""/>
+	<link rel="stylesheet" href="https://use.typekit.net/grm6kxy.css" />
+
+
+	<!-- Make sure you put this AFTER Leaflet's CSS -->
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+	integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+	crossorigin=""></script>
+
+	<script src="scripts/us-states.js"></script>
+	<script src="scripts/select_europe.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
+
+	<style>#map1 { height: 600px; width: 800px;}</style>
+	<style>#map2 { height: 600px; width: 800px;}</style>
+
+
+</head>
+<body>
+	<script>
+		const mapboxAccessToken = 'pk.eyJ1Ijoic29oYWlsYmFnaGVyaSIsImEiOiJja2N0Mno0NGgwYWN0MnJudG1qcDFmZXlsIn0.Slzmp4JvAnT08GrpHiBDWg';
+		const tileURL = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + mapboxAccessToken;
+	</script>
+
+	<h3>Changing privacy settings on social media is least common among EPCD respondents</h3>	
+
+
+	<div id="map1"></div>
+	<div style="padding: 15px 8px;"></div>
+
+
+	<h3>EPCD respondents are relatively less prone to reach out to institutional support for digital privacy</h3>
+	<div id="map2"></div>
+
+
+	<!-- map1 JavaScript -->
+	<script type="text/javascript" src = "scripts/map1.js"></script>
+
+
+	<!-- map2 JavaScript -->
+	<script type="text/javascript" src = "scripts/map2.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+<!-- map styling -->
+<style type="text/css">
+
+.info {
+	padding: 6px 8px;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	background: white;
+	background: rgba(255,255,255,0.8);
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	border-radius: 5px;
+}
+.info b {
+	font-weight: 400;
+}
+.info h4 {
+	margin: 0 0 5px;
+	color: #777;
+}
+
+.legend {
+	line-height: 18px;
+	color: #555;
+}
+
+.legend i {
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin-right: 8px;
+	opacity: 0.7;
+}
+.legend td {
+	opacity: 0.75;
+}
+
+* {
+	font-family: ministry, sans-serif;
+
+}
+
+</style>
+</html>
