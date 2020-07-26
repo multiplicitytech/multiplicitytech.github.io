@@ -17,6 +17,10 @@ let hidden_text, spacing;
 
 let ext_size;
 
+let keywords = ['lujain', 'tom', 'grace', 'jihyun', 'munib', 'rastra', 'alia', 'sohail', 'isabelle', 'tona', 'tech', 'privacy', 'surveillance', 'exile', 'identity', 'archives', 'bias', 'climate', 'nature', 'monopoly', 'food', 'internet', 'youth', 'nepal', 'korea', 'palestine', 'lebanon', 'nigeria', 'usa', 'eastern europe', 'bosnia', 'uae', 'abu dhabi', 'new zealand', 'online'];
+
+let word_list = [], wi;
+
 function windowResized() {
   //console.log('resized');
   resizeCanvas(windowWidth, windowHeight);
@@ -64,10 +68,27 @@ if (canvas.width < 700) {
   console.log(canvas.width);
   console.log(canvas.height);
 
+
+  for (let i=0; i<canvas.width; i+=(textWidth("surveillance")*1.2)) {
+    for (let j=0;j<canvas.height;j+=50) {
+    word_list.push(random(keywords));
+  }
+  }
+
+  console.log(word_list);
+
 }
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+
+  word_list = [];
+
+  for (let i=0; i<canvas.width; i+=(textWidth("surveillance")*1.2)) {
+    for (let j=0;j<canvas.height;j+=50) {
+    word_list.push(random(keywords));
+  }
+  }
 
   if (mode === "desktop" && canvas.width < 700) {
 
@@ -92,6 +113,22 @@ if (mode === "mobile" && canvas.width > 700) {
   logo_size = canvas.width / 25;
 }
 
+if (logox > (canvas.width-textWidth(extension))) {
+  logox = canvas.width - (textWidth(logo)+textWidth(extension));
+}
+
+if (logox < canvas.width) {
+  logox = canvas.width + 10;
+}
+
+if (logoy < canvas.height) {
+  logoy = canvas.height + 10;
+}
+
+if (logoy > canvas.height) {
+  logoy = canvas.height - 30;
+}
+
 }
 
 function draw() {
@@ -106,15 +143,18 @@ function draw() {
 
   textSize(20);
 
-  hidden_text = "trial text";
+  hidden_text = "surveillance";
 
   fill('#FFFAF0');
-  for (let i=0; i<canvas.width; i+=(textWidth(hidden_text)*1.3)) {
-    for (let j=0;j<canvas.height;j+=50) {
-    text("trial text",i,j);
-  }
-  }
 
+  wi = 0;
+  
+  for (let i=0; i<canvas.width; i+=(textWidth(hidden_text)*1.2)) {
+    for (let j=0;j<canvas.height;j+=50) {
+      text(word_list[wi],i,j);
+      wi+=1;
+  }
+  }
   
   fill(text_color);
   textSize(logo_size);
