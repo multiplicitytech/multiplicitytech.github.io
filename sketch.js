@@ -5,7 +5,7 @@ var logox, logoy;
 // var yspeed = 2.5;
 var xspeed, yspeed;
 var colors = ['#CC1B2C', '#0DB000', '#00CCA4', '#CC8200', '#C200CC', '#0500CC', '#B8CC00'];
-var text_color, text_width;
+var text_color, text_width, ext_color;
 var speeds, speeds_tab, speeds_mob;
 var mode;
 
@@ -33,6 +33,7 @@ function setup() {
   logoy = canvas.height/2;
 
   text_color = random(colors);
+  ext_color = random(colors);
   speeds =  [random(-3,-2.5), random(2.5,3)];
   speeds_tab = [random(-2,-1), random(1,2)];
   speeds_mob = [random(-1,-.5), random(.5,1)];
@@ -117,8 +118,11 @@ function draw() {
   
   fill(text_color);
   textSize(logo_size);
-  logo = "multiplicity" + extension;
+  // logo = "multiplicity" + extension;
+  logo = "multiplicity";
   text(logo,logox,logoy);
+  fill(ext_color);
+  text(extension,logox+textWidth(logo),logoy);
 
   logox += xspeed;
   logoy += yspeed;
@@ -127,6 +131,7 @@ function draw() {
     ext_size = textWidth(extension);
     xspeed = xspeed * -1;
     text_color = random(colors);
+    ext_color = random(colors);
     extension = random(extensions);
 
     if (logox > canvas.width - textWidth(logo)) {
@@ -137,6 +142,7 @@ function draw() {
   else if (logoy < 0 || logoy > canvas.height) {
     yspeed = yspeed * -1;
     text_color = random(colors);
+    ext_color = random(colors);
     extension = random(extensions);
   }
 

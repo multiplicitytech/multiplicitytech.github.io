@@ -160,7 +160,7 @@ body {
 }
 
 
-.articleTitle, h1 {
+.articleTitle h1 {
 	font-family: 'stenciletta-solid';
 	font-weight: 700;
 	color: #010033;
@@ -409,7 +409,7 @@ body {
 
 
 #coming_soon {
-  width: 100%; text-align: center; font-family: 'Ministry'; margin-top: 15%;
+  width: 100%; text-align: center; font-family: 'Ministry' !important; margin-top: 15%;
 }
 @media (max-width: 769px) {
 #mc_embed_signup form {
