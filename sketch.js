@@ -6,7 +6,7 @@ var logox, logoy;
 var xspeed, yspeed;
 var colors = ['#CC1B2C', '#0DB000', '#00CCA4', '#CC8200', '#C2C00CC', '#0500CC', '#B8CC00'];
 var text_color, text_width;
-var speeds, speeds_mobile;
+var speeds, speeds_tab, speeds_mob;
 var mode;
 
 let logo, logo_size, extension = '.tech';
@@ -34,7 +34,8 @@ function setup() {
 
   text_color = random(colors);
   speeds =  [random(-3,-2.5), random(2.5,3)];
-  speeds_mobile = [random(-2,-1), random(1,2)];
+  speeds_tab = [random(-2,-1), random(1,2)];
+  speeds_mob = [random(-1,-.5), random(.5,1)];
 
   if (canvas.width > 700) {
   mode = "desktop"
@@ -45,8 +46,17 @@ function setup() {
 
 if (canvas.width < 700) {
   mode = "mobile";
-  xspeed = random(speeds_mobile);
-  yspeed = random(speeds_mobile);
+
+  if (canvas.width > 400) {
+  xspeed = random(speeds_tab);
+  yspeed = random(speeds_tab);
+}
+  
+  if (canvas.width <= 400) {
+  xspeed = random(speeds_mob);
+  yspeed = random(speeds_mob);
+  }
+
   logo_size = canvas.width / 15;
 }
 
@@ -59,8 +69,17 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 
   if (mode === "desktop" && canvas.width < 700) {
-  xspeed = random(speeds_mobile);
-  yspeed = random(speeds_mobile);
+
+  if (canvas.width > 400) {
+  xspeed = random(speeds_tab);
+  yspeed = random(speeds_tab);
+}
+  
+  if (canvas.width <= 400) {
+  xspeed = random(speeds_mob);
+  yspeed = random(speeds_mob);
+  }
+
   logo_size = canvas.width / 15;
   mode = "mobile";
 }
