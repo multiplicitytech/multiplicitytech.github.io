@@ -70,24 +70,7 @@ body{
 	font-family: 'ministry';
 	font-weight: 700;
 	flex-shrink: 2;
-	/*teal*/
-	/*color: #00CCA4; */
-	
-	/*orange*/
-	/*color: #CC8200;*/
-	
-	/*blue*/
-	/*color: #0500CC;*/
-
 	color: #0600FF;
-
-	/*navy*/
-	/*color: #020066;*/
-
-	/*green*/
-	/*color: #0DB000;*/
-
-
 }
 
 .sublogo {
@@ -212,24 +195,26 @@ body {
 }
 
 .article-card {
-  width: 85%;
-  height: 50%;
-  margin-right: 5px;
+  width: 33%;
+  /*height: 50%;*/
+  /*margin-right: 5px;*/
+  /*margin-left: 2%;*/
   position: relative;
-
-  position: relative;
-
   margin-top: 2%;
+  min-width: 300px;
+  /*background: black; */
 
-  /*background: black;*/ 
+  /*margin-right: 1%;*/
 
 }
 
 .article-card .image {
   display: block;
-  width: 80%;
+  width: 85%;
   height: auto;
   z-index: 0;
+  height: 90%;
+  margin-top: 3%;
 }
 
 .card-title {
@@ -238,12 +223,12 @@ body {
   background: #FF2138;
   /*background: rgba(0, 0, 0, 0.5); /* Black see-through */*/
   /*color: #f1f1f1; */
-  width: 35%;
-  height: 40%;
+  width: 70%;
+  height: 45%;
   transition: .5s ease;
   padding: 20px;
-  margin-left: 70%;
-  margin-bottom: 12%;
+/*  margin-left: 30%;
+  margin-bottom: 5%;*/
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
 }
@@ -251,11 +236,12 @@ body {
 .card-title h2 {
   font-family: 'stenciletta-solid';
   font-weight: 600;
-  color: white;
+  color: black;
   text-align: left;
   /*margin: 0;*/
-  font-size: 1.8rem;
+  font-size: 1.1rem;
 }
+
 
 .card-title p {
   text-align: left;
@@ -281,10 +267,6 @@ body {
 }
 */
 
-.article-card {
-  display: none;
-}
-
 
 /* Next & previous buttons */
 .prev, .next {
@@ -300,43 +282,6 @@ body {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 2%;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev {
-  left: 2%;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.1);
-}
-
-.article-nav {
-  margin-top: 2%;
-  width: 100%;
-  height: 20px;
-  /*background: black;*/
-}
-
-.dot {
-  cursor: pointer;
-  height: 12px;
-  width: 12px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
 }
 
 
