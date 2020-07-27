@@ -1,6 +1,6 @@
 
-@import "lujain-styles.scss";
 @import url("https://use.typekit.net/grm6kxy.css");
+
 ::selection {
 background: #ffb7b7; 
 }
@@ -62,8 +62,8 @@ clear: both;
     animation-timing-function: linear;
     -webkit-animation-name: ticker;
     animation-name: ticker;
-    -webkit-animation-duration: 350s;
-    animation-duration: 350s;
+    -webkit-animation-duration: 1500s;
+    animation-duration: 1500s;
 
 }
 .ticker_item {
@@ -72,11 +72,11 @@ clear: both;
     font-size: 2rem;
     color:black;
     font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     
 }
     h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
     color: #ff2238; 
     font-size:80px;
     margin-top: 100px;
@@ -107,17 +107,17 @@ h2 {
 }
 
 h3 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     color: #ff2238; 
-    font-size:30px;
-    /* margin-top: 100px;
-    margin-bottom:0px; */
+    font-size:35px;
+    font-style: normal;
 }
 p {
     font-family: ministry;
     font-style: normal;
     font-weight: 100;
     font-size: 15px;
+    text-align:justify;
 }
 body {
 display: block;
@@ -126,10 +126,90 @@ margin: 0px;
 a{
     color:#3a3ffb;
     text-decoration: none;
+
 }
 a:hover{
-    color:white;
-    text-decoration: none;
-    background-color: #3a3ffb;
+ 
+    border-bottom: 1px dotted #3a3ffb;
 }
 
+/* Diagonal stacked paper effect */
+/* Messy stack of paper */
+.paper {
+    background: #fbfbf8;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 35px;
+  }
+  
+  .paper,
+  .paper::before,
+  .paper::after {
+    /* Styles to distinguish sheets from one another */
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+    border: 1px solid #bbb;
+  }
+  
+  .paper::before,
+  .paper::after {
+    content: "";
+    position: absolute;
+    height: 95%;
+    width: 99%;
+    background-color: #eee;
+  }
+  
+  .paper::before {
+    right: 15px;
+    top: 0;
+    transform: rotate(-1deg);
+    z-index: -1;
+  }
+  
+  .paper::after {
+    top: 5px;
+    right: -5px;
+    transform: rotate(1deg);
+    z-index: -2;
+  }
+  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    color:#3a3ffb;
+  }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 280px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -140px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 14px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    font-size: 14px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
