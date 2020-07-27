@@ -1,6 +1,6 @@
 # multiplicity
 
-[multiplicity](http://multiplicitytech.github.io) is an online publication examining the impact of tech on our youth & societies. 
+[multiplicity](http://multiplicitytech.github.io) is an online curation examining the impact of tech on our youth & societies. 
 
 ### Usage
 
