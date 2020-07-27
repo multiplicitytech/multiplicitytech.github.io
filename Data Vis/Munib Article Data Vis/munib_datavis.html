@@ -20,12 +20,12 @@
 	integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
 	crossorigin=""></script>
 
-	<script src="scripts/us-states.js"></script>
 	<script src="scripts/select_europe.js"></script>
-	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
+	<script src="scripts/interview_countries.js"></script>
 
 	<style>#map1 { height: 600px; width: 800px;}</style>
 	<style>#map2 { height: 600px; width: 800px;}</style>
+	<style>#map3 { height: 600px; width: 800px;}</style>
 
 
 </head>
@@ -35,26 +35,30 @@
 		const tileURL = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + mapboxAccessToken;
 	</script>
 
+
+
 	<h3>Changing privacy settings on social media is least common among EPCD respondents</h3>	
-
-
 	<div id="map1"></div>
 	<div style="padding: 15px 8px;"></div>
 
-
 	<h3>EPCD respondents are relatively less prone to reach out to institutional support for digital privacy</h3>
 	<div id="map2"></div>
+	<div style="padding: 15px 8px;"></div>
+
+	<h3>Nationalities interviewed throughout the investigation</h3>
+	<div id="map3"></div>
+	<div style="padding: 15px 8px;"></div>
+
 
 
 	<!-- map1 JavaScript -->
 	<script type="text/javascript" src = "scripts/map1.js"></script>
 
-
 	<!-- map2 JavaScript -->
 	<script type="text/javascript" src = "scripts/map2.js"></script>
 
-
-
+	<!-- map3 JavaScript -->
+	<script type="text/javascript" src = "scripts/map3.js"></script>
 
 
 
