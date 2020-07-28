@@ -16,7 +16,7 @@
     gtag('config', 'UA-161931112-1');
   </script>
 
-    <!-- Bootstrap core JavaScript -->
+  <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -64,7 +64,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <script src="/script.js"></script>
+  <script src="src/script.js"></script>
   <!-- <script src="/slideshow.js"></script> -->
 
 </head>
@@ -83,12 +83,27 @@
       <span class="w-100 d-block"><!-- hidden spacer to center brand on mobile --></span>
 
       <a class="navbar-brand" href="#">
-        multiplicity
+        multiplicity<span id="logo-extension">.tech</span>
       </a>
+
+      <script> 
+        var extension = document.getElementById("logo-extension");
+        var options = ['.privacy', '.tech', '.exile', '.identity', '.diaspora', '.archives', '.bias', '.gaming', '.community', '.climate', '.nature', '.food', '.delivery']
+        var colors = ['#CC1B2C', '#0DB000', '#00CCA4', '#CC8200', '#C200CC', '#0500CC', '#B8CC00'];
+
+        setInterval(function() {
+          var ext_index = Math.floor(Math.random() * options.length-1) + 1;
+          var color_index = Math.floor(Math.random() * colors.length-1) + 1;
+
+          extension.innerHTML = options[ext_index];
+          extension.style.color = colors[color_index];
+        }, 2000);
+
+      </script>
 
       <!-- d-lg-none -->
       <div class="w-100 text-right">
-        
+
         <button class="navbar-toggler flex-fill" type="button" data-toggle="collapse" data-target="#myNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -98,11 +113,11 @@
             <li class="nav-item">
               <a href="/about.html" class="nav-link">About</a>
             </li>
-<!--             <li class="nav-item">
-              <a href="/archive.html" class="nav-link">Archive</a>
-            </li> -->
+            <li class="nav-item">
+              <p></p>
+            </li>
           </ul>
-        
+
         </div>
 
 
@@ -123,98 +138,112 @@
 
 
 
-<div class="article-card" style="display: block;">
-    
-  <img src="img/sample-header-5.png" alt="header" class="image" style="margin-left: 5%;">
-  <a href="articles/article-1.html">
-  <div class="card-title" style=" margin-left: 30%; margin-bottom: 0%;">
-    <h2> Domestic Surveillance and Black Lives Matter </h2>
-    <!-- <p>A short blurb on what the article talks about or whatever. </p>  -->
-    <p> <i> by </i> Tona Campbell </p>
-  </div>
-</a>
-</div>
+        <div class="article-card" style="display: block;">
 
-<div class="article-card">
-  <img src="img/sample-header-5.png" alt="header" class="image" style="margin-left: 15%;">
-  <a href="articles/article-2.html" >
-  <div class="card-title" style="background: #CC1B2C; margin-right: 30%; margin-bottom: 35%;">
-    <h2> On the Contingency of Archive </h2>
-    <!-- <p> A short blurb on what the article talks about or whatever. </p>  -->
-    <p> <i> by </i> Tom Abi Samra </p>
-  </div>
-</a>
-</div>
+          <a class="card-link" href="articles/article-1.html">
+            <div class="card-title" style=" margin-left: 30%; margin-bottom: 0%; background: #0500CC;">
+              <h2> Domestic Surveillance and Black Lives Matter </h2>
+              <!-- <p>A short blurb on what the article talks about or whatever. </p>  -->
+              <p> <i> by </i> Tona Campbell </p>
+            </div>
+          </a>
+          <a class="card-img" href="articles/article-1.html">
+            <img src="img/sample-nyuad1.jpg" class="image1" alt="header" style="margin-left: 0%;">
+          </a>
+        </div>
 
-
-<div class="article-card">
-  <img src="img/sample-header-5.png" alt="header" class="image" style="margin-left: 18%;">
-   <a href="articles/article-3.html">
-  <div class="card-title" style="background:#00CCA4; margin-right: 20%; margin-left: 5%; margin-bottom: 0%;">
-    <h2> Can the internet reconnect humans with the environment? </h2>
-    <!-- <p> A short blurb on what the article talks about or whatever. </p>  -->
-    <p> <i> by </i> Rastra Bhandari </p>
-  </div>
-</a>
-</div>
+        <div class="article-card">
+          <a href="articles/article-1.html" >
+            <div id="second" class="card-title" style="background:#C200CC; margin-right: 30%; margin-bottom: 35%;">
+              <h2> On the Contingency of Archive </h2>
+              <p> <i> by </i> Tom Abi Samra </p>
+            </div>
+          </a>
+          <a id="card-img" href="articles/article-1.html">
+            <img src="img/sample-nyuad2.jpg" alt="header" class="image1" style="margin-left: 10%;margin-top: 10%;">
+          </a>
+        </div>
 
 
-<div class="article-card">
-  <img src="img/sample-header-5.png" alt="header" class="image" style="margin-left: 10%;">
-  <a href="articles/article-4.html">
-  <div class="card-title" style="background: #00CCA4;margin-right: 20%; margin-left: 5%; margin-bottom: 2%;">
-    <h2> Unheard Voices: Digital Privacy in European Post-Communist Democracies </h2>
-    <!-- <p> A short blurb on what the article talks about or whatever. </p>  -->
-    <p> <i> by </i> Munib Mesinovic </p>
-  </div>
-</a>
-</div>
+        <div class="article-card">
+
+          <a href="articles/article-1.html">
+            <div class="card-title" style="background:#00CCA4; margin-right: 20%; margin-left: 5%; margin-bottom: 0%;">
+              <h2> Can the internet reconnect humans with the environment? </h2>
+              <p> <i> by </i> Rastra Bhandari </p>
+            </div>
+          </a>
+          <a id="card-img" href="articles/article-1.html">
+            <img src="img/sample-nyuad3.jpg" alt="header" class="image2">
+          </a>
+        </div>
 
 
-<div class="article-card">
-  <img src="img/sample-header-5.png" alt="header" class="image" style="margin-left: 5%;">
-  <a href="articles/article-5.html">
-  <div class="card-title" style="background: #CC1B2C; margin-left: 30%; margin-bottom: 5%;">
-    <h2> Can the internet reconnect us with the environment? </h2>
-    <!-- <p> A short blurb on what the article talks about or whatever. </p>  -->
-    <p> <i> by </i> Rastra Raj Bhandari</p>
-  </div>
-</a>
-</div>
+        <div class="article-card">
+
+          <a href="articles/article-4.html">
+            <div class="card-title" style="background: #CC8200;margin-right: 20%;margin-bottom: 0;">
+              <h2> Unheard Voices: Privacy in European Post-Communist Democracies </h2>
+              <p> <i> by </i> Munib Mesinovic </p>
+            </div>
+          </a>
+          <a id="card-img" href="articles/article-1.html">
+            <img src="img/sample-nyuad4.jpg" alt="header" class="image2" style="margin-left: 5%; margin-top: 5%;">
+          </a> 
+        </div>
 
 
-<div class="article-card">
-  <img src="img/sample-header-5.png" alt="header" class="image" style="margin-left: 18%;">
-  <a href="articles/article-6.html">
-  <div class="card-title" style="background:#0DB000;margin-right: 30%; margin-bottom: 35%;">
-    <h2> Reflections on Exile in the Digital Age </h2>
-    <!-- <p> A short blurb on what the article talks about or whatever. </p>  -->
-    <p> <i> by </i> Lujain Ibrahim </p>
-  </div>
-</a>
-</div>
+        <div class="article-card">
 
-<div class="article-card">
-  <img src="img/sample-header-5.png" alt="header" class="image" style="margin-left: 10%;">
-  <a href="articles/article-6.html">
-  <div class="card-title" style="background: #00CCA4; margin-right: 20%; margin-left: 5%; margin-bottom: 0%; height: auto;">
-    <h2> Preserving Our Internet Flash History </h2>
-    <!-- <p> A short blurb on what the article talks about or whatever. </p>  -->
-    <p> <i> by </i> Grace Huang </p>
-  </div>
-</a>
-</div>
+          <a href="articles/article-5.html">
+            <div class="card-title" style="background: #CC1B2C; margin-left: 30%; margin-bottom: 45%;">
+              <h2> Delivery Nation: Challening the Food Monopoly in South Korea </h2>
+              <p> <i> by </i> Jihyun Kim</p>
+            </div>
+          </a>
+          <a id="card-img" href="articles/article-1.html">
+            <img src="img/sample-nyuad5.jpg" alt="header" class="image1" style="margin-left: 5%; margin-top: 10%;">
+          </div>
 
-<div class="article-card">
-  <img src="img/sample-header-5.png" alt="header" class="image" style="margin-left: 5%">
-  <a href="articles/article-4.html">
-  <div class="card-title" style="background:#0DB000; margin-left: 20%; height: auto;">
-    <h2> What's Multiplicity? The Origin Story </h2>
-    <!-- <p> A short blurb on what the article talks about or whatever. </p>  -->
-    <p> <i> by </i> Alia ElKattan </p>
-  </div>
-</a>
-</div>
+
+          <div class="article-card">
+            <a href="articles/article-6.html">
+              <div class="card-title" style="background:#0DB000;margin-right: 0%; margin-bottom: 5%; margin-left: 25%;">
+                <h2> Reflections on Exile in the Digital Age </h2>
+                <p> <i> by </i> Lujain Ibrahim </p>
+              </div>
+            </a>
+            <a id="card-img" href="articles/article-1.html">
+              <img src="img/sample-nyuad6.jpg" alt="header" class="image2" style="margin-left: 5%;">
+            </a>
+          </div>
+
+
+          <div class="article-card">
+
+            <a href="articles/article-6.html">
+              <div class="card-title" style="background: #00CCA4; margin-right: 20%; margin-left: 5%; margin-bottom: 0%; height: auto;">
+                <h2> Preserving Our Internet Flash History </h2>
+                <p> <i> by </i> Grace Huang </p>
+              </div>
+            </a>
+            <a id="card-img" href="articles/article-1.html">
+              <img src="img/sample-nyuad7.jpg" alt="header" class="image1" style="margin-left: 10%;">
+            </a>
+          </div>
+
+          <div class="article-card">
+
+            <a href="articles/article-4.html">
+              <div class="card-title" style="background:#CC8200; margin-left: 5%; margin-bottom: 45%;margin-right: 20%;">
+                <h2> What's Multiplicity? The Origin Story </h2>
+                <p> <i> by </i> Alia ElKattan </p>
+              </div>
+            </a>
+            <a id="card-img" href="articles/article-1.html">
+             <img src="img/sample-nyuad3.jpg" alt="header" class="image2"style="margin-left: 15%; margin-top: 10%">
+           </a>
+         </div> 
 
 
 
@@ -229,26 +258,26 @@ for(var i = 0; i < cards.length; i++){
 }
 
 </script>
- -->
+-->
 
-    </div>
-  </div>
+</div>
+</div>
 
 </div>
 <!-- todo: mailchimp -->
 
 
 
-  <!-- Footer -->
+<!-- Footer -->
 
-  <footer id="sticky-footer" style="margin-top: 5%;" class="py-1 bg-dark text-white">
+<footer id="sticky-footer" style="margin-top: 5%;" class="py-1 bg-dark text-white">
 
-    <div class="container text-center">
-      <small>&copy; multiplicity, 2020</small>
-    </div>
+  <div class="container text-center">
+    <small>&copy; multiplicity, 2020</small>
+  </div>
 
 
-  </footer>
+</footer>
 
 
 

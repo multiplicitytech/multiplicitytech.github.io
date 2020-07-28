@@ -1,6 +1,9 @@
 
 @import url("https://use.typekit.net/grm6kxy.css");
 
+header, body {
+  background-color: #FFFAF0;
+}
 .navbar-brand.abs
     {
         position: absolute;
@@ -200,22 +203,52 @@ body {
   /*margin-right: 5px;*/
   /*margin-left: 2%;*/
   position: relative;
-  margin-top: 2%;
+  margin-top: 2.5%;
   min-width: 300px;
   /*background: black; */
 
-  /*margin-right: 1%;*/
-
 }
 
-.article-card .image {
-  display: block;
+/*.image*/
+/*.article-card img {
   width: 85%;
   height: auto;
   z-index: 0;
-  height: 90%;
-  margin-top: 3%;
+  height: 85%;
+}*/
+
+
+.article-card img {
+  width: 85%;
+  /*height: auto;*/
+  z-index: 0;
 }
+
+.article-card .image1 {
+  box-shadow: -10px 10px 0px rgba(1,0,61,1);
+  transition: 0.3s;
+}
+
+.article-card .image2 {
+  box-shadow: 10px 10px 0px rgba(1,0,61,1);
+  transition: 0.3s;
+}
+
+.article-card .image1:hover {
+  box-shadow: -10px 10px 0px rgba(6,0,255,1);
+  transition: 0.3s;
+}
+
+.article-card .image2:hover {
+  box-shadow: 10px 10px 0px rgba(0,0,255,1);
+  transition: 0.3s;
+}
+
+
+.card-title:hover ~  .image1 {
+  box-shadow: -10px 10px 0px rgba(6,0,255,1);
+}
+
 
 .card-title {
   position: absolute; 
@@ -223,8 +256,9 @@ body {
   background: #FF2138;
   /*background: rgba(0, 0, 0, 0.5); /* Black see-through */*/
   /*color: #f1f1f1; */
-  width: 70%;
-  height: 45%;
+  /*width: 70%;*/
+  height: auto;
+  width: auto;
   transition: .5s ease;
   padding: 20px;
 /*  margin-left: 30%;
@@ -236,7 +270,7 @@ body {
 .card-title h2 {
   font-family: 'stenciletta-solid';
   font-weight: 600;
-  color: black;
+  color: white;
   text-align: left;
   /*margin: 0;*/
   font-size: 1.1rem;
@@ -249,40 +283,23 @@ body {
   font-family: 'Ministry';
   font-weight: 300;
   font-size: .8rem;
-  margin-bottom: 2.5%;
+  margin-bottom: 0%;
 }
 
-
+/*
 .card-title:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+}*/
 
-.card-title:hover h2 {
+/*.card-title:hover h2, p {
   color: black;
-}
+}*/
 /*@media screen and (min-width: 290px) {
   .navbar-brand {
     font-size: 2.5rem;
   }
 }
 */
-
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 25px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
 
 
 /*@media screen and (max-width: 767px) {
