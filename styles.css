@@ -136,7 +136,7 @@ body {
 	margin-top: 1rem;
 }
 
-.article-body {
+.article-body p {
 	text-align: justify;
 }
 .article-placeholder {
@@ -146,7 +146,7 @@ body {
 }
 
 
-.articleTitle h1 {
+.articleTitle h1, h1 {
 	font-family: 'stenciletta-solid';
 	font-weight: 700;
 	color: #010033;

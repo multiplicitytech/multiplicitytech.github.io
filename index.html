@@ -86,76 +86,8 @@
         <!-- multiplicity<span id="logo-extension">.tech</span> -->
         multiplicity<span class="txt-rotate"
         data-period = "2000"
-        data-rotate = '[".privacy", ".tech", ".exile", ".identity", ".diaspora", ".archives", ".bias", ".gaming", ".community", ".climate", ".nature", ".food", ".delivery"]'></span>
+        data-rotate = '[ ".tech", ".privacy", ".exile", ".identity", ".diaspora", ".archives", ".bias", ".gaming", ".community", ".climate", ".nature", ".food", ".delivery"]'></span>
       </a>
-
-<script> 
-
-var colors = ['#CC1B2C', '#0DB000', '#00CCA4', '#CC8200', '#C200CC', '#0500CC', '#B8CC00'];
-
-var TxtRotate = function(el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
-
-TxtRotate.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
-
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
-
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-  var that = this;
-  var delta = 300 - Math.random() * 100;
-
-  if (this.isDeleting) { delta /= 2; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
-
-  setTimeout(function() {
-    that.tick();
-  }, delta);
-};
-
-window.onload = function() {
-  var elements = document.getElementsByClassName('txt-rotate');
-  var color_index = Math.floor(Math.random() * colors.length-1) + 1;
-  for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-    elements[i].style.color = colors[color_index];
-  }
-  // INJECT CSS
-
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-  document.body.appendChild(css);
-};
-
-
-
-</script>
 
 <!--       <script> 
         var extension = document.getElementById("logo-extension");
@@ -211,26 +143,26 @@ window.onload = function() {
 
         <div class="article-card" style="display: block;">
 
-          <a class="card-link" href="articles/article-1.html">
+          <a class="card-link" href="articles/article-template.html">
             <div class="card-title" style=" margin-left: 30%; margin-bottom: 0%; background: #0500CC;">
               <h2> Domestic Surveillance and Black Lives Matter </h2>
               <!-- <p>A short blurb on what the article talks about or whatever. </p>  -->
               <p> <i> by </i> Tona Campbell </p>
             </div>
           </a>
-          <a class="card-img" href="articles/article-1.html">
+          <a class="card-img" href="articles/article-template.html">
             <img src="img/sample-nyuad1.jpg" class="image1" alt="header" style="margin-left: 0%;">
           </a>
         </div>
 
         <div class="article-card">
-          <a href="articles/article-1.html" >
+          <a href="articles/article-template.html" >
             <div id="second" class="card-title" style="background:#C200CC; margin-right: 30%; margin-bottom: 35%;">
               <h2> On the Contingency of Archive </h2>
               <p> <i> by </i> Tom Abi Samra </p>
             </div>
           </a>
-          <a id="card-img" href="articles/article-1.html">
+          <a id="card-img" href="articles/article-template.html">
             <img src="img/sample-nyuad2.jpg" alt="header" class="image1" style="margin-left: 10%;margin-top: 10%;">
           </a>
         </div>
@@ -238,13 +170,13 @@ window.onload = function() {
 
         <div class="article-card">
 
-          <a href="articles/article-1.html">
+          <a href="articles/article-template.html">
             <div class="card-title" style="background:#00CCA4; margin-right: 20%; margin-left: 5%; margin-bottom: 0%;">
               <h2> Can the internet reconnect humans with the environment? </h2>
               <p> <i> by </i> Rastra Bhandari </p>
             </div>
           </a>
-          <a id="card-img" href="articles/article-1.html">
+          <a id="card-img" href="articles/article-template.html">
             <img src="img/sample-nyuad3.jpg" alt="header" class="image2">
           </a>
         </div>
@@ -252,13 +184,13 @@ window.onload = function() {
 
         <div class="article-card">
 
-          <a href="articles/article-4.html">
+          <a href="articles/article-template.html">
             <div class="card-title" style="background: #CC8200;margin-right: 20%;margin-bottom: 0;">
               <h2> Unheard Voices: Privacy in European Post-Communist Democracies </h2>
               <p> <i> by </i> Munib Mesinovic </p>
             </div>
           </a>
-          <a id="card-img" href="articles/article-1.html">
+          <a id="card-img" href="articles/article-template.html">
             <img src="img/sample-nyuad4.jpg" alt="header" class="image2" style="margin-left: 5%; margin-top: 5%;">
           </a> 
         </div>
@@ -266,25 +198,25 @@ window.onload = function() {
 
         <div class="article-card">
 
-          <a href="articles/article-5.html">
+          <a href="articles/article-template.html">
             <div class="card-title" style="background: #CC1B2C; margin-left: 30%; margin-bottom: 45%;">
               <h2> Delivery Nation: Challening the Food Monopoly in South Korea </h2>
               <p> <i> by </i> Jihyun Kim</p>
             </div>
           </a>
-          <a id="card-img" href="articles/article-1.html">
+          <a id="card-img" href="articles/article-template.html">
             <img src="img/sample-nyuad5.jpg" alt="header" class="image1" style="margin-left: 5%; margin-top: 10%;">
           </div>
 
 
           <div class="article-card">
-            <a href="articles/article-6.html">
+            <a href="articles/article-template.html">
               <div class="card-title" style="background:#0DB000;margin-right: 0%; margin-bottom: 5%; margin-left: 25%;">
                 <h2> Reflections on Exile in the Digital Age </h2>
                 <p> <i> by </i> Lujain Ibrahim </p>
               </div>
             </a>
-            <a id="card-img" href="articles/article-1.html">
+            <a id="card-img" href="articles/article-template.html">
               <img src="img/sample-nyuad6.jpg" alt="header" class="image2" style="margin-left: 5%;">
             </a>
           </div>
@@ -292,26 +224,26 @@ window.onload = function() {
 
           <div class="article-card">
 
-            <a href="articles/article-6.html">
+            <a href="articles/article-template.html">
               <div class="card-title" style="background: #00CCA4; margin-right: 20%; margin-left: 5%; margin-bottom: 0%; height: auto;">
                 <h2> Preserving Our Internet Flash History </h2>
                 <p> <i> by </i> Grace Huang </p>
               </div>
             </a>
-            <a id="card-img" href="articles/article-1.html">
+            <a id="card-img" href="articles/article-template.html">
               <img src="img/sample-nyuad7.jpg" alt="header" class="image1" style="margin-left: 10%;">
             </a>
           </div>
 
           <div class="article-card">
 
-            <a href="articles/article-4.html">
+            <a href="articles/article-template.html">
               <div class="card-title" style="background:#CC8200; margin-left: 5%; margin-bottom: 45%;margin-right: 20%;">
                 <h2> What's Multiplicity? The Origin Story </h2>
                 <p> <i> by </i> Alia ElKattan </p>
               </div>
             </a>
-            <a id="card-img" href="articles/article-1.html">
+            <a id="card-img" href="articles/article-template.html">
              <img src="img/sample-nyuad3.jpg" alt="header" class="image2"style="margin-left: 15%; margin-top: 10%">
            </a>
          </div> 
