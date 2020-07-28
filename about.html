@@ -46,7 +46,7 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="stylesheet.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
@@ -55,11 +55,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
-  <script src="/script.js"></script>
+  <script src="src/script.js"></script>
 
 </head>
 
-<body onload="Timer()" class="d-flex flex-column">
+<body class="d-flex flex-column">
 
 
   <!-- Header & Nav -->
@@ -70,27 +70,8 @@
       <span class="w-100 d-block"><!-- hidden spacer to center brand on mobile --></span>
 
       <a class="navbar-brand" href="/index.html">
-        multiplicity.<span id="sublogo">..?</span>
+        multiplicity<span id="sublogo">..?</span>
       </a>
-
-<!-- <script>
-function Timer() {
-  setTimeout(myTimeout1, 2000)
-  setTimeout(myTimeout2, 4000)
-  setTimeout(myTimeout3, 6000)
-}
-
-function myTimeout1() {
-  document.getElementById("sublogo").innerHTML = "politics";
-}
-function myTimeout2() {
-  document.getElementById("sublogo").innerHTML = "community";
-}
-function myTimeout3() {
- document.getElementById("sublogo").innerHTML = "gaming";
-}
-
-</script> -->
 
       <!-- d-lg-none -->
       <div class="w-100 text-right">
@@ -104,7 +85,7 @@ function myTimeout3() {
               <a href="#" class="nav-link">About</a>
             </li>
           <li class="nav-item">
-              <a href="/archive.html" class="nav-link">Archive</a>
+              <p></p>
             </li>
           </ul>
         </div>
