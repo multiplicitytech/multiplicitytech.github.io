@@ -83,10 +83,81 @@
       <span class="w-100 d-block"><!-- hidden spacer to center brand on mobile --></span>
 
       <a class="navbar-brand" href="#">
-        multiplicity<span id="logo-extension">.tech</span>
+        <!-- multiplicity<span id="logo-extension">.tech</span> -->
+        multiplicity<span class="txt-rotate"
+        data-period = "2000"
+        data-rotate = '[".privacy", ".tech", ".exile", ".identity", ".diaspora", ".archives", ".bias", ".gaming", ".community", ".climate", ".nature", ".food", ".delivery"]'></span>
       </a>
 
-      <script> 
+<script> 
+
+var colors = ['#CC1B2C', '#0DB000', '#00CCA4', '#CC8200', '#C200CC', '#0500CC', '#B8CC00'];
+
+var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  var color_index = Math.floor(Math.random() * colors.length-1) + 1;
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+    elements[i].style.color = colors[color_index];
+  }
+  // INJECT CSS
+
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+
+
+
+</script>
+
+<!--       <script> 
         var extension = document.getElementById("logo-extension");
         var options = ['.privacy', '.tech', '.exile', '.identity', '.diaspora', '.archives', '.bias', '.gaming', '.community', '.climate', '.nature', '.food', '.delivery']
         var colors = ['#CC1B2C', '#0DB000', '#00CCA4', '#CC8200', '#C200CC', '#0500CC', '#B8CC00'];
@@ -99,7 +170,7 @@
           extension.style.color = colors[color_index];
         }, 2000);
 
-      </script>
+      </script> -->
 
       <!-- d-lg-none -->
       <div class="w-100 text-right">

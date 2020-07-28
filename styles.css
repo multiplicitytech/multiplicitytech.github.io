@@ -203,7 +203,7 @@ body {
   /*margin-right: 5px;*/
   /*margin-left: 2%;*/
   position: relative;
-  margin-top: 2.5%;
+  margin-top: 3%;
   min-width: 300px;
   /*background: black; */
 
@@ -245,7 +245,7 @@ body {
 }
 
 
-.card-title:hover ~  .image1 {
+.card-title:hover ~ .image1 {
   box-shadow: -10px 10px 0px rgba(6,0,255,1);
 }
 
@@ -265,6 +265,7 @@ body {
   margin-bottom: 5%;*/
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  min-width: 250px;
 }
 
 .card-title h2 {
