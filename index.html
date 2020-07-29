@@ -1,10 +1,12 @@
-
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
 
 
 <!-- HEADER -->
 <head>
+
+<meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161931112-1"></script>
@@ -16,7 +18,7 @@
     gtag('config', 'UA-161931112-1');
   </script>
 
-  <!-- Bootstrap core JavaScript -->
+    <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -60,216 +62,46 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
 
-  <!-- Include Handlebars.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="src/sketch.js"></script>
 
-  <script src="src/script.js"></script>
-  <!-- <script src="/slideshow.js"></script> -->
+    <!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+  #mc_embed_signup{
+    background:rbg(255,255,255,0); 
+    clear:left;
+    /*font:14px Helvetica,Arial,*/
+    font: 14px, 'Ministry' sans-serif; 
+    width:100%;
+    /*margin-top: 15%;*/
+  }
+  /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
 
 </head>
 
+<body style="width: 100%; height: auto;">
+<!-- <script> console.log("entered"); </script> -->
 
+<div id="coming_soon">
+<h1 style="color: #CC1B2C; margin-bottom: 1%;"> <b><i> COMING SOON </i> </b><br></h1>
+<h4> global explorations of an internet generation </h4>
+</div>
 
-
-<body class="d-flex flex-column">
-
-
-  <!-- Header & Nav -->
-  <nav class="navbar navbar-expand-lg">
-
-    <div class="d-flex flex-grow-1">
-
-      <span class="w-100 d-block"><!-- hidden spacer to center brand on mobile --></span>
-
-      <a class="navbar-brand" href="#">
-        <!-- multiplicity<span id="logo-extension">.tech</span> -->
-        multiplicity<span class="txt-rotate"
-        data-period = "2000"
-        data-rotate = '[ ".tech", ".privacy", ".exile", ".identity", ".diaspora", ".archives", ".bias", ".gaming", ".community", ".climate", ".nature", ".food", ".delivery"]'></span>
-      </a>
-
-
-      <!-- d-lg-none -->
-      <div class="w-100 text-right">
-
-        <button class="navbar-toggler flex-fill" type="button" data-toggle="collapse" data-target="#myNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse text-right w-100" id="myNavbar">
-          <ul class="navbar-nav ml-auto flex-nowrap">
-            <li class="nav-item">
-              <a href="/about.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <p></p>
-            </li>
-          </ul>
-
-        </div>
-
-
-      </div>
-
-
+<div id="mc_embed_signup" style="margin-bottom: 5%;">
+<form action="https://tech.us19.list-manage.com/subscribe/post?u=8659c6f8a6dbc0a231338ed32&amp;id=274df37a1a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+  <!-- <label for="mce-EMAIL">Join Our Mailing List</label> -->
+  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <div style="position: absolute; left: -5000px;" aria-hidden="true" style="font-family: 'Ministry';"><input type="text" name="b_8659c6f8a6dbc0a231338ed32_274df37a1a" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="follow" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
     </div>
-
-  </nav>
-
-
-
-  <!-- Cover Page Content -->
-
-  <div id="page-content">
-    <div class="container text-center">
-      <div class="row justify-content-center">
-
-
-
-        <div class="article-card" style="display: block;">
-
-          <a class="card-link" href="articles/article-template.html">
-            <div class="card-title" style=" margin-left: 30%; margin-bottom: 0%; background: #0500CC;">
-              <h2> Domestic Surveillance and Black Lives Matter </h2>
-              <!-- <p>A short blurb on what the article talks about or whatever. </p>  -->
-              <p> <i> by </i> Tona Campbell </p>
-            </div>
-          </a>
-          <a class="card-img" href="articles/article-template.html">
-            <img src="img/sample-nyuad1.jpg" class="image1" alt="header" style="margin-left: 0%;">
-          </a>
-        </div>
-
-        <div class="article-card">
-          <a href="articles/article-template.html" >
-            <div id="second" class="card-title" style="background:#C200CC; margin-right: 30%; margin-bottom: 35%;">
-              <h2> On the Contingency of Archive </h2>
-              <p> <i> by </i> Tom Abi Samra </p>
-            </div>
-          </a>
-          <a id="card-img" href="articles/article-template.html">
-            <img src="img/sample-nyuad2.jpg" alt="header" class="image1" style="margin-left: 10%;margin-top: 10%;">
-          </a>
-        </div>
-
-
-        <div class="article-card">
-
-          <a href="articles/article-template.html">
-            <div class="card-title" style="background:#00CCA4; margin-right: 20%; margin-left: 5%; margin-bottom: 0%;">
-              <h2> Can the internet reconnect humans with the environment? </h2>
-              <p> <i> by </i> Rastra Bhandari </p>
-            </div>
-          </a>
-          <a id="card-img" href="articles/article-template.html">
-            <img src="img/sample-nyuad3.jpg" alt="header" class="image2">
-          </a>
-        </div>
-
-
-        <div class="article-card">
-
-          <a href="articles/article-template.html">
-            <div class="card-title" style="background: #CC8200;margin-right: 20%;margin-bottom: 0;">
-              <h2> Unheard Voices: Privacy in European Post-Communist Democracies </h2>
-              <p> <i> by </i> Munib Mesinovic </p>
-            </div>
-          </a>
-          <a id="card-img" href="articles/article-template.html">
-            <img src="img/sample-nyuad4.jpg" alt="header" class="image2" style="margin-left: 5%; margin-top: 5%;">
-          </a> 
-        </div>
-
-
-        <div class="article-card">
-
-          <a href="articles/article-template.html">
-            <div class="card-title" style="background: #CC1B2C; margin-left: 30%; margin-bottom: 45%;">
-              <h2> Delivery Nation: Challening the Food Monopoly in South Korea </h2>
-              <p> <i> by </i> Jihyun Kim</p>
-            </div>
-          </a>
-          <a id="card-img" href="articles/article-template.html">
-            <img src="img/sample-nyuad5.jpg" alt="header" class="image1" style="margin-left: 5%; margin-top: 10%;">
-          </div>
-
-
-          <div class="article-card">
-            <a href="articles/lujain-article/lujain-article.html">
-              <div class="card-title" style="background:#0DB000;margin-right: 0%; margin-bottom: 5%; margin-left: 25%;">
-                <h2> Reflections on Exile in the Digital Age </h2>
-                <p> <i> by </i> Lujain Ibrahim </p>
-              </div>
-            </a>
-            <a id="card-img" href="articles/lujain-article/lujain-article.html">
-              <img src="img/sample-nyuad6.jpg" alt="header" class="image2" style="margin-left: 5%;">
-            </a>
-          </div>
-
-
-          <div class="article-card">
-
-            <a href="articles/article-template.html">
-              <div class="card-title" style="background: #00CCA4; margin-right: 20%; margin-left: 5%; margin-bottom: 0%; height: auto;">
-                <h2> Preserving Our Internet Flash History </h2>
-                <p> <i> by </i> Grace Huang </p>
-              </div>
-            </a>
-            <a id="card-img" href="articles/article-template.html">
-              <img src="img/sample-nyuad7.jpg" alt="header" class="image1" style="margin-left: 10%;">
-            </a>
-          </div>
-
-          <div class="article-card">
-
-            <a href="articles/article-template.html">
-              <div class="card-title" style="background:#CC8200; margin-left: 5%; margin-bottom: 45%;margin-right: 20%;">
-                <h2> What's Multiplicity? The Origin Story </h2>
-                <p> <i> by </i> Alia ElKattan </p>
-              </div>
-            </a>
-            <a id="card-img" href="articles/article-template.html">
-             <img src="img/sample-nyuad3.jpg" alt="header" class="image2"style="margin-left: 15%; margin-top: 10%">
-           </a>
-         </div> 
-
-
-
-<!-- <script>
-
-var cards = $(".article-card");
-
-for(var i = 0; i < cards.length; i++){
-    var target = Math.floor(Math.random() * cards.length -1) + 1;
-    var target2 = Math.floor(Math.random() * cards.length -1) +1;
-    cards.eq(target).before(cards.eq(target2));
-}
-
-</script>
--->
-
-</div>
+</form>
 </div>
 
-</div>
-<!-- todo: mailchimp -->
 
-
-
-<!-- Footer -->
-
-<footer id="sticky-footer" style="margin-top: 5%;" class="py-1 bg-dark text-white">
-
-  <div class="container text-center">
-    <small>&copy; multiplicity, 2020</small>
-  </div>
-
-
-</footer>
-
-
-
+<!--End mc_embed_signup-->
 
 </body>
 
