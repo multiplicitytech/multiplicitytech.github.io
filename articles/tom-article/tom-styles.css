@@ -44,7 +44,7 @@ h2 {
     color: black;
     font-size:35px;
     font-style: normal;
-    margin-left: 75px;
+    margin-left: 125px;
     margin-bottom: 0px;
     
 }
@@ -144,8 +144,8 @@ a:hover {
 
 .text {
     margin-top:20px; 
-    margin-left: 150px; 
-    margin-right: 150px; 
+    margin-left: 250px; 
+    margin-right: 250px; 
     margin-bottom: 30px; 
     display:inline-block;
 }
