@@ -2,12 +2,14 @@
 @import url("https://use.typekit.net/grm6kxy.css");
 
 header, body {
-  /*background-color: #FFFAF0;*/
   background-color: 
+  /*#FFFAF0*/
   /*teal*/
   /*#00FFCE*/
   /*light teal*/
   /*#99FFEB*/
+  /*very light teal*/
+  /*#EDFFFC*/
   /*blue*/
 /*#00FFCE*/
 /*darkblue*/
@@ -165,45 +167,47 @@ color: #00FFCE !important;
 }
 
     #tona-card .card-title {
-      /*background: #0500CC;*/
+      background: #CC1B2C;
+      /*background: #FF2138;*/
       /*background: #FF4E54;*/
-      background: #FF2138;
     }
 
     #tom-card .card-title {
-      /*background:#C200CC;*/
+      background:#CC8200;
+      /*background: #10DD00;*/
       /*background: #40E333;*/
-      background: #10DD00;
     }
 
     #rastra-card .card-title {
+      background:  #098500;
       /*background:#0DB000; */
       /*background:#FFB533;*/
-      background: #FFA200;
+      /*background: #FFA200;*/
     }
 
     #munib-card .card-title {
-      /*background: #CC8200;*/
+       background:#CC8200;
       /*background: #F533FF;*/
-      background: #E7FF00;
+      /*background: #E7FF00;*/
     }
 
     #jihyun-card .card-title {
-      /*background: #CC1B2C; */
+      background: #0500CC; 
       /*background: #EBFF33;*/
-      background: #F100FF;
+      /*background: #F100FF;*/
     }
 
     #lujain-card .card-title {
-      /*background:#0DB000;*/
+      background: #CC1B2C;
       /*background: #FF4E5F;*/
-      background: #E7FF00;
+      /*background: #E7FF00;*/
     }
 
     #grace-card .card-title {
-      /*background: #00CCA4;*/
+       background:  #098500;
       /*background: #FFB533;*/
-      background: #FFA200;   }
+      /*background: #FFA200*/
+         }
 
 .navbar-brand {
 	/*width: 10%;*/
@@ -364,25 +368,30 @@ body {
 
 .article-card .image1 {
   /*box-shadow: -10px 10px 0px rgba(1,0,61,1);*/
-  box-shadow: -10px 10px 0px rgba(0,255,206,1);
+  /*box-shadow: -10px 10px 0px rgba(0,255,206,1);*/
+  /*box-shadow: -10px 10px 0px rgba(0,255,206,.7);*/
+  box-shadow: -10px 10px 0px rgba(255,255,255,1);
   transition: 0.3s;
 }
 
 .article-card .image2 {
   /*box-shadow: 10px 10px 0px rgba(1,0,61,1);*/
-  box-shadow: 10px 10px 0px rgba(0,255,206,1);
+  /*box-shadow: 10px 10px 0px rgba(0,255,206,1);*/
+  box-shadow: 10px 10px 0px rgba(255,255,255,1);
   transition: 0.3s;
 }
 
 .article-card .image1:hover {
-  box-shadow: -10px 10px 0px rgba(6,0,255,1);
+  /*box-shadow: -10px 10px 0px rgba(6,0,255,1);*/
   /*box-shadow: -10px 10px 0px rgba(1,0,61,1);*/
+  box-shadow: -10px 10px 0px rgba(0,255,206,1);
   transition: 0.3s;
 }
 
 .article-card .image2:hover {
-  box-shadow: 10px 10px 0px rgba(6,0,255,1);
+  /*box-shadow: 10px 10px 0px rgba(6,0,255,1);*/
   /*box-shadow: -10px 10px 0px rgba(1,0,61,1);*/
+  box-shadow: 10px 10px 0px rgba(0,255,206,1);
   transition: 0.3s;
 }
 
@@ -413,8 +422,8 @@ body {
 .card-title h2 {
   font-family: 'stenciletta-solid';
   font-weight: 600;
-  /*color: white;*/
-  color: #010033;
+  color: white;
+  /*color: #010033;*/
   text-align: left;
   /*margin: 0;*/
   font-size: 1.1rem;
@@ -423,8 +432,8 @@ body {
 
 .card-title p {
   text-align: left;
-  /*color: white;*/
-  color: #010033;
+  color: white;
+  /*color: #010033;*/
   font-family: 'Ministry';
   font-weight: 300;
   font-size: .8rem;
