@@ -2,20 +2,28 @@
 @import url("https://use.typekit.net/grm6kxy.css");
 
 header, body {
-  background-color: #FFFAF0;
+  /*background-color: #FFFAF0;*/
+  background-color: 
+  /*teal*/
+  /*#00FFCE*/
+  /*light teal*/
+  /*#99FFEB*/
+  /*blue*/
+/*#00FFCE*/
+/*darkblue*/
+/*#010033*/
+#02012F
+  ;
+
 }
-.navbar-brand.abs
+/*.navbar-brand.abs
     {
         position: absolute;
         width: 100%;
         left: 0;
         text-align: center;
-      /*  margin-left: 6rem;*/
-    }
+    }*/
 
-.navbar {
-
-}
 
 body{
 	/*background-color: #00FFCE12;*/
@@ -25,63 +33,189 @@ body{
 
 .navbar-toggler-icon {
 
- background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+ background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0,255,206,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.navbar-toggler {
+/*.navbar-toggler {
 	height: 100%;
-}
+}*/
 
-.navbar-collapse {
+/*.navbar-collapse {
 	height: 100%;
-}
+}*/
 
 .nav-link {
 	font-weight: 500;
 	font-size: 1.2rem;
-	color: #010033;
+	/*color: #010033;*/
+  /*color: #0600FF;*/
+color: #00FFCE !important;
+}
 
+.navbar-toggler {
+  border-color: transparent !important;
 }
 
 
-@media screen and (min-width: 290px) {
+/*more than 1 card per row*/
+@media screen and (min-width: 751px) {
+  .navbar {margin-top: 1%;}
+  .navbar-brand {
+    font-size: 2.8rem;
+  }
+  .article-card {
+    width: 33%;
+    margin-top: 3%;
+    } 
+
+    #tona-card .card-title {
+      margin-left: 30%; margin-bottom: 0%; 
+    }
+
+    #tom-card .card-title {
+      margin-right: 30%; margin-bottom: 35%;
+    }
+
+    #rastra-card .card-title {
+      margin-right: 20%; margin-left: 5%; margin-bottom: 0%;"
+    }
+
+    #munib-card .card-title {
+      margin-right: 20%;margin-bottom: 0;
+    }
+
+    #jihyun-card .card-title {
+      margin-left: 30%; margin-bottom: 45%;
+    }
+
+    #lujain-card .card-title {
+      margin-right: 0%; margin-bottom: 5%; margin-left: 25%;
+    }
+
+    #grace-card .card-title {
+      margin-right: 20%; margin-left: 5%; margin-bottom: 0%; height: auto;
+    }
+}
+
+
+/*add middle tablet mode*/
+
+/*only 1 card per row*/
+@media screen and (max-width: 750px) {
+
+  .navbar {margin-top: 2.5%;}
+  .article-card {
+    width: 80%;
+    margin-top: 10%;
+    } 
+
+     #tona-card .card-title {
+      margin-left: 22%; margin-bottom: 0%;
+    }
+
+    #tom-card .card-title {
+     margin-right: 30%; margin-bottom: 35%;
+    }
+
+    #rastra-card .card-title {
+      margin-right: 20%; margin-left: 5%; margin-bottom: 0%;
+    }
+
+    #munib-card .card-title {
+      margin-right: 20%;margin-bottom: 0;
+    }
+
+    #jihyun-card .card-title {
+       margin-left: 23%; margin-bottom: 38%;
+    }
+
+    #lujain-card .card-title {
+      margin-right: 0%; margin-bottom: 5%; margin-left: 30%;
+    }
+
+    #grace-card .card-title {
+      margin-right: 20%; margin-left: 5%; margin-bottom: 0%; height: auto;
+    }
+
+}
+
+@media screen and (min-width: 570px) {
   .navbar-brand {
     font-size: 2.5rem;
   }
+
 }
 
-@media screen and (max-width: 290px) {
+@media screen and (max-width: 569px) {
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .navbar-brand {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
   .navbar-brand {
     font-size: 1.3rem;
   }
 }
 
-@media screen and (max-width: 90px) {
-  .navbar-brand {
-    font-size: .7rem;
-  }
-}
+    #tona-card .card-title {
+      /*background: #0500CC;*/
+      /*background: #FF4E54;*/
+      background: #FF2138;
+    }
 
+    #tom-card .card-title {
+      /*background:#C200CC;*/
+      /*background: #40E333;*/
+      background: #10DD00;
+    }
 
+    #rastra-card .card-title {
+      /*background:#0DB000; */
+      /*background:#FFB533;*/
+      background: #FFA200;
+    }
+
+    #munib-card .card-title {
+      /*background: #CC8200;*/
+      /*background: #F533FF;*/
+      background: #E7FF00;
+    }
+
+    #jihyun-card .card-title {
+      /*background: #CC1B2C; */
+      /*background: #EBFF33;*/
+      background: #F100FF;
+    }
+
+    #lujain-card .card-title {
+      /*background:#0DB000;*/
+      /*background: #FF4E5F;*/
+      background: #E7FF00;
+    }
+
+    #grace-card .card-title {
+      /*background: #00CCA4;*/
+      /*background: #FFB533;*/
+      background: #FFA200;   }
 
 .navbar-brand {
 	/*width: 10%;*/
 	text-decoration: none;
 	/*font-size: 3vw;*/
-	height: 100%;
+	/*height: 100%;*/
 	padding: 0;
 	font-family: 'ministry';
 	font-weight: 700;
 	flex-shrink: 2;
-	color: #0600FF;
-}
-
-.sublogo {
-	/*orange*/
-	color: #FFA300;
-/*	margin: 0 0 0 0 ;
-	padding: 0 0 0 0;*/
-	text-align: left;
+	/*color: #0600FF;*/
+  color: #00FFCE !important;
 }
 
 p, a {
@@ -138,6 +272,7 @@ body {
 
 .article-body p {
 	text-align: justify;
+  color: white !important;
 }
 .article-placeholder {
 	margin-top: 1rem;
@@ -149,17 +284,20 @@ body {
 .articleTitle h1, h1 {
 	font-family: 'stenciletta-solid';
 	font-weight: 700;
-	color: #010033;
+	/*color: #010033;*/
+  color: white;
 }
 
 .byline {
 	font-weight: 400;
-	color: #010033;
+	/*color: #010033;*/
+  color: #00FFCE;
 }
 
 .author {
 	font-weight: 400;
-	color: #0500CC;
+	/*color: #0500CC;*/
+  color: #00FFCE;
 }
 
 .date {
@@ -198,12 +336,12 @@ body {
 }
 
 .article-card {
-  width: 33%;
+  /*width: 33%;*/
   /*height: 50%;*/
   /*margin-right: 5px;*/
   /*margin-left: 2%;*/
   position: relative;
-  margin-top: 3%;
+  /*margin-top: 3%;*/
   min-width: 300px;
   /*background: black; */
 
@@ -225,30 +363,34 @@ body {
 }
 
 .article-card .image1 {
-  box-shadow: -10px 10px 0px rgba(1,0,61,1);
+  /*box-shadow: -10px 10px 0px rgba(1,0,61,1);*/
+  box-shadow: -10px 10px 0px rgba(0,255,206,1);
   transition: 0.3s;
 }
 
 .article-card .image2 {
-  box-shadow: 10px 10px 0px rgba(1,0,61,1);
+  /*box-shadow: 10px 10px 0px rgba(1,0,61,1);*/
+  box-shadow: 10px 10px 0px rgba(0,255,206,1);
   transition: 0.3s;
 }
 
 .article-card .image1:hover {
   box-shadow: -10px 10px 0px rgba(6,0,255,1);
+  /*box-shadow: -10px 10px 0px rgba(1,0,61,1);*/
   transition: 0.3s;
 }
 
 .article-card .image2:hover {
-  box-shadow: 10px 10px 0px rgba(0,0,255,1);
+  box-shadow: 10px 10px 0px rgba(6,0,255,1);
+  /*box-shadow: -10px 10px 0px rgba(1,0,61,1);*/
   transition: 0.3s;
 }
 
 
-.card-title:hover ~ .image1 {
+/*.card-title:hover ~ .image1 {
   box-shadow: -10px 10px 0px rgba(6,0,255,1);
 }
-
+*/
 
 .card-title {
   position: absolute; 
@@ -271,7 +413,8 @@ body {
 .card-title h2 {
   font-family: 'stenciletta-solid';
   font-weight: 600;
-  color: white;
+  /*color: white;*/
+  color: #010033;
   text-align: left;
   /*margin: 0;*/
   font-size: 1.1rem;
@@ -280,7 +423,8 @@ body {
 
 .card-title p {
   text-align: left;
-  color: white;
+  /*color: white;*/
+  color: #010033;
   font-family: 'Ministry';
   font-weight: 300;
   font-size: .8rem;
@@ -295,12 +439,6 @@ body {
 /*.card-title:hover h2, p {
   color: black;
 }*/
-/*@media screen and (min-width: 290px) {
-  .navbar-brand {
-    font-size: 2.5rem;
-  }
-}
-*/
 
 
 /*@media screen and (max-width: 767px) {

@@ -1,5 +1,5 @@
 
-var colors = ['#CC1B2C', '#0DB000', '#00CCA4', '#CC8200', '#C200CC', '#0500CC', '#B8CC00'];
+var colors = ['#CC1B2C', '#0DB000', '#CC8200', '#C200CC', '#0600FF', '#B8CC00', '#F533FF', '#40E333', '#FF2138'];
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
