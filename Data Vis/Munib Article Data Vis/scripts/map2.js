@@ -118,7 +118,7 @@ var nationallayer = L.geoJson(europe_data, {
         layer.on({
             'mousemove': function (e) {
                 e.target.setStyle({
-                    weight: 5,
+                    weight: 4,
                     color: '#666',
                     dashArray: '',
                     fillOpacity: 0.7

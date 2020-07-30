@@ -39,7 +39,7 @@ function highlightFeature(e) {
     var layer1 = e.target;
 
     layer1.setStyle({
-        weight: 5,
+        weight: 4,
         color: '#666',
         dashArray: '',
         fillOpacity: 0.7
