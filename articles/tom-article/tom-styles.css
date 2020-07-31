@@ -5,6 +5,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f9f9ff;
+    cursor: url('cursor.png'), auto;	
 }
 html {
     height: 100vh;
@@ -144,6 +145,12 @@ a:hover {
 
 .text {
     margin-top:20px; 
+    margin-left: 250px; 
+    margin-right: 250px; 
+    margin-bottom: 30px; 
+    display:inline-block;
+}
+.concluding-text {
     margin-left: 250px; 
     margin-right: 250px; 
     margin-bottom: 30px; 
