@@ -1,0 +1,120 @@
+.navy-filter {
+  filter: invert(9%) sepia(45%) saturate(2722%) hue-rotate(226deg) brightness(85%) contrast(119%);
+}
+
+
+.navbar-toggler-icon {
+
+ background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0,255,206,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+
+.nav-link {
+	font-weight: 500;
+	font-size: 1.2rem;
+	/*color: #010033;*/
+  /*color: #0600FF;*/
+color: #00FFCE !important;
+}
+
+.navbar-toggler {
+  border-color: transparent !important;
+}
+
+
+/*more than 1 card per row*/
+@media screen and (min-width: 751px) {
+  #sticky-footer {margin-top: 5% !important;}
+  .navbar {margin-top: 1%;}
+  .navbar-brand {
+    font-size: 2.8rem;
+  }
+ }
+
+ @media screen and (max-width: 750px) {
+  #sticky-footer {margin-top: 15% !important;}
+  .navbar {margin-top: 2.5%;}
+}
+
+@media screen and (min-width: 570px) {
+  .navbar-brand {
+    font-size: 2.5rem;
+  }
+
+}
+
+@media screen and (max-width: 569px) {
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .navbar-brand {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+}
+
+.nav-link {
+	font-weight: 500;
+	font-size: 1.2rem;
+	/*color: #010033;*/
+  /*color: #0600FF;*/
+color: #00FFCE !important;
+}
+
+.navbar-toggler {
+  border-color: transparent !important;
+}
+
+
+.navbar-brand {
+	/*width: 10%;*/
+	text-decoration: none;
+	/*font-size: 3vw;*/
+	/*height: 100%;*/
+	padding: 0;
+	font-family: 'ministry', sans-serif;
+	font-weight: 700;
+	flex-shrink: 2;
+	/*color: #0600FF;*/
+  color: #00FFCE !important;
+}
+
+.navbar-nav {
+	margin-left: 1rem;
+
+}
+
+.nav-item {
+	margin-right: 2rem;
+
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  /*background-color: #00FFCE !important;*/
+  background-color: white !important;
+  color: #02012F !important;
+}
+
+
+/*QUESTIONABLE - MARGINS FOR ARTICLES?*/
+.article {
+	text-align: left;
+	margin-top: 1rem;
+}
+
+.article-placeholder {
+	margin-top: 1rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+

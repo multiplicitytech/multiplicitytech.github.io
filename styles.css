@@ -3,32 +3,9 @@
 
 header, body {
   background-color: 
-  /*#FFFAF0*/
-  /*teal*/
-  /*#00FFCE*/
-  /*light teal*/
-  /*#99FFEB*/
-  /*very light teal*/
-  /*#EDFFFC*/
-  /*blue*/
-/*#00FFCE*/
-/*darkblue*/
-/*#010033*/
 #02012F
   ;
-
 }
-
-.navy-filter {
-  filter: invert(9%) sepia(45%) saturate(2722%) hue-rotate(226deg) brightness(85%) contrast(119%);
-}
-/*.navbar-brand.abs
-    {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        text-align: center;
-    }*/
 
 
 body{
@@ -37,39 +14,13 @@ body{
 	/*background-color: #EDFFFC;*/
 }
 
-.navbar-toggler-icon {
-
- background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0,255,206,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+.article-body p {
+  text-align: justify;
+  color: white !important;
 }
-
-/*.navbar-toggler {
-	height: 100%;
-}*/
-
-/*.navbar-collapse {
-	height: 100%;
-}*/
-
-.nav-link {
-	font-weight: 500;
-	font-size: 1.2rem;
-	/*color: #010033;*/
-  /*color: #0600FF;*/
-color: #00FFCE !important;
-}
-
-.navbar-toggler {
-  border-color: transparent !important;
-}
-
 
 /*more than 1 card per row*/
 @media screen and (min-width: 751px) {
-  #sticky-footer {margin-top: 5% !important;}
-  .navbar {margin-top: 1%;}
-  .navbar-brand {
-    font-size: 2.8rem;
-  }
   .article-card {
     width: 33%;
     margin-top: 3%;
@@ -109,8 +60,6 @@ color: #00FFCE !important;
 
 /*only 1 card per row*/
 @media screen and (max-width: 750px) {
-  #sticky-footer {margin-top: 15% !important;}
-  .navbar {margin-top: 2.5%;}
   .article-card {
     width: 80%;
     margin-top: 10%;
@@ -144,31 +93,6 @@ color: #00FFCE !important;
       margin-right: 20%; margin-left: 5%; margin-bottom: 0%; height: auto;
     }
 
-}
-
-@media screen and (min-width: 570px) {
-  .navbar-brand {
-    font-size: 2.5rem;
-  }
-
-}
-
-@media screen and (max-width: 569px) {
-  .navbar-brand {
-    font-size: 1.8rem;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .navbar-brand {
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (max-width: 330px) {
-  .navbar-brand {
-    font-size: 1.3rem;
-  }
 }
 
     #tona-card .card-title {
@@ -214,39 +138,15 @@ color: #00FFCE !important;
       /*background: #FFA200*/
          }
 
-.navbar-brand {
-	/*width: 10%;*/
-	text-decoration: none;
-	/*font-size: 3vw;*/
-	/*height: 100%;*/
-	padding: 0;
-	font-family: 'ministry', sans-serif;
-	font-weight: 700;
-	flex-shrink: 2;
-	/*color: #0600FF;*/
-  color: #00FFCE !important;
-}
 
 p, a {
 	font-size: 100%;
 	font-family: 'ministry', sans-serif;
 	font-weight: 300;
-	/*color: white;*/
 }
 
-.navbar-nav {
-	margin-left: 1rem;
 
-}
 
-/*a {
-	color: #0600FF;
-}*/
-
-.nav-item {
-	margin-right: 2rem;
-
-}
 
 html,
 body {
@@ -257,12 +157,6 @@ body {
   flex: 1 0 auto;
 }
 
-#sticky-footer {
-  flex-shrink: none;
-  /*background-color: #00FFCE !important;*/
-  background-color: white !important;
-  color: #02012F !important;
-}
 
 .bg-dark {
 	background-color: black !important;
@@ -273,21 +167,6 @@ body {
   width: 100%;
   height: 100%;
 
-}
-
-.article {
-	text-align: left;
-	margin-top: 1rem;
-}
-
-.article-body p {
-	text-align: justify;
-  color: white !important;
-}
-.article-placeholder {
-	margin-top: 1rem;
-	margin-left: 1.7rem;
-	margin-right: 1.7rem;
 }
 
 
@@ -356,14 +235,6 @@ body {
   /*background: black; */
 
 }
-
-/*.image*/
-/*.article-card img {
-  width: 85%;
-  height: auto;
-  z-index: 0;
-  height: 85%;
-}*/
 
 
 .article-card img {
@@ -446,68 +317,6 @@ body {
   margin-bottom: 0%;
 }
 
-/*
-.card-title:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}*/
-
-/*.card-title:hover h2, p {
-  color: black;
-}*/
-
-
-/*@media screen and (max-width: 767px) {
-
-}
-
-@media screen and (max-width: 505px) {
-
-
-}
-
-@media screen and (max-width: 450px) {
-
-}
-
-@media screen and (max-width: 383px) {
-
-}
-
-@media screen and (max-width: 350px) {
-
-}
-*/
-
-
-.sorting-button {
-	color: #020066;
-	background-color: white; 
-	box-shadow: none;
-	margin-bottom: 1%;
-	font-family: 'Ministry';
-	font-weight: 500;
-}
-
-.sorting-button:hover {
-	color: white;
-	background-color: #020066;
-}
-
-#article-list li {
-	margin-top: 2%;
-	list-style-type: none;
-
-}
-
-#article-list a {
-	/*navy*/
-	color: #020066;
-}
-
-#article-list h6 {
-	font-weight: 400;
-}
-/** {box-sizing: border-box;}*/
 
 #mc_embed_signup input{
   font-family: 'Ministry';
@@ -537,20 +346,3 @@ body {
   margin-top: 60% !important;
 }
 }
-
-/*@media screen and (max-width: 505px) {
-
-
-}
-
-@media screen and (max-width: 450px) {
-
-}
-
-@media screen and (max-width: 383px) {
-
-}
-
-@media screen and (max-width: 350px) {
-
-}*/
