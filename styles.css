@@ -61,6 +61,7 @@ color: #00FFCE !important;
 
 /*more than 1 card per row*/
 @media screen and (min-width: 751px) {
+  #sticky-footer {margin-top: 5% !important;}
   .navbar {margin-top: 1%;}
   .navbar-brand {
     font-size: 2.8rem;
@@ -104,7 +105,7 @@ color: #00FFCE !important;
 
 /*only 1 card per row*/
 @media screen and (max-width: 750px) {
-
+  #sticky-footer {margin-top: 15% !important;}
   .navbar {margin-top: 2.5%;}
   .article-card {
     width: 80%;
@@ -256,7 +257,6 @@ body {
   flex-shrink: none;
   /*background-color: #00FFCE !important;*/
   background-color: white !important;
-  margin-top: 5% !important;
   color: #02012F !important;
 }
 
