@@ -18,6 +18,10 @@ header, body {
   ;
 
 }
+
+.navy-filter {
+  filter: invert(9%) sepia(45%) saturate(2722%) hue-rotate(226deg) brightness(85%) contrast(119%);
+}
 /*.navbar-brand.abs
     {
         position: absolute;
