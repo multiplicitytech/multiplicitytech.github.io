@@ -118,7 +118,7 @@ var nationallayer = L.geoJson(europe_data, {
         layer.on({
             'mousemove': function (e) {
                 e.target.setStyle({
-                    weight: 5,
+                    weight: 4,
                     color: '#666',
                     dashArray: '',
                     fillOpacity: 0.7
@@ -272,13 +272,11 @@ map2.on('baselayerchange', function(e) {
     legend2.remove();
 
     if(e.name == 'Private Company Handling Data'){
-        console.log('private!')
         layerSelect = 'company';
         legend2.addTo(map2);
 
     }
     if(e.name == 'National Data Protection Authority') {
-        console.log('public!')
         layerSelect = 'national';
         legend2.addTo(map2);
 
