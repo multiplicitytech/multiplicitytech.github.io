@@ -2,6 +2,39 @@
 <html>
   <head>
     <link href="tona-styles.css" rel="stylesheet">  
+    <meta name="viewport" content="width=device-width">
+    <style>
+      @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  #tweet {
+    display: none;
+  }
+  .content {
+    margin-left: 10vw; 
+    margin-right: 10vw; 
+  }
+  p {
+    font-size: 2vw;
+  }
+  blockquote {
+    font-size: 2vw;
+  }
+  h1 {
+    font-size: 2.5vw;
+  }
+  .byline {
+    font-size: 2.5vw;
+  }
+  #channel {
+    font-size: 3vw;
+  }
+  #text {
+    font-size: 4vw;
+  }
+}
+    </style>
   </head>
   <body>
     <!-- Credits to https://codepen.io/Sickmonkeys/pen/gGjpRE for this design-->
@@ -12,11 +45,11 @@
                   <div id="channel">Tona Campbell</div>
                   <div class="row">
                     <div class="column">
-                      <div id="text" style="margin-top: 40px; margin-bottom: 40px; margin-left: 30px; margin-right: 10px;">Domestic Surveillance & Black Lives Matter</div>
-                    <p style="text-align: center; margin: 30px; font-weight: 400; font-size: 1.3vw;">As the movement for Black lives uses social media to rally and document the fight for racial justice, we must critically examine the way we use social media to facilitate social action.</p>
+                      <div id="text" style="margin-top: 40px; margin-bottom: 40px; margin-left: 20px; margin-right: 20px;">Domestic Surveillance & Black Lives Matter</div>
+                    <p class="byline">As the movement for Black lives uses social media to rally and document the fight for racial justice, we must critically examine the way we use social media to facilitate social action.</p>
                     </div>
                     <div class="column">
-                      <div style="margin-right: 30px; margin-top: 50px; margin-bottom: 50px; margin-left: 10px;"><img src="tweet.png" style="width: 100%;"></div>
+                      <div id ="tweet" style="margin-right: 30px; margin-top: 50px; margin-bottom: 50px; margin-left: 10px;"><img src="tweet.png" style="width: 100%;"></div>
                     </div>
                   </div>   
           </div>

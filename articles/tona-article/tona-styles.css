@@ -173,14 +173,14 @@ p {
     color: white;
     font-weight: 300;
     /* font-size: 15px; */
-    font-size: 1.1vw;
+    font-size: 1.5vw;
     text-align:justify;
 }
 h1 {
     color: #f55bff; 
     font-family: ministry;
     padding: 10px;
-    font-size: 1.25vw;
+    font-size: 1.7vw;
     font-weight: 400;
 }
 .content {
@@ -198,7 +198,7 @@ blockquote {
     border-left-width: 4px;
     border-left-color: #3a3ffb;
     padding: 20px;
-    font-size: 1.01vw;
+    font-size: 1.5vw;
     font-weight: 100;
 }
 ::selection {
@@ -225,3 +225,6 @@ a {
 a:hover {
   border-bottom: 0px dotted #f9ffc5;
 } 
+.byline {
+    text-align: center; margin: 30px; font-weight: 400; font-size: 1.7vw;
+}
