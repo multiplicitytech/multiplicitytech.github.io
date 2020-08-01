@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEADER -->
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161931112-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-161931112-1');
+  </script>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+
+  <!-- UPDATE THESE -->
+
+  <!-- Facebook tags -->
+  <meta property="og:title" content="Multiplicity">
+  <meta property="og:description" content="Global examinations of youth, tech & society.">
+  <meta property="og:image" content="sample-logo.jpg"> 
+  <meta property="og:url" content="http://multiplicitytech.github.io"> 
+  <meta property="og:site_name" content="Multiplicity">
+
+
+  <!-- Twitter tags -->
+  <meta name="twitter:title" content="Multiplicity">
+  <meta name="twitter:description" content="Global examinations of youth, tech & society.">
+  <meta name="twitter:image" content="sample-logo.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="multiplicity logo">
+
+  <!-- <meta name="twitter:site" content="@multiplicity_tech"> -->
+
+
+  <title>Multiplicity</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="stylesheet.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
+
+  <!-- Include Handlebars.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+  <script src="/script.js"></script>
+
+  <!-- Data Vis -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+  <link rel="stylesheet" href="https://use.typekit.net/grm6kxy.css" />
+
+
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+  crossorigin=""></script>
+
+  <script src="data-vis/munib-article-data-vis/scripts/select_europe.js"></script>
+  <script src="data-vis/munib-article-data-vis/scripts/interview_countries.js"></script>
+
+  <style>#map1 { height: 72vh;}</style>
+  <style>#map2 { height: 72vh;}</style>
+  <style>#map3 { height: 72vh;}</style>
+
+</head>
+
+<body onload="Timer()" class="d-flex flex-column">
+
+
+  <!-- Header & Nav -->
+  <nav class="navbar navbar-expand-lg">
+
+    <div class="d-flex flex-grow-1">
+
+      <span class="w-100 d-block"><!-- hidden spacer to center brand on mobile --></span>
+
+      <a class="navbar-brand" href="/index.html">
+        multiplicity.<span id="sublogo">politics</span>
+      </a>
+
+
+      <!-- d-lg-none -->
+      <div class="w-100 text-right">
+        <button class="navbar-toggler flex-fill" type="button" data-toggle="collapse" data-target="#myNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-right w-100" id="myNavbar">
+          <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item">
+              <a href="/about.html" class="nav-link">About</a>
+            </li>
+<!--             <li class="nav-item">
+              <a href="#" class="nav-link">Archive</a>
+            </li>
+          -->          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <script>
+    const mapboxAccessToken = 'pk.eyJ1Ijoic29oYWlsYmFnaGVyaSIsImEiOiJja2N0Mno0NGgwYWN0MnJudG1qcDFmZXlsIn0.Slzmp4JvAnT08GrpHiBDWg';
+    const tileURL = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + mapboxAccessToken;
+  </script>
+
+
+
+  <!-- Article -->
+
+  <div id="page-content">
+    <div class="container text-center">
+      <div class="row justify-content-center">
+
+        <div class="col-md-10 article">
+
+
+          <h1 class="articeTitle"> Unheard Voices: Digital Privacy in European Post-Communist Democracies (EPCDs)</h1>
+          <p class="byline">byline</p>
+          <p><span class="author">Munib Mesinovic</span> | <span class="date"> August 1, 2020</span> </p> 
+
+
+
+
+          <p id="first-paragraph">Few can argue that the digital privacy debate is a purely technical question and that the “solutions” will also be of a solely technological nature. It has become clear that any attempt to address this question needs to consider the social context as well. One crucial question of our time is “what does privacy mean for a democracy?” Many so-called democratic countries today struggle with the legislation, adaptation, and regulation of privacy in many different areas of information sharing that are beyond just the internet. There is also a profound disconnect between the people who demand better protections and safeguards and the governmental institutions operating the system. Within this group of democratic societies, post-communist countries form a special group that sets them apart not only by their past but also by their current narratives and contexts surrounding privacy. This article explores the digital privacy discourse in post-communist countries and aims to highlight that conversations around digital privacy have a strong context outside of Western and Northern Europe and should be heavily considered when implementing European-wide digital policies and regulations. It draws from my personal experiences living in a European post-communist democracy, Bosnia and Herzegovina, as an engaged young person and is also supplemented by conversations and interviews with fellow Bosnians and citizens of other European post-communist democracies.</p> 
+
+          <p>Learning from different, often underrepresented, narratives surrounding privacy can offer more insight into how we should change not only legislatively, but also socially and behaviorally, our approach to protecting privacy in a digital society. Within these discussions, the context of Eastern and Southern Europe has been missing, especially one drawing on their shared history within communism. In European post-communist democracies (EPCDs), many questions on privacy either have not been raised or remain unanswered. Are there societal practices instilled in those communities, many of which have “outgrown” communism just two decades ago, that foster or hinder privacy guarantees? How is the privacy debate developed, in what kinds of frameworks, and on what platforms? What kind of data is available, and is being collected, in these countries? And, under whose control is it? With election hacking being in the headlines in the US and the UK, how are young democracies dealing with such an impactful data breach on the cornerstone of democracy? And last, but not least, is the technologically advanced age preventing the people of EPCDs from achieving the freedoms they so adamantly fought for?</p>
+
+
+          <p>What <a href="https://www.sciencedirect.com/science/article/pii/S0261379413000887">studies</a> have identified is that people living in such communities have less support for democracy and open markets. A starting assumptive pointer, therefore, is that people do not care enough about their digital privacy to act because of remnants of communism such as institutionalized corruption and distrust. Such discussions become more important as <a href="https://iapp.org/news/a/most-member-states-wont-be-ready-for-gdpr/">EU-wide regulation</a> is put forward and widely implemented in many of the post-communist countries, now under its banner, without those countries’ different contexts in mind.
+          </p>
+
+          <p>The European Commission special <a href="https://ec.europa.eu/digital-single-market/en/news/eurobarometer-eprivacy">report</a> on data protection, which is within the framework of the Eurobarometer as a measure of public opinion, puts forward several survey results about European-wide attitudes to data privacy and online privacy settings. The first interesting survey result was on the question of whether the respondents had ever changed any privacy settings from the default ones on any of their social media accounts. It should be noted that, to ensure the significance of the results, over 57% of the total number of respondents actively use social media. In all the figures, for convenience, every EPCD country has a red dot next to it and the average has a blue dot next to it. What the data insinuated, as one can see in Figure 1, is that people in EPCDs were less likely to have changed their privacy settings from their default states. What is not certain, however, is if they did not change their settings because of personal choice or because of lack of knowledge of their ability to do so.
+          </p>
+
+          <!-- MAP 1 -->
+
+          <div style="padding: 10px 4px;"></div>
+
+          <div id="map1"></div>
+
+          <!-- map1 JavaScript -->
+          <script type="text/javascript" src = "data-vis/munib-article-data-vis/scripts/map1.js"></script>
+
+          <div style="padding: 10px 4px;"></div>
+
+          <p>The data further indicates that people in EPCDs, on average, are the least likely among European states to turn to their national governing bodies for data protection and regulation enforcement. Figure 2, also from the European Commission special report, suggests something similar by showing how EPCDs are below average when it comes to having faith in public institutions to deal with privacy regulations and enforcement.
+          </p>
+
+
+          <!-- MAP 2 -->
+
+          <div style="padding: 10px 4px;"></div>
+
+          <div id="map2"></div>
+
+          <!-- map2 JavaScript -->
+          <script type="text/javascript" src = "data-vis/munib-article-data-vis/scripts/map2.js"></script>
+
+          <div style="padding: 10px 4px;"></div>
+
+          <p>To investigate further, I conducted a series of interviews with nationals from the above-mentioned EPCD countries. The demographic of the interviews was heavily skewed towards the age group of early 20s due to access to such individuals. The interviews were conducted at the NYU Abu Dhabi campus among students and employees. The interviewees were reached out to through, ironically, social media, and a total of nine interviews were conducted. The interviews are of an exploratory and investigative nature meant to bring up existing worries, experiences, and opinions on the topic among these communities rather than to reach definitive answers on the above questions — any such attempt has to come from a larger empirical study built with an informed and comprehensive hypothesis. The nationalities included in our interviews were: Bosnia and Herzegovina, Serbia, Macedonia, Bulgaria, Romania, Poland, Lithuania, and Ukraine. 
+          </p>
+
+
+          <p>What all the interviewees’ responses shared was a heavy presence of distrust in their governments, their perception of their governments as inefficient and unknowledgeable when it comes to anything digital, and their description of the general public’s lack of concern or discussion of anything remotely touching upon digital privacy. The interviews indicated that all countries, except Poland, have heavily politically controlled media that most people follow and that any knowledge of digital privacy issues (Snowden, government surveillance, election hacking by Russia or other entities) can only be seen on foreign news outlets.
+          </p>
+
+
+          <p>Additionally, the interviews mentioned several examples of when a digital privacy scandal would arise only to be quickly framed as a political scandal to be taken advantage of in the media. An <a href="https://spynews.ro/actualitate/foto-inedite-andrei-baciu-din-chiloti-de-model-in-costum-de-ministru-85554.html">example</a> was given of a Romanian Minister-to-be who had political rivals “unearth” his modeling photos which they used in the media to discredit him. The scandal became entirely focused on the photos themselves and their political context and no mention was made of how the photos were obtained or on whether that was a violation of someone’s (digital) privacy. Similar situations have occurred in <a href="https://balkaninsight.com/2020/05/21/bosnian-serb-chief-shrugs-off-illegal-wiretapping-charges/">Bosnia and Herzegovina</a>, <a href="https://www.nytimes.com/2015/06/22/world/europe/macedonia-government-is-blamed-for-wiretapping-scandal.html">North Macedonia</a>, and <a href="https://www.dw.com/en/curious-wiretapping-affair-rocks-polish-government/a-17730517">Poland</a>, where scandals of wiretapping and hacking were always construed as political scandals and no discussion was facilitated on the acts themselves as anything relating to digital privacy by the domestic news media. In Ukraine, however, the interviewee’s experience with digital privacy is <a href="https://voxukraine.org/en/quiet-revolution-how-ukraine-became-the-champion-of-digital-work/">intertwined</a> with the revolution and with the government's attempts to crack down on digital privacy during the pre-revolutionary period; people rallied together online, in part, to resist government surveillance and social manipulation, and when the government started to intrude on online platforms, that fueled the revolution more. The digital privacy debate was a part of the revolution ideology, still being hijacked in a way by a political context, albeit a revolutionary one.
+          </p>
+
+
+          <!-- MAP 3 -->
+
+          <div style="padding: 10px 4px;"></div>
+
+          <div id="map3"></div>
+
+          <!-- map3 JavaScript -->
+          <script type="text/javascript" src = "data-vis/munib-article-data-vis/scripts/map3.js"></script>
+
+          <br><br>
+
+
+          <b> What does this have to do with communism? </b>
+
+
+          <p>As far as the questions on the possible influence of the communist heritage are concerned, there is a split of opinions. Some interviewees believe, and they are in the majority, that the communist mentality has little effect when it comes to these attitudes or the lack of them, and that it has more to do with the post-communist period being considered a corrupt failure. Others think that the communist “way of thinking” of relying on the government and trusting it too much makes people indifferent to asking questions about the consequences of the digital tools they are so frequently using.
+          </p>
+
+
+          <p>Thus, whether this indifference to digital privacy is a result of some sort of communist historical influence is neither straightforward nor widely agreed on. To recall, we have seen how Figures 1 and 4 and conversations with the members of EPCD communities suggest a lack of concern or action when it comes to digital privacy among the EPCD public; EPCD nationals appear much less likely to act on any kind of digital dangers by, for example, changing their privacy settings or using privacy software tools. Since digital privacy is not discussed or developed in public and educational discourse and no scandals pertaining to it have ever developed in the digital privacy context, rather than only the political one, the public remains indifferent and unaware of the meaning and the importance of the term. The interview responses also support the findings of a recent <a href="https://www.oecd.org/els/soc/cope-divide-europe-2017-background-report.pdf">report</a> by the Organisation for Economic Co-operation and Development (OECD): that economic, social, and political inequality as well as lack of progress compared to the rest of Europe are constantly on people’s minds, thus making digital privacy less of a priority. Thereon, most of people’s time, focus, and discussion is spent on political deliberations and attacks. 
+          </p>
+
+
+          <!-- Chart4 -->
+
+
+          <div id="chart4"></div>
+
+          <!-- chart4 JavaScript -->
+          <script type="text/javascript" src = "data-vis/munib-article-data-vis/scripts/chart4.js"></script>
+
+
+          <p>These aforementioned problems in the post-communist society are perceived as coming from governmental inefficiency which leads to distrust. This necessitates more public focus on political instability than digital privacy which is perceived, as one interviewee put it, as a “first world problem.” Therefore, the common attitude among EPCD nationals towards digital privacy and the importance of it seems to come not from their shared communist heritage as much as from their collective post-communist challenges and current political instabilities. Even in the cases where communism enters the barely existent public discourse on digital privacy, such as in Poland, it is only used as a controversial word to stir up anti-communist animosity towards government involvement in general, thereby serving, once again, political opponents and the opposition rather than the digital rights of the people as such. 
+          </p>
+
+          <p>Similar arguments have been made trying to explain the pre-Snowden era in the US filled with a relatively general lack of concern over digital privacy which later exploded following several revelatory events. As Phillip Rogaway <a href="https://web.cs.ucdavis.edu/~rogaway/papers/moral-fn.pdf">notes</a>, “It wasn’t until Snowden that I finally internalized that the surveillance issue was grave […],” noting that other problems such as the environment and sustainability were a larger concern that attracted more attention. 
+          </p>
+
+
+          <p>It seems that the attitude among EPCDs towards the importance of digital privacy is at a minimum and is deeply coupled with political narratives. The lack of discussion, information, and education on these issues and concerns necessarily means there is less pressure to create, adopt, and regulate laws that would help oversee and manage online activity and autonomy, which in the end, contributes to a lagging judiciary that is years behind contemporary technology and its dangers. What is missing is not just an Eastern European Snowden or anything similar, but also independent newspapers and portals, a strong political opposition, and an informed and involved public.
+          </p>
+
+
+
+          <p>Further, the term “digital privacy” and its meaning or connotations do not appear in news or public discourse more likely due to the post-communist political and economic lag than due to the communist period itself. The goal of this article is to highlight that conversations around digital privacy have a strong context outside of Western and Northern Europe and should be heavily considered when implementing European-wide digital policies and regulations. Well-founded hope remains that there will be heightened interest in the creation of similar resources in academia and public discourse in European post-communist democracies alongside other unheard voices on digital privacy around the world.
+          </p>
+
+
+          <p id = "extras">         
+           <a href="#references" onclick="toggleReferences()"> References</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <a href="#further-resources" onclick="toggleFurtherResources()"> Further Resources</a> 
+         </p>
+
+
+         <div id='references' display="none">
+          <b>References</b>
+
+          <p>
+            Pop-Eleches, G., & Tucker, J. A. (2014). Communist socialization and post-communist economic and political attitudes. <i>Electoral studies</i>, 33, 77-89. <a href="https://www.sciencedirect.com/science/article/pii/S0261379413000887">https://www.sciencedirect.com/science/article/pii/S0261379413000887</a>
+          </p>
+          <p>
+            Meyer, D. (2018, April 24). The Privacy Advisor | Most member states won't be ready for GDPR Related reading: CNIL publishes blockchain guidance for GDPR compliance. Retrieved from <a href="https://iapp.org/news/a/most-member-states-wont-be-ready-for-gdpr/">https://iapp.org/news/a/most-member-states-wont-be-ready-for-gdpr/</a>
+          </p>
+          <p>
+            European Commission. (2016), “Flash Eurobarometer 443, e-Privacy Report”, <a href="https://ec.europa.eu/digital-single-market/en/news/eurobarometer-eprivacy (Accessed 8 November 2018).">https://ec.europa.eu/digital-single-market/en/news/eurobarometer-eprivacy (Accessed 8 November 2018).</a>
+          </p>
+          <p>
+            European Commission. (2015). Special Eurobarometer 431: Data Protection.
+            <a href="https://ec.europa.eu/commfrontoffice/publicopinion/archives/ebs/ebs_431_en.pdf">https://ec.europa.eu/commfrontoffice/publicopinion/archives/ebs/ebs_431_en.pdf</a>
+          </p>
+          <p>
+            FOTO INEDITE. (2015). Andrei Baciu, din chiloţi de model, în costum de ministru! (n.d.). Retrieved from <a href="https://spynews.ro/actualitate/foto-inedite-andrei-baciu-din-chiloti-de-model-in-costum-de-ministru-85554.html">https://spynews.ro/actualitate/foto-inedite-andrei-baciu-din-chiloti-de-model-in-costum-de-ministru-85554.html</a>
+          </p>
+          <p>
+            OECD. (2017, January 26). Understanding the Socio-economic Divide in Europe. Retrieved from <a href="https://www.oecd.org/els/soc/cope-divide-europe-2017-background-report.pdf">OECD. (2017, January 26). Understanding the Socio-economic Divide in Europe. Retrieved from https://www.oecd.org/els/soc/cope-divide-europe-2017-background-report.pdf
+            </a>
+          </p>
+          <p>
+            Rogaway, P. (2015). The Moral Character of Cryptographic Work. IACR <i>Cryptology ePrint Archive</i>, 2015, 1162.
+            <a href="https://web.cs.ucdavis.edu/~rogaway/papers/moral-fn.pdf">https://web.cs.ucdavis.edu/~rogaway/papers/moral-fn.pdf</a>
+          </p>
+
+        </div>
+
+        <div id='further-resources' display = "none">
+          <b>Further Resources</b>
+
+          <p>
+            Pop-Eleches, G., & Tucker, J. A. (2014). Communist socialization and post-communist economic and political attitudes. <i>Electoral studies</i>, 33, 77-89. <a href="https://www.sciencedirect.com/science/article/pii/S0261379413000887">https://www.sciencedirect.com/science/article/pii/S0261379413000887</a>
+          </p>
+          <p>
+            <a href="https://www.youtube.com/watch?v=acijNEErf-c">https://www.youtube.com/watch?v=acijNEErf-c</a>
+          </p>
+          <p>
+           <a href="https://www.thehrdirector.com/features/big-data/international-gdpr-one-year-eastern-europe/">https://www.thehrdirector.com/features/big-data/international-gdpr-one-year-eastern-europe/</a>
+         </p>
+         <p>
+           <a href="https://www.twobirds.com/en/in-focus/general-data-protection-regulation/gdpr-tracker/hungary">https://www.twobirds.com/en/in-focus/general-data-protection-regulation/gdpr-tracker/hungary</a>
+         </p>
+         <p>
+           <a href="https://datareportal.com/reports/tag/Eastern+Europe">https://datareportal.com/reports/tag/Eastern+Europe</a>
+         </p>
+
+       </div>
+       <script>
+         document.getElementById("references").style.display = "none";
+         document.getElementById("further-resources").style.display = "none";
+
+       </script>
+
+       <script>
+         function toggleReferences() {
+          var x = document.getElementById("references");
+          var y = document.getElementById("further-resources");
+          y.style.display = "none";
+
+          if (x.style.display == "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+
+        function toggleFurtherResources() {
+          var x = document.getElementById("further-resources");
+          var y = document.getElementById("references");
+          y.style.display = "none";
+          if (x.style.display == "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+
+
+      </script>
+
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!-- Footer -->
+
+<footer id="sticky-footer" class="py-1 bg-dark text-white">
+  <div class="container text-center">
+    <small>&copy; multiplicity, 2020</small>
+  </div>
+</footer>
+
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.slim.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+<!-- map styling -->
+<style type="text/css">
+
+#first-paragraph:first-letter {
+  float: left;
+  font-size: 45px;
+  line-height: 1;
+  font-weight: bold;
+  margin-right: 9px;
+  text-shadow: #000cf5 .05em .05em;
+
+}
+
+#extras {
+  text-align: center;
+}
+
+.info {
+  padding: 6px 8px;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.info b {
+  font-weight: 400;
+}
+.info h4 {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+
+  margin: 0 0 5px;
+  color: #777;
+}
+
+.legend {
+  line-height: 18px;
+  color: #555;
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+.legend td {
+  opacity: 0.75;
+}
+
+.leaflet-tooltip{
+  width: 50vh;
+  white-space: normal;
+}
+
+
+* {
+  font-family: ministry, sans-serif;
+  font-weight: 300;
+
+}
+
+
+</style>
+
+</html>

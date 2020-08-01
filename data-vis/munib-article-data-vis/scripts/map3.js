@@ -5,11 +5,10 @@ var geojson3;
 var countryQuotes = {
 	"Bosnia and Herzegovina": [' " People probably do not even care about such things [digital privacy], they have bigger problems. They are not noticeably affected by the data mining. Digital privacy is a first world problem where everything works online, but people in Bosnia are reluctant to buy things online. And then it comes to issues on digital privacy the public is ignorant and inexperienced. I don’t think people would care even if they knew more about the issue. The ignorance they have comes from them not taking the whole topic seriously enough to care.  Maybe in 20 years people will start caring, when the other worries fade away (economic and social). " '],
 	"Serbia": [' " The only time digital privacy makes the news is with political wiretapping when it is a political issue and not about digital privacy or ethics. In general, there is a lot of information sharing, and people do not care about it being protected because the laws are non-existent and if they were realized there is a lack of faith in the judiciary. Everybody is oversharing online, and we normalized it as we know no better. " '],
-	"Kosovo": ['abc','def','ghi'],
 	"Macedonia": [' " If something like a digital breach happened to me, I would not reach out to the government, they are inefficient, they do not protect basic rights much less something heavier or more technical. I think when it comes to communism and attitudes, older people have their distrust linked to communism because they think the previous communist government was better and this one disappoints. Corruption in the justice system makes it even less possible to do anything about possible data breaches. " '],
 	"Bulgaria": [' " Social media and Google are collecting all of our data and probably the Bulgarian government is as well. " ',' " There are no legal mechanisms of implementation or regulation of digital privacy in Bulgaria, and even if the laws exist no one would use them because no one trusts the justice system here. " ',' " We had a scandal when the government was hacked and immediately politicians used the news around GDPR to hide the coverage of the scandal.The average Bulgarian probably does not care or think about digital privacy. " '],
 	"Romania": [' " There were scandals where politicians used online information for blackmail, but the scandals were more political than a digital privacy issue. The news media is very politically controlled and directed towards certain agendas. We had a case a few years ago when our minister of education was being blackmailed by political opponents because of his modelling past. " ',' " I never heard of any laws or discussions surrounding digital privacy regulation or data protection in Romania. I doubt there are any if this happened to someone as powerful as a minister and nothing was done. " '],
-	"Poland": ['abc','def','ghi'],
+	"Poland": [' "There is some discussion in Poland around digital privacy, but it is focused on political aspects trying to distance themselves from communist surveillance culture and not at all on what the correct or ethical practices would be. " ',' " There have been discussions on GDPR, but it was boring (politically), so people stopped talking about it. GDPR was being discussed more about its implications (political consequences) and not about the law itself and its guarantees. " '],
 	"Lithuania": [' " I do not trust the government with a lot of things based on my previous experiences and especially not with data privacy. My country is known for changing the implementation of EU laws because they are seen as imposed from Brussels. I once wanted to have my student’s insurance as guaranteed by EU law but Lithuania, a member of the EU, decided not to issue my insurance stating “that they do things differently. " ',' " I honestly have no clue who to reach out if my data was violated, would probably reach out to the company, would definitely not reach out to the government. Lithuania is corrupt with a lot of our political parties having members from communist bureaucracy. A lot of the Lithuanian government is previous communists, so the corrupt mindset remains. It would make sense people kept the surveillance mentality as well. " '],
 	"Ukraine": [' " I would never trust the government to deal with these kinds of issues surrounding digital privacy, as the government is corrupt and has no interest in stopping something that is profiting them. During the revolution there was a heavy online crackdown on critics as it was the starting point of the revolution. " ',' " The Russian government is collecting a lot more data than the Ukranian one. I once travelled to Russia and I saw that they had a detailed record at the border patrol of my online activity. They were using it to make a decision on whether I should be allowed to enter or not. " ']
 };
@@ -36,7 +35,6 @@ var map3colors = [
 'rgb(226, 73, 247)', 
 'rgb(51, 55, 245)', 
 'rgb(240, 254, 96)',
-'rgb(154, 154, 248)',
 'rgb(243, 171, 176)'
 ];
 
@@ -62,13 +60,12 @@ function getColor3(d) {
 	 // see where i have to put these exactly (shuffle colors and quotes at the same time)
 	 return d == "Bosnia and Herzegovina" ? map3colors[0] :
 	 d == "Serbia" ? map3colors[1] :
-	 d == "Kosovo" ? map3colors[2] :
-	 d == "Macedonia" ? map3colors[3] :
-	 d == "Bulgaria" ? map3colors[4] :
-	 d == "Romania" ? map3colors[5] :
-	 d == "Poland" ? map3colors[6] :
-	 d == "Lithuania" ? map3colors[7] :
-	 d == "Ukraine" ? map3colors[8]:
+	 d == "Macedonia" ? map3colors[2] :
+	 d == "Bulgaria" ? map3colors[3] :
+	 d == "Romania" ? map3colors[4] :
+	 d == "Poland" ? map3colors[5] :
+	 d == "Lithuania" ? map3colors[6] :
+	 d == "Ukraine" ? map3colors[7]:
 	 '#eb3e41';
 	}
 
@@ -155,7 +152,7 @@ info3.onAdd = function(map) {
 info3.update = function(props) {
 	this._div.innerHTML = '<h4>Nationalities interviewed throughout the investigation</h4>' + (props ?
 		'<b>' + props.name_long :
-		'Hover over a country');
+		'Hover over a country for an interview snippet');
 };
 
 var counter = 0;
@@ -172,43 +169,7 @@ function changeColor(){
 	}
 
 	geojson3.eachLayer(function (layer) {  
-		// switch (layer.feature.properties.name_long) {
-		// 	case "Bosnia and Herzegovina":
-		// 	layer.setStyle({fillColor :map3colors[0]});
-		// 	break;
-		// 	case "Serbia":
-		// 	layer.setStyle({fillColor :map3colors[1]});
 
-		// 	break;
-		// 	case "Kosovo":
-		// 	layer.setStyle({fillColor :map3colors[2]});
-
-		// 	break;
-		// 	case "Macedonia":
-		// 	layer.setStyle({fillColor :map3colors[3]});
-
-		// 	break;
-		// 	case "Bulgaria":
-		// 	layer.setStyle({fillColor :map3colors[4]});
-
-		// 	break;
-		// 	case "Romania":
-		// 	layer.setStyle({fillColor :map3colors[5]});
-
-		// 	break;
-		// 	case "Poland":
-		// 	layer.setStyle({fillColor :map3colors[6]});
-
-		// 	break;
-		// 	case "Lithuania":
-		// 	layer.setStyle({fillColor :map3colors[7]});
-
-		// 	break;
-		// 	case "Ukraine":
-		// 	layer.setStyle({fillColor :map3colors[8]});
-
-		// 	break;			
-		// }
 		switch (counter) {
 			case 0:
 			if (layer.feature.properties.name_long == "Bosnia and Herzegovina")
@@ -221,45 +182,39 @@ function changeColor(){
 
 			break;
 			case 2:
-			if (layer.feature.properties.name_long == "Kosovo")
+			if (layer.feature.properties.name_long == "Macedonia")
 
 				layer.setStyle({fillColor :map3colors[2]});
 
 			break;
 			case 3:
-			if (layer.feature.properties.name_long == "Macedonia")
+			if (layer.feature.properties.name_long == "Bulgaria")
 
 				layer.setStyle({fillColor :map3colors[3]});
 
 			break;
 			case 4:
-			if (layer.feature.properties.name_long == "Bulgaria")
+			if (layer.feature.properties.name_long == "Romania")
 
 				layer.setStyle({fillColor :map3colors[4]});
 
 			break;
 			case 5:
-			if (layer.feature.properties.name_long == "Romania")
+			if (layer.feature.properties.name_long == "Poland")
 
 				layer.setStyle({fillColor :map3colors[5]});
 
 			break;
 			case 6:
-			if (layer.feature.properties.name_long == "Poland")
+			if (layer.feature.properties.name_long == "Lithuania")
 
 				layer.setStyle({fillColor :map3colors[6]});
 
 			break;
 			case 7:
-			if (layer.feature.properties.name_long == "Lithuania")
-
-				layer.setStyle({fillColor :map3colors[7]});
-
-			break;
-			case 8:
 			if (layer.feature.properties.name_long == "Ukraine")
 
-				layer.setStyle({fillColor :map3colors[8]});
+				layer.setStyle({fillColor :map3colors[7]});
 
 			break;			
 		}
