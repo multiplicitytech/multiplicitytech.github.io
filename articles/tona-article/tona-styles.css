@@ -172,20 +172,21 @@ p {
     font-style: normal;
     color: white;
     font-weight: 300;
-    font-size: 15px;
+    /* font-size: 15px; */
+    font-size: 1.1vw;
     text-align:justify;
 }
 h1 {
     color: #f55bff; 
     font-family: ministry;
     padding: 10px;
-    font-size: 17px;
+    font-size: 1.25vw;
     font-weight: 400;
 }
 .content {
     margin-top:50px; 
-    margin-left: 300px; 
-    margin-right: 300px; 
+    margin-left: 20vw; 
+    margin-right: 20vw; 
     margin-bottom: 50px; 
 }
 
@@ -197,7 +198,7 @@ blockquote {
     border-left-width: 4px;
     border-left-color: #3a3ffb;
     padding: 20px;
-    font-size: 14px;
+    font-size: 1.01vw;
     font-weight: 100;
 }
 ::selection {
