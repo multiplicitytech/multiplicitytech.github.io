@@ -1,7 +1,7 @@
 @import url("https://use.typekit.net/grm6kxy.css");
 @media screen and (max-width: 600px) {
     .column {
-      width: 100%;
+      width: 100vh;
     }
     #tweet {
       display: none;
@@ -75,6 +75,7 @@
     -o-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    z-index: -1;
 }
 body {
     box-sizing: border-box;
@@ -125,7 +126,6 @@ html {
     overflow: hidden;
 }
 #content {
-    /* background-color: #b0b0b0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,7 +156,6 @@ html {
     top: 15px;
     left: 25px;
     font-size: 2vw;
-    /* font-family: "VT323", monospace; */
     font-weight: 400;
     font-family: ministry;
     font-style: normal;
@@ -228,12 +227,17 @@ blockquote {
 }  
 a {
     color:#f9ffc5;
-    border-bottom: 1px dotted #f9ffc5;
     text-decoration: none;
+    z-index: 1000;
+
+}
+ .writer{
+    text-decoration: none;
+    color: #e9fe2d;
 
 }
 a:hover {
-  border-bottom: 0px dotted #f9ffc5;
+  border-bottom: 1px dotted #f9ffc5;
 } 
 .byline {
     text-align: center; 

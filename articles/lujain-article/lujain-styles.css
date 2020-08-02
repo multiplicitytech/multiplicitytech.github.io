@@ -230,3 +230,36 @@ a:hover {
     opacity: 1;
 }
 
+#cont {
+    display: flex;
+  }
+  
+#center {
+margin: auto;
+}
+
+#p12 {
+display: flex;
+overflow: hidden;
+white-space: nowrap;
+margin: 0 auto;
+letter-spacing: 2px;
+animation: typing 3s steps(30, end);
+font-family: ministry, sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 2.5vw;
+}
+
+#p12 {
+display: inline-flex;
+}
+
+@keyframes typing {
+from {
+    width: 0
+}
+to {
+    width: 100%
+}
+}
