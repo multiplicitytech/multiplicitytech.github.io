@@ -1,6 +1,10 @@
 
 @import url("https://use.typekit.net/grm6kxy.css");
-
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100vh;
+    }
+}
 body, html {
     height: 100vh;
     display:block;
@@ -76,14 +80,14 @@ body, html {
     padding: 0 2rem;
     font-size: 2rem;
     color:black;
-    font-size: 20px;
+    font-size: 1.6vw;
     font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     
 }
 h1 {
     font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
     color: #ff2238; 
-    font-size:80px;
+    font-size: 6vw;
     margin-top: 100px;
     margin-bottom:0px;
 }
@@ -97,7 +101,7 @@ h1 {
 }
 h2 {
     font-family: 'VT323', monospace; 
-    font-size: 50px; 
+    font-size: 4vw; 
     margin-top:0px;
     margin-bottom: 50px;
     -webkit-background-clip: text;
@@ -107,28 +111,28 @@ h2 {
     -ms-background-clip: text;
     -ms-text-fill-color: black;
     background-clip: text;
-    animation: .11s shake infinite alternate;
+    /* animation: .11s shake infinite alternate; */
 
 }
 
 h3 {
     font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     color: #ff2238; 
-    font-size:35px;
+    font-size:3vw;
     font-style: normal;
 }
 p {
     font-family: ministry, sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 1.3vw;
     text-align:justify;
 }
 blockquote {
     font-family: ministry, sans-serif;
     font-style: italic;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1.3vw;
     border-left-style: dashed;
     border-left-width: 4px;
     border-left-color: #ff2238;
@@ -181,6 +185,10 @@ a:hover {
     z-index: -2;
 }
 
+.paper-text { 
+    font-size: 1.5vw;
+    font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
 .tooltip {
     position: relative;
     display: inline-block;
@@ -202,7 +210,7 @@ a:hover {
     margin-left: -140px;
     opacity: 0;
     transition: opacity 0.3s;
-    font-size: 14px;
+    font-size: 1.2vw;
 }
 
 .tooltip .tooltiptext::after {
@@ -214,10 +222,11 @@ a:hover {
     border-width: 5px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
-    font-size: 14px;
+    font-size: 1.2vw;
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
 }
+

@@ -30,7 +30,7 @@ h1 {
     color: #3a3ffb; 
     font-family: 'stenciletta-solid';
     font-weight: 700;
-    font-size:70px;
+    font-size: 6vw;
 }
 @keyframes shake {
     0% { transform: skewX(-15deg); }
@@ -43,12 +43,13 @@ h1 {
 h2 {
     font-family: 'stenciletta-solid';
     color: black;
-    font-size:35px;
+    font-size:3vw;
     font-style: normal;
     margin-left: 125px;
     margin-bottom: 0px;
     
 }
+/* IGNORE h3 STYLES */
 h3 {
     font-family: 'stenciletta-solid';
     color: black; 
@@ -63,7 +64,7 @@ p {
     font-style: normal;
     color: black;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 1.3vw;
     text-align:justify;
 }
 blockquote {
@@ -74,7 +75,7 @@ blockquote {
     border-left-width: 4px;
     border-left-color: #3a3ffb;
     padding: 20px;
-    font-size: 14px;
+    font-size: 1.3vw;
     font-weight: 100;
 }
 body {
@@ -110,7 +111,7 @@ a:hover {
     margin-left: -140px;
     opacity: 0;
     transition: opacity 0.3s;
-    font-size: 14px;
+    font-size: 1.2vw;
 }
 
 .tooltip .tooltiptext::after {
@@ -122,7 +123,7 @@ a:hover {
     border-width: 5px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
-    font-size: 14px;
+    font-size: 1.2vw;
 }
 
 .tooltip:hover .tooltiptext {
@@ -191,7 +192,7 @@ a:hover {
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    font-size: 17px;
+    font-size: 1.6vw;
     width: 16.66666666%;
     z-index:-1;
     font-family: 'stenciletta-solid';
@@ -205,7 +206,7 @@ a:hover {
     border: none;
     cursor: pointer;
     padding: 14px 16px;
-    font-size: 17px;
+    font-size: 1.6vw;
     width: 20%;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
@@ -221,7 +222,7 @@ a:hover {
     border: none;
     cursor: pointer;
     padding: 14px 16px;
-    font-size: 17px;
+    font-size: 1.6vw;
     width: 16.66666666%;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
@@ -239,7 +240,7 @@ a:hover {
     border: none;
     cursor: pointer;
     padding: 14px 16px;
-    font-size: 17px;
+    font-size: 1.6vw;
     width: 20%;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
@@ -256,7 +257,7 @@ a:hover {
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    font-size: 17px;
+    font-size: 1.6vw;
     width: 20%;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
@@ -272,7 +273,7 @@ a:hover {
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    font-size: 17px;
+    font-size: 1.6vw;
     width: 20%;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;

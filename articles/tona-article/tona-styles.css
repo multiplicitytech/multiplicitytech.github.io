@@ -1,4 +1,12 @@
 @import url("https://use.typekit.net/grm6kxy.css");
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+    #tweet {
+      display: none;
+    }
+    }
 @keyframes screen-turn-on {
     0% {
         width: 0%;
@@ -136,7 +144,7 @@ html {
     height: 5px;
     position: absolute;
     right: 45px;
-    background-color: #0035ff;
+    background-color: #0600ff;
     cursor: pointer;
 }
 .on #power {
@@ -153,18 +161,22 @@ html {
     font-family: ministry;
     font-style: normal;
     vertical-align: middle;
-    color: #fbff68;
+    color: #e9fe2d;
     animation: shiver 1s linear .5s infinite;
 }
 #text {
     color: #ededed;
     text-align: center;
     text-transform: uppercase;
-    font-size: 4vw;
+    font-size: 4.2vw;
     animation: shiver 1s linear .5s infinite;
     font-weight: 300;
-    font-family: ministry;
+    font-family: 'stenciletta-solid';
     font-style: normal;
+    margin-top: 60px; 
+    margin-bottom: 0px; 
+    margin-left: 20px; 
+    margin-right: 20px;
 
 }
 p {
@@ -172,15 +184,13 @@ p {
     font-style: normal;
     color: white;
     font-weight: 300;
-    /* font-size: 15px; */
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     text-align:justify;
 }
 h1 {
     color: #f55bff; 
     font-family: ministry;
-    padding: 10px;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     font-weight: 400;
 }
 .content {
@@ -198,7 +208,7 @@ blockquote {
     border-left-width: 4px;
     border-left-color: #3a3ffb;
     padding: 20px;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-weight: 100;
 }
 ::selection {
@@ -226,5 +236,17 @@ a:hover {
   border-bottom: 0px dotted #f9ffc5;
 } 
 .byline {
-    text-align: center; margin: 30px; font-weight: 400; font-size: 1.7vw;
+    text-align: center; 
+    margin-top: 20px;
+    margin-left: 75px; 
+    margin-right: 75px; 
+    font-weight: 400; 
+    font-size: 1.5vw;
+}
+
+#tweet {
+    margin-right: 30px; 
+    margin-top: 60px; 
+    margin-bottom: 60px; 
+    margin-left: 10px;
 }
