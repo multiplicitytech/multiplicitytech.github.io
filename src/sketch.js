@@ -21,10 +21,6 @@ let keywords = ['lujain', 'tom', 'grace', 'jihyun', 'munib', 'rastra', 'alia', '
 
 let word_list = [], wi;
 
-function windowResized() {
-  //console.log('resized');
-  resizeCanvas(windowWidth, windowHeight);
-}
 
 function setup() {
   textFont('Ministry');
@@ -38,7 +34,7 @@ function setup() {
 
   text_color = random(colors);
   ext_color = random(colors);
-  speeds =  [random(-3,-2.5), random(2.5,3)];
+  speeds =  [random(-2.5,-2), random(2,2.5)];
   speeds_tab = [random(-2,-1), random(1,2)];
   speeds_mob = [random(-1,-.5), random(.5,1)];
 
@@ -69,7 +65,7 @@ if (canvas.width < 700) {
   console.log(canvas.height);
 
 
-  for (let i=0; i<canvas.width; i+=(textWidth("surveillance")*1.2)) {
+  for (let i=0; i<canvas.width; i+=(textWidth("eastern europe")*1.2)) {
     for (let j=0;j<canvas.height;j+=50) {
     word_list.push(random(keywords));
   }
@@ -81,20 +77,22 @@ if (canvas.width < 700) {
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
-
+  console.log("resized");
   word_list = [];
 
-  for (let i=0; i<canvas.width; i+=(textWidth("surveillance")*1.2)) {
+  for (let i=0; i<canvas.width; i+=(textWidth("eastern europe")*1.2)) {
     for (let j=0;j<canvas.height;j+=50) {
     word_list.push(random(keywords));
   }
   }
 
-  if (mode === "desktop" && canvas.width < 700) {
+  if (canvas.width < 700) {
 
   if (canvas.width > 400) {
   xspeed = random(speeds_tab);
   yspeed = random(speeds_tab);
+
+
 }
   
   if (canvas.width <= 400) {
@@ -104,30 +102,33 @@ function windowResized() {
 
   logo_size = canvas.width / 15;
   mode = "mobile";
+
 }
 
-if (mode === "mobile" && canvas.width > 700) {
+if (canvas.width > 700) {
   mode = "desktop";
   xspeed = random(speeds);
   yspeed = random(speeds);
   logo_size = canvas.width / 25;
 }
 
-if (logox > (canvas.width-textWidth(extension))) {
+if (logox > (canvas.width-(textWidth(logo)+textWidth(extension)))) {
   logox = canvas.width - (textWidth(logo)+textWidth(extension));
 }
 
-if (logox < canvas.width) {
+if (logox < 0) {
   logox = canvas.width + 10;
-}
-
-if (logoy < canvas.height) {
-  logoy = canvas.height + 10;
 }
 
 if (logoy > canvas.height) {
   logoy = canvas.height - 30;
 }
+
+if (logoy < 0) {
+  logoy+=10;
+}
+
+
 
 }
 
@@ -143,7 +144,7 @@ function draw() {
 
   textSize(20);
 
-  hidden_text = "surveillance";
+  hidden_text = "eastern europe";
 
   fill('#FFFAF0');
 
@@ -167,19 +168,23 @@ function draw() {
   logox += xspeed;
   logoy += yspeed;
 
-  if (logox < 0 || logox > canvas.width - (textWidth(logo)+textWidth(extension))) {
-    ext_size = textWidth(extension);
-    xspeed = xspeed * -1;
+  if (logox < 0 || logox > (canvas.width - (textWidth(logo)+textWidth(extension)))) {
+    console.log("entered logox");
+    // ext_size = textWidth(extension);
+    // xspeed = xspeed * -1;
     text_color = random(colors);
     ext_color = random(colors);
     extension = random(extensions);
 
-    if (logox > canvas.width - textWidth(logo)) {
-      if (textWidth(extension) > ext_size) logox -= (textWidth(extension)-ext_size);
+    if (logox > (canvas.width - (textWidth(logo)+textWidth(extension)))) {
+    logox = canvas.width - (textWidth(logo)+textWidth(extension));
     }
+
+    xspeed = xspeed * -1;
   }
 
   else if (logoy < 0 || logoy > canvas.height) {
+    console.log("entered logoy"); 
     yspeed = yspeed * -1;
     text_color = random(colors);
     ext_color = random(colors);

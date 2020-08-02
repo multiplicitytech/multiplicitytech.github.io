@@ -1,0 +1,314 @@
+
+@import url("https://use.typekit.net/grm6kxy.css");
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9ff;
+    cursor: url('cursor.png'), auto;	
+}
+html {
+    height: 100vh;
+}
+::selection {
+    background: #cdcdfc; 
+}
+::-moz-selection {
+    background: #cdcdfc; 
+}
+.column {
+    float: left;
+    width: 50%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}    
+
+h1 {
+    color: #3a3ffb; 
+    font-family: 'stenciletta-solid';
+    font-weight: 700;
+    font-size:70px;
+}
+@keyframes shake {
+    0% { transform: skewX(-15deg); }
+    5% { transform: skewX(15deg); }
+    10% { transform: skewX(-15deg); }
+    15% { transform: skewX(15deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }  
+}
+h2 {
+    font-family: 'stenciletta-solid';
+    color: black;
+    font-size:35px;
+    font-style: normal;
+    margin-left: 125px;
+    margin-bottom: 0px;
+    
+}
+h3 {
+    font-family: 'stenciletta-solid';
+    color: black; 
+    font-size:0.1px;
+    font-style: normal;
+    margin-left: 75px;
+    margin-top: 0px;
+    
+}
+p {
+    font-family: ministry;
+    font-style: normal;
+    color: black;
+    font-weight: 300;
+    font-size: 15px;
+    text-align:justify;
+}
+blockquote {
+    font-family: ministry;
+    font-style: italic;
+    color: black;
+    border-left-style: dashed;
+    border-left-width: 4px;
+    border-left-color: #3a3ffb;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 100;
+}
+body {
+    display: block;
+    margin: 0px;
+    } 
+a {
+    color:#302eff;
+    text-decoration: none;
+}
+a:hover {
+    border-bottom: 1px dotted #302eff;
+}
+  
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    color:#3a3ffb;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 280px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -140px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 14px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    font-size: 14px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.fadein {
+    margin-top: 30px; 
+    display: inline-block;
+}
+
+.text {
+    margin-top:20px; 
+    margin-left: 250px; 
+    margin-right: 250px; 
+    margin-bottom: 30px; 
+    display:inline-block;
+}
+.concluding-text {
+    margin-left: 250px; 
+    margin-right: 250px; 
+    margin-bottom: 30px; 
+    display:inline-block;
+}
+@keyframes ring {
+0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+}
+100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+}
+}
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 16.66666666%;
+    font-family: 'stenciletta-solid';
+}
+
+.tablink-home {
+    background-color: #9083ff;
+    color: white;
+    float: left;
+    border:none;
+    border-top:  5px solid black;
+    border-right:  5px solid black;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 16.66666666%;
+    z-index:-1;
+    font-family: 'stenciletta-solid';
+}
+.tablink-2 {
+    background-color: #555;
+    color: white;
+    float: left;
+    border-bottom: 5px solid black;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    z-index:-1;
+    font-family: 'stenciletta-solid';
+    border-bottom: 5px solid black;
+}
+.tablink-3 {
+    background-color: #555;
+    color: white;
+    float: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 16.66666666%;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    z-index:-1;
+    font-family: 'stenciletta-solid';
+    border-bottom: 5px solid black;
+    width: 20%;
+}
+
+.tablink-4 {
+    background-color: #555;
+    color: white;
+    float: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    z-index:-1;
+    font-family: 'stenciletta-solid';
+    border-bottom: 5px solid black;
+}
+
+.tablink-5 {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    z-index:-1;
+    font-family: 'stenciletta-solid';
+    border-bottom: 5px solid black;
+}
+.tablink-6 {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    z-index:-1;
+    font-family: 'stenciletta-solid';
+    border-bottom: 5px solid black;
+}
+
+
+.tablink:hover {
+    background-color: #777;
+}
+
+.tablink-2:hover {
+    background-color: #168413;
+}
+.tablink-3:hover {
+    background-color: #be5701;
+}
+.tablink-4:hover {
+    background-color: #16987c;
+}
+.tablink-5:hover {
+    background-color: #071196;
+}
+.tablink-6:hover {
+    background-color: #8b981c;
+}
+.tabcontent {
+    display: none;
+    padding: 0px 20px;
+    height: 100%;
+}
+
+#I {background-color: #f9f9ff;}
+#II{background-color: #f9f9ff;}
+#III {background-color: #f9f9ff;}
+#IV {background-color: #f9f9ff;}
+#V {background-color: #f9f9ff;}

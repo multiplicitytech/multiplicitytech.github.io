@@ -1,0 +1,223 @@
+
+@import url("https://use.typekit.net/grm6kxy.css");
+
+body, html {
+    height: 100vh;
+    display:block;
+    background-color: #fdffec;
+    margin: 0;
+}
+::selection {
+    background: #ffb7b7; 
+}
+::-moz-selection {
+    background: #ffb7b7; 
+}
+.column {
+    float: left;
+    width: 50%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}    
+@-webkit-keyframes ticker {
+    0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    }
+}
+@keyframes ticker {
+    0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    }
+}
+.ticker-wrap {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 4rem;
+    background-color:#a5997f;
+    padding-left: 100%;
+    z-index: 20;
+}
+
+.ticker {
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;
+    white-space: nowrap;
+    padding-right: 100%;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 1500s;
+    animation-duration: 1500s;
+
+}
+.ticker_item {
+    display: inline-block;
+    padding: 0 2rem;
+    font-size: 2rem;
+    color:black;
+    font-size: 20px;
+    font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    
+}
+h1 {
+    font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+    color: #ff2238; 
+    font-size:80px;
+    margin-top: 100px;
+    margin-bottom:0px;
+}
+@keyframes shake {
+    0% { transform: skewX(-15deg); }
+    5% { transform: skewX(15deg); }
+    10% { transform: skewX(-15deg); }
+    15% { transform: skewX(15deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }  
+}
+h2 {
+    font-family: 'VT323', monospace; 
+    font-size: 50px; 
+    margin-top:0px;
+    margin-bottom: 50px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: black;
+    -moz-background-clip: text;
+    -moz-text-fill-color: black;
+    -ms-background-clip: text;
+    -ms-text-fill-color: black;
+    background-clip: text;
+    animation: .11s shake infinite alternate;
+
+}
+
+h3 {
+    font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    color: #ff2238; 
+    font-size:35px;
+    font-style: normal;
+}
+p {
+    font-family: ministry, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    text-align:justify;
+}
+blockquote {
+    font-family: ministry, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    border-left-style: dashed;
+    border-left-width: 4px;
+    border-left-color: #ff2238;
+    padding: 15px;
+    text-align:justify;
+}
+a {
+    color:#3a3ffb;
+    text-decoration: none;
+
+}
+a:hover {
+    border-bottom: 1px dotted #3a3ffb;
+}
+
+.paper {
+    background: #fbfbf8;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 35px;
+  }
+  
+.paper,
+.paper::before,
+.paper::after {
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+    border: 1px solid #bbb;
+}
+
+.paper::before,
+.paper::after {
+    content: "";
+    position: absolute;
+    height: 95%;
+    width: 99%;
+    background-color: #eee;
+}
+
+.paper::before {
+    right: 15px;
+    top: 0;
+    transform: rotate(-1deg);
+    z-index: -1;
+}
+
+.paper::after {
+    top: 5px;
+    right: -5px;
+    transform: rotate(1deg);
+    z-index: -2;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    color:#3a3ffb;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 280px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -140px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 14px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    font-size: 14px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
