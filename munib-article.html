@@ -81,7 +81,77 @@
 
 </head>
 
-<body onload="Timer()" class="d-flex flex-column">
+<style type="text/css">
+
+#first-paragraph:first-letter {
+  float: left;
+  font-size: 45px;
+  line-height: 1;
+  font-weight: bold;
+  margin-right: 9px;
+  text-shadow: #000cf5 .05em .05em;
+
+}
+
+#extras {
+  text-align: center;
+}
+
+.info {
+  padding: 6px 8px;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.info b {
+  font-weight: 400;
+}
+.info h4 {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+
+  margin: 0 0 5px;
+  color: #777;
+}
+
+.legend {
+  line-height: 18px;
+  color: #555;
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+.legend td {
+  opacity: 0.75;
+}
+
+.leaflet-tooltip{
+  width: 50vh;
+  white-space: normal;
+}
+
+
+* {
+  font-family: ministry, sans-serif;
+  font-weight: 300;
+
+}
+
+
+</style>
+
+
+<body class="d-flex flex-column">
 
 
   <!-- Header & Nav -->
@@ -350,74 +420,5 @@
 
 
 </body>
-<!-- map styling -->
-<style type="text/css">
-
-#first-paragraph:first-letter {
-  float: left;
-  font-size: 45px;
-  line-height: 1;
-  font-weight: bold;
-  margin-right: 9px;
-  text-shadow: #000cf5 .05em .05em;
-
-}
-
-#extras {
-  text-align: center;
-}
-
-.info {
-  padding: 6px 8px;
-  font-family: ministry, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  background: white;
-  background: rgba(255,255,255,0.8);
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  border-radius: 5px;
-}
-.info b {
-  font-weight: 400;
-}
-.info h4 {
-  display: block;
-  font-size: 1em;
-  font-weight: bold;
-
-  margin: 0 0 5px;
-  color: #777;
-}
-
-.legend {
-  line-height: 18px;
-  color: #555;
-}
-
-.legend i {
-  width: 18px;
-  height: 18px;
-  float: left;
-  margin-right: 8px;
-  opacity: 0.7;
-}
-.legend td {
-  opacity: 0.75;
-}
-
-.leaflet-tooltip{
-  width: 50vh;
-  white-space: normal;
-}
-
-
-* {
-  font-family: ministry, sans-serif;
-  font-weight: 300;
-
-}
-
-
-</style>
 
 </html>
