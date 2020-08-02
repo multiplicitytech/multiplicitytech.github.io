@@ -71,17 +71,26 @@
     text-align: left;
   }
 
+  #header {
+    background-color: #f3eee8;
+  }
+
+
+  #page-content {
+    background-color: #f3eee8;
+  }
+
   blockquote {
     font-family: ministry, sans-serif;
     font-style: italic;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     border-left-style: dashed;
     border-left-width: 4px;
     border-left-color: #0DB000;
-    padding: 5px;
+    padding: 10px;
     text-align:justify;
-}
+  }
 
   .author {
     font-weight: 400;
@@ -107,7 +116,7 @@
 
 
 <!-- Header & Nav -->
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg" id = "header">
 
   <div class="d-flex flex-grow-1">
 
@@ -143,11 +152,11 @@
 
   <!-- Article -->
 
-  <div id="page-content">
-    <div class="container text-center">
-      <div class="row justify-content-center">
+  <div id="page-content" >
+    <div class="container text-center" >
+      <div class="row justify-content-center" style="margin-left: 80px; margin-right: 80px;  margin-bottom: 50px;">
 
-        <div class="col-md-10 article">
+        <div class="col-md-10 article" >
 
 
           <h1 class="articeTitle"> Can the Internet Reconnect Humans With the Environment?</h1>
@@ -237,56 +246,57 @@
 
 
           <!-- FURTHER RESOURCES -->
-          <p id = "extras">         
-           <a href="#further-resources" onclick="toggleFurtherResources()"> Further Resources</a> 
-         </p>
+
+
+          <div style="margin-left: 80px; margin-right: 80px;">
+            <hr style="width: 10vw; margin-top: 40px; margin-bottom: 40px;">
+          </div>
+
+
+          <div style="margin-bottom: 50px;">
+
+
+            <p><i>We <a target="_blank" href="https://multiplicity.tech/about">believe</a> in continuing conversations around this topic beyond this article. Here are few resources on this topic that Rastraraj compiled to get that started:</i></p>
+            <p>1. <a target="_blank" href="https://www.theatlantic.com/technology/archive/2015/12/there-are-no-clean-clouds/420744/">The Environmental Toll of a Netflix Binge | Ingrid Burrington</a></p>
+
+            <p>2. <a target="_blank" href="https://newrepublic.com/article/155993/can-internet-survive-climate-change">Can the Internet Survive Climate Change? | Kevin Lozano</a></p>
+
+
+            <p>3. <a target="_blank" href="https://www.bbc.com/future/article/20200305-why-your-internet-habits-are-not-as-clean-as-you-think">Why your internet habits are not as clean as you think | Sarah Griffiths</a></p>
+
+
+            <p>4. <a target="_blank" href="https://www.washingtonpost.com/news/parenting/wp/2018/05/30/kids-dont-spend-nearly-enough-time-outside-heres-how-and-why-to-change-that/">Kids do not spend nearly enough time outside. Here’s how (and why) to change that. | Colin O'Mara</a></p>
+
+            <p>5. <a target="_blank" href="https://www.theguardian.com/lifeandstyle/2010/aug/16/childre-nature-outside-play-health">Why our children need to get outside and engage with nature | Jon Henley</a></p>
+
+          </div>   
 
 
 
 
-         <div id='further-resources' display = "none">
-          <p><b>Further Resources</b></p>
+          <script>
+           document.getElementById("further-resources").style.display = "none";
 
-          <p>
-            Pop-Eleches, G., & Tucker, J. A. (2014). Communist socialization and post-communist economic and political attitudes. <i>Electoral studies</i>, 33, 77-89. <a href="https://www.sciencedirect.com/science/article/pii/S0261379413000887">https://www.sciencedirect.com/science/article/pii/S0261379413000887</a>
-          </p>
-          <p>
-            <a href="https://www.youtube.com/watch?v=acijNEErf-c">https://www.youtube.com/watch?v=acijNEErf-c</a>
-          </p>
-          <p>
-           <a href="https://www.thehrdirector.com/features/big-data/international-gdpr-one-year-eastern-europe/">https://www.thehrdirector.com/features/big-data/international-gdpr-one-year-eastern-europe/</a>
-         </p>
-         <p>
-           <a href="https://www.twobirds.com/en/in-focus/general-data-protection-regulation/gdpr-tracker/hungary">https://www.twobirds.com/en/in-focus/general-data-protection-regulation/gdpr-tracker/hungary</a>
-         </p>
-         <p>
-           <a href="https://datareportal.com/reports/tag/Eastern+Europe">https://datareportal.com/reports/tag/Eastern+Europe</a>
-         </p>
+         </script>
 
-       </div>
-       <script>
-         document.getElementById("further-resources").style.display = "none";
+         <script>
 
-       </script>
-
-       <script>
-
-        function toggleFurtherResources() {
-          var x = document.getElementById("further-resources");
-          if (x.style.display == "none") {
-            x.style.display = "block";
-          } else {
-            x.style.display = "none";
+          function toggleFurtherResources() {
+            var x = document.getElementById("further-resources");
+            if (x.style.display == "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
           }
-        }
 
 
-      </script>
+        </script>
+
+      </div>
 
     </div>
-
   </div>
-</div>
 </div>
 
 <!-- Footer -->
