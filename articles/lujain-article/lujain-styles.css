@@ -263,3 +263,18 @@ to {
     width: 100%
 }
 }
+
+.left {
+    margin-left: 120px; 
+    margin-right: 20px;
+}
+
+.right {
+    margin-right: 120px; 
+    margin-left: 20px;
+}
+
+.subtitle {
+    margin-left: 120px; 
+    margin-right: 120px;
+}
