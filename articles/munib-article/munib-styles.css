@@ -24,26 +24,26 @@ blockquote {
   line-height: 1;
   font-weight: bold;
   margin-right: 9px;
-  text-shadow: #000cf5 .05em .05em;
+  text-shadow: #7cfcda .05em .05em;
 
 }
 
 .author {
   font-weight: 400;
-  color: #000cf5;
+  color: #91e877;
 }
 
 .byline {
-  color:#000cf5;
+  color:#7cfcda;
 }
 
 .articleTitle {
-  color: #000cf5;
+  color: #7cfcda;
 }
 
 
 .date {
-  color: #000cf5
+  color: #7cfcda
 }
 
 #extras {
@@ -91,6 +91,13 @@ blockquote {
 .leaflet-tooltip{
   width: 300px;
   white-space: normal;
+}
+
+
+h2 {
+    font-size: 20px; 
+    margin-top:20px;
+    margin-bottom: 10px;
 }
 
 
