@@ -108,9 +108,12 @@ var nationallayer = L.geoJson(europe_data, {
 
         return {
             fillColor: colorByThresholds(nationalthresholds, nationalData),
-            fillOpacity: 0.75,
+           fillOpacity: 0.75,
             weight: 1,
-            color: 'black'
+            opacity: 1,
+            dashArray: '3',
+
+            color: '#666'
         };
 
     },
@@ -118,8 +121,8 @@ var nationallayer = L.geoJson(europe_data, {
         layer.on({
             'mousemove': function (e) {
                 e.target.setStyle({
-                    weight: 4,
-                    color: '#666',
+                    weight: 3,
+                    color: '#d7f7cf',
                     dashArray: '',
                     fillOpacity: 0.7
                 });
@@ -186,15 +189,18 @@ var companylayer = L.geoJson(europe_data, {
             fillColor: colorByThresholds(privatecompanythresholds, companyData),
             fillOpacity: 0.75,
             weight: 1,
-            color: 'black'
+            opacity: 1,
+            dashArray: '3',
+
+            color: '#666'
         };
     },
     onEachFeature: function (feature, layer) {
         layer.on({
             'mousemove': function (e) {
                 e.target.setStyle({
-                    weight: 5,
-                    color: '#666',
+                    weight: 3,
+                    color: 'rgb(214, 254, 245)',
                     dashArray: '',
                     fillOpacity: 0.7
                 });

@@ -16,22 +16,30 @@ const tiles1 = L.tileLayer(tileURL, {
 });
 tiles1.addTo(map1);
 
+var privatecompanythresholds = [
+[0, 'rgb(241, 255, 251)'],
+[40, 'rgb(177, 253, 236)'],
+[45, 'rgb(124, 252, 218)'],
+[55, 'rgb( 92, 201, 167)'],
+[65, 'rgb(  67,  151, 126)']
+];
 
 function getColor1(d) {
-    return d > 65 ? '#bc3136' :
-        d > 54 ? '#eb3e41' :
-        d > 0 ? '#f3a63b' :
-        '#f5b850';
+    return d > 65 ? 'rgb( 92, 201, 167)' :
+    d > 54 ? 'rgb(124, 252, 218)' :
+    d > 0 ? 'rgb(177, 253, 236)' :
+    'rgb(241, 255, 251)';
 }
 
 function style(feature) {
     return {
         fillColor: getColor1(feature.properties.changedPrivacySettings),
-        weight: 2,
+        fillOpacity: 0.75,
+        weight: 1,
         opacity: 1,
-        color: 'white',
         dashArray: '3',
-        fillOpacity: 0.7
+
+        color: '#666'
     };
 }
 
@@ -39,11 +47,11 @@ function highlightFeature(e) {
     var layer1 = e.target;
 
     layer1.setStyle({
-        weight: 4,
-        color: '#666',
-        dashArray: '',
-        fillOpacity: 0.7
-    });
+     weight: 3,
+     color: 'rgb(214, 254, 245)',
+     dashArray: '',
+     fillOpacity: 0.7
+ });
 
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
         layer1.bringToFront();
@@ -63,35 +71,35 @@ function zoomToFeature1(e) {
     } else {
         switch (e.target.feature.properties.name_long) { // islands far from mainland so need to change bounds
             case 'France':
-                map1.fitBounds([
-                    [51.1, 7.6],
-                    [41.5, -4.6]
+            map1.fitBounds([
+                [51.1, 7.6],
+                [41.5, -4.6]
                 ]);
-                break;
+            break;
 
             case 'Spain':
-                map1.fitBounds([
-                    [44.4, 3.9],
-                    [35.4, -9.2]
+            map1.fitBounds([
+                [44.4, 3.9],
+                [35.4, -9.2]
                 ]);
-                break;
+            break;
 
             case 'Netherlands':
-                map1.fitBounds([
-                    [53.7, 7.6],
-                    [50.7, 3.2]
+            map1.fitBounds([
+                [53.7, 7.6],
+                [50.7, 3.2]
                 ]);
-                break;
+            break;
 
             case 'Portugal':
-                map1.fitBounds([
-                    [42.4, -6.2],
-                    [36.4, -9.7]
+            map1.fitBounds([
+                [42.4, -6.2],
+                [36.4, -9.7]
                 ]);
-                break;
+            break;
 
             default: // if not these special case countries then just go to bounds
-                map1.fitBounds(e.target.getBounds());
+            map1.fitBounds(e.target.getBounds());
         }
         bounded1 = true;
         pastLocation1 = e.target._bounds;
@@ -134,14 +142,14 @@ var legend1 = L.control({
 legend1.onAdd = function(map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
-        grades = [0, 54, 65, 100],
-        labels = [];
+    grades = [0, 54, 65, 100],
+    labels = [];
 
     // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < grades.length - 1; i++) {
         div.innerHTML +=
-            '<i style="background:' + getColor1(grades[i] + 1) + '"></i> ' +
-            grades[i] + (grades[i + 1] ? '% &ndash; ' + grades[i + 1] + '%<br>' : '');
+        '<i style="background:' + getColor1(grades[i] + 1) + '"></i> ' +
+        grades[i] + (grades[i + 1] ? '% &ndash; ' + grades[i + 1] + '%<br>' : '');
     }
 
     return div;

@@ -16,6 +16,7 @@ a { color: #0DB000; } /* CSS link color (green) */
 a:hover { color: #0DB000; } /* CSS link hover (green) */
 
 
+
 #header {
   background-color: #f3eee8;
 }
@@ -24,9 +25,7 @@ a:hover { color: #0DB000; } /* CSS link hover (green) */
   background-color: #f3eee8;
 }
 
-.byline {
-  color:#bcaa73;
-}
+
 
 h2 {
     font-size: 20px; 
@@ -55,6 +54,10 @@ blockquote {
 .author {
   font-weight: 400;
   color: #0DB000;
+}
+
+.byline {
+  color:#bcaa73;
 }
 
 .articleTitle {
