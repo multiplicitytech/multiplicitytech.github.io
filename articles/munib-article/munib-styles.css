@@ -89,7 +89,7 @@ blockquote {
 }
 
 .leaflet-tooltip{
-  width: 50vh;
+  width: 300px;
   white-space: normal;
 }
 

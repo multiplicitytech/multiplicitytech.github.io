@@ -28,14 +28,14 @@ tiles3.addTo(map3);
 
 //randomize colors so each time the colors are different
 var map3colors = [
-'rgb(236, 92, 101)', 
-'rgb(118, 225, 84)', 
+'rgb(81, 174, 50)', 
+'rgb(145, 232,  119)', 
+'rgb(178, 239,  162)', 
+'rgb( 92, 201, 167)', 
 'rgb(124, 252, 218)', 
-'rgb(245, 184, 80)', 
-'rgb(226, 73, 247)', 
-'rgb(51, 55, 245)', 
-'rgb(240, 254, 96)',
-'rgb(243, 171, 176)'
+'rgb(177, 253, 236)', 
+'rgb(  67,  151, 126)',
+'rgb(60, 131, 35)'
 ];
 
 
@@ -72,11 +72,11 @@ function getColor3(d) {
 	function style(feature) {
 		return {
 			fillColor: getColor3(feature.properties.name_long),
-			weight: 2,
+			fillOpacity: 0.75,
+			weight: 1,
 			opacity: 1,
-			color: 'white',
 			dashArray: '3',
-			fillOpacity: 0.7
+			color: '#666'
 		};
 	}
 
@@ -91,8 +91,8 @@ function getColor3(d) {
 		layer3.bindTooltip(countryQuotes[layer3.feature.properties.name_long][0]);
 
 		layer3.setStyle({
-			weight: 4,
-			color: 'rgb(214, 254, 245)',
+			weight: 3,
+			color: '#d7f7cf',
 			dashArray: '',
 			fillOpacity: 0.7
 		});
@@ -159,77 +159,77 @@ var counter = 0;
 // window.setInterval(function(){
 	counter++;
 
-function changeColor(){
-	if (counter>9) {
-		counter = 0;
-	}
-
-	if (counter == 0) {
-		shuffle(map3colors);
-	}
-
-	geojson3.eachLayer(function (layer) {  
-
-		switch (counter) {
-			case 0:
-			if (layer.feature.properties.name_long == "Bosnia and Herzegovina")
-				layer.setStyle({fillColor :map3colors[0]});
-			break;
-			case 1:
-			if (layer.feature.properties.name_long == "Serbia")
-
-				layer.setStyle({fillColor :map3colors[1]});
-
-			break;
-			case 2:
-			if (layer.feature.properties.name_long == "Macedonia")
-
-				layer.setStyle({fillColor :map3colors[2]});
-
-			break;
-			case 3:
-			if (layer.feature.properties.name_long == "Bulgaria")
-
-				layer.setStyle({fillColor :map3colors[3]});
-
-			break;
-			case 4:
-			if (layer.feature.properties.name_long == "Romania")
-
-				layer.setStyle({fillColor :map3colors[4]});
-
-			break;
-			case 5:
-			if (layer.feature.properties.name_long == "Poland")
-
-				layer.setStyle({fillColor :map3colors[5]});
-
-			break;
-			case 6:
-			if (layer.feature.properties.name_long == "Lithuania")
-
-				layer.setStyle({fillColor :map3colors[6]});
-
-			break;
-			case 7:
-			if (layer.feature.properties.name_long == "Ukraine")
-
-				layer.setStyle({fillColor :map3colors[7]});
-
-			break;			
+	function changeColor(){
+		if (counter>9) {
+			counter = 0;
 		}
 
-	});
-}
+		if (counter == 0) {
+			shuffle(map3colors);
+		}
+
+		geojson3.eachLayer(function (layer) {  
+
+			switch (counter) {
+				case 0:
+				if (layer.feature.properties.name_long == "Bosnia and Herzegovina")
+					layer.setStyle({fillColor :map3colors[0]});
+				break;
+				case 1:
+				if (layer.feature.properties.name_long == "Serbia")
+
+					layer.setStyle({fillColor :map3colors[1]});
+
+				break;
+				case 2:
+				if (layer.feature.properties.name_long == "Macedonia")
+
+					layer.setStyle({fillColor :map3colors[2]});
+
+				break;
+				case 3:
+				if (layer.feature.properties.name_long == "Bulgaria")
+
+					layer.setStyle({fillColor :map3colors[3]});
+
+				break;
+				case 4:
+				if (layer.feature.properties.name_long == "Romania")
+
+					layer.setStyle({fillColor :map3colors[4]});
+
+				break;
+				case 5:
+				if (layer.feature.properties.name_long == "Poland")
+
+					layer.setStyle({fillColor :map3colors[5]});
+
+				break;
+				case 6:
+				if (layer.feature.properties.name_long == "Lithuania")
+
+					layer.setStyle({fillColor :map3colors[6]});
+
+				break;
+				case 7:
+				if (layer.feature.properties.name_long == "Ukraine")
+
+					layer.setStyle({fillColor :map3colors[7]});
+
+				break;			
+			}
+
+		});
+	}
 
 
 
-geojson3 = L.geoJson(interview_countries, {
-	style: style,
-	onEachFeature: onEachFeature
-}).addTo(map3);
+	geojson3 = L.geoJson(interview_countries, {
+		style: style,
+		onEachFeature: onEachFeature
+	}).addTo(map3);
 
 
 
 
-info3.addTo(map3);
+	info3.addTo(map3);

@@ -16,19 +16,13 @@ const tiles1 = L.tileLayer(tileURL, {
 });
 tiles1.addTo(map1);
 
-var privatecompanythresholds = [
-[0, 'rgb(241, 255, 251)'],
-[40, 'rgb(177, 253, 236)'],
-[45, 'rgb(124, 252, 218)'],
-[55, 'rgb( 92, 201, 167)'],
-[65, 'rgb(  67,  151, 126)']
-];
+
 
 function getColor1(d) {
-    return d > 65 ? 'rgb( 92, 201, 167)' :
-    d > 54 ? 'rgb(124, 252, 218)' :
-    d > 0 ? 'rgb(177, 253, 236)' :
-    'rgb(241, 255, 251)';
+    return d > 65 ? 'rgb(81, 174, 50)' :
+    d > 54 ? 'rgb(145, 232,  119)' :
+    d > 0 ? 'rgb(178, 239,  162)' :
+    'rgb(245, 253, 244)';
 }
 
 function style(feature) {
@@ -47,11 +41,11 @@ function highlightFeature(e) {
     var layer1 = e.target;
 
     layer1.setStyle({
-     weight: 3,
-     color: 'rgb(214, 254, 245)',
-     dashArray: '',
-     fillOpacity: 0.7
- });
+       weight: 3,
+       color: '#d7f7cf',
+       dashArray: '',
+       fillOpacity: 0.7
+   });
 
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
         layer1.bringToFront();
