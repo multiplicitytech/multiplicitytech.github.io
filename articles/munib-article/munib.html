@@ -45,8 +45,8 @@
   <title>Multiplicity</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="stylesheet.css" rel="stylesheet">
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../styles.css" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
 
@@ -55,8 +55,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
-  <script src="/script.js"></script>
-
+<!--   <script src="/script.js"></script>
+ -->
   <!-- Data Vis -->
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
@@ -72,96 +72,16 @@
   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
   crossorigin=""></script>
 
-  <script src="data-vis/munib-article-data-vis/scripts/select_europe.js"></script>
-  <script src="data-vis/munib-article-data-vis/scripts/interview_countries.js"></script>
+  <script src="./scripts/select_europe.js"></script>
+  <script src="./scripts/interview_countries.js"></script>
 
   <style>#map1 { height: 72vh;}</style>
   <style>#map2 { height: 72vh;}</style>
   <style>#map3 { height: 72vh;}</style>
+  <link href="munib-styles.css" rel="stylesheet">  
 
 </head>
 
-<style type="text/css">
-
-blockquote {
-  font-family: ministry, sans-serif;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 16px;
-  border-left-style: dashed;
-  border-left-width: 3px;
-  border-left-color: #000cf5;
-  padding: 10px;
-  text-align:justify;
-}
-
-#first-paragraph:first-letter {
-  float: left;
-  font-size: 45px;
-  line-height: 1;
-  font-weight: bold;
-  margin-right: 9px;
-  text-shadow: #000cf5 .05em .05em;
-
-}
-
-#extras {
-  text-align: center;
-}
-
-.info {
-  padding: 6px 8px;
-  font-family: ministry, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  background: white;
-  background: rgba(255,255,255,0.8);
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  border-radius: 5px;
-}
-.info b {
-  font-weight: 400;
-}
-.info h4 {
-  display: block;
-  font-size: 1em;
-  font-weight: bold;
-
-  margin: 0 0 5px;
-  color: #777;
-}
-
-.legend {
-  line-height: 18px;
-  color: #555;
-}
-
-.legend i {
-  width: 18px;
-  height: 18px;
-  float: left;
-  margin-right: 8px;
-  opacity: 0.7;
-}
-.legend td {
-  opacity: 0.75;
-}
-
-.leaflet-tooltip{
-  width: 50vh;
-  white-space: normal;
-}
-
-
-* {
-  font-family: ministry, sans-serif;
-  font-weight: 300;
-  text-align: left;
-
-}
-
-
-</style>
 
 
 <body class="d-flex flex-column">
@@ -247,7 +167,7 @@ blockquote {
         <div id="map1"></div>
 
         <!-- map1 JavaScript -->
-        <script type="text/javascript" src = "data-vis/munib-article-data-vis/scripts/map1.js"></script>
+        <script type="text/javascript" src = "./scripts/map1.js"></script>
 
         <div style="padding: 10px 4px;"></div>
 
@@ -262,7 +182,7 @@ blockquote {
         <div id="map2"></div>
 
         <!-- map2 JavaScript -->
-        <script type="text/javascript" src = "data-vis/munib-article-data-vis/scripts/map2.js"></script>
+        <script type="text/javascript" src = "./scripts/map2.js"></script>
 
         <div style="padding: 10px 4px;"></div>
 
@@ -285,7 +205,7 @@ blockquote {
         <div id="map3"></div>
 
         <!-- map3 JavaScript -->
-        <script type="text/javascript" src = "data-vis/munib-article-data-vis/scripts/map3.js"></script>
+        <script type="text/javascript" src = "./scripts/map3.js"></script>
 
         <br><br>
 
@@ -307,7 +227,7 @@ blockquote {
         <div id="chart4"></div>
 
         <!-- chart4 JavaScript -->
-        <script type="text/javascript" src = "data-vis/munib-article-data-vis/scripts/chart4.js"></script>
+        <script type="text/javascript" src = "./scripts/chart4.js"></script>
 
 
         <p>These aforementioned problems in the post-communist society are perceived as coming from governmental inefficiency which leads to distrust. This necessitates more public focus on political instability than digital privacy which is perceived, as one interviewee put it, as a “first world problem.” Therefore, the common attitude among EPCD nationals towards digital privacy and the importance of it seems to come not from their shared communist heritage as much as from their collective post-communist challenges and current political instabilities. Even in the cases where communism enters the barely existent public discourse on digital privacy, such as in Poland, it is only used as a controversial word to stir up anti-communist animosity towards government involvement in general, thereby serving, once again, political opponents and the opposition rather than the digital rights of the people as such. 
@@ -432,8 +352,8 @@ blockquote {
 
 
 <!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.slim.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../vendor/jquery/jquery.slim.min.js"></script>
+<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
 </body>
