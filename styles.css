@@ -43,11 +43,11 @@ body{
     }
 
     #jihyun-card .card-title {
-      margin-left: 30%; margin-bottom: 45%;
+      margin-left: 27%; margin-bottom: 42%;
     }
 
     #lujain-card .card-title {
-      margin-right: 0%; margin-bottom: 5%; margin-left: 25%;
+      margin-right: 0%; margin-bottom: 5%; margin-left: 27%;
     }
 
     #grace-card .card-title {
@@ -273,6 +273,8 @@ body {
 }
 
 
+
+
 /*.card-title:hover ~ .image1 {
   box-shadow: -10px 10px 0px rgba(6,0,255,1);
 }
@@ -297,13 +299,17 @@ body {
 }
 
 .card-title h2 {
-  font-family: 'stenciletta-solid';
+  font-family: 'ministry', sans-serif;
   font-weight: 600;
   color: white;
   /*color: #010033;*/
   text-align: left;
   /*margin: 0;*/
-  font-size: 1.1rem;
+  font-size: 1rem;
+}
+
+.card-link .card-title:hover ~ .card-img {
+  background-color: black;
 }
 
 
@@ -311,38 +317,94 @@ body {
   text-align: left;
   color: white;
   /*color: #010033;*/
-  font-family: 'Ministry';
+  font-family: 'ministry', sans-serif !important;
   font-weight: 300;
   font-size: .8rem;
   margin-bottom: 0%;
 }
 
 
+
 #mc_embed_signup input{
-  font-family: 'Ministry';
+  font-family: 'ministry', sans-serif;
+  font-weight: 400;
 }
 
 #mc_embed_signup .clear input {
-  color: white !important;
-  background-color: #0500CC !important;
+  color: #02012F!important;
+  background-color: #00FFCE !important;
 }
 
 #mc_embed_signup .clear input:hover {
+  /*color: #00FFCE !important;*/
   color: white !important;
-  background-color: #0DB000 !important;
+  background-color: #0600FF !important;
 }
 
 
 #coming_soon {
-  width: 100%; text-align: center; font-family: 'Ministry' !important; margin-top: 15%;
+  width: 100%; text-align: center; font-family: 'ministry' !important; margin-top: 15%;
+
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
+
+#coming_soon h1 {
+  font-size: 3rem;
+  color: #CC1B2C; 
+  margin-bottom: 1%;
+
+}
+
+#coming_soon h4 {
+  color: white;
+  margin-bottom: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
 @media (max-width: 769px) {
 #mc_embed_signup form {
   width: 70% !important;
   margin-left: 15%;
 }
 
+  #coming_soon {
+  margin-top: 40% !important;
+}
+
+}
+
+
+@media (max-width: 420px) {
 #coming_soon {
   margin-top: 60% !important;
 }
+}
+
+
+/*@media (max-width: 376px) {
+#coming_soon {
+  margin-top: 65% !important;
+}
+}*/
+
+@media (max-width: 321px) {
+#coming_soon {
+  margin-top: 55% !important;
+}
+}
+
+.white-teal-filter {
+ filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(194deg) brightness(104%) contrast(100%);
+}
+
+.white-teal-filter:hover {
+  /*white
+   filter: invert(75%) sepia(99%) saturate(775%) hue-rotate(100deg) brightness(101%) contrast(101%);
+  
 }

@@ -1,5 +1,15 @@
 .navy-filter {
+  /*navy*/
   filter: invert(9%) sepia(45%) saturate(2722%) hue-rotate(226deg) brightness(85%) contrast(119%);
+}
+
+.navy-filter:hover {
+  /*teal*/
+ filter: invert(8%) sepia(100%) saturate(7120%) hue-rotate(250deg) brightness(103%) contrast(141%);
+}
+
+.teal-filter {
+filter: invert(8%) sepia(100%) saturate(7120%) hue-rotate(250deg) brightness(103%) contrast(141%);
 }
 
 
@@ -18,9 +28,13 @@
 color: #00FFCE !important;
 }
 
+.nav-link:hover {
+  color:  white !important;
+}
+
 .navbar-toggler {
   border-color: transparent !important;
-
+}
 
 /*more than 1 card per row*/
 @media screen and (min-width: 751px) {
@@ -85,6 +99,10 @@ color: #00FFCE !important;
 	flex-shrink: 2;
 	/*color: #0600FF;*/
   color: #00FFCE !important;
+}
+
+.navbar-brand:hover {
+color: white!important;
 }
 
 .navbar-nav {

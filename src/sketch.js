@@ -4,7 +4,7 @@ var logox, logoy;
 // var xspeed = 2.5;
 // var yspeed = 2.5;
 var xspeed, yspeed;
-var colors = ['#CC1B2C', '#0DB000', '#00CCA4', '#CC8200', '#C200CC', '#0500CC', '#B8CC00'];
+var colors = ['#CC1B2C', '#0DB000', '#CC8200', '#C200CC', '#0600FF', '#B8CC00', '#F533FF', '#40E333', '#FF2138'];
 var text_color, text_width, ext_color;
 var speeds, speeds_tab, speeds_mob;
 var mode;
@@ -17,7 +17,7 @@ let hidden_text, spacing;
 
 let ext_size;
 
-let keywords = ['lujain', 'tom', 'grace', 'jihyun', 'munib', 'rastra', 'alia', 'sohail', 'isabelle', 'tona', 'tech', 'privacy', 'surveillance', 'exile', 'identity', 'archives', 'bias', 'climate', 'nature', 'monopoly', 'food', 'internet', 'youth', 'nepal', 'korea', 'palestine', 'lebanon', 'nigeria', 'usa', 'eastern europe', 'bosnia', 'uae', 'abu dhabi', 'new zealand', 'online'];
+let keywords = ['lujain', 'tom', 'grace', 'jihyun', 'munib', 'rastra', 'alia', 'tona', 'tech', 'privacy', 'media', 'exile', 'identity', 'archives', 'bias', 'climate', 'nature', 'monopoly', 'food', 'internet', 'youth', 'nepal', 'korea', 'palestine', 'lebanon', 'nigeria', 'usa', 'said', 'apps', 'bosnia', 'uae', 'abu dhabi', 'online'];
 
 let word_list = [], wi;
 
@@ -61,30 +61,31 @@ if (canvas.width < 700) {
   logo_size = canvas.width / 15;
 }
 
-  console.log(canvas.width);
-  console.log(canvas.height);
+  //console.log(canvas.width);
+  //console.log(canvas.height);
 
 
-  for (let i=0; i<canvas.width; i+=(textWidth("eastern europe")*1.2)) {
+  for (let i=0; i<canvas.width; i+=(textWidth("abu dhabi")*1.1)) {
     for (let j=0;j<canvas.height;j+=50) {
     word_list.push(random(keywords));
   }
   }
 
-  console.log(word_list);
+  //console.log(word_list);
 
 }
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
-  console.log("resized");
-  word_list = [];
+  //console.log("resized");
 
-  for (let i=0; i<canvas.width; i+=(textWidth("eastern europe")*1.2)) {
+  for (let i=0; i<canvas.width; i+=(textWidth("abu dhabi")*1.1)) {
     for (let j=0;j<canvas.height;j+=50) {
     word_list.push(random(keywords));
   }
   }
+
+console.log(word_list.length);
 
   if (canvas.width < 700) {
 
@@ -134,23 +135,31 @@ if (logoy < 0) {
 
 function draw() {
 
-  background('#FFFAF0');
+  background('#02012F');
   // fill(random(0,255), random(0,255),random(0,255));
 
   if (mouseIsPressed) {
-  fill(220);
-  circle(mouseX,mouseY,100);
+    for (let i=120; i>0; i-=1) {
+      fill(255,255,255,120-i);
+      circle(mouseX,mouseY,i)
+      fill('#02012F');
+      if (i > 1) {
+      circle(mouseX,mouseY,i-1);
+    }
+    }
+  // fill(220,220,200,80);
+  // circle(mouseX,mouseY,100);
 }
 
   textSize(20);
 
-  hidden_text = "eastern europe";
+  hidden_text = "abu dhabi";
 
-  fill('#FFFAF0');
+  fill('#02012F');
 
   wi = 0;
   
-  for (let i=0; i<canvas.width; i+=(textWidth(hidden_text)*1.2)) {
+  for (let i=0; i<canvas.width; i+=(textWidth(hidden_text)*1.1)) {
     for (let j=0;j<canvas.height;j+=50) {
       text(word_list[wi],i,j);
       wi+=1;
@@ -168,8 +177,9 @@ function draw() {
   logox += xspeed;
   logoy += yspeed;
 
+
   if (logox < 0 || logox > (canvas.width - (textWidth(logo)+textWidth(extension)))) {
-    console.log("entered logox");
+    //console.log("entered logox");
     // ext_size = textWidth(extension);
     // xspeed = xspeed * -1;
     text_color = random(colors);
@@ -184,7 +194,7 @@ function draw() {
   }
 
   else if (logoy < 0 || logoy > canvas.height) {
-    console.log("entered logoy"); 
+    //console.log("entered logoy"); 
     yspeed = yspeed * -1;
     text_color = random(colors);
     ext_color = random(colors);
