@@ -1,8 +1,7 @@
 body, html {
     height: 100vh;
-    display:block;
-    background-color: #ffffff;
-    margin: 0;
+    background-color: white;
+    margin: 0px;
 }
 
 blockquote {
@@ -17,20 +16,12 @@ blockquote {
   text-align:justify;
 }
 
-#first-paragraph:first-letter {
-
-  float: left;
-  font-size: 45px;
-  line-height: 1;
-  font-weight: bold;
-  margin-right: 9px;
-  text-shadow: #7cfcda .05em .05em;
-
-}
-
 .author {
   font-weight: 400;
   color: #91e877;
+  text-align: center;
+  font-size: 1.5vw;
+  margin-top: 0px;
 }
 
 .byline {
@@ -38,7 +29,14 @@ blockquote {
 }
 
 .articleTitle {
-  color: #7cfcda;
+  color: #002d25;
+  text-align: center;
+  font-weight: 300;
+  font-family: 'stenciletta-solid';
+  font-style: normal;
+  font-size: 3vw;
+  margin: 0px;
+  margin-bottom: 10px;
 }
 
 
@@ -65,11 +63,18 @@ blockquote {
 }
 .info h4 {
   display: block;
-  font-size: 1em;
+  font-size: 1.5vw;
   font-weight: bold;
-
+  font-family: 'stenciletta-solid';
   margin: 0 0 5px;
-  color: #777;
+  color: black;
+}
+
+h4 {
+  font-size: 1.8vw;
+  font-weight: bold;
+  color: black;
+  font-family: 'stenciletta-solid';
 }
 
 .legend {
@@ -90,7 +95,11 @@ blockquote {
 
 .leaflet-tooltip{
   width: 300px;
+  font-size: 1vw;
   white-space: normal;
+  font-family: ministry;
+  font-style: normal;
+
 }
 
 
@@ -100,10 +109,38 @@ h2 {
     margin-bottom: 10px;
 }
 
+.content {
+  margin-top:50px; 
+  margin-left: 20vw; 
+  margin-right: 20vw; 
+  margin-bottom: 50px; 
+}
 
-* {
-  font-family: ministry, sans-serif;
+.text {
+  text-align: justify;
+}
+
+a {
+  color: #008e71;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px dotted #008e71;
+} 
+
+p {
+  font-family: ministry;
+  font-style: normal;
+  color: black;
   font-weight: 300;
-  text-align: left;
+  font-size: 1.3vw;
+  text-align:justify;
+}
 
+::selection {
+  background: #c5fff3; 
+}
+::-moz-selection {
+  background: #c5fff3; 
 }
