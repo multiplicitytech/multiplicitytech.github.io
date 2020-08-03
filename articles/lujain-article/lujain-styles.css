@@ -112,7 +112,6 @@ h2 {
     -ms-text-fill-color: black;
     background-clip: text;
     /* animation: .11s shake infinite alternate; */
-
 }
 
 h3 {
@@ -121,6 +120,7 @@ h3 {
     font-size:3vw;
     font-style: normal;
 }
+
 p {
     font-family: ministry, sans-serif;
     font-style: normal;
@@ -128,6 +128,7 @@ p {
     font-size: 1.3vw;
     text-align:justify;
 }
+
 blockquote {
     font-family: ministry, sans-serif;
     font-style: italic;
@@ -139,11 +140,13 @@ blockquote {
     padding: 15px;
     text-align:justify;
 }
+
 a {
     color:#3a3ffb;
     text-decoration: none;
 
 }
+
 a:hover {
     border-bottom: 1px dotted #3a3ffb;
 }

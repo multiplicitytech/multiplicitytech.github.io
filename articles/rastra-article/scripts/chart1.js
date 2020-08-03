@@ -24,23 +24,23 @@ var options = {
 
     }
   },
-  colors: ['#3c8323','#51ae32','#66da41', '#75e154', '#91e877', '#b1efa2', '#d7f7d0'
+  colors: ['#75e154', '#91e877', '#b1efa2', '#d7f7d0','#e7f7e3'
   ],
   dataLabels: {
 
     enabled: true,
     textAnchor: 'start',
     style: {
-      fontSize: '12px',
+      fontSize: '14px',
 
-      colors: ['#fff']
+      colors: ['#b5a265']
     },
     formatter: function (val, opt) {
       return opt.w.globals.labels[opt.dataPointIndex] + ":  " + val + "%"
     },
     offsetX: 0,
     dropShadow: {
-      enabled: true
+      enabled: false
     }
   },
   stroke: {
@@ -48,7 +48,7 @@ var options = {
     colors: ['#fff']
   },
   xaxis: {
-    categories: ['Play outside less than once per week', "Don't know where milk comes from", "Haven't been on a country walk in a year", "Haven't been on a farm", "Haven't climbed a tree"
+    categories: ['Play outside less than once per week', "Do not know where milk comes from", "Have not been on a country walk in a year", "Have never been on a farm", "Have never climbed a tree"
     ],
     max: 70,
     tickAmount: 7,
@@ -77,9 +77,13 @@ var options = {
     }
   },
   title: {
-    text: 'How many kids..',
+    text: 'How much do children engage with nature?',
     align: 'left',
-    floating: true
+    floating: true,
+    style: {
+      fontSize: '16px',
+      color:  '#b5a265'
+    }  
   },
   subtitle: {
   },
@@ -100,13 +104,13 @@ var options = {
     hover: {
       filter: {
         type: 'lighten',
-        value: 0.15,
+        value: 0.01,
       }
     },
     active: {
       filter: {
         type: 'darken', /* none, lighten, darken */
-        value: 0.85,
+        value: 0.99,
       }
     },
   },
