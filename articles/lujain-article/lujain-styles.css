@@ -189,7 +189,7 @@ a:hover {
 }
 
 .paper-text { 
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
 .tooltip {
@@ -205,7 +205,7 @@ a:hover {
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 5px 3px;
     position: absolute;
     z-index: 1;
     bottom: 125%;
@@ -233,3 +233,51 @@ a:hover {
     opacity: 1;
 }
 
+#cont {
+    display: flex;
+  }
+  
+#center {
+margin: auto;
+}
+
+#p12 {
+display: flex;
+overflow: hidden;
+white-space: nowrap;
+margin: 0 auto;
+letter-spacing: 2px;
+animation: typing 3s steps(30, end);
+font-family: ministry, sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 2.5vw;
+}
+
+#p12 {
+display: inline-flex;
+}
+
+@keyframes typing {
+from {
+    width: 0
+}
+to {
+    width: 100%
+}
+}
+
+.left {
+    margin-left: 120px; 
+    margin-right: 20px;
+}
+
+.right {
+    margin-right: 120px; 
+    margin-left: 20px;
+}
+
+.subtitle {
+    margin-left: 120px; 
+    margin-right: 120px;
+}

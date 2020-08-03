@@ -1,7 +1,7 @@
 @import url("https://use.typekit.net/grm6kxy.css");
 @media screen and (max-width: 600px) {
     .column {
-      width: 100%;
+      width: 100vh;
     }
     #tweet {
       display: none;
@@ -75,6 +75,7 @@
     -o-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    z-index: -1;
 }
 body {
     box-sizing: border-box;
@@ -125,7 +126,6 @@ html {
     overflow: hidden;
 }
 #content {
-    /* background-color: #b0b0b0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,14 +155,14 @@ html {
     position: absolute;
     top: 15px;
     left: 25px;
-    font-size: 2vw;
-    /* font-family: "VT323", monospace; */
+    font-size: 1.7vw;
     font-weight: 400;
     font-family: ministry;
     font-style: normal;
     vertical-align: middle;
-    color: #e9fe2d;
+    color: #f4ff8e;
     animation: shiver 1s linear .5s infinite;
+    z-index: 20;
 }
 #text {
     color: #ededed;
@@ -188,9 +188,9 @@ p {
     text-align:justify;
 }
 h1 {
-    color: #f55bff; 
+    color: #f9ffc5; 
     font-family: ministry;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-weight: 400;
 }
 .content {
@@ -227,13 +227,18 @@ blockquote {
     clear: both;
 }  
 a {
-    color:#f9ffc5;
-    border-bottom: 1px dotted #f9ffc5;
+    color: #f4ff8e;
     text-decoration: none;
+    z-index: 1000;
 
 }
+ .writer{
+    text-decoration: none;
+    color: #f4ff8e;
+}
+
 a:hover {
-  border-bottom: 0px dotted #f9ffc5;
+  border-bottom: 1px dotted #f9ffc5;
 } 
 .byline {
     text-align: center; 
@@ -249,4 +254,45 @@ a:hover {
     margin-top: 60px; 
     margin-bottom: 60px; 
     margin-left: 10px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #f4ff8e;
+    color:#f4ff8e;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 280px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 3px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -140px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 1.2vw;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    font-size: 1.2vw;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
