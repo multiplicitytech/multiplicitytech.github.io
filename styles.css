@@ -354,7 +354,7 @@ body {
 }
 
 #coming_soon h1 {
-  font-size: 3rem;
+  font-size: 3.3rem;
   color: #CC1B2C; 
   margin-bottom: 1%;
 
@@ -371,6 +371,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .centered {
   flex-direction: column;
   justify-content: center;
@@ -421,7 +422,5 @@ body {
 }
 
 .white-teal-filter:hover {
-  /*white
    filter: invert(75%) sepia(99%) saturate(775%) hue-rotate(100deg) brightness(101%) contrast(101%);
-  
 }
