@@ -155,13 +155,14 @@ html {
     position: absolute;
     top: 15px;
     left: 25px;
-    font-size: 1.6vw;
+    font-size: 1.7vw;
     font-weight: 400;
     font-family: ministry;
     font-style: normal;
     vertical-align: middle;
-    color: #e9fe2d;
+    color: #f4ff8e;
     animation: shiver 1s linear .5s infinite;
+    z-index: 20;
 }
 #text {
     color: #ededed;
@@ -226,16 +227,16 @@ blockquote {
     clear: both;
 }  
 a {
-    color:#f9ffc5;
+    color: #f4ff8e;
     text-decoration: none;
     z-index: 1000;
 
 }
  .writer{
     text-decoration: none;
-    color: #e9fe2d;
-
+    color: #f4ff8e;
 }
+
 a:hover {
   border-bottom: 1px dotted #f9ffc5;
 } 
