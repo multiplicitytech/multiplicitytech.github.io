@@ -85,7 +85,7 @@ function windowResized() {
   }
   }
 
-console.log(word_list.length);
+// console.log(word_list.length);
 
   if (canvas.width < 700) {
 

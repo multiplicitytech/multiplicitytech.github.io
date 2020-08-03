@@ -343,7 +343,8 @@ body {
 
 
 #coming_soon {
-  width: 100%; text-align: center; font-family: 'ministry' !important; margin-top: 15%;
+  width: 100%; text-align: center; font-family: 'ministry' !important;
+   /*margin-top: 15%;*/
 
   -webkit-user-select: none;
     -moz-user-select: none;
@@ -366,6 +367,22 @@ body {
   margin-right: 5%;
 }
 
+#container {
+  width: 100%;
+  height: 100%;
+}
+.centered {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+
+#socials {
+  flex-direction: none !important;
+}
 
 @media (max-width: 769px) {
 #mc_embed_signup form {
@@ -373,17 +390,17 @@ body {
   margin-left: 15%;
 }
 
-  #coming_soon {
+/*  #coming_soon {
   margin-top: 40% !important;
-}
+}*/
 
 }
 
 
 @media (max-width: 420px) {
-#coming_soon {
+/*#coming_soon {
   margin-top: 60% !important;
-}
+}*/
 }
 
 
@@ -394,9 +411,9 @@ body {
 }*/
 
 @media (max-width: 321px) {
-#coming_soon {
+/*#coming_soon {
   margin-top: 55% !important;
-}
+}*/
 }
 
 .white-teal-filter {
