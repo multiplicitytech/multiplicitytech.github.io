@@ -258,19 +258,21 @@ blockquote {
     display: table;
     clear: both;
 }  
-a {
-    color: #f4ff8e;
-    text-decoration: none;
+#page-content a {
+    color: #f4ff8e !important;
+    text-decoration: none !important;
     z-index: 1000;
+}
+
+#page-content a:hover {
+    color: #f4ff8e !important;
+    border-bottom: 1px dotted #f9ffc5;
 }
  .writer{
     text-decoration: none;
     color: #f4ff8e;
 }
 
-a:hover {
-  border-bottom: 1px dotted #f9ffc5;
-} 
 .byline {
     text-align: center; 
     margin-top: 20px;
@@ -368,13 +370,13 @@ a:hover {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted #f4ff8e;
-    color:#f4ff8e;
+    border-bottom: 1px dotted #f4ff8e !important;
+    color:#f4ff8e !important;
 }
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 280px;
-    background-color: #555;
+    background-color: #555 !important!;
     color: #fff;
     text-align: center;
     border-radius: 6px;
