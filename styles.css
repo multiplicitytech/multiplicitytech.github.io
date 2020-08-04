@@ -404,7 +404,105 @@ body {
 }
 
 .white-teal-filter:hover {
-  /*white
-   filter: invert(75%) sepia(99%) saturate(775%) hue-rotate(100deg) brightness(101%) contrast(101%);
+  /*white*/
+   filter: invert(75%) sepia(99%) saturate(775%) hue-rotate(100deg) brightness(101%) contrast(101%);*/
+}
+
+.team {
+  width: 80%;
+}
+
+.team-container {
+  width: 20%;
+  /*background-color: white;*/
+  height: auto;
+  position: relative;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 5%;
+  /*clear: left;*/
+  min-width: 228px;
+
+}
+
+.team-container .team-img{
+  width: 100%;
+  /*box-shadow: -5px 5px 0px rgba(255,255,255,1);*/
+}
+
+.team-container .team-img img:hover {
+  /*box-shadow: -3px 3px 0px rgba(0,255,206,1);*/
+  /*box-shadow: -3px 3px 0px rgba(255,255,255,1);*/
+}
+
+.team-container .team-card {
+  font-size: .8rem;
+  text-align: justify; 
+  bottom: 0; 
+  /*background: red;*/
+  width: 100%;
+  /*height: 100%;*/
+  /*width: auto;*/
+  transition: .5s ease;
+  padding: 10px;
+
+  transition: 0.3s;
+  /*min-width: 250px;*/
+}
+.team-card p {
+  font-size: 1rem;
+  font-family: 'ministry',sans-serif;
+  margin-bottom: 0 !important;
+}
+
+.team-card h2 {
+  font-size: 1.3rem;
+  /*font-style: bold;*/
+  font-family: 'stenciletta-solid', sans-serif;
+  font-weight: 600;
+  float: left;
+
+  color: white;
+
+}
+
+.team-name {
+  width: 100%;
+}
+
+.about-link {
+  margin-top: 5%;
+}
+
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.row            { 
+  -webkit-flex-direction: row; 
+  flex-direction: row;
+}
+
+.column { 
+  -webkit-flex-direction: column; 
+  flex-direction: column; 
+  float: left;
+}
+
+
+.about-body p {
+  text-align: justify;
+  color: white !important;
+  font-weight: 500;
 }
