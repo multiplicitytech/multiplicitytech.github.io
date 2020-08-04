@@ -8,6 +8,13 @@
  filter: invert(8%) sepia(100%) saturate(7120%) hue-rotate(250deg) brightness(103%) contrast(141%);
 }
 
+
+.black-blue-filter:hover {
+ filter: invert(8%) sepia(100%) saturate(7120%) hue-rotate(250deg) brightness(103%) contrast(141%);
+}
+
+
+
 .teal-filter {
 filter: invert(8%) sepia(100%) saturate(7120%) hue-rotate(250deg) brightness(103%) contrast(141%);
 }
@@ -29,11 +36,14 @@ filter: invert(8%) sepia(100%) saturate(7120%) hue-rotate(250deg) brightness(103
 	font-size: 1.2rem;
 	/*color: #010033;*/
   /*color: #0600FF;*/
-color: #00FFCE !important;
+color: #00FFCE;
+/*padding-top: 5%;*/
 }
+
 
 .nav-link:hover {
   color:  white !important;
+  border-bottom: none !important;
 }
 
 .navbar-toggler {
@@ -84,7 +94,8 @@ color: #00FFCE !important;
 	font-size: 1.2rem;
 	/*color: #010033;*/
   /*color: #0600FF;*/
-color: #00FFCE !important;
+color: #00FFCE ;
+padding: .8rem 1rem !important;
 }
 
 .navbar-toggler {
@@ -107,6 +118,7 @@ color: #00FFCE !important;
 
 .navbar-brand:hover {
 color: white!important;
+border-bottom: none !important;
 }
 
 .navbar-nav {

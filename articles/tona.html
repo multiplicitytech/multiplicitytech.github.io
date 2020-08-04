@@ -34,13 +34,72 @@
   <meta name="twitter:image:alt" content="multiplicity logo">
   <meta name="twitter:site" content="@multiplicity_x">
 
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<!--   <link href="../../styles.css" rel="stylesheet">
-  <link href="../../shared.css" rel="stylesheet"> -->
+  <!-- p5 library -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" href="../img/favicon.png" />
+
+
+
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../styles.css" rel="stylesheet">
+  <link href="../shared.css" rel="stylesheet">
 </head>
 <body style="background: black">
   <!-- Credits to https://codepen.io/Sickmonkeys/pen/gGjpRE for this design-->
+
+
+
+ <nav class="navbar navbar-expand-lg" style="margin-left: 2%; margin-right: 2%;">
+
+  <div class="d-flex flex-grow-1"> 
+
+    <span class="w-100 d-block"></span>
+
+    <a class="navbar-brand" href="index.html">
+      multiplicity<span style="color: white;">.surveillance</span>
+
+<!--         <span class="txt-rotate"
+        data-period = "2000"
+        data-rotate = '[ ".tech", ".privacy", ".exile", ".identity", ".diaspora", ".archive", ".bias", ".gaming", ".home", ".climate", ".nature", ".food", ".apps", ".flash", ".art", ".earth", ".youth"]'></span> -->
+      </a>
+
+
+      <!-- d-lg-none -->
+      <div class="w-100 text-right">
+
+        <button class="navbar-toggler flex-fill" type="button" data-toggle="collapse" data-target="#myNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-right w-100" id="myNavbar">
+          <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item">
+              <a href="/about.html" class="nav-link" >About</a>
+            </li>
+          </ul>
+
+        </div>
+
+
+      </div> 
+
+
+
+
+    </div>
+
+  </nav>
+
 
   <!-- Title Full Screen Page-->
   <div id="wrapper" style="display:block;" class="on">
@@ -69,15 +128,15 @@
     <div class="container text-center">
       <div class="row justify-content-center">  
 
-        <div class="col-md-10">
+        <div class="col-md-8">
 
 
-          <p><b>Aug 15, 2020</b></p>
+          <p><b><a href="../about.html#tona" class="author" style="color:#3a3ffb">Tona Campbell</a> </b> | Aug 15, 2020</p>
           <p> The recent Black Lives Matter protests after the Minneapolis Police Department killed George Floyd, a forty-six-year-old Black American, during an arrest over allegedly using counterfeit money, sparked weeks of protests in Minneapolis and around the country. Along with the protests demanding justice for Floyd, millions poured into the street to demand justice for Breonna Taylor, who was killed by Louisville Police officers as she slept in her bedroom. 
           </p>
           <p>These tragedies have re-ignited the Movement for Black Lives and the growing calls for racial justice and the dismantlement of white supremacy. The internet and social media have undoubtedly helped to organize protests, circulate digital petitions, raise money for mutual aid groups, and facilitate political education on white supremacy and anti-Blackness. But at the same time, in many ways, the social media platforms and the internet more broadly, work to create new vectors of digital surveillance and marginalization. </p>
           <p>
-            Black Americans around the country use social media to gather together on the streets, risking exposure to COVID-19 and police brutality, to demand justice. Meanwhile, law enforcement agencies around the country routinely use surveillance technology to suppress protests. Police departments use “stingray devices” to impersonate cell towers to collect protestors’ mobile data and identify protesters, especially when protestors and allies share and republish videos of those resisting riot police and damaging property. The social media surveillance platform <a target="_blank" href="https://theintercept.com/2020/07/09/twitter-dataminr-police-spy-surveillance-black-lives-matter-protests/">Dataminr</a> is already “siphoning vast amounts of social media data from across the web and converting it into tidy police intelligence packages.” Together with the location data, law enforcement agencies use published videos to identify and track down protestors. In addition to facial recognition software and location data, law enforcement agencies around the United States continue to use internet technologies to suppress freedom of speech and undermine collective privacy.We must also recognize that the very platforms we use to organize and build solidarity ultimately work to re-establish systems of oppression that dominate the lives of Black Americans.</p>
+            Black Americans around the country use social media to gather together on the streets, risking exposure to COVID-19 and police brutality, to demand justice. Meanwhile, law enforcement agencies around the country routinely use surveillance technology to suppress protests. Police departments use “stingray devices” to impersonate cell towers to collect protestors’ mobile data and identify protesters, especially when protestors and allies share and republish videos of those resisting riot police and damaging property. The social media surveillance platform <a target="_blank" href="https://theintercept.com/2020/07/09/twitter-dataminr-police-spy-surveillance-black-lives-matter-protests/">Dataminr</a> is already “siphoning vast amounts of social media data from across the web and converting it into tidy police intelligence packages.” Together with the location data, law enforcement agencies use published videos to identify and track down protestors. In addition to facial recognition software and location data, law enforcement agencies around the United States continue to use internet technologies to suppress freedom of speech and undermine collective privacy. We must also recognize that the very platforms we use to organize and build solidarity ultimately work to re-establish systems of oppression that dominate the lives of Black Americans.</p>
             <p>Safiya U. Noble, a scholar of race and technology, <a target="_blank" href="https://muse.jhu.edu/article/694972/pdf">underscores</a> that while videos and images of law enforcement murdering Black Americans often go viral on online media platforms and create national media spectacles, these videos fail to actually push for substantive social action or even work to hold law enforcement accountable. Noble argues that these social media platforms, while moderating and removing traumatic content, willingly circulate and profit from videos of dying Black Americans. Noble writes, </p>
             <blockquote>“I contend that social media exacerbates the spectacle of death and dying, through the mechanisms of virality and hyper-circulation…While at one moment we think of these videos as meaningful in helping us make sense of police brutality and state violence, we also imagine them as evidence or records that will bring about justice.” </blockquote>
             <p>Noble <a target="_blank" href="https://muse.jhu.edu/article/694972/pdf">argues</a> that hyper circulation has profound implications because,</p>
@@ -106,6 +165,21 @@
       </div>
     </div>
 
+  <footer id="sticky-footer" class="py-1 bg-light text-white">
+
+    <div class="container text-center">
+      <!-- <small> 2020</small> -->
+      <!-- <medium><a href="https://twitter.com/multiplicity_x"> Twitter </a>, <a href="https://www.instagram.com/multiplicity_x/"> Instagram </a>, and <a href="https://github.com/multiplicitytech/multiplicitytech.github.io"> GitHub</a></medium> -->
+      <a href="mailto:multiplicitytech@gmail.com"><img class="black-blue-filter" src="../img/mail.png" style="height: 2.1rem;"></a>  &emsp;
+      <a href="https://twitter.com/multiplicity_x"><img class="black-blue-filter" src="../img/twitter.png" style="height: 1.7rem;"></a> &emsp;
+      <a href="https://www.instagram.com/multiplicity_x/"><img class="black-blue-filter" src="../img/instagram.png" style="height: 1.8rem;"></a> &emsp;
+      <a href="https://github.com/multiplicitytech/multiplicitytech.github.io"><img class="black-blue-filter" src="../img/github.png" style="height: 2.3rem;"> 
+
+
+      </div>
+
+
+    </footer>
 
     <!-- Article -->
     <!-- <div class="content" > -->

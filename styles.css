@@ -184,9 +184,13 @@ body {
 }
 
 .author {
-	font-weight: 400;
+	font-weight: 500;
 	/*color: #0500CC;*/
   color: #00FFCE;
+}
+
+.author:hover {
+  color: white;
 }
 
 .date {

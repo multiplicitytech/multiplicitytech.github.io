@@ -1,12 +1,13 @@
 @import url("https://use.typekit.net/grm6kxy.css");
-@media screen and (max-width: 600px) {
+
+/*@media screen and (max-width: 600px) {
     .column {
       width: 100vh;
     }
     #tweet {
       display: none;
     }
-    }
+    }*/
 @keyframes screen-turn-on {
     0% {
         width: 0%;
@@ -193,8 +194,8 @@ html {
     color: #ededed;
     text-align: center;
     text-transform: uppercase;
-    /*font-size: 4.2vw;*/
-    font-size: 3.5rem;
+    font-size: 4.2vw;
+    /*font-size: 3.5rem;*/
     animation: shiver 1s linear .5s infinite;
     font-weight: 300;
     font-family: 'stenciletta-solid';
@@ -207,13 +208,14 @@ html {
 
 }
 p {
-    font-family: ministry;
+    font-family: 'ministry';
     font-style: normal;
     color: white;
     font-weight: 300;
     font-size: 1.3vw;
     text-align:justify;
 }
+
 h1 {
     color: #f9ffc5; 
     font-family: ministry;
@@ -235,9 +237,12 @@ blockquote {
     border-left-width: 4px;
     border-left-color: #3a3ffb;
     padding: 20px;
-    font-size: 1.3vw;
+    /*font-size: 1.3vw !important;*/
+    font-size: 100%;
     font-weight: 100;
+    text-align: left !important;
 }
+
 ::selection {
     background: #f9ffc5; 
 }
@@ -289,8 +294,8 @@ a:hover {
     }
 
     .column {
-        width: 80%;
-        margin-left: 10%;
+        width: 100%;
+        /*margin-left: 10%;*/
     }
 
     #content-holder {
@@ -303,39 +308,60 @@ a:hover {
 
 }
 
-@media (max-width: 750px) {
+@media (max-width: 998px) {
     #text {
-        font-size: 3.2rem;
+        font-size: 4.6vw;
+    }
+    .byline {
+        font-size: 1.9vw;
+    }
+}
+
+@media (max-width: 850px) {
+    #text {
+        font-size: 5.5vw;
+    }
+    .byline {
+        font-size: 2.2vw;
     }
 }
 
 @media (max-width: 700px) {
-    #text {
-        font-size: 2.8rem;
+    .byline {
+        display: none;
     }
-}
-
-@media (max-width: 570px) {
     #text {
-        font-size: 2.4rem;
-        text-align: center;
+        font-size: 7.5vw;
     }
 }
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     #text {
-        font-size: 2.1rem;
+        font-size: 10vw;
+        margin-bottom: 5%;
     }
 
-     #content-holder {
-    height: calc(60vh - 60px);
+
+    #content-holder {
+    width: calc(100vw - 20px);
 }
 
 #screen {
-    height: calc(60vh - 60px);
+    width: calc(100vw - 20px);
+    margin: 10px;
 }
+
+}
+
+@media (max-width: 400px) {
+    #text {
+        font-size: 10vw;
+        margin-bottom: 17%;
+    }
+
+
 }
 
 .tooltip {
