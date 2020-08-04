@@ -57,8 +57,8 @@ var options = {
     }
   },
   grid: {
-    show: fa
-  }
+    show: false
+  },
   plotOptions: {
     bar: {
       horizontal: false,
