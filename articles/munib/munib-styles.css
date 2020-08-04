@@ -28,13 +28,14 @@ blockquote {
   color:#7cfcda;
 }
 
-.articleTitle {
+.article-title {
+  margin-top: 5%;
   color: #002d25;
   text-align: center;
   font-weight: 300;
   font-family: 'stenciletta-solid';
   font-style: normal;
-  font-size: 2.5vw;
+  font-size: 2rem;
   margin: 0px;
   margin-bottom: 10px;
 }
@@ -120,14 +121,17 @@ h2 {
   text-align: justify;
 }
 
+
 a {
-  color: #008e71;
-  text-decoration: none;
+    color: #008e71 !important;
+    text-decoration: none !important;
+    z-index: 1000;
 }
 
 a:hover {
-  border-bottom: 1px dotted #008e71;
-} 
+    color: #008e71 !important;
+    border-bottom: 1px dotted #008e71;
+}
 
 p {
   font-family: ministry;

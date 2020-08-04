@@ -47,6 +47,7 @@
 
 
   <!-- Bootstrap core CSS -->
+  <link href="munib/munib-styles.css" rel="stylesheet">  
   <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../styles.css" rel="stylesheet">
   <link href="../shared.css" rel="stylesheet">
@@ -69,7 +70,7 @@
   <style>#map1 { height: 500px;}</style>
   <style>#map2 { height: 500px;}</style>
   <style>#map3 { height: 500px;}</style>
-  <link href="munib/munib-styles.css" rel="stylesheet">  
+
   <script>
     const mapboxAccessToken = 'pk.eyJ1Ijoic29oYWlsYmFnaGVyaSIsImEiOiJja2N0Mno0NGgwYWN0MnJudG1qcDFmZXlsIn0.Slzmp4JvAnT08GrpHiBDWg';
     const tileURL = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + mapboxAccessToken;
@@ -79,7 +80,7 @@
 
 
 
-<body class="d-flex flex-column">
+<body class="d-flex flex-column" style="background-color: white">
 <!-- <body> -->
 
 <nav class="navbar navbar-expand-lg" style="margin-left: 2%; margin-right: 2%;">
@@ -88,8 +89,8 @@
 
     <span class="w-100 d-block"></span>
 
-    <a class="navbar-brand" href="index.html" style="color: #02012F;">
-      multiplicity<span style="color: #3a3ffb;">.privacy</span>
+    <a class="navbar-brand" href="index.html" style="color: #02012F !important;">
+      multiplicity<span style="color: #008e71;">.privacy</span>
 
 <!--         <span class="txt-rotate"
         data-period = "2000"
@@ -126,10 +127,16 @@
 
   <!-- Article -->
 
-  <div class="content">
-    <div>
-      <h1 class="articleTitle"><span class="scramble"></span></h1>
-      <h1 class="articleTitle">Digital Privacy in European Post-Communist Democracies</h1>
+  <div id="page-content">
+    <div class="container text-center">
+      <div class="row justify-content-center">  
+
+        <div class="col-md-8">
+
+<!--   <div class="content">
+    <div> -->
+      <h1 class="article-title"><span class="scramble"></span></h1>
+      <h1 class="article-title">Digital Privacy in European Post-Communist Democracies</h1>
       <!-- <p class="author"><a target="_blank" href="multiplicity.tech/about">Munib Mesinovic</a></p> -->
 
       <!-- MAP 3 -->
@@ -137,7 +144,7 @@
         <!-- map3 JavaScript -->
         <script type="text/javascript" src = "munib/scripts/map3.js"></script>
       </div>
-      <p><b><a target="_blank" href="multiplicity.tech/about">Munib Mesinovic</a> | Aug 15, 2020</b></p>
+      <p><b><a href="../about.html#munib" target="_blank" style="color:#3a3ffb">Munib Mesinovic</a> </b> | Aug 15, 2020</p>
       <p class="text">Few can argue that the digital privacy debate is a purely technical question and that the “solutions” will also be of a solely technological nature. It has become clear that any attempt to address this question needs to consider the social context as well. One crucial question of our time is “what does privacy mean for a democracy?” Many so-called democratic countries today struggle with the legislation, adaptation, and regulation of privacy in many different areas of information sharing that are beyond just the internet. There is also a profound disconnect between the people who demand better protections and safeguards and the governmental institutions operating the system. Within this group of democratic societies, post-communist countries form a special group that sets them apart not only by their past but also by their current narratives and contexts surrounding privacy. This article explores the digital privacy discourse in post-communist countries and aims to highlight that conversations around digital privacy have a strong context outside of Western and Northern Europe and should be heavily considered when implementing European-wide digital policies and regulations. It draws from my personal experiences living in a European post-communist democracy, Bosnia and Herzegovina, as an engaged young person and is also supplemented by conversations and interviews with fellow Bosnians and citizens of other European post-communist democracies.</p> 
 
       <p class="text">Learning from different, often underrepresented, narratives surrounding privacy can offer more insight into how we should change not only legislatively, but also socially and behaviorally, our approach to protecting privacy in a digital society. Within these discussions, the context of Eastern and Southern Europe has been missing, especially one drawing on their shared history within communism. In European post-communist democracies (EPCDs), many questions on privacy either have not been raised or remain unanswered. Are there societal practices instilled in those communities, many of which have “outgrown” communism just two decades ago, that foster or hinder privacy guarantees? How is the privacy debate developed, in what kinds of frameworks, and on what platforms? What kind of data is available, and is being collected, in these countries? And, under whose control is it? With election hacking being in the headlines in the US and the UK, how are young democracies dealing with such an impactful data breach on the cornerstone of democracy? And last, but not least, is the technologically advanced age preventing the people of EPCDs from achieving the freedoms they so adamantly fought for?</p>
@@ -214,7 +221,7 @@
       </p>
 
 
-      <hr style="width: 10vw; margin-top: 40px; margin-bottom: 40px;">
+      <hr style="width: 10vw; margin-top: 40px; margin-bottom: 40px; border: 1px solid black">
       <p><i>We <a target="_blank" href="https://multiplicity.tech/about">believe</a> in furthering the conversation on digital privacy beyond this article. Here are a few resources from Munib to get that started:</i></p>
       <p>
         1. <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0261379413000887"> Communist socialization and post-communist economic and political attitudes |  G. Pop-Eleches & J. A. Tucker</a>
@@ -235,7 +242,8 @@
    </div>
 
  </div>
-
+</div>
+</div>
   <footer id="sticky-footer" class="py-1 bg-light text-white">
 
     <div class="container text-center">

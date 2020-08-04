@@ -97,7 +97,7 @@ html {
     /*margin-left: 3%;*/
     /*margin-top: 30px;*/
     /*margin-top: 3%;*/
-    height: calc(60vh - 60px);
+    height: calc(70vh - 60px);
     width: calc(100vw - 60px);
     background: #0a0a0a;
     color: #fff;
@@ -145,7 +145,7 @@ html {
 }
 #content-holder {
     padding: 0;
-    height: calc(60vh - 60px);
+    height: calc(70vh - 60px);
     width: calc(100vw - 60px);
     display: flex;
     justify-content: center;
@@ -378,7 +378,11 @@ hr {
     margin-top: 40px !important; 
     margin-bottom: 40px !important;
     /*color: red;*/
-    border: 1px solid grey;
+    border: 1px solid grey !important;
+}
+
+.navbar-brand:hover {
+    color: white !important;
 }
 
 .tooltip-m {
