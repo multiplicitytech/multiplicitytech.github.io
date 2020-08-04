@@ -518,5 +518,30 @@ body {
 .about-body p {
   text-align: center;
   color: white !important;
-  font-weight: 500;
+  font-weight: 400;
+  margin-top: 2%;
+}
+
+@media (min-width: 992px) {
+
+  .about-body p {
+   margin-right: 20%; 
+    margin-left: 20%; 
+}
+}
+
+@media (max-width: 991px) {
+
+  .about-body p {
+    margin-right: 10%; 
+    margin-left: 10%; 
+}
+}
+
+@media (max-width: 768px) {
+
+  .about-body p {
+    margin-right: 5%; 
+    margin-left: 5%; 
+}
 }
