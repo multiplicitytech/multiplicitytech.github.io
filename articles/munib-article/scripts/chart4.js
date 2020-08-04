@@ -21,7 +21,31 @@ var options = {
     stacked: true,
     toolbar: {
       show: false
+    },
+    events: {
+      scrolled: function(chartContext, { xaxis }) {
+        console.log('scroll');
+      },
+      zoomed: function(chartContext, { xaxis, yaxis }) {
+        console.log('zoom');
+      }
+
+    },
+    animations: {
+      enabled: true,
+      easing: 'easeinout',
+      speed: 2500,
+      animateGradually: {
+        enabled: true,
+        delay: 150
+      },
+      dynamicAnimation: {
+        enabled: true,
+        speed: 350
+      }
     }
+
+
 
   },
   plotOptions: {
@@ -84,14 +108,10 @@ var options = {
         value: 0.99,
       }
     },
-
-
   }
 
 };
 
-var chart = new ApexCharts(document.querySelector("#chart4"), options);
-chart.render();
 
 
 
