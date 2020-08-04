@@ -1,5 +1,8 @@
 var options = {
-  colors: ['#51ae32', '#7cfcda','#ddd'],
+  title: {
+    text: 'Do you use software that prevents your online activities from being monitored? (%)'
+  },
+  colors: ['#51ae32', '#7cfcda','#ccc'],
   series: [ {
     name: 'Yes',
     data: [39,36,36,33,33,31,31,29,27,27,27,27,26,26,25,25,24,23,23,23,22,22,21,19,19,18,17,16,14]
@@ -28,6 +31,14 @@ var options = {
 
     },
   },
+  dataLabels: {
+    enabled: true,
+    style: {
+      fontSize: '12px',
+      colors: ['#222']
+    }
+  },
+
   stroke: {
     width: 1,
     colors: ['#fff']
