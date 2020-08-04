@@ -8,17 +8,17 @@
 body, html {
     height: 100vh;
     display:block;
-    background-color: #fff4ff;
+    background-color: #fff7f8;
     margin: 0;
 }
 
 a {
-  color: #008e71;
+  color: #10a701;
   text-decoration: none;
 }
 
 a:hover {
-  border-bottom: 1px dotted #008e71;
+  border-bottom: 1px dotted #10a701;
 } 
 
 
@@ -33,6 +33,7 @@ h2 {
     margin-top:40px;
     margin-bottom: 10px;
     font-family: 'stenciletta-solid';
+    color: #5b1016;
 }
 
 h3 {
@@ -63,14 +64,15 @@ blockquote {
 }
 
 .articleTitle {
-  color: #002d25;
+  color: #5b1016;
   text-align: center;
   font-weight: 300;
   font-family: 'stenciletta-solid';
   font-style: normal;
-  font-size: 3vw;
+  font-size: 2.5vw;
   margin: 0px;
   margin-bottom: 10px;
+  display: inline-block;
 }
 
 .date {
@@ -105,4 +107,63 @@ p {
   margin-left: 20vw; 
   margin-right: 20vw; 
   margin-bottom: 50px; 
+}
+
+::selection {
+  background: #c8f7c5; 
+}
+::-moz-selection {
+  background: #c8f7c5; 
+}
+
+#offset {
+  animation: letter-flicker 2s linear infinite;
+}
+
+.word {
+  position: absolute;
+  width: 220px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
 }
