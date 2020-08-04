@@ -1,5 +1,9 @@
 @import url("https://use.typekit.net/grm6kxy.css");
 
+.navbar-toggler-icon {
+ background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(253,255,142,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
 /*@media screen and (max-width: 600px) {
     .column {
       width: 100vh;
@@ -349,7 +353,8 @@ blockquote {
 @media (max-width: 540px) {
     #text {
         font-size: 10vw;
-        /*margin-bottom: 5%;*/
+        /*margin-bottom: 5%;*/ 
+
     }
 
 
@@ -361,6 +366,7 @@ blockquote {
     width: calc(100vw - 20px);
     margin: 10px;
 }
+
 
 }
 
