@@ -428,11 +428,13 @@ body {
 .team-container .team-img{
   width: 100%;
   /*box-shadow: -5px 5px 0px rgba(255,255,255,1);*/
+    box-shadow: 3px -3px 0px rgba(2,1,47,1);
+
 }
 
-.team-container .team-img img:hover {
+.team-container .team-img:hover {
   /*box-shadow: -3px 3px 0px rgba(0,255,206,1);*/
-  /*box-shadow: -3px 3px 0px rgba(255,255,255,1);*/
+  box-shadow: 3px -3px 0px rgba(255,255,255,1);
 }
 
 .team-container .team-card {
@@ -444,7 +446,7 @@ body {
   /*height: 100%;*/
   /*width: auto;*/
   transition: .5s ease;
-  padding: 10px;
+  padding-top: 5px;
 
   transition: 0.3s;
   /*min-width: 250px;*/
@@ -456,22 +458,34 @@ body {
 }
 
 .team-card h2 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   /*font-style: bold;*/
-  font-family: 'stenciletta-solid', sans-serif;
-  font-weight: 600;
+  font-family: 'ministry', sans-serif;
+  /*font-weight: 600;*/
   float: left;
+  text-align: left;
 
   color: white;
 
 }
+.team-card h3{
+  font-size: .9rem;
+  /*font-style: bold;*/
+  font-family: 'ministry', sans-serif;
+  /*font-weight: 600;*/
+  float: left;
+  text-align: left;
+  color: #00FFCE;
+}
 
 .team-name {
   width: 100%;
+  margin-top: 1%;
 }
 
 .about-link {
-  margin-top: 5%;
+  /*margin-top: 5%;*/
+
 }
 
 
@@ -502,7 +516,7 @@ body {
 
 
 .about-body p {
-  text-align: justify;
+  text-align: center;
   color: white !important;
   font-weight: 500;
 }
