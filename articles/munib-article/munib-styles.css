@@ -1,6 +1,6 @@
 body, html {
     height: 100vh;
-    background-color: white;
+    background-color: #fff;
     margin: 0px;
 }
 
@@ -34,7 +34,7 @@ blockquote {
   font-weight: 300;
   font-family: 'stenciletta-solid';
   font-style: normal;
-  font-size: 3vw;
+  font-size: 2.5vw;
   margin: 0px;
   margin-bottom: 10px;
 }

@@ -8,7 +8,7 @@
 body, html {
     height: 100vh;
     display:block;
-    background-color: #fdffec;
+    background-color: #fff9ed;
     margin: 0;
 }
 
@@ -18,13 +18,8 @@ a:hover { color: #0DB000; } /* CSS link hover (green) */
 
 
 #header {
-  background-color: #f3eee8;
+  background-color: #fff9ed;
 }
-
-#content {
-  background-color: #f3eee8;
-}
-
 
 
 h2 {
@@ -57,15 +52,15 @@ blockquote {
 }
 
 .byline {
-  color:#bcaa73;
+  color: black;
 }
 
 .articleTitle {
-  color: #bcaa73;
+  color: black;
 }
 
 .date {
-  color: #bcaa73
+  color: black
 }
 
 #sublogo {
@@ -81,3 +76,19 @@ blockquote {
   text-align: left;
 }
 
+
+p {
+  font-family: ministry;
+  font-style: normal;
+  color: black;
+  font-weight: 300;
+  font-size: 1.3vw;
+  text-align:justify;
+}
+
+.content {
+  margin-top:50px; 
+  margin-left: 20vw; 
+  margin-right: 20vw; 
+  margin-bottom: 50px; 
+}
