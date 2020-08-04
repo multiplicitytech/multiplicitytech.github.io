@@ -304,13 +304,16 @@ blockquote {
         /*margin-left: 10%;*/
     }
 
-    #content-holder {
+    #text {
+        margin-bottom: 15%;
+    }
+/*    #content-holder {
     height: calc(60vh - 60px);
 }
 
 #screen {
     height: calc(60vh - 60px);
-}
+}*/
 
 }
 
@@ -343,10 +346,10 @@ blockquote {
 
 
 
-@media (max-width: 500px) {
+@media (max-width: 540px) {
     #text {
         font-size: 10vw;
-        margin-bottom: 5%;
+        /*margin-bottom: 5%;*/
     }
 
 
