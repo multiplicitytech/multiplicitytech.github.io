@@ -114,7 +114,7 @@ html {
     mix-blend-mode: multiply;
     border-radius: 5px;
     background-color: #00f;
-    opacity: 90%;
+    opacity: 85%;
     width: 100%;
     height: 100%;
 }
@@ -262,7 +262,6 @@ a {
     color: #f4ff8e;
     text-decoration: none;
     z-index: 1000;
-
 }
  .writer{
     text-decoration: none;
@@ -279,6 +278,8 @@ a:hover {
     margin-right: 75px; 
     font-weight: 400; 
     font-size: 1.5vw;
+
+    text-shadow: 1px 0 rgba(255, 0, 0, 0.9), -1px 0 rgba(0, 0, 255, 0.9);
 }
 
 #tweet {
