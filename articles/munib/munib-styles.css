@@ -29,9 +29,10 @@ blockquote {
 }
 
 .article-title {
-  margin-top: 5%;
+  margin-top: 10%;
   color: #002d25;
-  text-align: center;
+  /*text-align: center;*/
+  text-align: left;
   font-weight: 300;
   font-family: 'stenciletta-solid';
   font-style: normal;
