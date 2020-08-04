@@ -121,35 +121,7 @@
       </div>
       <!-- chart4 JavaScript -->
       <script type="text/javascript" src = "./scripts/chart4.js"></script>
-      <script>
-
-        var inView = false;
-
-        function isScrolledIntoView(elem)
-        {
-          var docViewTop = $(window).scrollTop();
-          var docViewBottom = docViewTop + $(window).height();
-
-          var elemTop = $(elem).offset().top;
-          var elemBottom = elemTop + $(elem).height();
-
-          return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
-        }
-
-
-        $(window).scroll(function() {
-          if (isScrolledIntoView('#chart4')) {
-            if (inView) { return; }
-            inView = true;
-
-            var chart = new ApexCharts(document.querySelector("#chart4"), options);
-            chart.render();
-
-          } else {
-            inView = false;  
-          }
-        });
-      </script>
+  
 
 
       <p>These aforementioned problems in the post-communist society are perceived as coming from governmental inefficiency which leads to distrust. This necessitates more public focus on political instability than digital privacy which is perceived, as one interviewee put it, as a “first world problem.” Therefore, the common attitude among EPCD nationals towards digital privacy and the importance of it seems to come not from their shared communist heritage as much as from their collective post-communist challenges and current political instabilities. Even in the cases where communism enters the barely existent public discourse on digital privacy, such as in Poland, it is only used as a controversial word to stir up anti-communist animosity towards government involvement in general, thereby serving, once again, political opponents and the opposition rather than the digital rights of the people as such. 

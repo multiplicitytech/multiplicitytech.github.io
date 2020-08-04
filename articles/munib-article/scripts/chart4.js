@@ -32,15 +32,15 @@ var options = {
 
     },
     animations: {
-      enabled: true,
+      enabled: false,
       easing: 'easeinout',
       speed: 2500,
       animateGradually: {
-        enabled: true,
+        enabled: false,
         delay: 150
       },
       dynamicAnimation: {
-        enabled: true,
+        enabled: false,
         speed: 350
       }
     }
@@ -91,7 +91,7 @@ var options = {
       toggleDataSeries: false
     },
     onItemHover: {
-      highlightDataSeries: false
+      highlightDataSeries: true
     },
 
   },
@@ -111,6 +111,9 @@ var options = {
   }
 
 };
+
+var chart = new ApexCharts(document.querySelector("#chart4"), options);
+chart.render();
 
 
 
