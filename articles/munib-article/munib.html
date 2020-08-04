@@ -42,7 +42,7 @@
 
 
 <body class="d-flex flex-column">
-  
+
   <!-- Article -->
 
   <div class="content">
@@ -105,14 +105,16 @@
       <p>Thus, whether this indifference to digital privacy is a result of some sort of communist historical influence is neither straightforward nor widely agreed on. To recall, we have seen how Figures 1 and 4 and conversations with the members of EPCD communities suggest a lack of concern or action when it comes to digital privacy among the EPCD public; EPCD nationals appear much less likely to act on any kind of digital dangers by, for example, changing their privacy settings or using privacy software tools. Since digital privacy is not discussed or developed in public and educational discourse and no scandals pertaining to it have ever developed in the digital privacy context, rather than only the political one, the public remains indifferent and unaware of the meaning and the importance of the term. The interview responses also support the findings of a recent <a target="_blank" href="https://www.oecd.org/els/soc/cope-divide-europe-2017-background-report.pdf">report</a> by the Organisation for Economic Co-operation and Development (OECD): that economic, social, and political inequality as well as lack of progress compared to the rest of Europe are constantly on people’s minds, thus making digital privacy less of a priority. Thereon, most of people’s time, focus, and discussion is spent on political deliberations and attacks. 
       </p>
 
-
+      <div class = "info" style = "margin-right: 185px; margin-top: 30px">
+        <h4>Do you use software that prevents your online activities from being monitored? (%)</h4>
+      </div>
       <!-- Chart4 -->
-      <div id="chart4" style="margin-top: 30px; margin-bottom: 30px;">
+      <div id="chart4" style="margin-top: 0px; margin-bottom: 30px;">
 
       </div>
       <!-- chart4 JavaScript -->
       <script type="text/javascript" src = "./scripts/chart4.js"></script>
-  
+
 
 
       <p>These aforementioned problems in the post-communist society are perceived as coming from governmental inefficiency which leads to distrust. This necessitates more public focus on political instability than digital privacy which is perceived, as one interviewee put it, as a “first world problem.” Therefore, the common attitude among EPCD nationals towards digital privacy and the importance of it seems to come not from their shared communist heritage as much as from their collective post-communist challenges and current political instabilities. Even in the cases where communism enters the barely existent public discourse on digital privacy, such as in Poland, it is only used as a controversial word to stir up anti-communist animosity towards government involvement in general, thereby serving, once again, political opponents and the opposition rather than the digital rights of the people as such. 
@@ -159,57 +161,57 @@
 // ——————————————————————————————————————————————————
 
 class TextScramble {
-constructor(el) {
-  this.el = el
-  this.chars = '!<>-_\\/[]{}—=+*^?#________'
-  this.update = this.update.bind(this)
-}
-setText(newText) {
-  const oldText = this.el.innerText
-  const length = Math.max(oldText.length, newText.length)
-  const promise = new Promise((resolve) => this.resolve = resolve)
-  this.queue = []
-  for (let i = 0; i < length; i++) {
-    const from = oldText[i] || ''
-    const to = newText[i] || ''
-    const start = Math.floor(Math.random() * 40)
-    const end = start + Math.floor(Math.random() * 40)
-    this.queue.push({ from, to, start, end })
+  constructor(el) {
+    this.el = el
+    this.chars = '!<>-_\\/[]{}—=+*^?#________'
+    this.update = this.update.bind(this)
   }
-  cancelAnimationFrame(this.frameRequest)
-  this.frame = 0
-  this.update()
-  return promise
-}
-update() {
-  let output = ''
-  let complete = 0
-  for (let i = 0, n = this.queue.length; i < n; i++) {
-    let { from, to, start, end, char } = this.queue[i]
-    if (this.frame >= end) {
-      complete++
-      output += to
-    } else if (this.frame >= start) {
-      if (!char || Math.random() < 0.28) {
-        char = this.randomChar()
-        this.queue[i].char = char
+  setText(newText) {
+    const oldText = this.el.innerText
+    const length = Math.max(oldText.length, newText.length)
+    const promise = new Promise((resolve) => this.resolve = resolve)
+    this.queue = []
+    for (let i = 0; i < length; i++) {
+      const from = oldText[i] || ''
+      const to = newText[i] || ''
+      const start = Math.floor(Math.random() * 40)
+      const end = start + Math.floor(Math.random() * 40)
+      this.queue.push({ from, to, start, end })
+    }
+    cancelAnimationFrame(this.frameRequest)
+    this.frame = 0
+    this.update()
+    return promise
+  }
+  update() {
+    let output = ''
+    let complete = 0
+    for (let i = 0, n = this.queue.length; i < n; i++) {
+      let { from, to, start, end, char } = this.queue[i]
+      if (this.frame >= end) {
+        complete++
+        output += to
+      } else if (this.frame >= start) {
+        if (!char || Math.random() < 0.28) {
+          char = this.randomChar()
+          this.queue[i].char = char
+        }
+        output += `<span class="dud">${char}</span>`
+      } else {
+        output += from
       }
-      output += `<span class="dud">${char}</span>`
+    }
+    this.el.innerHTML = output
+    if (complete === this.queue.length) {
+      this.resolve()
     } else {
-      output += from
+      this.frameRequest = requestAnimationFrame(this.update)
+      this.frame++
     }
   }
-  this.el.innerHTML = output
-  if (complete === this.queue.length) {
-    this.resolve()
-  } else {
-    this.frameRequest = requestAnimationFrame(this.update)
-    this.frame++
+  randomChar() {
+    return this.chars[Math.floor(Math.random() * this.chars.length)]
   }
-}
-randomChar() {
-  return this.chars[Math.floor(Math.random() * this.chars.length)]
-}
 }
 
 // ——————————————————————————————————————————————————
@@ -227,10 +229,10 @@ const fx = new TextScramble(el)
 
 var counter = 0
 const next = () => {
-fx.setText(phrases[counter]).then(() => {
-  setTimeout(next, 3000)
-})
-counter = (counter + 1) % phrases.length
+  fx.setText(phrases[counter]).then(() => {
+    setTimeout(next, 3000)
+  })
+  counter = (counter + 1) % phrases.length
 }
 
 next()
