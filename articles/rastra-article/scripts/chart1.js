@@ -33,7 +33,7 @@ var options = {
     style: {
       fontSize: '14px',
 
-      colors: ['#b5a265']
+      colors: ['black']
     },
     formatter: function (val, opt) {
       return opt.w.globals.labels[opt.dataPointIndex] + ":  " + val + "%"
@@ -82,7 +82,7 @@ var options = {
     floating: true,
     style: {
       fontSize: '16px',
-      color:  '#b5a265'
+      color:  'black'
     }  
   },
   subtitle: {

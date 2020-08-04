@@ -1,6 +1,17 @@
 var options = {
   title: {
-    text: 'Do you use software that prevents your online activities from being monitored? (%)'
+    text: undefined,
+    align: 'left',
+    margin: 0,
+    offsetX: 0,
+    offsetY: 0,
+    floating: false,
+    style: {
+      fontSize:  '14px',
+      fontWeight:  'bold',
+      fontFamily:  undefined,
+      color:  '#263238'
+    },
   },
   colors: ['#51ae32', '#7cfcda','#ccc'],
   series: [ {
@@ -15,6 +26,8 @@ var options = {
     data: [13,6,8,12,8,13,8,12,5,8,9,15,9,5,7,9,6,13,9,12,4,14,12,10,10,14,5,7,6]
   }],
   chart: {
+    offsetY: '0px',
+    offsetX: '0px',
     fontFamily: 'ministry, sans-serif',
     type: 'bar',
     height: 600,
@@ -44,9 +57,9 @@ var options = {
         speed: 350
       }
     }
-
-
-
+  },
+  grid: {
+    show: false
   },
   plotOptions: {
     bar: {
@@ -84,9 +97,11 @@ var options = {
 
   },
   legend: {
+    show: true,
     position: 'top',
     horizontalAlign: 'left',
-    offsetX: 40,
+    offsetX: 14,
+    offsetY: 20,
     onItemClick: {
       toggleDataSeries: false
     },

@@ -8,24 +8,32 @@
 body, html {
     height: 100vh;
     display:block;
-    background-color: #fff9ed;
+    background-color: #fff7f8;
     margin: 0;
 }
 
-a { color: #0DB000; } /* CSS link color (green) */
-a:hover { color: #0DB000; } /* CSS link hover (green) */
+a {
+  color: #10a701;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px dotted #10a701;
+} 
 
 
 
 #header {
-  background-color: #fff9ed;
+  background-color: #fff4ff;
 }
 
 
 h2 {
-    font-size: 20px; 
+    font-size: 2vw; 
     margin-top:40px;
     margin-bottom: 10px;
+    font-family: 'stenciletta-solid';
+    color: #5b1016;
 }
 
 h3 {
@@ -56,7 +64,15 @@ blockquote {
 }
 
 .articleTitle {
-  color: black;
+  color: #5b1016;
+  text-align: center;
+  font-weight: 300;
+  font-family: 'stenciletta-solid';
+  font-style: normal;
+  font-size: 2.5vw;
+  margin: 0px;
+  margin-bottom: 10px;
+  display: inline-block;
 }
 
 .date {
@@ -91,4 +107,57 @@ p {
   margin-left: 20vw; 
   margin-right: 20vw; 
   margin-bottom: 50px; 
+}
+
+::selection {
+  background: #c8f7c5; 
+}
+::-moz-selection {
+  background: #c8f7c5; 
+}
+
+#offset {
+  animation: letter-flicker 2s linear infinite;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  color:#10a701;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 280px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 3px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -140px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 1.2vw;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+  font-size: 1.2vw;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
