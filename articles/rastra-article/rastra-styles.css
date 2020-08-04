@@ -8,24 +8,31 @@
 body, html {
     height: 100vh;
     display:block;
-    background-color: #fff9ed;
+    background-color: #fff4ff;
     margin: 0;
 }
 
-a { color: #0DB000; } /* CSS link color (green) */
-a:hover { color: #0DB000; } /* CSS link hover (green) */
+a {
+  color: #008e71;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px dotted #008e71;
+} 
 
 
 
 #header {
-  background-color: #fff9ed;
+  background-color: #fff4ff;
 }
 
 
 h2 {
-    font-size: 20px; 
+    font-size: 2vw; 
     margin-top:40px;
     margin-bottom: 10px;
+    font-family: 'stenciletta-solid';
 }
 
 h3 {
@@ -56,7 +63,14 @@ blockquote {
 }
 
 .articleTitle {
-  color: black;
+  color: #002d25;
+  text-align: center;
+  font-weight: 300;
+  font-family: 'stenciletta-solid';
+  font-style: normal;
+  font-size: 3vw;
+  margin: 0px;
+  margin-bottom: 10px;
 }
 
 .date {
