@@ -373,13 +373,27 @@ blockquote {
 
 }
 
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted #f4ff8e !important;
-    color:#f4ff8e !important;
+hr {
+    width: 10vw !important;  
+    margin-top: 40px !important; 
+    margin-bottom: 40px !important;
+    /*color: red;*/
+    border: 1px solid grey;
 }
-.tooltip .tooltiptext {
+
+.tooltip-m {
+    position: relative ;
+    display: inline-block;
+    border-bottom: 1px dotted #f4ff8e;
+    color: #f4ff8e; 
+}
+
+.tooltip-m:hover {
+border-bottom: none !important;
+text-decoration: none !important;
+}
+
+.tooltip-m .tooltiptext-m {
     visibility: hidden;
     width: 280px;
     background-color: #555 !important!;
@@ -397,7 +411,7 @@ blockquote {
     font-size: 1.2vw;
 }
 
-.tooltip .tooltiptext::after {
+.tooltip-m .tooltiptext-m::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -409,7 +423,7 @@ blockquote {
     font-size: 1.2vw;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip-m:hover .tooltiptext-m {
     visibility: visible;
     opacity: 1;
 }
