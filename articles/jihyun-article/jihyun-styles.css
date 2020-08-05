@@ -89,11 +89,6 @@ blockquote {
   text-align: center;
 }
 
-*  {
-  text-align: left;
-}
-
-
 p {
   font-family: ministry;
   font-style: normal;
@@ -104,10 +99,11 @@ p {
 }
 
 .content {
-  margin-top:50px; 
+  margin-top:4vw; 
   margin-left: 20vw; 
   margin-right: 20vw; 
-  margin-bottom: 50px; 
+  margin-bottom: 4vw; 
+  position: relative;
 }
 
 ::selection {
@@ -169,11 +165,48 @@ p {
 }
 .tabulator-col {
     font-family: ministry;
+    font-size: 1vw;
     color:white;
 }
 .tabulator-cell {
     font-family: ministry;  
+    font-size: 1vw;
 }
 .tabulator-col-content {
-    background-color: #302eff;
+    background-color: #c51928;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+
+
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .lujain{
+    text-align:center;
+}
+
+.fake_img{
+    /* display:inline-block; */
+    margin: 0;
+    padding: 0;
+}
+
+img:hover { 
+    border: 5px solid #0600ff; 
+  } 
+img {
+    margin: 5px;
 }
