@@ -94,15 +94,14 @@ html {
 
 #screen {
     /*margin: 30px;*/
-    margin-left: 22px;
+    /*margin-left: 22px;*/
     margin-bottom: 30px;
     margin-top: 10px;
     /*margin-left: 22px;*/
-    /*margin-left: 3%;*/
     /*margin-top: 30px;*/
-    /*margin-top: 3%;*/
-    height: calc(70vh - 60px);
-    width: calc(100vw - 60px);
+    height: calc(50vh - 60px);
+    /*width: calc(100vw - 60px);*/
+    width: 100%;
     background: #0a0a0a;
     color: #fff;
     text-shadow: 2px 0 rgba(255, 0, 0, 0.9), -2px 0 rgba(0, 0, 255, 0.9);
@@ -149,8 +148,9 @@ html {
 }
 #content-holder {
     padding: 0;
-    height: calc(70vh - 60px);
-    width: calc(100vw - 60px);
+    height: calc(50vh - 60px);
+    /*width: calc(100vw - 60px);*/
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,7 +169,8 @@ html {
     position: relative;
 }
 .on #content {
-    animation: screen-turn-on .4s linear .5s 1 forwards;
+    /*animation: screen-turn-on .4s linear .5s 1 forwards;*/
+    animation: screen-turn-on .7s linear 0s 1 forwards;*/
 }
 #power {
     bottom: 12px;
@@ -207,11 +208,15 @@ html {
     font-weight: 300;
     font-family: 'stenciletta-solid';
     font-style: normal;
-    margin-top: 75px; 
+    /*margin-top: 75px; */
     margin-bottom: 0px; 
     margin-left: 15px; 
     margin-right: 20px;
     flex-shrink: 1;
+
+           margin-bottom: 10%;
+        height: 80%;
+        margin-top: 10%;
 
 }
 p {
@@ -258,9 +263,12 @@ blockquote {
 }
 .column {
     float: left;
-    width: 50%;
+    /*width: 50%;*/
+    width: 100%;
 }
-.row:after {
+
+
+.row-m:after {
     content: "";
     display: table;
     clear: both;
@@ -298,32 +306,25 @@ blockquote {
     margin-left: 50px;
 }
 
+@media (min-width: 1600px) {
+    #text {
+        font-size: 3.2vw;
+    }
+}
+
 @media (max-width: 999px) {
     #tweet {
         display: none;
     }
 
-    .column {
-        width: 100%;
-        /*margin-left: 10%;*/
-    }
-
     #text {
         margin-bottom: 15%;
     }
-/*    #content-holder {
-    height: calc(60vh - 60px);
-}
-
-#screen {
-    height: calc(60vh - 60px);
-}*/
-
 }
 
 @media (max-width: 998px) {
     #text {
-        font-size: 4.6vw;
+        font-size: 4.2vw;
     }
     .byline {
         font-size: 1.9vw;
@@ -333,10 +334,20 @@ blockquote {
 @media (max-width: 850px) {
     #text {
         font-size: 5.5vw;
+               margin-bottom: 20%;
+        height: 60%;
+        margin-top: 20%;
     }
-    .byline {
-        font-size: 2.2vw;
+
+    #content-holder {
+        height: calc(40vh - 20px);
     }
+
+    #screen {
+        height: calc(40vh - 20px);
+    }
+
+
 }
 
 @media (max-width: 700px) {
@@ -352,30 +363,25 @@ blockquote {
 
 @media (max-width: 540px) {
     #text {
-        font-size: 10vw;
-        /*margin-bottom: 5%;*/ 
+        font-size: 8.8vw;
 
     }
 
 
-    #content-holder {
-    width: calc(100vw - 20px);
-}
+#content-holder {
+        height: calc(35vh - 20px);
+    }
 
-#screen {
-    width: calc(100vw - 20px);
-    margin: 10px;
-}
-
+    #screen {
+        height: calc(35vh - 20px);
+    }
 
 }
 
 @media (max-width: 400px) {
     #text {
-        font-size: 10vw;
-        margin-bottom: 17%;
+        font-size: 8.4vw;
     }
-
 
 }
 

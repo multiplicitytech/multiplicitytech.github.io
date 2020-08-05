@@ -19,6 +19,14 @@
 filter: invert(8%) sepia(100%) saturate(7120%) hue-rotate(250deg) brightness(103%) contrast(141%);
 }
 
+@media (min-width: 1800px) {
+  .col-xl-8 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+}
 
 .navbar-toggler-icon {
 
