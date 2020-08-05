@@ -209,4 +209,5 @@ img:hover {
   } 
 img {
     margin: 5px;
+    border: 5px solid white; 
 }
