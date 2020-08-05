@@ -1,0 +1,168 @@
+
+@import url("https://use.typekit.net/grm6kxy.css");
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100vh;
+    }
+}
+body, html {
+    height: 100vh;
+    display:block;
+    background-color: white;
+    margin: 0;
+}
+
+a {
+  color: #0600ff;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px dotted #0600ff;
+} 
+
+
+
+#header {
+  background-color: white;
+}
+
+
+h2 {
+    font-size: 2vw; 
+    margin-top:40px;
+    margin-bottom: 10px;
+    font-family: 'stenciletta-solid';
+    color: #0600ff;
+}
+
+h3 {
+    color:#bcaa73;
+    font-size: 16px;
+}
+
+
+blockquote {
+  font-family: ministry, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  border-left-style: dashed;
+  border-left-width: 4px;
+  border-left-color: #0DB000;
+  padding: 10px;
+  text-align:justify;
+}
+
+.author {
+  font-weight: 400;
+  color: #0DB000;
+}
+
+.byline {
+  color: black;
+}
+
+.articleTitle {
+  color: #0600ff;
+  text-align: center;
+  font-weight: 300;
+  font-family: 'stenciletta-solid';
+  font-style: normal;
+  font-size: 2.5vw;
+  margin: 0px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.date {
+  color: black
+}
+
+#sublogo {
+  font-weight: 300;
+
+}
+
+#extras {
+  text-align: center;
+}
+
+*  {
+  text-align: left;
+}
+
+
+p {
+  font-family: ministry;
+  font-style: normal;
+  color: black;
+  font-weight: 300;
+  font-size: 1.3vw;
+  text-align:justify;
+}
+
+.content {
+  margin-top:50px; 
+  margin-left: 20vw; 
+  margin-right: 20vw; 
+  margin-bottom: 50px; 
+}
+
+::selection {
+  background: #ffeac5; 
+}
+::-moz-selection {
+  background: #ffeac5; 
+}
+
+#offset {
+  animation: letter-flicker 2s linear infinite;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  color:#0600ff;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 280px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 3px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -140px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 1.2vw;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+  font-size: 1.2vw;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.full {
+    width: 100%; 
+    height: 100%;
+}
