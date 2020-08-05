@@ -306,6 +306,11 @@ blockquote {
     margin-left: 50px;
 }
 
+@media (min-width: 2370px) {
+    #text {
+        font-size: 1.7vw;
+    }
+}
 @media (min-width: 1600px) {
     #text {
         font-size: 3.2vw;

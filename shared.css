@@ -28,6 +28,40 @@ filter: invert(8%) sepia(100%) saturate(7120%) hue-rotate(250deg) brightness(103
 
 }
 
+@media (min-width: 1024px) {
+#page-content p {
+  font-size: 1.12rem !important;
+}
+}
+
+
+@media (min-width: 1366px) {
+#page-content p {
+  font-size: 1.2rem !important;
+}
+}
+
+@media (min-width: 1920px) {
+#page-content p {
+  font-size: 1.4rem !important;
+}
+}
+
+@media (min-width: 2560px) {
+#page-content p {
+  font-size: 1.6rem !important;
+}
+
+    .col-xl-8 {
+  -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  
+}
+
+
+
 .navbar-toggler-icon {
 
  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0,255,206,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
