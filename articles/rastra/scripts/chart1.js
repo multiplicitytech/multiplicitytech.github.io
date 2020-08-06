@@ -74,15 +74,15 @@ var options = {
       show: false
     }
   },
-  title: {
-    text: 'How much do children engage with nature?',
-    align: 'left',
-    floating: true,
-    style: {
-      fontSize: '16px',
-      color:  'black'
-    }  
-  },
+  // title: {
+  //   text: 'How much do children engage with nature?',
+  //   align: 'left',
+  //   floating: true,
+  //   style: {
+  //     fontSize: '16px',
+  //     color:  'black'
+  //   }  
+  // },
   subtitle: {
   },
   tooltip: {
