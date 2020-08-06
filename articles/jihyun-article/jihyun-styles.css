@@ -6,11 +6,12 @@
     }
 }
 body, html {
-    height: 100vh;
-    display:block;
+    height: 100%;
+    width: 100%;
+    /* display:block;
     /* background-color: #01002d; */
     background-color: white;
-    margin: 0;
+    margin: 0; */
 }
 
 a {
@@ -220,7 +221,7 @@ img:hover {
   } 
 img {
     margin: 15px;
-    border: 5px solid black;
+    /* border: 5px solid black; */
     border-radius: 25px; 
     transition: all ease 0.3s;
 }
@@ -276,4 +277,9 @@ svg:hover path {
 @keyframes blinkTextCursor{
   from{border-right-color: black;}
   to{border-right-color: transparent;}
+}
+#map {
+  width: 50%;
+  height: 50%;
+
 }
