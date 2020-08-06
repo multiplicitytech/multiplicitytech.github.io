@@ -19,33 +19,34 @@
 filter: invert(8%) sepia(100%) saturate(7120%) hue-rotate(250deg) brightness(103%) contrast(141%);
 }
 
-@media (min-width: 1800px) {
+
+#page-content p {
+  text-align: left;
+}
+@media (min-width: 1024px) {
+#page-content p {
+  font-size: 1.07rem !important;
+}
+}
+
+@media (min-width: 1200px) {
+#page-content p {
+  font-size: 1.1rem !important;
+}
+}
+
+@media (min-width: 1366px) {
+#page-content p {
+  font-size: 1.2rem !important;
+}
+
   .col-xl-8 {
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
 
-}
 
-
-@media (min-width: 1200px) {
-#page-content p {
-  font-size: 1.07rem !important;
-}
-}
-
-@media (min-width: 1024px) {
-#page-content p {
-  font-size: 1.12rem !important;
-}
-}
-
-
-@media (min-width: 1366px) {
-#page-content p {
-  font-size: 1.2rem !important;
-}
 }
 
 @media (min-width: 1920px) {
@@ -66,6 +67,7 @@ filter: invert(8%) sepia(100%) saturate(7120%) hue-rotate(250deg) brightness(103
   }
 
 }
+
 
 
 

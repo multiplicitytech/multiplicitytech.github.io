@@ -33,7 +33,7 @@ var options = {
     offsetX: '0px',
     fontFamily: 'ministry, sans-serif',
     type: 'bar',
-    height: 600,
+    height: 450,
     stacked: true,
     toolbar: {
       show: false

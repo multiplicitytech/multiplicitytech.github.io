@@ -5,7 +5,11 @@ body, html {
     height: 100vh;
     display:block;
     background-color: #fdffec;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    width: 100%;
+
 }
 ::selection {
     background: #ffb7b7; 
@@ -16,6 +20,11 @@ body, html {
 .column {
     float: left;
     width: 50%;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
 }
 
 
@@ -49,7 +58,7 @@ body, html {
 .ticker-wrap {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     height: 4rem;
     background-color:#a5997f;
@@ -79,7 +88,7 @@ body, html {
     font-size: 2rem;
     color:black;
     /*font-size: 1.6vw;*/
-    font-size: 1.025rem;
+    font-size: 1.25rem;
     font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     
 }
@@ -115,7 +124,9 @@ h2 {
 }
 
 h3 {
-    font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    /*font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: 'ministry';
+    font-weight: 400;
     color: #ff2238; 
     /*font-size:3vw;*/
     font-size: 2rem;
@@ -198,44 +209,6 @@ a:hover {
 }
 
 
-@media (min-width: 1200px) {
-.paper-text {
-  font-size: 1.15rem !important;
-}
-
-h1 {
-    font-size: 4.5rem;
-}
-}
-
-
-@media (min-width: 1366px) {
-.paper-text {
-  font-size: 1.23rem !important;
-}
-
-h1 {
-    font-size: 5rem;
-}
-
-}
-
-@media (min-width: 1920px) {
-.paper-text {
-  
-}
-}
-
-@media (min-width: 2560px) {
-.paper-text {
-  font-size: 1.9rem !importfont-size: 1.7rem !important;ant;
-}
-
-h1 {
-    font-size: 5.5rem;
-}
-}
-
 .tooltip-m {
     position: relative;
     display: inline-block;
@@ -313,18 +286,18 @@ to {
 }
 
 .left {
-    margin-left: 120px; 
-    margin-right: 20px;
+    margin-left: 125px; 
+    margin-right: 15px;
 }
 
 .right {
-    margin-right: 120px; 
-    margin-left: 20px;
+    margin-right: 125px; 
+    margin-left: 15px;
 }
 
 .subtitle {
-    margin-left: 120px; 
-    margin-right: 120px;
+    margin-left: 125px; 
+    margin-right: 125px;
 }
 
 @media screen and (max-width: 800px) {
@@ -340,25 +313,37 @@ to {
         margin-right: 60px;
     }
 
+    .ticker_item {
+        font-size: 1.125rem;
+    }
+
 }
+
+
 @media screen and (max-width: 600px) {
     .column {
-      width: 100%;
+      width: 95%;
+      margin-left: 2.5%;
+      margin-right: 2.5%;
     }
 
     .left {
         margin-left: 20px;
+        margin-top: 0%;
     }
 
-    .right {margin-right: 20px;}
+    .right {
+        margin-right: 20px;
+        margin-top: 0%;
+    }
 
     .subtitle {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
     }
 
     h1 {
-        font-size: 3.5rem;
+        font-size: 2.8rem;
     }
 
     h3 {
@@ -367,4 +352,55 @@ to {
     #p12 {
         font-size: 1.5rem;
     }
+.ticker_item {
+    font-size: 1.025rem;
+}
+}
+
+
+
+
+@media (min-width: 1200px) {
+.paper-text {
+  font-size: 1.15rem !important;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+}
+
+
+@media (min-width: 1366px) {
+.paper-text {
+  font-size: 1.23rem !important;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+}
+
+@media (min-width: 1920px) {
+.paper-text {
+  
+}
+.ticker_item {
+    font-size: 1.29rem;
+}
+}
+
+@media (min-width: 2560px) {
+.paper-text {
+  font-size: 1.9rem !importfont-size: 1.7rem !important;ant;
+}
+
+h1 {
+    font-size: 5.5rem;
+}
+
+.ticker_item {
+    font-size: 1.325rem;
+}
 }
