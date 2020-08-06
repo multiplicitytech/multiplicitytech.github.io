@@ -97,7 +97,15 @@ p {
   font-size: 1.3vw;
   text-align:justify;
 }
-
+span {
+    font-family: ministry;
+    font-style: normal;
+    color: black;
+    font-weight: 300;
+    font-size: 1.3vw;
+    text-align:justify;
+  }
+  
 .content {
   margin-top:4vw; 
   margin-left: 20vw; 
@@ -199,15 +207,61 @@ p {
 }
 
 .fake_img{
-    /* display:inline-block; */
+    display:inline-block;
     margin: 0;
-    padding: 0;
+    padding: 1vw;
 }
 
 img:hover { 
     border: 5px solid #0600ff; 
+    transition: all ease 0.5s;
+    cursor: pointer;
   } 
 img {
     margin: 5px;
     border: 5px solid white; 
+    transition: all ease 0.3s;
+}
+
+.map {
+    margin: 0px;
+    border: 5px solid white; 
+}
+
+svg:hover path {
+    fill: #c51928;
+    transition: all ease 0.3s;
+    cursor: pointer;
+  }
+  
+  svg path {
+    transition: all ease 0.3s;
+  }
+
+  .line-1{
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #0600ff;
+    font-weight: 300;
+    font-family: 'stenciletta-solid';
+    font-style: normal;
+    font-size: 3vw;
+}
+
+#cont {
+    display: flex;
+  }
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: black;}
+  to{border-right-color: transparent;}
 }
