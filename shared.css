@@ -38,23 +38,23 @@ filter: invert(33%) sepia(92%) saturate(3455%) hue-rotate(336deg) brightness(96%
 
 
 
-#page-content p {
+#page-content p, .mt-body p {
   text-align: left;
 }
 @media (min-width: 1024px) {
-#page-content p {
+#page-content p, .mt-body p {
   font-size: 1.07rem !important;
 }
 }
 
 @media (min-width: 1200px) {
-#page-content p {
+#page-content p, .mt-body p {
   font-size: 1.1rem !important;
 }
 }
 
 @media (min-width: 1366px) {
-#page-content p {
+#page-content p, .mt-body p {
   font-size: 1.2rem !important;
 }
 
@@ -68,13 +68,13 @@ filter: invert(33%) sepia(92%) saturate(3455%) hue-rotate(336deg) brightness(96%
 }
 
 @media (min-width: 1920px) {
-#page-content p {
+#page-content p, .mt-body p {
   font-size: 1.4rem !important;
 }
 }
 
 @media (min-width: 2560px) {
-#page-content p {
+#page-content p, .mt-body p {
   font-size: 1.6rem !important;
 }
 
