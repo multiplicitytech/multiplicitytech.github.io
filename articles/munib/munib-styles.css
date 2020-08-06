@@ -120,7 +120,8 @@ h4 {
 
 .leaflet-tooltip{
   width: 300px;
-  font-size: 1vw;
+  /*font-size: 1vw;*/
+  font-size: 1rem;
   white-space: normal;
   font-family: ministry;
   font-style: normal;
