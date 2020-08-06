@@ -20,6 +20,16 @@ filter: invert(8%) sepia(100%) saturate(7120%) hue-rotate(250deg) brightness(103
 }
 
 
+.white-green-filter {
+filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(102deg) brightness(101%) contrast(101%);
+}
+
+.white-green-filter:hover {
+  filter: invert(39%) sepia(94%) saturate(685%) hue-rotate(127deg) brightness(84%) contrast(101%);
+}
+
+
+
 #page-content p {
   text-align: left;
 }
@@ -133,6 +143,11 @@ color: #00FFCE;
 @media screen and (max-width: 390px) {
   .navbar-brand {
     font-size: 1.6rem;
+    text-align: left;
+  }
+
+  .navbar {
+    padding: 7px;
   }
 }
 
@@ -166,8 +181,9 @@ padding: .8rem 1rem !important;
 	font-weight: 700;
 	flex-shrink: 2;
 	/*color: #0600FF;*/
-  color: #00FFCE !important;
+  color: #00FFCE;
 }
+
 
 .navbar-brand:hover {
 color: white!important;
@@ -203,4 +219,5 @@ border-bottom: none !important;
 	margin-left: 2rem;
 	margin-right: 2rem;
 }
+
 

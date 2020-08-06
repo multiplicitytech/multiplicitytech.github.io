@@ -2,6 +2,7 @@ body, html {
     height: 100vh;
     background-color: #fff;
     margin: 0px;
+    overflow-x: hidden;
 }
 
 .navbar-toggler-icon {
@@ -67,13 +68,20 @@ blockquote {
 }
 .info h4 {
   display: block;
-  font-size: 1.5vw;
+  font-size: 1rem;
   font-weight: bold;
   font-family: 'stenciletta-solid';
   margin: 0 0 5px;
   color: black;
 }
 
+@media (min-width: 1200px) {
+  .info h4 {font-size: 1.125rem;}
+
+  .leaflet-right .leaflet-control{
+    margin-right: 0px !important;
+  }
+}
 h4 {
   font-size: 1.8vw;
   font-weight: bold;
@@ -125,13 +133,13 @@ h2 {
 }
 
 
-a {
+#page-content a {
     color: #008e71 !important;
     text-decoration: none !important;
     z-index: 1000;
 }
 
-a:hover {
+#page-content a:hover {
     color: #008e71 !important;
     border-bottom: 1px dotted #008e71;
 }
@@ -141,7 +149,7 @@ p {
   font-style: normal;
   color: black;
   font-weight: 300;
-  font-size: 1.3vw;
+  /*font-size: 1.3vw;*/
   text-align:justify;
 }
 
@@ -150,4 +158,20 @@ p {
 }
 ::-moz-selection {
   background: #c5fff3; 
+}
+
+.navbar-brand {
+   color: #002d25 !important;
+}
+
+.navbar-brand:hover {
+  color: #008e71 !important;
+}
+
+.nav-link:hover {
+  color: #008e71 !important;
+}
+
+.leaflet-control {
+  margin-bottom: 20px;
 }

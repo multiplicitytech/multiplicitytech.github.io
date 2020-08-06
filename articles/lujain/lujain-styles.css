@@ -93,7 +93,8 @@ body, html {
     
 }
 h1 {
-    font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+    /*font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  */
+    font-family: 'stenciletta-solid';
     color: #ff2238; 
     /*font-size: 6vw;*/
     font-size: 4rem;
@@ -125,7 +126,7 @@ h2 {
 
 h3 {
     /*font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-    font-family: 'ministry';
+    font-family: 'stenciletta-solid';
     font-weight: 400;
     color: #ff2238; 
     /*font-size:3vw;*/
@@ -150,8 +151,10 @@ blockquote {
     border-left-style: dashed;
     border-left-width: 4px;
     border-left-color: #ff2238;
-    padding: 15px;
+    padding: 15px !important;
     text-align:justify;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
 a {
@@ -265,7 +268,8 @@ white-space: nowrap;
 margin: 0 auto;
 letter-spacing: 2px;
 animation: typing 3s steps(30, end);
-font-family: ministry, sans-serif;
+/*font-family: ministry, sans-serif;*/
+font-family: 'stenciletta-solid', sans-serif;
 font-style: normal;
 font-weight: 300;
 /*font-size: 2.5vw;*/

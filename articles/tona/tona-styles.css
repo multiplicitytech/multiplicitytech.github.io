@@ -87,9 +87,11 @@ body {
     height: 100%;
     margin: 0;
     background-color:#181818;
+    overflow-x: hidden;
 }
 html {
   height: 100%;
+  overflow-x: hidden;
 }
 
 #screen {
@@ -253,6 +255,8 @@ blockquote {
     font-size: 100%;
     font-weight: 100;
     text-align: left !important;
+    margin-left: 2.5rem  !important;
+    margin-right: 2.5rem !important;
 }
 
 ::selection {
@@ -448,3 +452,4 @@ text-decoration: none !important;
     visibility: visible;
     opacity: 1;
 }
+
