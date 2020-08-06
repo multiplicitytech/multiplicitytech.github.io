@@ -77,13 +77,26 @@ blockquote {
 
 @media (min-width: 1200px) {
   .info h4 {font-size: 1.125rem;}
+}
 
-  .leaflet-right .leaflet-control{
-    margin-right: 0px !important;
+@media (max-width: 450px) {
+    .leaflet-right .leaflet-control{
+/*    margin-right: 10px;
+    margin-left: 10px !important;*/
+    width: 35%;
+  }
+
+  .leaflet-touch .leaflet-control-attribution {
+    width: 100%;
+  }
+
+  .leaflet-left .leaflet-control  {
+    margin-bottom: 45px !important;
   }
 }
+
 h4 {
-  font-size: 1.8vw;
+  /*font-size: 1.8vw;*/
   font-weight: bold;
   color: black;
   font-family: 'stenciletta-solid';
