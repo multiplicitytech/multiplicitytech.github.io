@@ -1,5 +1,3 @@
-
-
 var options = {
   series: [{
     name: undefined,
@@ -36,7 +34,7 @@ var options = {
       colors: ['black']
     },
     formatter: function (val, opt) {
-      return opt.w.globals.labels[opt.dataPointIndex] + ":  " + val + "%"
+      return opt.w.globals.labels[opt.dataPointIndex]
     },
     offsetX: 0,
     dropShadow: {
@@ -89,12 +87,17 @@ var options = {
   },
   tooltip: {
     shared: true,
-    enabled: false,
+    enabled: true,
     x: {
       show: false    
     },
     y: {
-      formatter: (value) => { return value + "%" },
+      show: true,
+      formatter: (value, opt) => {return opt.w.globals.stackedSeriesTotals[opt.dataPointIndex] + "%"},
+
+      title: {
+        formatter: (value, opt) => {return ""},
+      }
     },
     marker: {
       show: true,
@@ -122,3 +125,5 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#chart1"), options);
 chart.render();
+
+
