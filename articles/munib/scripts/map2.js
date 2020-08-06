@@ -6,6 +6,8 @@ var layerSelect = '';
 
 const map2 = L.map('map2').setView([54, 13], 4); //europe
 
+map2.scrollWheelZoom.disable();
+
 
 const attribution2 = '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>, Data: <a href="https://ec.europa.eu/commfrontoffice/publicopinion/archives/ebs/ebs_431_en.pdf">European Commission</a>';
 

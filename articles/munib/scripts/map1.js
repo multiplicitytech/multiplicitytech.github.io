@@ -6,6 +6,8 @@ var geojson1;
 
 const map1 = L.map('map1').setView([54, 13], 4); //europe
 
+map1.scrollWheelZoom.disable();
+
 const attribution1 = '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>, Data: <a href="https://ec.europa.eu/commfrontoffice/publicopinion/archives/ebs/ebs_431_en.pdf">European Commission</a>';
 
 const tiles1 = L.tileLayer(tileURL, {

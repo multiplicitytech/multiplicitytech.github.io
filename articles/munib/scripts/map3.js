@@ -15,6 +15,8 @@ var countryQuotes = {
 
 const map3 = L.map('map3').setView([49, 27], 5); //europe
 
+map3.scrollWheelZoom.disable();
+
 const attribution3 = '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
 
 const tiles3 = L.tileLayer(tileURL, {
