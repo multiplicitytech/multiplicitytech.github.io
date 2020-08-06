@@ -274,13 +274,13 @@ blockquote {
     clear: both;
 }  
 #page-content a {
-    color: #f4ff8e !important;
-    text-decoration: none !important;
+    color: #f4ff8e;
+    text-decoration: none;
     z-index: 1000;
 }
 
 #page-content a:hover {
-    color: #f4ff8e !important;
+    color: #f4ff8e;
     border-bottom: 1px dotted #f9ffc5;
 }
  .writer{
@@ -410,7 +410,7 @@ hr {
 }
 
 .tooltip-m:hover {
-border-bottom: none !important;
+/*border-bottom: 1px dotted #f4ff8e;*/
 text-decoration: none !important;
 }
 

@@ -1,10 +1,6 @@
 
 @import url("https://use.typekit.net/grm6kxy.css");
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100vh;
-    }
-}
+
 body, html {
     height: 100vh;
     display:block;
@@ -21,6 +17,8 @@ body, html {
     float: left;
     width: 50%;
 }
+
+
 .row:after {
     content: "";
     display: table;
@@ -80,14 +78,16 @@ body, html {
     padding: 0 2rem;
     font-size: 2rem;
     color:black;
-    font-size: 1.6vw;
+    /*font-size: 1.6vw;*/
+    font-size: 1.025rem;
     font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     
 }
 h1 {
     font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
     color: #ff2238; 
-    font-size: 6vw;
+    /*font-size: 6vw;*/
+    font-size: 4rem;
     margin-top: 100px;
     margin-bottom:0px;
 }
@@ -117,15 +117,17 @@ h2 {
 h3 {
     font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     color: #ff2238; 
-    font-size:3vw;
+    /*font-size:3vw;*/
+    font-size: 2rem;
     font-style: normal;
+    text-align: left;
 }
 
 p {
     font-family: ministry, sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 1.3vw;
+    /*font-size: 1.3vw;*/
     text-align:justify;
 }
 
@@ -133,7 +135,7 @@ blockquote {
     font-family: ministry, sans-serif;
     font-style: italic;
     font-weight: 300;
-    font-size: 1.3vw;
+    /*font-size: 1.3vw;*/
     border-left-style: dashed;
     border-left-width: 4px;
     border-left-color: #ff2238;
@@ -142,13 +144,14 @@ blockquote {
 }
 
 a {
-    color:#3a3ffb;
-    text-decoration: none;
+    color:#3a3ffb !important;
+    text-decoration: none !important;
 
 }
 
 a:hover {
-    border-bottom: 1px dotted #3a3ffb;
+    border-bottom: 1px dotted #3a3ffb !important;
+    text-decoration: none !important;
 }
 
 .paper {
@@ -189,16 +192,57 @@ a:hover {
 }
 
 .paper-text { 
-    font-size: 1.7vw;
+    /*font-size: 1.7vw;*/
+    font-size: 1.1rem;
     font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
-.tooltip {
+
+
+@media (min-width: 1200px) {
+.paper-text {
+  font-size: 1.15rem !important;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+}
+
+
+@media (min-width: 1366px) {
+.paper-text {
+  font-size: 1.23rem !important;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+}
+
+@media (min-width: 1920px) {
+.paper-text {
+  
+}
+}
+
+@media (min-width: 2560px) {
+.paper-text {
+  font-size: 1.9rem !importfont-size: 1.7rem !important;ant;
+}
+
+h1 {
+    font-size: 5.5rem;
+}
+}
+
+.tooltip-m {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
     color:#3a3ffb;
 }
-.tooltip .tooltiptext {
+.tooltip-m .tooltiptext-m {
     visibility: hidden;
     width: 280px;
     background-color: #555;
@@ -216,7 +260,7 @@ a:hover {
     font-size: 1.2vw;
 }
 
-.tooltip .tooltiptext::after {
+.tooltip-m .tooltiptext-m::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -228,7 +272,7 @@ a:hover {
     font-size: 1.2vw;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip-m:hover .tooltiptext-m {
     visibility: visible;
     opacity: 1;
 }
@@ -251,7 +295,8 @@ animation: typing 3s steps(30, end);
 font-family: ministry, sans-serif;
 font-style: normal;
 font-weight: 300;
-font-size: 2.5vw;
+/*font-size: 2.5vw;*/
+font-size: 2rem;
 }
 
 #p12 {
@@ -280,4 +325,46 @@ to {
 .subtitle {
     margin-left: 120px; 
     margin-right: 120px;
+}
+
+@media screen and (max-width: 800px) {
+    .left {
+        margin-left: 60px;
+    }
+    .right {
+        margin-right: 60px;
+    }
+
+    .subtitle {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+
+    .left {
+        margin-left: 20px;
+    }
+
+    .right {margin-right: 20px;}
+
+    .subtitle {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+    #p12 {
+        font-size: 1.5rem;
+    }
 }
