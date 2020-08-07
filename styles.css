@@ -142,9 +142,12 @@ body{
 p, a {
 	font-size: 100%;
 	font-family: 'ministry', sans-serif;
-	font-weight: 300;
+	/*font-weight: 300;*/
 }
 
+p {
+  font-weight: 300;
+}
 
 
 
