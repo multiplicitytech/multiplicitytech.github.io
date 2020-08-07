@@ -147,7 +147,7 @@ color: #00FFCE;
 
 
 .nav-link:hover {
-  color:  white !important;
+  color:  white;
   border-bottom: none !important;
 }
 
@@ -228,7 +228,7 @@ padding: .8rem 1rem !important;
 
 
 .navbar-brand:hover {
-color: white!important;
+color: white;
 border-bottom: none !important;
 }
 
