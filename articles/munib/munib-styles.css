@@ -32,16 +32,21 @@ blockquote {
   color:#7cfcda;
 }
 
-.article-title h1{
+.page-content .article-title h1{
   color: #002d25;
   /*text-align: center;*/
-  text-align: left;
+  text-align: left !important;
   font-weight: 300;
   font-family: 'stenciletta-solid';
   font-style: normal;
   font-size: 2rem;
   margin: 0px;
   margin-bottom: 10px;
+
+}
+
+.text-center h1 {
+  text-align: left !important;
 }
 
 @media (max-width: 450px) {

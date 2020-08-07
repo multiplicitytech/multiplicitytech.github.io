@@ -19,6 +19,16 @@ body{
   color: white !important;
 }
 
+#tona-card .card-link .card-title:hover ~ .card-img .image1 {
+  display: none;
+}
+
+#tona-card .card-title:hover ~ #tona-card .image1 {
+  color: black;
+  background: black;
+  display: none;
+}
+
 /*more than 1 card per row*/
 @media screen and (min-width: 751px) {
   .article-card {
@@ -53,6 +63,10 @@ body{
     #grace-card .card-title {
       margin-right: 20%; margin-left: 5%; margin-bottom: 0%; height: auto;
     }
+
+     #origin-card .card-title {
+      margin-right: 0%; margin-top: 80%; margin-left: 35%;
+
 }
 
 
@@ -91,6 +105,10 @@ body{
 
     #grace-card .card-title {
       margin-right: 20%; margin-left: 5%; margin-bottom: 0%; height: auto;
+    }
+
+ #origin-card .card-title {
+      margin-right: 0%; margin-bottom: 0%; margin-left: 35%;
     }
 
 }
@@ -138,6 +156,15 @@ body{
       /*background: #FFA200*/
          }
 
+        #origin-card .card-title {
+          background: white;
+        }
+
+        #origin-card .card-title h2 {
+          color: #02012F;
+        }
+
+
 
 p, a {
 	font-size: 100%;
@@ -177,7 +204,7 @@ body {
 	font-family: 'stenciletta-solid';
 	font-weight: 700;
 	/*color: #010033;*/
-  color: white;
+  /*color: white;*/
 }
 
 .byline {
