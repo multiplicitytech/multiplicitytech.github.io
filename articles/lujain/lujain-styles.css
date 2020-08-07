@@ -150,24 +150,25 @@ h3 {
     font-size: 1rem;
 }
 
+
 @media (min-width: 1024px) {
-#lujain-article p, {
+#lujain-article p {
   font-size: 1.07rem !important;
 }
 }
 @media (min-width: 1200px) {
-#lujain-article p, {
+#lujain-article p {
   font-size: 1.1rem !important;
 }
 }
 @media (min-width: 1366px) {
-#lujain-article p, {
+#lujain-article p {
   font-size: 1.2rem !important;
 }
 
 }
 @media (min-width: 1920px) {
-#lujain-article p, {
+#lujain-article p {
   font-size: 1.4rem !important;
 }
 }
@@ -243,7 +244,7 @@ blockquote {
 
 .paper-text { 
     /*font-size: 1.7vw;*/
-    font-size: 1.1rem;
+    /*font-size: 1.1rem !important;*/
     font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
 
@@ -364,7 +365,7 @@ to {
     }
 
     .paper-text {
-        font-size: 1rem;
+        font-size: 1rem !important;
     }
 }
 
@@ -410,8 +411,8 @@ to {
 
 
 @media (min-width: 1200px) {
-.paper-text p{
-  font-size: 1.25rem !important;
+.paper-text {
+  font-size: 1.1rem !important;
 }
 
 h1 {
@@ -422,7 +423,7 @@ h1 {
 
 @media (min-width: 1366px) {
 .paper-text {
-  font-size: 1.35rem !important;
+  font-size: 1.2rem !important;
 }
 
 h1 {
@@ -433,6 +434,7 @@ h1 {
 
 @media (min-width: 1920px) {
 .paper-text {
+    font-size: 1.27rem !important;
   
 }
 .ticker_item {
@@ -442,7 +444,7 @@ h1 {
 
 @media (min-width: 2560px) {
 .paper-text {
-  font-size: 1.7rem !important;;
+  font-size: 1.3rem !important;;
 }
 
 h1 {
