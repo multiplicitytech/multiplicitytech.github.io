@@ -147,6 +147,35 @@ h3 {
     font-weight: 300;
     /*font-size: 1.3vw;*/
     text-align:justify;
+    font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+#lujain-article p, {
+  font-size: 1.07rem !important;
+}
+}
+@media (min-width: 1200px) {
+#lujain-article p, {
+  font-size: 1.1rem !important;
+}
+}
+@media (min-width: 1366px) {
+#lujain-article p, {
+  font-size: 1.2rem !important;
+}
+
+}
+@media (min-width: 1920px) {
+#lujain-article p, {
+  font-size: 1.4rem !important;
+}
+}
+@media (min-width: 2560px) {
+#lujain-article p {
+  font-size: 1.5rem !important;
+}
+
 }
 
 blockquote {
@@ -334,6 +363,9 @@ to {
         font-size: 1.125rem;
     }
 
+    .paper-text {
+        font-size: 1rem;
+    }
 }
 
 
@@ -378,8 +410,8 @@ to {
 
 
 @media (min-width: 1200px) {
-.paper-text {
-  font-size: 1.15rem !important;
+.paper-text p{
+  font-size: 1.25rem !important;
 }
 
 h1 {
@@ -390,7 +422,7 @@ h1 {
 
 @media (min-width: 1366px) {
 .paper-text {
-  font-size: 1.23rem !important;
+  font-size: 1.35rem !important;
 }
 
 h1 {
@@ -404,13 +436,13 @@ h1 {
   
 }
 .ticker_item {
-    font-size: 1.29rem;
+    font-size: 1.4rem;
 }
 }
 
 @media (min-width: 2560px) {
 .paper-text {
-  font-size: 1.9rem !importfont-size: 1.7rem !important;ant;
+  font-size: 1.7rem !important;;
 }
 
 h1 {
