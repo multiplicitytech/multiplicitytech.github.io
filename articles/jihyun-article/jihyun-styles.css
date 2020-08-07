@@ -98,6 +98,7 @@ p {
   font-size: 1.3vw;
   text-align:justify;
 }
+
 span {
     font-family: ministry;
     font-style: normal;
@@ -203,7 +204,7 @@ span {
   }
 
 
-  .lujain{
+.lujain{
     text-align:center;
 }
 
@@ -214,28 +215,17 @@ span {
 }
 
 img:hover { 
-    border: 5px solid #0600ff; 
-    border-radius: 25px;
-    transition: all ease 0.5s;
     cursor: pointer;
   } 
 img {
-    margin: 15px;
-    /* border: 5px solid black; */
-    border-radius: 25px; 
-    transition: all ease 0.3s;
+  margin: 15px;
 }
 
-.world img:hover {
-    border: none; 
-    cursor: auto;
-}
-.world img {
-    /* margin: 5px; */
-    border: none; 
-    transition: all ease 0.3s;
-}
 
+#one img:hover {
+  border: 5px solid #0600ff; 
+  transition: all ease 0.3s;
+}
 .map {
     margin: 0px;
     border: 5px solid white; 
@@ -265,21 +255,19 @@ svg:hover path {
 #cont {
     display: flex;
   }
-/* Animation */
-.anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: black;}
-  to{border-right-color: transparent;}
-}
+
 #map {
   width: 50%;
   height: 50%;
+
+}
+
+.maptiptext { 
+  font-family: ministry;
+  font-style: normal;
+  color: black;
+  font-weight: 300;
+  font-size: 0.8vw;
+  text-align: center;
 
 }
