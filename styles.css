@@ -142,9 +142,12 @@ body{
 p, a {
 	font-size: 100%;
 	font-family: 'ministry', sans-serif;
-	font-weight: 300;
+	/*font-weight: 300;*/
 }
 
+p {
+  font-weight: 300;
+}
 
 
 
@@ -184,7 +187,7 @@ body {
 }
 
 .author {
-	font-weight: 500;
+	/*font-weight: 500;*/
 	/*color: #0500CC;*/
   color: #00FFCE;
 }
@@ -246,6 +249,19 @@ body {
   /*height: auto;*/
   z-index: 0;
 }
+
+@media (min-width: 1450px) {
+  .container {
+    max-width: 1250px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
 
 .article-card .image1 {
   /*box-shadow: -10px 10px 0px rgba(1,0,61,1);*/
@@ -549,3 +565,32 @@ body {
     margin-left: 5%; 
 }
 }
+
+
+.card-title p {
+  font-size: .925rem;
+}
+
+
+@media (min-width: 1366px) {
+.card-title  p {
+  font-size: 1rem !important;
+}
+
+
+}
+
+@media (min-width: 1920px) {
+.card-title  p {
+  font-size: 1.025rem !important;
+}
+}
+
+@media (min-width: 2560px) {
+.card-title  p {
+  font-size: 1.05rem !important;
+}
+
+}
+
+

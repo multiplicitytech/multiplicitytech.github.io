@@ -1,11 +1,17 @@
 
 @import url("https://use.typekit.net/grm6kxy.css");
 
-body, html {
+/*html*/
+
+body{
     height: 100vh;
     display:block;
     background-color: #fdffec;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    width: 100%;
+
 }
 ::selection {
     background: #ffb7b7; 
@@ -16,6 +22,11 @@ body, html {
 .column {
     float: left;
     width: 50%;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
 }
 
 
@@ -48,13 +59,15 @@ body, html {
 }
 .ticker-wrap {
     position: fixed;
+    /*margin-top: 2%;*/
     top: 0;
-    width: 100%;
-    overflow: hidden;
+    width: 100vw;
+    overflow: hidden;den;
     height: 4rem;
     background-color:#a5997f;
     padding-left: 100%;
     z-index: 20;
+    /*margin-top: 30vh;*/
 }
 
 .ticker {
@@ -79,16 +92,17 @@ body, html {
     font-size: 2rem;
     color:black;
     /*font-size: 1.6vw;*/
-    font-size: 1.025rem;
+    font-size: 1.25rem;
     font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     
 }
 h1 {
-    font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+    /*font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  */
+    font-family: 'stenciletta-solid';
     color: #ff2238; 
     /*font-size: 6vw;*/
     font-size: 4rem;
-    margin-top: 100px;
+    margin-top: 10px;
     margin-bottom:0px;
 }
 @keyframes shake {
@@ -115,7 +129,9 @@ h2 {
 }
 
 h3 {
-    font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    /*font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: 'stenciletta-solid';
+    font-weight: 400;
     color: #ff2238; 
     /*font-size:3vw;*/
     font-size: 2rem;
@@ -139,17 +155,19 @@ blockquote {
     border-left-style: dashed;
     border-left-width: 4px;
     border-left-color: #ff2238;
-    padding: 15px;
+    padding: 15px !important;
     text-align:justify;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
-a {
+#lujain-article a {
     color:#3a3ffb !important;
     text-decoration: none !important;
 
 }
 
-a:hover {
+#lujain-article a:hover {
     border-bottom: 1px dotted #3a3ffb !important;
     text-decoration: none !important;
 }
@@ -198,6 +216,160 @@ a:hover {
 }
 
 
+.tooltip-m {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    color:#3a3ffb;
+}
+.tooltip-m .tooltiptext-m {
+    visibility: hidden;
+    width: 280px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 3px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -140px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    /*font-size: 1.2vw;*/
+    font-size: .9rem;
+}
+
+.tooltip-m .tooltiptext-m::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    /*font-size: 1.2vw;*/
+    font-size: .9rem;
+}
+
+.tooltip-m:hover .tooltiptext-m {
+    visibility: visible;
+    opacity: 1;
+}
+
+#cont {
+    display: flex;
+  }
+  
+#center {
+margin: auto;
+}
+
+#p12 {
+display: flex;
+overflow: hidden;
+white-space: nowrap;
+margin: 0 auto;
+letter-spacing: 2px;
+animation: typing 3s steps(30, end);
+/*font-family: ministry, sans-serif;*/
+font-family: 'stenciletta-solid', sans-serif;
+font-style: normal;
+font-weight: 300;
+/*font-size: 2.5vw;*/
+font-size: 2rem;
+}
+
+#p12 {
+display: inline-flex;
+}
+
+@keyframes typing {
+from {
+    width: 0
+}
+to {
+    width: 100%
+}
+}
+
+.left {
+    margin-left: 125px; 
+    margin-right: 15px;
+}
+
+.right {
+    margin-right: 125px; 
+    margin-left: 15px;
+}
+
+.subtitle {
+    margin-left: 125px; 
+    margin-right: 125px;
+}
+
+@media screen and (max-width: 800px) {
+    .left {
+        margin-left: 60px;
+    }
+    .right {
+        margin-right: 60px;
+    }
+
+    .subtitle {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .ticker_item {
+        font-size: 1.125rem;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+/*      margin-left: 2.5%;
+      margin-right: 2.5%;*/
+    }
+
+    #lujain-article p {
+        text-align: left;
+    }
+
+    .left, .right {
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: 0%;
+    }
+
+    .subtitle {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+    #p12 {
+        font-size: 1.5rem;
+    }
+.ticker_item {
+    font-size: 1.025rem;
+}
+}
+
+
+
+
 @media (min-width: 1200px) {
 .paper-text {
   font-size: 1.15rem !important;
@@ -224,6 +396,9 @@ h1 {
 .paper-text {
   
 }
+.ticker_item {
+    font-size: 1.29rem;
+}
 }
 
 @media (min-width: 2560px) {
@@ -234,137 +409,48 @@ h1 {
 h1 {
     font-size: 5.5rem;
 }
-}
 
-.tooltip-m {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-    color:#3a3ffb;
-}
-.tooltip-m .tooltiptext-m {
-    visibility: hidden;
-    width: 280px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 3px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -140px;
-    opacity: 0;
-    transition: opacity 0.3s;
-    font-size: 1.2vw;
-}
-
-.tooltip-m .tooltiptext-m::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-    font-size: 1.2vw;
-}
-
-.tooltip-m:hover .tooltiptext-m {
-    visibility: visible;
-    opacity: 1;
-}
-
-#cont {
-    display: flex;
-  }
-  
-#center {
-margin: auto;
-}
-
-#p12 {
-display: flex;
-overflow: hidden;
-white-space: nowrap;
-margin: 0 auto;
-letter-spacing: 2px;
-animation: typing 3s steps(30, end);
-font-family: ministry, sans-serif;
-font-style: normal;
-font-weight: 300;
-/*font-size: 2.5vw;*/
-font-size: 2rem;
-}
-
-#p12 {
-display: inline-flex;
-}
-
-@keyframes typing {
-from {
-    width: 0
-}
-to {
-    width: 100%
+.ticker_item {
+    font-size: 1.325rem;
 }
 }
 
-.left {
-    margin-left: 120px; 
-    margin-right: 20px;
+.navbar {
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 100vw !important;
+    padding-top: 1%;
+    margin-top: 0px !important;
+    background-color: #fdffec;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
 }
 
-.right {
-    margin-right: 120px; 
-    margin-left: 20px;
+@media (max-width: 570px)  {
+    .navbar {
+    padding-top: 1%;
+    padding-bottom: 4.5%;
 }
 
-.subtitle {
-    margin-left: 120px; 
-    margin-right: 120px;
+h1 {margin-top: 0px;}
 }
 
-@media screen and (max-width: 800px) {
-    .left {
-        margin-left: 60px;
-    }
-    .right {
-        margin-right: 60px;
-    }
 
-    .subtitle {
-        margin-left: 60px;
-        margin-right: 60px;
-    }
+.navbar-toggler-icon {
+ background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;}
 
+.navbar-brand {
+    color: black;
 }
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
 
-    .left {
-        margin-left: 20px;
-    }
+.navbar-brand:hover {
+ color:#ff2238 !important;
+}
 
-    .right {margin-right: 20px;}
-
-    .subtitle {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    h1 {
-        font-size: 3.5rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-    #p12 {
-        font-size: 1.5rem;
-    }
+hr {
+    width: 10vw !important;  
+    margin-top: 40px !important; 
+    margin-bottom: 40px !important;
+    /*color: red;*/
+    border: 1px solid grey !important;
 }

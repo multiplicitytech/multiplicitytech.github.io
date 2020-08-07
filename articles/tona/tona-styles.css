@@ -87,9 +87,11 @@ body {
     height: 100%;
     margin: 0;
     background-color:#181818;
+    overflow-x: hidden;
 }
 html {
   height: 100%;
+  overflow-x: hidden;
 }
 
 #screen {
@@ -253,6 +255,8 @@ blockquote {
     font-size: 100%;
     font-weight: 100;
     text-align: left !important;
+    margin-left: 2.5rem  !important;
+    margin-right: 2.5rem !important;
 }
 
 ::selection {
@@ -429,7 +433,8 @@ text-decoration: none !important;
     margin-left: -140px;
     opacity: 0;
     transition: opacity 0.3s;
-    font-size: 1.2vw;
+    /*font-size: 1.2vw;*/
+    font-size: .9rem;
 }
 
 .tooltip-m .tooltiptext-m::after {
@@ -441,10 +446,12 @@ text-decoration: none !important;
     border-width: 5px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
-    font-size: 1.2vw;
+    /*font-size: 1.2vw;*/
+    font-size: .9rem;
 }
 
 .tooltip-m:hover .tooltiptext-m {
     visibility: visible;
     opacity: 1;
 }
+

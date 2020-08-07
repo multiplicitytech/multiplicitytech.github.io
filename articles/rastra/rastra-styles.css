@@ -5,6 +5,12 @@
       width: 100vh;
     }
 }
+
+.navbar-toggler-icon {
+ background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(91,16,22,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+
 body, html {
     height: 100vh;
     display:block;
@@ -12,22 +18,33 @@ body, html {
     margin: 0;
 }
 
-a {
-  color: #10a701;
-  text-decoration: none;
+body {
+  overflow-x: hidden;
 }
 
-a:hover {
-  border-bottom: 1px dotted #10a701;
+#page-content a {
+  color: #10a701 !important;
+  text-decoration: none !important;
+}
+
+#page-content a:hover {
+  border-bottom: 1px dotted #10a701 !important;
 } 
 
 
+hr {
+    width: 10vw !important;  
+    margin-top: 40px !important; 
+    margin-bottom: 40px !important;
+    /*color: red;*/
+    border: 1px solid grey !important;
+}
 
 #header {
   background-color: #fff4ff;
 }
 
-
+/*
 h2 {
     font-size: 2vw; 
     margin-top:40px;
@@ -35,6 +52,17 @@ h2 {
     font-family: 'stenciletta-solid';
     color: #5b1016;
 }
+*/
+
+
+h4 {
+    /*font-size: 2vw; */
+    margin-top:40px;
+    margin-bottom: 10px;
+    font-family: 'stenciletta-solid';
+    color: #5b1016;
+}
+
 
 h3 {
     color:#bcaa73;
@@ -98,8 +126,8 @@ p {
   font-style: normal;
   color: black;
   font-weight: 300;
-  font-size: 1.3vw;
-  text-align:justify;
+  /*font-size: 1.3vw;*/
+  text-align:left;
 }
 
 .content {
@@ -121,13 +149,13 @@ p {
 }
 
 
-.tooltip {
+.tooltip-m {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
   color:#10a701;
 }
-.tooltip .tooltiptext {
+.tooltip-m .tooltiptext-m {
   visibility: hidden;
   width: 280px;
   background-color: #555;
@@ -145,7 +173,7 @@ p {
   font-size: 1.2vw;
 }
 
-.tooltip .tooltiptext::after {
+.tooltip-m .tooltiptext-m::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -157,41 +185,60 @@ p {
   font-size: 1.2vw;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip-m:hover .tooltiptext-m {
   visibility: visible;
   opacity: 1;
 }
 
 
 
-.container {
+.title-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container p {
+.title-container p {
   color: #5b1016;
   text-align: center;
   font-weight: 300;
   font-family: 'stenciletta-solid';
   font-style: normal;
-  font-size: 2.5vw;
+  /*font-size: 2.5vw;*/
+  font-size: 2rem;
   margin: 0px;
   margin-bottom: 10px;
   display: inline-block;
   overflow: hidden;
 }
-.container p span.typed-text {
+
+.navbar-brand:hover {
+  color:#5b1016 !important;
+}
+
+.nav-link:hover {
+  color: #10a701 !important;
+}
+@media (max-width: 450px) {
+  .title-container p {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1600px) {
+  .title-container p {font-size: 2.5rem}
+}
+
+
+.title-container p span.typed-text {
   font-weight: normal;
 }
-.container p span.cursor {
+.title-container p span.cursor {
   display: inline-block;
   background-color: #ccc;
   margin-left: 0.1rem;
   width: 3px;
   animation: blink 1s infinite;
 }
-.container p span.cursor.typing {
+.title-container p span.cursor.typing {
   animation: none;
 }
 @keyframes blink {
@@ -201,3 +248,4 @@ p {
   99% { background-color: transparent; }
   100%  { background-color: #ccc; }
 }
+
