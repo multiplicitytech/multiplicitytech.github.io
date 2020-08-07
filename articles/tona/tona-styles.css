@@ -261,9 +261,11 @@ blockquote {
 
 ::selection {
     background: #f9ffc5; 
+    color: black;
 }
 ::-moz-selection {
     background: #f9ffc5; 
+    color: black;
 }
 .column {
     float: left;
