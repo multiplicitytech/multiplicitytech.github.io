@@ -8,14 +8,24 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <link href="https://unpkg.com/tabulator-tables@4.7.2/dist/css/bootstrap/tabulator_bootstrap.min.css" rel="stylesheet">
   <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.7.2/dist/js/tabulator.min.js"></script>
+
+ <!-- LEAFLET Data Vis Library -->
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+ integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+ crossorigin=""/>
+ <link rel="stylesheet" href="https://use.typekit.net/grm6kxy.css" />
+
+ <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+ integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+ crossorigin=""></script>
+
   <title>multiplicity.monopoly</title>
-  <div id="pieChart"></div>
 </head>
 
 
 
 <body>
-
   <div class="content" >
     <h1 class="articleTitle">The Delivery Nation:</h1>
     <h1 class="articleTitle">Challenging the Food Delivery Monopoly in South Korea</h1>
@@ -35,12 +45,15 @@
           <!-- <p style="font-size: 1.3vw; color:lightgrey; font-weight: 300;">Hover over the apps to see their shares...</p> -->
         </div>
 
-
           <p>The most popular and largest platform by size is Baemin. Baemin actually translates to “Delivery Nation” and is a pun on the country-wide addiction to its incredibly fast and affordable delivery services. Baemin, led by a CEO with a design background, became popular with its viral marketing copies and flashy motorcycles painted in an iconic <a target="_blank" href="https://platum.kr/wp-content/uploads/2015/06/Baemin.jpg"><span class="tooltip">turquoise<span class="tooltiptext"><img src="iconic.jpg" style="width: 90%;"></span></span></a>. Some of the most famous slogans, including "let photoshop do the diets for you" and "eat well, live well", went viral among the millennial consumers that most frequently encountered them on subways and buses. Baemin’s ingenious marketing and low commissions quickly led the company to its current majority market share and eventually to the recent 4 billion USD <a target="_blank" href="https://www.bloomberg.com/news/articles/2019-12-13/delivery-hero-said-to-near-deal-to-buy-woowa-in-4-billion-deal#:~:text=SHARE%20THIS%20ARTICLE&text=Delivery%20Hero%20SE%20will%20take,shares%20jumped%20by%20a%20record."><span class="tooltip">merger<span class="tooltiptext">a combination of two things, especially companies, into one</span></span></a> with Delivery Hero, the Berlin-based delivery parent company of many regional companies such as foodpanda, foodora and Talabat. The merger is currently pending approval from The Korea Fair Trade Commission (KFTC), South Korea's regulatory authority for economic competition. If approved, the merger would be the largest delivery app deal yet, and leave Delivery Hero, which currently owns Yogiyo and Baedaltong, in control of 99% of the Korean food delivery market.</p>
-          <div style="  margin: auto;
-          width: 80%;" class= "world" >
-          <img src="map.png" width="100%">
-        </div>
+          <!-- <div style="  margin: auto;
+          width: 80%;" class= "world" > -->
+          <!-- <img src="map.png" width="100%"> -->
+
+        <!-- </div> -->
+          </div>
+          <div id="map" style="margin:0 auto;"></div>
+          <div class="content" style="margin-top: 0px;">
           <p style="text-align: center;"><i><b>Figure 1.</b> Delivery Hero's coverage & monopoly</i></p>
           <p>While the antitrust review is ongoing, Baemin caught itself in a large public technology (tech) backlash after announcing a new pricing mechanism to charge participating restaurants a 5.8% fee. As COVID-19 ravaged many F&B (food and beverage) businesses, the app that once appealed to the national identity of its customers was now met with a visceral response berating its monopolistic exploitation. Users and regulators alike criticized Baemin for being the greedy intermediary exploiting the simple value exchange between small businesses and consumers, especially in a pandemic-inflicted economic downturn. The announcement was met immediately with a boycott of the app and a subsequent consumer push for direct orders bypassing the app. Restaurant owners had mixed reactions as some preferred the newly proposed fee schedule that was based on order volume and/or the ease of managing orders through the app. </p>
           <p>The most decisive and outspoken criticism came from policymakers who used the Baemin announcement to highlight their stance for small businesses just weeks before the parliamentary election. In particular, among this criticism, Lee Jae-myeong, the Governor of Gyeonggi province, which is inhabited by a quarter of Korea's population, stood out in his response. He criticized the delivery app by characterizing it as an exploitative “<a target="_blank" href="https://www.facebook.com/jaemyunglee/posts/3688000624575073">monopolistic tyranny</a>” and proposed a public food delivery app as a solution to regulate such misconduct. </p>
@@ -99,4 +112,56 @@
   </div>
 </body>
 <script type="text/javascript" src="jihyun.js"></script>
+<script type="text/javascript">
+
+var points = [
+    ["Canada",60, -95],
+    ["Panama", 9, -80],
+    ["Bolivia",-17, -65],
+    ["Paraguay",-23, -58],
+    ["Argentina", -34, -64],
+    ["Chile", -30, -71],
+    ["Uruguay", -33, -56 ],
+    ["Norway",62,10 ],
+    ["Germany",51,9 ],
+    ["Italy",42.83333333, 12.83333333],
+    ["Austria",47.33333333, 13.33333333],
+    ["Romania",46,25 ],
+    ["Bulgaria",43,25 ],
+    ["Finland", 64, 26],
+    ["Pakistan", 30,70 ],
+    ["India", 20,70 ],
+    ["Thailand",15 ,100 ],
+    ["Hong Kong", 22.267, 114.188 ],
+    ["Taiwan",23.5 ,121 ],
+    ["Malaysia", 2.5,112.5],
+    ["Philipines", 13, 122],
+    ];
+
+//create map object and set default positions and zoom level
+var map = L.map('map').setView([20, 8], 2);
+
+map.scrollWheelZoom.disable();
+
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+
+  
+  
+  var Icon = L.icon({
+    iconUrl: 'map.svg',
+    //shadowUrl: 'http://leafletjs.com/docs/images/leaf-shadow.png',
+
+    iconSize:     [20, 20], // size of the icon
+    //shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [10, 20], // point of the icon which will correspond to marker's location
+    //shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [0, -10] // point from which the popup should open relative to the iconAnchor
+});
+
+for (var i = 0; i < points.length; i++) {
+        L.marker([points[i][1], points[i][2]], {icon: Icon}).bindPopup(points[i][0]).addTo(map);
+    }
+
+
+</script>
 </html>
