@@ -9,7 +9,7 @@ var points = [
    ["Austria","Mjam",48.2, 16.366667],
    ["Romania","foodpanda",44.43333333, 26.1],
    ["Bulgaria","foodpanda",42.68333333, 23.316667	],
-   ["Finland","Foodora", 12.36666667	, -1.516667],
+   ["Finland","Foodora", 60.16666667	, 24.933333	],
    ["Thailand","foodpanda", 13.75, 100.516667],
    ["Hong Kong","foodpanda", 22.3193, 114.1694],
    ["Taiwan","foodpanda", 25.03333333,121.516667],
