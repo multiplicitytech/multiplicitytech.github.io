@@ -136,11 +136,12 @@ h3 {
     /*font-size:3vw;*/
     font-size: 2.3rem;
     font-style: normal;
+
     text-align: left;
     margin-top: 2vw;
 }
 
-p {
+#lujain-article p {
     font-family: ministry, sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -281,7 +282,11 @@ font-family: 'stenciletta-solid', sans-serif;
 font-style: normal;
 font-weight: 300;
 /*font-size: 2.5vw;*/
-font-size: 2rem;
+font-size: 2rem !important;
+}
+
+#p12 p {
+    font-size: 2rem !important;
 }
 
 #p12 {
@@ -430,7 +435,7 @@ h1 {
 
 @media (max-width: 570px)  {
     .navbar {
-    padding-top: 1%;
+    padding-top: 2%;
     padding-bottom: 4.5%;
 }
 
@@ -455,4 +460,8 @@ hr {
     margin-bottom: 40px !important;
     /*color: red;*/
     border: 1px solid grey !important;
+}
+
+.nav-link:hover {
+    color: black !important;
 }
