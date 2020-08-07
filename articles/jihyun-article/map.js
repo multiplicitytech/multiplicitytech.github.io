@@ -1,29 +1,51 @@
 var points = [
-   ["Canada",60, -95],
-   ["Panama", 9, -80],
-   ["Bolivia",-17, -65],
-   ["Paraguay",-23, -58],
-   ["Argentina", -34, -64],
-   ["Chile", -30, -71],
-   ["Uruguay", -33, -56 ],
-   ["Norway",62,10 ],
-   ["Germany",51,9 ],
-   ["Italy",42.83333333, 12.83333333],
-   ["Austria",47.33333333, 13.33333333],
-   ["Romania",46,25 ],
-   ["Bulgaria",43,25 ],
-   ["Finland", 64, 26],
-   ["Pakistan", 30,70 ],
-   ["India", 20,70 ],
-   ["Thailand",15 ,100 ],
-   ["Hong Kong", 22.267, 114.188 ],
-   ["Taiwan",23.5 ,121 ],
-   ["Malaysia", 2.5,112.5],
-   ["Philipines", 13, 122],
+   ["Panama", "Appetito24", 8.966666667, -79.533333],
+   ["Bolivia","PedidosYa", -16.5, -68.15],
+   ["Paraguay","PedidosYa",-25.26666667,-57.666667 ],
+   ["Argentina","PedidosYa",-34.58333333	 , -58.666667],
+   ["Chile","PedidosYa",-33.45 ,-70.666667 ],
+   ["Uruguay","PedidosYa",-34.85 ,-56.166667  ],
+   ["Norway","Foodora",59.91666667	, 	10.75],
+   ["Austria","Mjam",48.2, 16.366667],
+   ["Romania","foodpanda",44.43333333, 26.1],
+   ["Bulgaria","foodpanda",42.68333333, 23.316667	],
+   ["Finland","Foodora", 12.36666667	, -1.516667],
+   ["Thailand","foodpanda", 13.75, 100.516667],
+   ["Hong Kong","foodpanda", 22.3193, 114.1694],
+   ["Taiwan","foodpanda", 25.03333333,121.516667],
+   ["Malaysia", "foodpanda",3.166666667,101.7],
+   ["Philipines","foodpanda",	14.6 , 120.966667],
+   ["Greece","efood" ,37.98333333 ,23.733333], 
+   ["Qatar", "Talabat",25.28333333,51.533333 ], 
+   ["Bahrain","Talabat",26.23333333,50.566667 ], 
+   ["Bangladesh","foodpanda", 23.71666667, 90.4], 
+   ["Saudi Arabia","Talabat", 24.65, 46.7], 
+   ["Jordan","Talabat" ,	31.95 ,	35.933333],
+   ["Serbia","Donesi",44.83333333 ,	20.5 ],
+   ["Bosnia and Herzegona","Donesi", 43.86666667	, 18.416667], 
+   ["Kuwait","Talabat", 29.36666667,47.966667 ], 
+   ["Singapore","foodpanda", 1.283333333,103.85 ], 
+   ["Laos","foodpanda", 17.96666667,102.6], 
+   ["South Korea","Yogiyo" , 	37.55, 126.983333], 
+   ["Cambodia","foodpanda", 	11.55, 104.916667], 
+   ["Sweden","Foodora",59.33333333 ,18.05 ], 
+   ["Chile","PedidosYa",-33.45 , -70.666667	], 
+   ["Montenegro","Donesi", 42.43333333,19.266667], 
+   ["Colombia","Domicilios.com",4.6 ,-74.083333],
+   ["Myanmar","foodpanda", 	16.8, 	96.15],
+   ["Croatia","Pauza",	45.8 ,	16],
+   ["Turkey","Yemeksepeti", 	39.93333333, 32.866667],
+   ["Cyprus", "Foody", 35.16666667, 33.366667], 
+   ["Oman","Talabat",23.61666667 ,58.583333],
+   ["UAE","Talabat",24.46666667 , 54.366667], 
+   ["Czech Republic", "DameJidlo", 50.08333333	, 14.466667], 
+   ["Pakistan","foodpanda" , 33.68333333, 73.05], 
+   ["Dominican Republic","PedidosYa" ,	18.46666667 , 	-69.9], 
+   ["Egypt", "Otlob",	30.05 ,	31.25],
    ];
 
 //create map object and set default positions and zoom level
-var map = L.map('map').setView([20, 8], 2);
+var map = L.map('map').setView([23, 15], 1.5);
 
 map.scrollWheelZoom.disable();
 
@@ -42,6 +64,6 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '&copy; <a 
    popupAnchor:  [0, -10] // point from which the popup should open relative to the iconAnchor
 });
 
-for (var i = 0; i < points.length; i++) {
-       L.marker([points[i][1], points[i][2]], {icon: Icon}).bindPopup(points[i][0]).addTo(map);
+for (var i = 0; i < 44; i++) {
+       L.marker([points[i][2], points[i][3]], {icon: Icon}).bindTooltip('<p class="maptiptext"><b>'+ points[i][0]+ '</b></p> <p class="maptiptext">' + points[i][1] +'</p>', {className: 'maptip'}).addTo(map);
    }
