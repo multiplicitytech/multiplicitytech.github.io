@@ -71,12 +71,12 @@ tiles.addTo(map);
 
 function style(feature) {
    return {
-       fillColor: '#302eff',
-       weight: 2,
+       fillColor: '#c51928',
+       weight: 1,
        opacity: 1,
        color: 'white',
        dashArray: '3',
-       fillOpacity: 0.7
+       fillOpacity: 0.5
    };
 }
 
@@ -88,7 +88,7 @@ function highlightFeature(e) {
     layer.setStyle({
         weight: 2,
         color: '#ffa300',
-        fillColor: '#0600ff',
+        fillColor: '#c51928',
         dashArray: '',
         fillOpacity: 0.7
     });
