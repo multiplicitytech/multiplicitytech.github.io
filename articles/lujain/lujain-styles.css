@@ -153,28 +153,28 @@ h3 {
 
 @media (min-width: 1024px) {
 #lujain-article p {
-  font-size: 1.07rem !important;
+  font-size: 1.07rem;
 }
 }
 @media (min-width: 1200px) {
 #lujain-article p {
-  font-size: 1.1rem !important;
+  font-size: 1.1rem;
 }
 }
 @media (min-width: 1366px) {
 #lujain-article p {
-  font-size: 1.2rem !important;
+  font-size: 1.2rem;
 }
 
 }
 @media (min-width: 1920px) {
 #lujain-article p {
-  font-size: 1.4rem !important;
+  font-size: 1.4rem;
 }
 }
 @media (min-width: 2560px) {
 #lujain-article p {
-  font-size: 1.5rem !important;
+  font-size: 1.5rem;
 }
 
 }

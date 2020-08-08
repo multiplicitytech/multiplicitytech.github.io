@@ -28,7 +28,8 @@ body {
 }
 
 #page-content a:hover {
-  border-bottom: 1px dotted #10a701 !important;
+  border-bottom: 1px dotted #10a701;
+  text-decoration: none !important;
 } 
 
 
@@ -155,6 +156,8 @@ p {
   border-bottom: 1px dotted black;
   color:#10a701;
 }
+
+
 .tooltip-m .tooltiptext-m {
   visibility: hidden;
   width: 280px;
@@ -189,7 +192,6 @@ p {
   visibility: visible;
   opacity: 1;
 }
-
 
 
 .title-container {
