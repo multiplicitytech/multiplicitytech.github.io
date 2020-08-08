@@ -37,7 +37,7 @@ var companies = {
    "Turkey":['Yemeksepeti'] ,
    "Cyprus":['Foody']  , 
    "Oman":['Talabat'] ,
-   "UAE":['Talabat'] ,
+   "United Arab Emirates":['Talabat'] ,
    "Czech Republic":['DameJidlo']  , 
    "Pakistan":['foodpanda']  , 
    "Dominican Republic":['PedidosYa']  , 

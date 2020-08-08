@@ -224,15 +224,15 @@ img:hover {
     border: 5px solid white; 
 }
 
-/* svg:hover path {
+#main svg:hover path {
     fill: #c51928;
     transition: all ease 0.3s;
     cursor: pointer;
   }
   
-svg path {
+#main svg path {
   transition: all ease 0.3s;
-} */
+} 
 
   .line-1{
     border-right: 2px solid black;
