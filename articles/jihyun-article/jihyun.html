@@ -19,22 +19,8 @@
  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
  crossorigin=""></script>
-
+ <script src="specific.js"></script>
   <title>multiplicity.monopoly</title>
-  <style>
-    .maptip {
-  border: 2px solid #0600ff;
-  padding-top: 0px;  
-  padding-bottom: 0px;
-
-}
-.leaflet-tooltip-left.maptip::before {
-  border-left-color: #0600ff;
-}
-.leaflet-tooltip-right.maptip::before {
-  border-right-color: #0600ff;
-}
-  </style>
 </head>
 
 
@@ -51,9 +37,9 @@
           </p>
           <p style="font-size: 1.5vw; color:#0600ff; font-weight: 400;">99% of this market is dominated by three major players:</p>
           <div class="lujain">
-            <img src="one.jpg" id= "one" onMouseOver="this.style.border='5px solid #0600ff'" onMouseOut="this.style.border='5px solid black'" style="width: 20%; border-radius: 25px; border: 5px solid black;">
-            <img src="two.png" id= "two" onMouseOver="this.style.border='5px solid #0600ff'" onMouseOut="this.style.border='5px solid black'" style="width: 20%; border-radius: 25px; border: 5px solid black;">
-            <img src="three.png" id="three" onMouseOver="this.style.border='5px solid #0600ff'" onMouseOut="this.style.border='5px solid black'" style="width: 20%; border-radius: 25px; border: 5px solid black;">
+            <img src="one.jpg" id= "one" onMouseOver="this.style.border='5px solid #0600ff'" onMouseOut="this.style.border='5px solid black'" style="width: 20%; border-radius: 25px; border: 5px solid black; margin: 15px;">
+            <img src="two.png" id= "two" onMouseOver="this.style.border='5px solid #0600ff'" onMouseOut="this.style.border='5px solid black'" style="width: 20%; border-radius: 25px; border: 5px solid black; margin: 15px;">
+            <img src="three.png" id="three" onMouseOver="this.style.border='5px solid #0600ff'" onMouseOut="this.style.border='5px solid black'" style="width: 20%; border-radius: 25px; border: 5px solid black; margin: 15px;">
         </div>
         <div class="change">
           <p style="font-size: 1.5vw; color:lightgrey; font-weight: 300;">Hover over the apps to see their shares...</p>

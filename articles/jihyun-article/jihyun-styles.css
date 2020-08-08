@@ -11,7 +11,7 @@ body, html {
     /* display:block;
     /* background-color: #01002d; */
     background-color: white;
-    margin: 0; */
+    margin: 0;
 }
 
 a {
@@ -216,30 +216,23 @@ span {
 
 img:hover { 
     cursor: pointer;
-  } 
-img {
-  margin: 15px;
-}
+  }
 
 
-#one img:hover {
-  border: 5px solid #0600ff; 
-  transition: all ease 0.3s;
-}
 .map {
     margin: 0px;
     border: 5px solid white; 
 }
 
-svg:hover path {
+/* svg:hover path {
     fill: #c51928;
     transition: all ease 0.3s;
     cursor: pointer;
   }
   
-  svg path {
-    transition: all ease 0.3s;
-  }
+svg path {
+  transition: all ease 0.3s;
+} */
 
   .line-1{
     border-right: 2px solid black;
@@ -262,14 +255,26 @@ svg:hover path {
 
 }
 
-.maptiptext { 
+
+.info {
+  padding: 6px 8px;
+  font: 14px;
   font-family: ministry;
-  font-style: normal;
-  color: black;
-  font-weight: 300;
-  font-size: 0.8vw;
-  padding: 0px;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.info h4 {
+  margin: 0 0 5px;
+  font-size: 1rem !important;
+  color: #777;
+}
+
+.info p {
+  font-size: 1rem !important;
   margin: 0px;
-  text-align: center;
+  padding: 0px;
 
 }
+
