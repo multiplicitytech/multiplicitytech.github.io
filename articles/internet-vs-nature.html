@@ -139,7 +139,7 @@
 
           <h4>Young People and Our Interaction with Nature </h4>
 
-          <p>The pursuit of economic growth has come at the expense of human interaction with nature as the global notion of development is increasingly in conflict with natural ecosystems. Additionally, with the rise of modern day technology, children are increasingly spending more time in the virtual world than outside. A survey of more than 2000 eight–to–twelve year olds in the UK showed these <a target="_blank" href="https://www.theguardian.com/lifeandstyle/2010/aug/16/childre-nature-outside-play-health">results</a>:
+          <p style="margin-bottom: 0px;">The pursuit of economic growth has come at the expense of human interaction with nature as the global notion of development is increasingly in conflict with natural ecosystems. Additionally, with the rise of modern day technology, children are increasingly spending more time in the virtual world than outside. A survey of more than 2000 eight–to–twelve year olds in the UK showed these <a target="_blank" href="https://www.theguardian.com/lifeandstyle/2010/aug/16/childre-nature-outside-play-health">results</a>:
           </p>
 
           <!-- Chart1 -->
@@ -165,7 +165,9 @@
 
           <p>While the younger generation may have fewer opportunities to interact with nature compared to previous generations, we are still at the forefront of the environmental movement worldwide. For example, first initiated by Greta Thunberg and other young activists to protest the lack of action on the climate crisis, “<a target="_blank" href="https://fridaysforfuture.org/" style="border-bottom: none !important"><span class="tooltip-m">Fridays For Future<span class="tooltiptext-m"><img src="rastra/friday.jpg" width="100%"></span></span></a>” has emerged as a global movement spanning more than 7,500 cities and 13 million young people. The desire for a common future that protects the environment is the driving force behind these youth movements. 
           </p>
-
+          <div style="margin:0 auto; width: 90%;">
+          <img src="rastra/nepal.jpg" width="100%"></div>
+          <p style="text-align: center;"><i><b><a target="_blank" href="https://www.facebook.com/pg/FridaysNepal/photos/?ref=page_internal">Fridays for Future - Kathmandu, Nepal</a></b></i></p>
           <p>While the advent of technology and the internet can be partially blamed for reducing young people’s interactions with nature, technology, primarily in the form of the internet, has also proven to be highly effective in rallying young people for a common cause, like “Fridays For Future,” and providing alternative ways to experience unattainable realities. Against this backdrop, I explore the role of technology, mainly the internet, in providing alternatives for interacting with nature and in impacting the climate action movement.
           </p>
 
@@ -183,7 +185,7 @@
           <p>As an alternative to these technologies, there is an increased possibility of leveraging the internet to replicate experiences with nature. This is not only cost-effective but also largely scalable given the penetration of the internet is already quite high around the world. Of course, despite its global usage, accessing the internet is still a privilege that many communities cannot afford. Furthermore, the environmental costs of the internet including the increase in emissions caused by data storage cannot be ignored. Nonetheless, the internet does provide some promising avenues for climate action. 
           </p>
 
-          <p>An example of this comes in the form of virtual tours on the internet. In 2015, Google launched a largely successful <a target="_blank" href="https://honeyguideapps.com/blog/google-launches-virtual-tour-of-nepals-everest-region">virtual tour</a> of Nepal’s Everest region giving people the opportunity to see the world’s tallest peak up-close. The idea of virtual tours has gained increased momentum following the COVID-19 outbreak. Jane Patterson, who was compelled by Louv’s book on nature deficit  fifteen years ago to organize kids’ bird-watching sessions, has now launched a <a target="_blank" href="https://www.theadvocate.com/article_ca8bc1b4-c914-11ea-9a60-1fef89a225f5.html">weekly virtual group</a>. According to Google Keyword Planner data, the number of times the phrase “virtual tour” was searched on the internet <a target="_blank" href="https://www.forbes.com/sites/laurabegleybloom/2020/04/27/ranked-worlds-15-best-virtual-tours-coronavirus/#2acd379e6709">increased</a> seven times, from 1,300 in February to almost 10,000 in March. Consequently, Forbes has created a <a target="_blank" href="https://www.forbes.com/sites/laurabegleybloom/2020/04/27/ranked-worlds-15-best-virtual-tours-coronavirus/#1d82fbbd6709">list</a> of 15 of the most popular virtual tours in the world at this moment which range from a tour of the San Diego Zoo to a tour of a 3D replica of the surface of Mars built by Google and NASA. In many ways, virtual tours seem to be an expanded and much more decorated version of a nature documentary. In addition, compared to static nature documentaries, these tours focus on a visitor-centric approach which makes them a particularly memorable experience.
+          <p>An example of this comes in the form of virtual tours on the internet. In 2015, Google launched a largely successful <a target="_blank" href="https://honeyguideapps.com/blog/google-launches-virtual-tour-of-nepals-everest-region">virtual tour</a> of Nepal’s Everest region giving people the opportunity to see the world’s tallest peak up-close. The idea of virtual tours has gained increased momentum following the COVID-19 outbreak. Jane Patterson, who was compelled by Louv’s book on nature deficit  fifteen years ago to organize kids’ bird-watching sessions, has now launched a weekly virtual <a target="_blank" href="https://www.theadvocate.com/article_ca8bc1b4-c914-11ea-9a60-1fef89a225f5.html">group</a>. According to Google Keyword Planner data, the number of times the phrase “virtual tour” was searched on the internet <a target="_blank" href="https://www.forbes.com/sites/laurabegleybloom/2020/04/27/ranked-worlds-15-best-virtual-tours-coronavirus/#2acd379e6709">increased</a> seven times, from 1,300 in February to almost 10,000 in March. Consequently, Forbes has created a <a target="_blank" href="https://www.forbes.com/sites/laurabegleybloom/2020/04/27/ranked-worlds-15-best-virtual-tours-coronavirus/#1d82fbbd6709">list</a> of 15 of the most popular virtual tours in the world at this moment which range from a tour of the San Diego Zoo to a tour of a 3D replica of the surface of Mars built by Google and NASA. In many ways, virtual tours seem to be an expanded and much more decorated version of a nature documentary. In addition, compared to static nature documentaries, these tours focus on a visitor-centric approach which makes them a particularly memorable experience.
           </p>
 
           <p>An equally important question is the manner through which such internet-based resources can be provided to young people. This can be done either in direct ways by mainstreaming virtual tours in educational curriculums and pedagogy or indirectly through incentivizing children to partake in such activities voluntarily. What such approaches entail should be left to educators, environmental experts, and children health experts to design. 
@@ -279,6 +281,19 @@ function erase() {
 
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+
+$(document).ready(function() {
+  $("#cf7_controls").on('click', 'span', function() {
+    $("#cf7 img").removeClass("opaque");
+
+    var newImage = $(this).index();
+
+    $("#cf7 img").eq(newImage).addClass("opaque");
+
+    $("#cf7_controls span").removeClass("selected");
+    $(this).addClass("selected");
+  });
 });
 </script>
 </html>
