@@ -2,8 +2,7 @@ var bounded2 = false;
 var pastLocation2;
 var geojson2;
 var layerSelect = '';
-const mapboxAccessToken = 'pk.eyJ1Ijoic29oYWlsYmFnaGVyaSIsImEiOiJja2N0Mno0NGgwYWN0MnJudG1qcDFmZXlsIn0.Slzmp4JvAnT08GrpHiBDWg';
-const tileURL = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + mapboxAccessToken;
+
 
 const map2 = L.map('map2').setView([54, 13], 4); //europe
 
