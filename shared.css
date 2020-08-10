@@ -132,9 +132,11 @@ filter: invert(40%) sepia(98%) saturate(920%) hue-rotate(81deg) brightness(92%) 
   color: #00FFCE !important;
 }
 
-#page-content {
+/*#page-content {
   flex: 1 0 auto;
-}
+}*/
+
+
 
 .nav-link {
 	font-weight: 500;
