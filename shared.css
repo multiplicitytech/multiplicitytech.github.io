@@ -218,6 +218,12 @@ color: #00FFCE ;
 padding: .8rem 1rem !important;
 }
 
+@media (max-width:960px) {
+  .nav-link {
+    padding: 0rem !important; 
+  }
+}
+
 .navbar-toggler {
   border-color: transparent !important;
 }
