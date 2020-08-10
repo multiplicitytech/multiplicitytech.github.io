@@ -28,25 +28,25 @@ var table = new Tabulator("#example-table", {
 
 $(document).ready(function() {
    $('#one').hover(function() {
-      $('.change').html(' <p class="breakdown" style="color:#2b8db5;">Baemin owns 55.7% of the market share.</p>'); 
+      $('.change').html(' <p class="breakdown" style="color:#2b8db5;"><b>Baemin owns 55.7% of the market share.</b></p>'); 
    });
    $('#two').hover(function() {
-      $('.change').html('<p class="breakdown" style="color:#c51928;">Yogiyo owns 33.7% of the market share.</p>'); 
+      $('.change').html('<p class="breakdown" style="color:#c51928;"><b>Yogiyo owns 33.7% of the market share.</b></p>'); 
    });
    $('#three').hover(function() {
-      $('.change').html('<p class="breakdown" style="color:#ffa300;">Baedaltong owns 10.8% of the market share.</p>'); 
+      $('.change').html('<p class="breakdown" style="color:#ffa300;"><b>Baedaltong owns 10.8% of the market share.</b></p>'); 
    });
    $('#def').hover(function() {
     // $('.SOC').html('<p  class="breakdown" style="color:#0600ff; ">What is Social Overhead Capital (SOC)? Definition?</p>'); 
-    $('.change2').html('<p style="color:#0600ff;">A form of economic infrastructure; the source of certain “basic” services required in the production of virtually all commodities</p>'); 
+    $('.change2').html('<p style="color:#0600ff;"><b>A form of economic infrastructure; the source of certain “basic” services required in the production of virtually all commodities</b></p>'); 
  });
  $('#char').hover(function() {
     // $('.SOC').html('<p class="breakdown" style="color:#0600ff;">What is Social Overhead Capital (SOC)? Characteristics?</p>'); 
-    $('.change2').html('<p style="color:#0600ff;">External economies, high barrier of entry due to massive upfront investment, and an importance in facilitating economic development as a whole</p>'); 
+    $('.change2').html('<p style="color:#0600ff;"><b>External economies, high barrier of entry due to massive upfront investment, and an importance in facilitating economic development as a whole</b></p>'); 
  });
  $('#exp').hover(function() {
     // $('.SOC').html('<p class="breakdown" style="color:#0600ff;">What is Social Overhead Capital (SOC)? Examples?</p>'); 
-    $('.change2').html('<p style="color:#0600ff;">Highways, schools, roads, public parks, and hospitals</p>'); 
+    $('.change2').html('<p style="color:#0600ff;"><b>Highways, schools, roads, public parks, and hospitals</b></p>'); 
  });
 
 });
