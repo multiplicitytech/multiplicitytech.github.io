@@ -408,6 +408,10 @@ hr {
     color: white !important;
 }
 
+.nav-link:hover {
+    color: white !important;
+}
+
 .tooltip-m {
     position: relative ;
     display: inline-block;

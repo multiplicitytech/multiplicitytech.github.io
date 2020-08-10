@@ -92,17 +92,30 @@ blockquote {
   color: black;
 }
 
-.articleTitle {
+.article-title {
   color: #5b1016;
-  text-align: center;
+  /*text-align: center;*/
+  text-align: left;
   font-weight: 300;
   font-family: 'stenciletta-solid';
   font-style: normal;
-  font-size: 2.5vw;
+  /*font-size: 2.2rem !important;*/
+  font-size: 2rem;
   margin: 0px;
   margin-bottom: 10px;
   display: inline-block;
 }
+
+@media (max-width: 450px) {
+  .article-title {
+    font-size: 1.8rem !important;
+  }
+}
+@media (min-width: 1600px) {
+  .article-title {font-size: 2.5rem !important;}
+}
+
+
 
 .date {
   color: black
