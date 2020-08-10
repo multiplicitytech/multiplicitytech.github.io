@@ -14,6 +14,14 @@
 }
 
 
+.white-orange-filter {
+ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(102deg) brightness(101%) contrast(101%);
+}
+
+.white-orange-filter:hover {
+ filter: invert(68%) sepia(48%) saturate(3492%) hue-rotate(1deg) brightness(103%) contrast(104%);
+}
+
 
 .teal-filter {
 filter: invert(8%) sepia(100%) saturate(7120%) hue-rotate(250deg) brightness(103%) contrast(141%);
