@@ -2,8 +2,7 @@ var bounded2 = false;
 var pastLocation2;
 var geojson2;
 var layerSelect = '';
-const mapboxAccessToken = 'pk.eyJ1Ijoic29oYWlsYmFnaGVyaSIsImEiOiJja2N0Mno0NGgwYWN0MnJudG1qcDFmZXlsIn0.Slzmp4JvAnT08GrpHiBDWg';
-const tileURL = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + mapboxAccessToken;
+
 
 const map2 = L.map('map2').setView([54, 13], 4); //europe
 
@@ -33,11 +32,17 @@ info2.onAdd = function (e) {
     return this._div;
 };
 info2.update = function (properties) {
-    this._div.innerHTML = '<h4>Who would you send a complaint to about protecting your data?</h4>';
+    this._div.innerHTML = '<h4>To whom would you prefer to send a complaint to about protecting your data?</h4>';
     if (typeof (properties) != 'undefined') {
-        this._div.innerHTML += '<b>' + properties.name_long + '</b><br/>' + 'Private Company Handling Data: ' + properties.dataProblemToAuthority_PrivateCompany + '%<br/>' + 'National Data Protection Authority: ' + properties.dataProblemToDataProtectionAuthority + '%';
+        if (layerSelect == 'national') {
+            this._div.innerHTML += '<b>' +properties.dataProblemToDataProtectionAuthority +'% prefer this option';
+        }
+        else{
+            this._div.innerHTML += '<b>'+ properties.dataProblemToAuthority_PrivateCompany +'% prefer this option';
+        }
+        // this._div.innerHTML += '<b>' + properties.name_long + '</b><br/>' + 'Private Company Handling Data: ' + properties.dataProblemToAuthority_PrivateCompany + '%<br/>' + 'National Data Protection Authority: ' + properties.dataProblemToDataProtectionAuthority + '%';
     } else {
-        this._div.innerHTML += 'Hover over a country';
+        this._div.innerHTML += 'Change your selection below & hover over a country';
     }
 };
 
