@@ -205,9 +205,34 @@ color: #00FFCE;
 
 @media screen and (max-width: 330px) {
   .navbar-brand {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
   }
 }
+
+.navbar-toggler-icon  {
+  /*height: 100%;*/
+  margin-top: 2vh;
+  /*padding-top: 2.5rem;*/
+}
+
+
+@media screen and (max-width: 569px) {
+  .navbar-toggler-icon {
+  margin-top: .65vh;
+}
+}
+@media screen and (min-width: 570px) {
+.navbar-toggler-icon {
+  margin-top: 2vh;
+}
+}
+
+@media screen and (max-width: 334px) {
+  .navbar-toggler-icon {
+  margin-top: 0vh;
+}
+}
+
 
 .nav-link {
 	font-weight: 500;
@@ -215,7 +240,8 @@ color: #00FFCE;
 	/*color: #010033;*/
   /*color: #0600FF;*/
 color: #00FFCE ;
-padding: .8rem 1rem !important;
+/*padding: .8rem 1rem !important;*/
+padding-top: 1.15rem !important;
 }
 
 @media (max-width:960px) {
