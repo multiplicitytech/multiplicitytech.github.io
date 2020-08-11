@@ -23,12 +23,12 @@ body {
 }
 
 #page-content a {
-  color: #ff2238 !important;
+  color: #f200ff !important;
   text-decoration: none !important;
 }
 
 #page-content a:hover {
-  border-bottom: 1px dotted #ff2238 !important;
+  border-bottom: 1px dotted #f200ff !important;
   text-decoration: none !important;
 } 
 
@@ -61,7 +61,7 @@ h4 {
     margin-top:40px;
     margin-bottom: 10px;
     font-family: 'stenciletta-solid';
-    color: #f4ff8e;
+    color: #00ffce;
 }
 
 
@@ -79,7 +79,7 @@ blockquote {
     color:white;
     border-left-style: dashed;
     border-left-width: 4px;
-    border-left-color: #f4ff8e;
+    border-left-color: #00ffce;
     padding: 15px !important;
     text-align:justify;
     margin-left: 2.5rem;
@@ -97,7 +97,7 @@ blockquote {
 }
 
 .articleTitle {
-  color: #f4ff8e;
+  color: #00ffce;
   text-align: left !important;
   font-weight: 300;
   font-family: 'stenciletta-solid', sans-serif;
@@ -157,7 +157,7 @@ p {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
-  color:#908eff;
+  color:#f200ff;
 }
 
 
@@ -217,11 +217,11 @@ p {
 }
 
 .navbar-brand:hover {
-  color:#ff2238 !important;
+  color:#f200ff !important;
 }
 
 .nav-link:hover {
-  color: #ff2238 !important;
+  color: #f200ff !important;
 }
 @media (max-width: 450px) {
   .title-container p {
@@ -257,8 +257,8 @@ p {
 .tooltip-m {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted #ff2238;
-    color:#ff2238;
+    border-bottom: 1px dotted #f200ff;
+    color:#f200ff;
 }
 .tooltip-m .tooltiptext-m {
     visibility: hidden;
