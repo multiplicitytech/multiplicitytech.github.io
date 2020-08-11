@@ -98,14 +98,13 @@ blockquote {
 
 .articleTitle {
   color: #f4ff8e;
-  text-align: center;
+  text-align: left !important;
   font-weight: 300;
-  font-family: 'stenciletta-solid';
+  font-family: 'stenciletta-solid', sans-serif;
   font-style: normal;
-  font-size: 2.5vw;
+  font-size: 2.2rem !important;
   margin: 0px;
   margin-bottom: 10px;
-  display: inline-block;
 }
 
 .date {
