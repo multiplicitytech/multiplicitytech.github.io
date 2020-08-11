@@ -1,8 +1,8 @@
 //define some sample data
 var tabledata = [
     {id:1, country:"South Korea", map:"1", traffic:"", drive:"", walk:""},
-    {id:2, country:"United States", map:"1", traffic:"1", drive:"1", walk:"1"},
-    {id:3, country:"United Kingdom", map:"1", traffic:"1", drive:"1", walk:"1"},
+    {id:2, country:"US", map:"1", traffic:"1", drive:"1", walk:"1"},
+    {id:3, country:"UK", map:"1", traffic:"1", drive:"1", walk:"1"},
     {id:4, country:"India", map:"1", traffic:"1", drive:"1", walk:"1"},
   {id:5, country:"China", map:"1", traffic:"", drive:"1", walk:"1"},
   {id:6, country:"Russia", map:"1", traffic:"1", drive:"1", walk:"1"}
