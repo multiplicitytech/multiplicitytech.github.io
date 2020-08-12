@@ -142,10 +142,10 @@ p {
 }
 
 ::selection {
-  background: #f9ffc5; 
+  background: #fbc5ff; 
 }
 ::-moz-selection {
-  background: #f9ffc5; 
+  background: #fbc5ff; 
 }
 
 #offset {
