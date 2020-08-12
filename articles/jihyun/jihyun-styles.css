@@ -188,7 +188,9 @@ p {
     /*font-size: 1vw;*/
 }
 .tabulator-col-content {
-    background-color: #c51928;
+    /*background-color: #c51928;*/
+    background-color: #ffa300;
+    color: black;
     height: 45px;
     padding: 4px;
     line-height: 1.1;
