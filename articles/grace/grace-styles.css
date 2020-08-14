@@ -19,11 +19,11 @@ body {
 }
 
 .navbar-brand, .nav-link {
-	color: #cc8200 !important;
+	color: #f98eff !important;
 }
 
 .navbar-brand:hover, .nav-link:hover {
-	color: #3833ff !important;
+	color: #908eff !important;
 }
 
 .nav-link {
