@@ -1,0 +1,229 @@
+
+body:after{
+   position:absolute; width:1px; height:1px; overflow:hidden; z-index:-5;
+   content: url(../img/lujain-nofilter.png) url(../img/alia-nofilter.png) url(../img/tom-nofilter.png) url(../img/jihyun-nofilter.png) url(../img/tona-nofilter.png) url(../img/munib-nofilter.png) url(../img/rastra-nofilter.png) url(../img/grace-nofilter.png); 
+}
+
+
+
+.team {
+  width: 80%;
+}
+
+.team-container {
+  width: 20%;
+  /*background-color: white;*/
+  height: auto;
+  position: relative;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 5%;
+  /*clear: left;*/
+  min-width: 228px;
+
+}
+
+/*.team-container::after{
+   position:absolute; width:0; height:0; overflow:hidden; z-index:-5;
+   content: url(../img/lujain-nofilter.png) url(../img/alia-nofilter.png) url(../img/tom-nofilter.png) url(../img/jihyun-nofilter.png) url(../img/tona-nofilter.png) url(../img/munib-nofilter.png) url(../img/rastra-nofilter.png) url(../img/grace-nofilter.png); 
+}*/
+
+.team-container .team-img{
+  width: 100%;
+  box-shadow: 3px -3px 0px rgba(2,1,47,1);
+}
+
+.team-container .team-img:hover {
+  /*box-shadow: -3px 3px 0px rgba(0,255,206,1);*/
+  box-shadow: 3px -3px 0px rgba(255,255,255,1);
+}
+
+#lujain-img {
+  background: url(../img/lujain.png);
+  background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+  display: block;
+}
+
+#lujain-img::after{
+   position:absolute; width:0; height:0; overflow:hidden; z-index:-5;
+   content: url(../img/lujain-nofilter.png) url(../img/alia-nofilter.png) url(../img/tom-nofilter.png) url(../img/jihyun-nofilter.png) url(../img/tona-nofilter.png) url(../img/munib-nofilter.png) url(../img/rastra-nofilter.png) url(../img/grace-nofilter.png); 
+}
+
+#lujain-img:hover {
+  background-image: url(../img/lujain-nofilter.png);
+}
+ 
+
+#alia-img {
+  background: url(../img/alia.png);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
+
+
+#alia-img:hover {
+  background-image: url(../img/alia-nofilter.png);
+}
+
+
+#tom-img {
+  background: url(../img/tom.png);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
+
+#tom-img:hover {
+  background-image: url(../img/tom-nofilter.png);
+}
+
+
+#jihyun-img {
+  background: url(../img/jihyun.png);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
+
+#jihyun-img:hover {
+  background-image: url(../img/jihyun-nofilter.png);
+}
+
+
+#tona-img {
+  background: url(../img/tona.png);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
+
+#tona-img:hover {
+  background-image: url(../img/tona-nofilter.png);
+}
+
+
+#munib-img {
+  background: url(../img/munib.png);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
+
+#munib-img:hover {
+  background-image: url(../img/munib-nofilter.png);
+}
+
+
+#rastra-img {
+  background: url(../img/rastra.png);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
+
+#rastra-img:hover {
+  background-image: url(../img/rastra-nofilter.png);
+}
+
+#grace-img {
+  background: url(../img/grace.png);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
+
+#grace-img:hover {
+  background-image: url(../img/grace-nofilter.png);
+}
+
+
+
+
+.team-container .team-card {
+  font-size: .8rem;
+  text-align: justify; 
+  bottom: 0; 
+  /*background: red;*/
+  width: 100%;
+  /*height: 100%;*/
+  /*width: auto;*/
+  transition: .5s ease;
+  padding-top: 5px;
+
+  transition: 0.3s;
+  /*min-width: 250px;*/
+}
+.team-card p {
+  font-size: 1rem;
+  font-family: 'ministry',sans-serif;
+  margin-bottom: 0 !important;
+}
+
+.team-card h2 {
+  font-size: 1rem;
+  /*font-style: bold;*/
+  font-family: 'ministry', sans-serif;
+  /*font-weight: 600;*/
+  float: left;
+  text-align: left;
+
+  color: white;
+
+}
+.team-card h3{
+  font-size: .9rem;
+  /*font-style: bold;*/
+  font-family: 'ministry', sans-serif;
+  /*font-weight: 600;*/
+  float: left;
+  text-align: left;
+  color: #00FFCE;
+}
+
+.team-name {
+  width: 100%;
+  margin-top: 1%;
+}
+
+
+.about-body p {
+  text-align: justify !important;
+  color: white !important;
+  font-weight: 200;
+  margin-top: 2%;
+}
+
+@media (min-width: 992px) {
+
+  .about-body p {
+   margin-right: 20%; 
+   margin-left: 20%; 
+ }
+}
+
+@media (max-width: 991px) {
+
+  .about-body p {
+    margin-right: 10%; 
+    margin-left: 10%; 
+  }
+}
+
+@media (max-width: 768px) {
+
+  .about-body p {
+    margin-right: 5%; 
+    margin-left: 5%; 
+  }
+}
