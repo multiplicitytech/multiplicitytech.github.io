@@ -1,3 +1,11 @@
+body {
+	overflow-x: hidden;
+}
+
+
+.grace-img {
+	width: 98%;
+}
 
 
 tw-passage {
@@ -30,16 +38,41 @@ body {
 	/*margin-right: 50px;*/
 }
 
+#sideimgs {
+	width: 75%;
+}
+
+@media (max-width: 1100px) {
+		#sideimgs  {
+		display: none;
+	}
+
+	.img-hide {
+		display:none;
+	}
+
+	tw-story[tags~="BannerAds"] {
+    padding: 0px !important;
+}
+
+}
 @media (max-width: 500px) {
 	tw-sidebar {
 		left: -3.5rem !important;
 	}
 
-	#sideimgs  {
-		display: none;
-	}
 }
 
+@media (max-width: 900px) {
+.middlepane {
+	width: 65% !important;
+	/*margin-left: 7%;*/
+}
+
+ul {
+	padding-left: 15px !important;
+}
+}
 
 @media (min-width: 1024px) {
 tw-passage {
