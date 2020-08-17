@@ -526,3 +526,14 @@ min-width: 250px;
 }
 
 
+
+
+.white-teal-filter {
+ filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(194deg) brightness(104%) contrast(100%);
+}
+
+.white-teal-filter:hover {
+  /*white*/
+  filter: invert(75%) sepia(99%) saturate(775%) hue-rotate(100deg) brightness(101%) contrast(101%);
+}
+
