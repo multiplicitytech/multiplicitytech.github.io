@@ -296,15 +296,17 @@ body {
   transition: 0.3s;
 }
 
-#rastra-card .image2:hover{
+
+#jihyun-card .image2:hover{
+  box-shadow: 11px 11px 0px #0600ff;
+  transition: 0.3s;
+}
+
+#rastra-card .image1:hover{
   box-shadow: -11px 11px 0px #1b8e00;
   transition: 0.3s;
 }
 
-#jihyun-card .image1:hover{
-  box-shadow: 11px 11px 0px #0600ff;
-  transition: 0.3s;
-}
 
 #tom-card .image2:hover{
   box-shadow: 11px 11px 0px #C500F5;
