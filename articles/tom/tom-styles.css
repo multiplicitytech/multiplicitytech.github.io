@@ -81,7 +81,7 @@ blockquote {
     border-left-width: 4px;
     border-left-color: #00ffce;
     padding: 15px !important;
-    text-align:justify;
+    text-align:left !important;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
 }
