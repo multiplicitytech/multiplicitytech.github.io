@@ -52,7 +52,7 @@ var layerSelect = '';
 const mapboxAccessToken = 'pk.eyJ1Ijoic29oYWlsYmFnaGVyaSIsImEiOiJja2N0Mno0NGgwYWN0MnJudG1qcDFmZXlsIn0.Slzmp4JvAnT08GrpHiBDWg';
 		const tileURL = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + mapboxAccessToken;
 
-const map = L.map('map', {dragging: false}).setView([23, 15], 1.5); //world
+const map = L.map('map').setView([23, 15], 1.5); //world
 
 map.scrollWheelZoom.disable();
 
