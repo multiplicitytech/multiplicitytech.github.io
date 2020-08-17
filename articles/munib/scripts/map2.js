@@ -148,41 +148,13 @@ var nationallayer = L.geoJson(europe_data, {
                     bounded2 = false;
                 } 
                 else {
-                    switch (e.target.feature.properties.name_long) { // islands far from mainland so need to change bounds
-                        case 'France':
-                        map2.fitBounds([
-                            [51.1, 7.6],
-                            [41.5, -4.6]
-                            ]);
-                        break;
-
-                        case 'Spain':
-                        map2.fitBounds([
-                            [44.4, 3.9],
-                            [35.4, -9.2]
-                            ]);
-                        break;
-
-                        case 'Netherlands':
-                        map2.fitBounds([
-                            [53.7, 7.6],
-                            [50.7, 3.2]
-                            ]);
-                        break;
-
-                        case 'Portugal':
-                        map2.fitBounds([
-                            [42.4, -6.2],
-                            [36.4, -9.7]
-                            ]);
-                        break;
-
-                        default: // if not these special case countries then just go to bounds
-                        map2.fitBounds(e.target.getBounds());
-                    }
-                    bounded2 = true;
-                    pastLocation2 = e.target._bounds;
-                }            }
+                    e.target.setStyle({
+                        weight: 3,
+                        color: '#d7f7cf',
+                        dashArray: '',
+                        fillOpacity: 0.7
+                    });
+                    info2.update(feature.properties);  }
             });
     }
 });
@@ -222,47 +194,13 @@ var companylayer = L.geoJson(europe_data, {
             },
             'click': function (e) {
 
-                if (bounded2 && pastLocation2 == e.target._bounds) {
-                    map2.setView([51.74739, 10], 4);
-                    bounded2 = false;
-                } 
-                else {
-                    switch (e.target.feature.properties.name_long) { // islands far from mainland so need to change bounds
-                        case 'France':
-                        map2.fitBounds([
-                            [51.1, 7.6],
-                            [41.5, -4.6]
-                            ]);
-                        break;
-
-                        case 'Spain':
-                        map2.fitBounds([
-                            [44.4, 3.9],
-                            [35.4, -9.2]
-                            ]);
-                        break;
-
-                        case 'Netherlands':
-                        map2.fitBounds([
-                            [53.7, 7.6],
-                            [50.7, 3.2]
-                            ]);
-                        break;
-
-                        case 'Portugal':
-                        map2.fitBounds([
-                            [42.4, -6.2],
-                            [36.4, -9.7]
-                            ]);
-                        break;
-
-                        default: // if not these special case countries then just go to bounds
-                        map2.fitBounds(e.target.getBounds());
-                    }
-                    bounded2 = true;
-                    pastLocation2 = e.target._bounds;
-                }
-            }
+                e.target.setStyle({
+                    weight: 3,
+                    color: '#d7f7cf',
+                    dashArray: '',
+                    fillOpacity: 0.7
+                });
+                info2.update(feature.properties);  
         });
     }
 }).addTo(map2);
