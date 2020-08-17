@@ -297,6 +297,8 @@ border-bottom: none !important;
   /*background-color: #00FFCE !important;*/
   background-color: white !important;
   color: #02012F !important;
+  display: block;
+  width: 100vw;
 }
 
 
