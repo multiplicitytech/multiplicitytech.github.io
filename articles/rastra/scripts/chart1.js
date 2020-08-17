@@ -4,9 +4,9 @@ var options = {
     data: [64, 40, 28, 21, 20] 
   }],
   chart: {
-    fontFamily: 'ministry, sans-serif',
-    // fontWeight: '300',
-    type: 'bar',
+      fontFamily: 'ministry, sans-serif',
+        fontSize: '100px',
+        type: 'bar',
     height: 380,
     toolbar: {
       show: false
@@ -31,6 +31,7 @@ var options = {
     textAnchor: 'start',
     style: {
       fontSize: '14px',
+      fontWeight: '300',
 
       colors: ['black']
     },
@@ -49,8 +50,8 @@ var options = {
   xaxis: {
     categories: ['Play outside less than once per week', "Do not know where milk comes from", "Have not been on a country walk in a year", "Have never been on a farm", "Have never climbed a tree"
     ],
-    max: 80,
-    tickAmount: 8,
+    max: 70,
+    tickAmount: 7,
     labels: {
       show: true,
       formatter: function (value) {
