@@ -30,15 +30,15 @@ var options = {
     enabled: true,
     textAnchor: 'start',
     style: {
-      fontSize: '14px',
-      fontWeight: '300',
+      fontSize: '0.9rem',
+      fontWeight: '400',
 
       colors: ['black']
     },
     formatter: function (val, opt) {
       return opt.w.globals.labels[opt.dataPointIndex]
     },
-    offsetX: 0,
+    offsetX: 5,
     dropShadow: {
       enabled: false
     }
@@ -48,7 +48,7 @@ var options = {
     colors: ['#fff']
   },
   xaxis: {
-    categories: ['Play outside less than once per week', "Do not know where milk comes from", "Have not been on a country walk in a year", "Have never been on a farm", "Have never climbed a tree"
+    categories: ['  Play outside less than once per week', "  Do not know where milk comes from", "  Have not been on a country walk in a year", "  Have never been on a farm", "  Have never climbed a tree"
     ],
     max: 70,
     tickAmount: 7,
