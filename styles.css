@@ -144,7 +144,7 @@ body{
 }
 
 #grace-card .card-title {
- background:  #098500;
+ background:  #CC8200;
 }
 
 #origin-card .card-title {
@@ -318,10 +318,8 @@ body {
   transition: 0.3s;
 }
 
-
-
 #origin-card .image2:hover{
-  box-shadow: 11px 11px 0px #0600fe;
+  box-shadow: 11px 11px 0px #6304b8;
   transition: 0.3s;
 }
 
