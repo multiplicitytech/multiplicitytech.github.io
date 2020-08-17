@@ -17,6 +17,7 @@ var table = new Tabulator("#example-table", {
            row.getElement().style.backgroundColor = "#ffeac5";
        }
    },
+   resizableColumns:false,
     columns:[ //Define Table Columns
         {title:"Country <br> ", field:"country", width:100},
         {title:"Map <br> Tiles", field:"map", hozAlign:"center", formatter:"tickCross"},
