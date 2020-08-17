@@ -51,7 +51,7 @@ blockquote {
 
 @media (max-width: 450px) {
   .article-title {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 }
 @media (min-width: 1600px) {
