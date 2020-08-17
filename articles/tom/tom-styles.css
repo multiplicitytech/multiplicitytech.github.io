@@ -16,7 +16,7 @@ body, html {
     display:block;
     background-color: #01002d;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
