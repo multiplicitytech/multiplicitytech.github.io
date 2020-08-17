@@ -223,12 +223,6 @@ color: #00FFCE;
   }
 }
 
-.navbar-toggler-icon  {
-  /*height: 100%;*/
-  margin-top: 2vh;
-  /*padding-top: 2.5rem;*/
-}
-
 
 @media screen and (max-width: 569px) {
   .navbar-toggler-icon {
@@ -237,7 +231,7 @@ color: #00FFCE;
 }
 @media screen and (min-width: 570px) {
 .navbar-toggler-icon {
-  margin-top: 2vh;
+  margin-top: 1.65vh;
 }
 }
 
@@ -303,6 +297,8 @@ border-bottom: none !important;
   /*background-color: #00FFCE !important;*/
   background-color: white !important;
   color: #02012F !important;
+  display: block;
+  width: 100vw;
 }
 
 
