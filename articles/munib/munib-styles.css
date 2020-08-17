@@ -68,8 +68,12 @@ blockquote {
 
 
 @media (max-width: 500px) {
-  #map1, #map2, #map3 {
+  #map1, #map3 {
     height: 55vh !important;
+  }
+
+  #map2 {
+    height: 58vh !important;
   }
 }
 
@@ -104,7 +108,7 @@ blockquote {
     .leaflet-right .leaflet-control{
 /*    margin-right: 10px;
     margin-left: 10px !important;*/
-    width: 35%;
+    width: 40%;
   }
 
   .leaflet-touch .leaflet-control-attribution {
