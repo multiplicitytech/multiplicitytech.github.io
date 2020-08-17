@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEADER -->
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161931112-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-161931112-1');
+  </script>
+
+  <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- p5 library -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+
+
+  <!-- UPDATE THESE -->
+
+  <!-- Facebook tags -->
+  <meta property="og:title" content="Multiplicity">
+  <meta property="og:description" content="Global examinations of the internet, youth & society.">
+  <meta property="og:image" content="https://www.multiplicity.tech/img/thumbnail.png"> 
+  <meta property="og:url" content="https://www.multiplicity.tech"> 
+  <meta property="og:site_name" content="multiplicity">
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#02012F"/>
+
+
+  <!-- Twitter tags -->
+  <meta name="twitter:title" content="Multiplicity">
+  <meta name="twitter:description" content="Global examinations of the internet, youth & society.">
+  <meta name="twitter:image" content="https://www.multiplicity.tech/img/thumbnail.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="multiplicity logo">
+  <meta name="twitter:site" content="@multiplicity_x">
+
+
+  <title>Multiplicity</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link href="shared.css" rel="stylesheet">
+  <link href="styles/about.css" rel="stylesheet">
+<style>
+  .teal a:hover {
+    border-bottom: 1px dotted#c5fff3;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+</style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+
+  <!-- <script src="src/sketch.js"></script> -->
+
+</head>
+
+<body class="d-flex flex-column">
+
+
+ <nav class="navbar navbar-expand-lg" style="margin-left: 2%; margin-right: 2%;">
+
+  <div class="d-flex flex-grow-1"> 
+
+    <span class="w-100 d-block"></span>
+
+    <a class="navbar-brand" href="index.html">
+      multiplicity<span style="color: white;">.about</span>
+
+<!--         <span class="txt-rotate"
+        data-period = "2000"
+        data-rotate = '[ ".tech", ".privacy", ".exile", ".identity", ".diaspora", ".archive", ".bias", ".gaming", ".home", ".climate", ".nature", ".food", ".apps", ".flash", ".art", ".earth", ".youth"]'></span> -->
+      </a>
+
+
+      <!-- d-lg-none -->
+      <div class="w-100 text-right">
+
+        <button class="navbar-toggler flex-fill" type="button" data-toggle="collapse" data-target="#myNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-right w-100" id="myNavbar">
+          <ul class="navbar-nav ml-auto flex-nowrap">
+     <!--                <li class="nav-item">
+              <a href="twitter.com" class="nav-link"><img src="img/twitter.png" style="height: 2.1rem;;"></a>
+            </li>
+              <li class="nav-item">
+              <a href="instagram.com" class="nav-link"><img src="img/instagram.png" style="height: 1.5rem;"></a>
+            </li> -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+          </ul>
+
+        </div>
+
+
+      </div> 
+
+
+
+
+    </div>
+
+  </nav>
+
+
+
+  <div id="page-content" style="margin-top: 4%;">
+    <div class="container text-center">
+      <div class="row justify-content-center">
+
+
+        <!-- <div class="about-mt" style="width: 100%"> -->
+          <div class="about-body">
+
+            <h1 class="teal">About</h1>
+            <p><span class="teal"><b>Multiplicity</b></span> is a digital curation on the internet's place in our lives, on both a personal and socio-political level, as young people in different parts of the world. We critically examine the internet's influence, and explore ways to build a healtheir and more equitable internet. For more on the project's inception and goals, read our <span class="teal"><a class="teal" target="_blank" href="articles/origin.html">origin story</a></span>.</p>
+
+            <!-- add links -->
+            <!-- <p> You can get in touch through e-mail, Instagram, or Twitter. Multiplicity is an open-source project, so feel free to open an issue or make a pull request on GitHub. </p>   -->
+
+            <br></br>
+            <!-- </div> -->
+
+            <!-- <h1 class="teal" style="font-family:'stenciletta-solid'">Origin Story</h1> -->
+
+            <h1 class="teal">Team</h1>
+            <p> We are students and alumni of NYU Abu Dhabi and NYU with backgrounds ranging from Literature and Visual Arts to Economics and Computer Engineering. We come from Palestine, Jordan, Egypt, Lebanon, Nepal, Bosnia and Herzegovina, New Zealand, South Korea, and the US.</p>
+            <br><br/>
+
+          </div>
+
+
+        <div id="lujain" class="team-container flex-container-column">
+          <div class="team-img" id="lujain-img"></div>
+
+          <div class="team-card">
+            <div class="team-name flex-container row">
+
+             <h2> Lujain Ibrahim</h2> &emsp;
+
+             <!--    <a  href="mailto:multiplicitytech@gmail.com"><img class="about-link white-teal-filter" src="img/mail.png" style="height: 1.1rem;"></a> &emsp; -->
+             <a  target="_blank" href="https://www.lujainibrahim.com" target="_blank"><img class="about-link white-teal-filter" src="img/webicon.png" style="height: .92rem;"></a> &emsp;
+             <a target="_blank" href="https://twitter.com/lujainmibrahim" target="_blank"><img class="about-link white-teal-filter" src="img/twitter.png" style="height: .8rem;"></a> &emsp;
+               <!-- <a  href="https://www.instagram.com/multiplicity_x/"><img class="about-link white-teal-filter" src="img/instagram.png" style="height: .9rem;"></a>
+               -->
+             </div>
+             <h3> Co-founder | Developer & Writer </h3>
+           </div>
+         </div>
+
+
+         <div id="alia" class="team-container flex-container-column">
+          <div class="team-img" id="alia-img"></div>
+          <!-- <img class="team-img" src="img/alia.png"> -->
+          <div class="team-card">
+            <div class="team-name flex-container row">
+
+              <h2> Alia ElKattan </h2> &emsp;
+
+              <!--      <a  href="mailto:multiplicitytech@gmail.com"><img class="about-link white-teal-filter" src="img/mail.png" style="height: 1.1rem;"></a> &emsp; -->
+              <a  target="_blank" href="https://aliaelkattan.github.io" target="_blank"><img class="about-link white-teal-filter" src="img/webicon.png" style="height: .92rem;"></a> &emsp;
+              <a target="_blank" href="https://www.twitter.com/aliaelkattan" target="_blank"><img class="about-link white-teal-filter" src="img/twitter.png" style="height: .8rem;"></a> &emsp;
+              <a  target="_blank" href="https://www.instagram.com/aliaelkattan/" target="_blank"><img class="about-link white-teal-filter" src="img/instagram.png" style="height: .9rem;"></a>
+
+            </div>
+            <h3>Co-founder | Developer </h3>
+          </div>
+        </div>
+
+
+        <div id="tom" class="team-container flex-container-column">
+          <div class="team-img" id="tom-img"></div>
+          <!-- <img class="team-img" src="img/tom.png"> -->
+          <div class="team-card">
+            <div class="team-name flex-container row">
+
+             <h2>Tom Abi Samra</h2> &emsp;
+
+             <!-- <a  href="mailto:multiplicitytech@gmail.com"><img class="about-link white-teal-filter" src="img/mail.png" style="height: 1.1rem;"></a> &emsp; -->
+             <a  target="_blank" href="https://www.tabisamra.com" target="_blank"><img class="about-link white-teal-filter" src="img/webicon.png" style="height: .92rem;"></a> &emsp;
+             <a target="_blank" href="https://www.twitter.com/tabisamra" target="_blank"><img class="about-link white-teal-filter" src="img/twitter.png" style="height: .8rem;"></a> &emsp;
+             <a  target="_blank" href="https://www.instagram.com/tabisamra" target="_blank"><img class="about-link white-teal-filter" src="img/instagram.png" style="height: .9rem;"></a>
+
+           </div>
+           <h3>Design Lead | Writer </h3>
+         </div>
+       </div>
+
+
+       <div id="jihyun" class="team-container flex-container-column">
+        <!-- <img class="team-img" src="img/jihyun.png"> -->
+        <div class="team-img" id="jihyun-img"></div>
+        <div class="team-card">
+          <div class="team-name flex-container row">
+
+            <h2> Jihyun Kim</h2> &emsp;
+
+            <!--        <a  href="mailto:multiplicitytech@gmail.com" target="_blank"><img class="about-link white-teal-filter" src="img/mail.png" style="height: 1.1rem;"></a> &emsp; -->
+            <a  target="_blank" href="https://www.jihjihk.com" target="_blank"><img class="about-link white-teal-filter" src="img/webicon.png" style="height: .92rem;"></a> &emsp;
+            <a target="_blank" href="https://twitter.com/jihjihk" target="_blank"><img class="about-link white-teal-filter" src="img/twitter.png" style="height: .8rem;"></a> &emsp;
+            <!--             <a  href="https://www.instagram.com/multiplicity_x/" target="_blank"><img class="about-link white-teal-filter" src="img/instagram.png" style="height: .9rem;"></a> -->
+
+          </div>
+          <h3> Writer </h3>
+        </div>
+      </div>
+
+
+      <div id="tona" class="team-container flex-container-column">
+        <!-- <img class="team-img" src="img/tona.png"> -->
+        <div class="team-img" id="tona-img"></div>
+        <div class="team-card">
+          <div class="team-name flex-container row">
+
+            <h2> Tona Campbell</h2> &emsp;
+
+            <!-- <a  href="mailto:multiplicitytech@gmail.com"><img class="about-link white-teal-filter" src="img/mail.png" style="height: 1.1rem;"></a> &emsp; -->
+<!--             <a  href="https://www.jihjihk.com" target="_blank"><img class="about-link white-teal-filter" src="img/webicon.png" style="height: .92rem;"></a> &emsp; -->
+            <a target="_blank" href="https://twitter.com/otcamp" target="_blank"><img class="about-link white-teal-filter" src="img/twitter.png" style="height: .8rem;"></a> &emsp;
+                <a  target="_blank" href="https://www.instagram.com/otcamp/"><img class="about-link white-teal-filter" src="img/instagram.png" style="height: .9rem;"></a>
+
+          </div>
+          <h3> Writer </h3>
+        </div>
+      </div>
+
+
+
+      <div id="munib" class="team-container flex-container-column">
+        <!-- <img class="team-img" src="img/munib.png"> -->
+        <div class="team-img" id="munib-img"></div>
+        <div class="team-card">
+          <div class="team-name flex-container row">
+
+           <h2> Munib Mesinovic</h2> &emsp;
+
+
+           <!--  <a  href="mailto:multiplicitytech@gmail.com"><img class="about-link white-teal-filter" src="img/mail.png" style="height: 1.1rem;"></a> &emsp; -->
+           <a target="_blank" href="https://www.twitter.com/munibmesinovic" target="_blank"><img class="about-link white-teal-filter" src="img/twitter.png" style="height: .8rem;"></a> &emsp;
+           <a  target="_blank" href="https://www.instagram.com/munnib_mesinovic/" target="_blank"><img class="about-link white-teal-filter" src="img/instagram.png" style="height: .9rem;"></a>
+
+         </div>
+         <h3> Writer </h3>
+       </div>
+     </div>
+
+
+
+
+     <div id="rastra" class="team-container flex-container-column">
+      <!-- <img class="team-img" src="img/rastra.png"> -->
+      <div class="team-img" id="rastra-img"></div>
+      <div class="team-card">
+        <div class="team-name flex-container row">
+
+          <h2> Rastra Bhandari</h2> &emsp;
+
+      <!--     <a  href="mailto:multiplicitytech@gmail.com"><img class="about-link white-teal-filter" src="img/mail.png" style="height: 1.1rem;"></a> &emsp;
+        <a href="https://twitter.com/multiplicity_x"><img class="about-link white-teal-filter" src="img/twitter.png" style="height: .8rem;"></a> &emsp; -->
+        <a  target="_blank" href="https://www.instagram.com/rastraraj/" target="_blank"><img class="about-link white-teal-filter" src="img/instagram.png" style="height: .9rem;"></a>
+
+      </div>
+      <h3> Writer </h3>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div id="grace" class="team-container flex-container-column">
+    <!-- <img class="team-img" src="img/grace.png"> -->
+    <div class="team-img" id="grace-img"></div>
+    <div class="team-card">
+      <div class="team-name flex-container row">
+
+       <h2>Grace Huang</h2> &emsp;
+
+       <!--   <a  href="mailto:multiplicitytech@gmail.com"><img class="about-link white-teal-filter" src="img/mail.png" style="height: 1.1rem;"></a> &emsp; -->
+       <a href="https://twitter.com/thatgracehuang"><img class="about-link white-teal-filter" src="img/twitter.png" style="height: .8rem;"></a> &emsp;
+       <a  href="https://www.instagram.com/dotluma/"><img class="about-link white-teal-filter" src="img/instagram.png" style="height: .9rem;"></a>
+
+     </div>
+     <h3> Writer </h3>
+   </div>
+ </div>
+
+
+
+
+<!-- <div class="team-container flex-container-column">
+  <img class="team-img" src="img/jihyun.png">
+  <div class="team-card">
+    <div class="team-name flex-container row">
+
+     <h2> Sohail Bagheri | <span class="teal">Contributor</span> </h2> 
+
+     <div id="about-socials"> 
+      <a  href="mailto:multiplicitytech@gmail.com"><img class="about-link white-teal-filter"  src="img/mail.png" style="height: 1.4rem;"></a> &ensp;
+      <a href="https://twitter.com/multiplicity_x"><img class="about-link white-teal-filter"  src="img/twitter.png" style="height: 1rem;"></a> &ensp;
+      <a  href="https://www.instagram.com/multiplicity_x/"><img class="about-link white-teal-filter"  src="img/instagram.png" style="height: 1.1rem;"></a>
+    </div>
+  </div>
+</div>
+</div> -->
+
+
+
+<!-- ARCHIVED, version 1 -->
+<!--           <div class="team-container" id="about-jihyun">
+
+          <img class="about-img" src="img/jihyun.png">
+
+          <div class="team-card"> 
+
+          <div class="about-name flex-container row">
+
+          <h2> Jihyun Kim </h2> 
+
+           <div id="about-socials"> 
+            <a  href="mailto:multiplicitytech@gmail.com"><img class="about-link white-teal-filter"  src="img/mail.png" style="height: 1.4rem;"></a> &ensp;
+      <a href="https://twitter.com/multiplicity_x"><img class="about-link white-teal-filter"  src="img/twitter.png" style="height: 1rem;"></a> &ensp;
+      <a  href="https://www.instagram.com/multiplicity_x/"><img class="about-link white-teal-filter"  src="img/instagram.png" style="height: 1.1rem;"></a>
+</div>
+      </div>
+
+          <p> Writer, South Korea <br>
+          
+          Jihyun is a software developer and co-founder of a legal tech startup currently based in Singapore. Last year, she built Survival of the Best Fit, a Mozilla-funded educational game on AI bias. </p>
+
+          </div>
+
+          </div>
+
+        -->
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer id="sticky-footer" class="py-1 bg-light text-white">
+
+    <div class="container text-center">
+      <!-- <small> 2020</small> -->
+      <!-- <medium><a href="https://twitter.com/multiplicity_x"> Twitter </a>, <a href="https://www.instagram.com/multiplicity_x/"> Instagram </a>, and <a href="https://github.com/multiplicitytech/multiplicitytech.github.io"> GitHub</a></medium> -->
+      <a href="mailto:multiplicitytech@gmail.com" target="_blank"><img class="navy-filter" src="img/mail.png" style="height: 2.1rem;"></a>  &emsp;
+      <a href="https://twitter.com/multiplicity_x" target="_blank"><img class="navy-filter" src="img/twitter.png" style="height: 1.7rem;"></a> &emsp;
+      <a href="https://www.instagram.com/multiplicity_x/" target="_blank"><img class="navy-filter" src="img/instagram.png" style="height: 1.8rem;"></a> &emsp;
+      <a href="https://github.com/multiplicitytech/multiplicitytech.github.io" target="_blank"><img class="navy-filter" src="img/github.png" style="height: 2.3rem;"> 
+
+
+      </div>
+
+
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.slim.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+  </html>

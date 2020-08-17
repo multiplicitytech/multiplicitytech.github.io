@@ -1,6 +1,6 @@
-# multiplicity
+# Multiplicity
 
-[multiplicity](http://multiplicitytech.github.io) is an online curation examining the impact of tech on our youth & societies. 
+[Multiplicity](http://www.multiplicitytech.tech) is an online curation examining the impact of tech on our youth & societies. 
 
 ### Usage
 
@@ -13,4 +13,8 @@
 ## Bugs and Issues
 
 If you find a bug or have a suggestion, please [open a new issue](https://github.com/mutiplicitytech/multiplicity.github.io/issues) here on GitHub or email us at multiplicitytech@gmail.com.
+
+## Contact
+
+Follow us at @multiplicity_x on Twitter & Instagram and/or email us at multiplicitytech@gmail.com
 

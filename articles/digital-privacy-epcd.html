@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEADER -->
+<head>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161931112-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-161931112-1');
+  </script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+  <title>Digital Privacy in European Post-Communist Democracies - Multiplicity</title>
+
+
+  <!-- Facebook tags -->
+  <meta property="og:title" content="Digital Privacy in European Post-Communist Democracies - Multiplicity">
+  <meta property="og:description" content="There is a needed shift in education and narraitve to include citizens of European Post-Communities Democracies in debates on digital privacy.">
+  <meta property="og:image" content="https://www.multiplicity.tech/img/thumbnail.png"> 
+  <meta property="og:url" content="https://www.multiplicity.tech"> 
+  <meta property="og:site_name" content="multiplicity">
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#02012F"/>
+
+
+  <!-- Twitter tags -->
+  <meta name="twitter:title" content="Digital Privacy in European Post-Communist Democracies - Multiplicity">
+  <meta name="twitter:description" content="There is a needed shift in education and narraitve to include citizens of European Post-Communities Democracies in debates on digital privacy.">
+  <meta name="twitter:image" content="https://www.multiplicity.tech/img/thumbnail.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="multiplicity logo">
+  <meta name="twitter:site" content="@multiplicity_x">
+
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" href="../img/favicon.png" />
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.slim.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+
+  <link href="munib/munib-styles.css" rel="stylesheet"> 
+
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../styles.css" rel="stylesheet">
+  <link href="../shared.css" rel="stylesheet">
+
+ 
+  <!-- Map Raw Data -->
+  <script src="munib/scripts/select_europe.js"></script>
+  <script src="munib/scripts/interview_countries.js"></script>
+
+  <!-- LEAFLET Data Vis Library -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+  <link rel="stylesheet" href="https://use.typekit.net/grm6kxy.css" />
+
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+  crossorigin=""></script>
+
+  <style>#map1 { height: 500px;}</style>
+  <style>#map2 { height: 500px;}</style>
+  <style>#map3 { height: 500px;}</style>
+
+  <script>
+    const mapboxAccessToken = 'pk.eyJ1Ijoic29oYWlsYmFnaGVyaSIsImEiOiJja2N0Mno0NGgwYWN0MnJudG1qcDFmZXlsIn0.Slzmp4JvAnT08GrpHiBDWg';
+    const tileURL = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + mapboxAccessToken;
+  </script>
+
+</head>
+
+
+
+<body class="d-flex flex-column" style="background-color: white">
+<!-- <body> -->
+
+<nav class="navbar navbar-expand-lg" style="margin-left: 2%; margin-right: 2%;">
+
+  <div class="d-flex flex-grow-1"> 
+
+    <span class="w-100 d-block"></span>
+
+    <a class="navbar-brand" href="../index.html">
+      multiplicity<span style="color: #008e71;">.privacy</span>
+
+<!--         <span class="txt-rotate"
+        data-period = "2000"
+        data-rotate = '[ ".tech", ".privacy", ".exile", ".identity", ".diaspora", ".archive", ".bias", ".gaming", ".home", ".climate", ".nature", ".food", ".apps", ".flash", ".art", ".earth", ".youth"]'></span> -->
+      </a>
+
+
+      <!-- d-lg-none -->
+      <div class="w-100 text-right">
+
+        <button class="navbar-toggler flex-fill" type="button" data-toggle="collapse" data-target="#myNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-right w-100" id="myNavbar">
+          <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item">
+              <a href="../about.html" class="nav-link" style="color: #002d25">About</a>
+            </li>
+          </ul>
+
+        </div>
+
+
+      </div> 
+
+
+
+
+    </div>
+
+  </nav>
+
+
+  <!-- Article -->
+
+  <div id="page-content" style="margin-top: 3%;">
+    <div class="container text-center">
+      <div class="row justify-content-center">  
+
+        <div class="col-sm-12 col-md-8 col-xl-8">
+
+<!--   <div class="content">
+    <div> -->
+      <h1 class="article-title"><span class="scramble"></span></h1>
+      <h1 class="article-title">Digital Privacy in European Post-Communist Democracies</h1>
+      <!-- <p class="author"><a target="_blank" href="multiplicity.tech/about">Munib Mesinovic</a></p> -->
+
+      <!-- MAP 3 -->
+      <!-- <div id="map3" style="margin-top: 30px; margin-bottom: 30px;"> -->
+        <!-- map3 JavaScript -->
+        <!-- <script type="text/javascript" src = "munib/scripts/map3.js"></script> -->
+      <!-- </div> -->
+
+      <p><b><a href="../about.html#munib" target="_blank" style="color:#3a3ffb">Munib Mesinovic</a> </b> | Aug 18, 2020</p>
+      <p class="text">Few can argue that the digital privacy debate is a purely technical question and that the “solutions” will also be of a solely technological nature. It has become clear that any attempt to address this question needs to consider the social context as well. One crucial question of our time is “what does privacy mean for a democracy?” Many so-called democratic countries today struggle with the legislation, adaptation, and regulation of privacy in many different areas of information sharing that are beyond just the internet. There is also a profound disconnect between the people who demand better protections and safeguards and the governmental institutions operating the system. Within this group of democratic societies, post-communist countries form a special group that sets them apart not only by their past but also by their current narratives and contexts surrounding privacy. This article explores the digital privacy discourse in post-communist countries and aims to highlight that conversations around digital privacy have a strong context outside of Western and Northern Europe and should be heavily considered when implementing European-wide digital policies and regulations. It draws from my personal experiences living in a European post-communist democracy, Bosnia and Herzegovina, as an engaged young person and is also supplemented by conversations and interviews with fellow Bosnians and citizens of other European post-communist democracies.</p> 
+
+      <p class="text">Learning from different, often underrepresented, narratives surrounding privacy can offer more insight into how we should change not only legislatively, but also socially and behaviorally, our approach to protecting privacy in a digital society. Within these discussions, the context of Eastern and Southern Europe has been missing, especially one drawing on their shared history within communism. In European post-communist democracies (EPCDs), many questions on privacy either have not been raised or remain unanswered. Are there societal practices instilled in those communities, many of which have “outgrown” communism just two decades ago, that foster or hinder privacy guarantees? How is the privacy debate developed, in what kinds of frameworks, and on what platforms? What kind of data is available, and is being collected, in these countries? And, under whose control is it? With election hacking being in the headlines in the US and the UK, how are young democracies dealing with such an impactful data breach on the cornerstone of democracy? And last, but not least, is the technologically advanced age preventing the people of EPCDs from achieving the freedoms they so adamantly fought for?</p>
+
+
+      <p class="text">What <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0261379413000887">studies</a> have identified is that people living in such communities have less support for democracy and open markets. A starting assumptive pointer, therefore, is that people do not care enough about their digital privacy to act because of remnants of communism such as institutionalized corruption and distrust. Such discussions become more important as <a target="_blank" href="https://iapp.org/news/a/most-member-states-wont-be-ready-for-gdpr/">EU-wide regulation</a> is put forward and widely implemented in many of the post-communist countries, now under its banner, without those countries’ different contexts in mind.
+      </p>
+
+      <p class="text">The European Commission special <a target="_blank" href="https://ec.europa.eu/digital-single-market/en/news/eurobarometer-eprivacy">report</a> on data protection, which is within the framework of the Eurobarometer as a measure of public opinion, puts forward several survey results about European-wide attitudes to data privacy and online privacy settings. The first interesting survey result was on the question of whether the respondents had ever changed any privacy settings from the default ones on any of their social media accounts. It should be noted that, to ensure the significance of the results, over 57% of the total number of respondents actively use social media. What the data insinuated, as one can see in figure 1, is that people in EPCDs were less likely to have changed their privacy settings from their default states. What is not certain, however, is if they did not change their settings because of personal choice or because of lack of knowledge of their ability to do so.
+      </p>
+
+      <!-- MAP 1 -->
+      <div id="map1" style="margin-top: 30px; margin-bottom: 30px;">
+
+        <!-- map1 JavaScript -->
+        <script type="text/javascript" src = "munib/scripts/map1.js"></script>
+      </div>
+    <p class="figure-caption" style="text-align: center;"><i><b>Figure 1.</b> Have you changed your privacy settings on social media?</i></p>
+      <p>The data further indicates that people in EPCDs, on average, are the least likely among European states to turn to their national governing bodies for data protection and regulation enforcement. Figure 2, also from the European Commission special report, suggests something similar by showing how EPCDs are below average when it comes to having faith in public institutions to deal with privacy regulations and enforcement.
+      </p>
+
+
+      <!-- MAP 2 -->
+      <div id="map2" style="margin-top: 30px; margin-bottom: 30px;">
+
+        <!-- map2 JavaScript -->
+        <script type="text/javascript" src = "munib/scripts/map2.js"></script>
+      </div>
+      <p class="figure-caption" style="text-align: center;"><i><b>Figure 2.</b> To whom would you prefer to send a complaint about protecting your data? (multiple answers possible)</i></p>
+      <p class="text">To investigate further, I conducted a series of interviews with nationals from the above-mentioned EPCD countries. The demographic of the interviews was heavily skewed towards the age group of early 20s due to access to such individuals. The interviews were conducted at the NYU Abu Dhabi campus among students and employees. The interviewees were reached out to through, ironically, social media, and a total of nine interviews were conducted. The interviews are of an exploratory and investigative nature meant to bring up existing worries, experiences, and opinions on the topic among these communities rather than to reach definitive answers on the above questions — any such attempt has to come from a larger empirical study built with an informed and comprehensive hypothesis. The nationalities included in our interviews were: Bosnia and Herzegovina, Serbia, Macedonia, Bulgaria, Romania, Poland, Lithuania, and Ukraine. 
+      </p>
+
+
+      <p class="text">What all the interviewees’ responses shared was a heavy presence of distrust in their governments, their perception of their governments as inefficient and unknowledgeable when it comes to anything digital, and their description of the general public’s lack of concern or discussion of anything remotely touching upon digital privacy. The interviews indicated that all countries, except Poland, have heavily politically controlled media that most people follow and that any knowledge of digital privacy issues (Snowden, government surveillance, election hacking by Russia or other entities) can only be seen on foreign news outlets.
+      </p>
+
+
+      <p class="text">Additionally, the interviews mentioned several examples of when a digital privacy scandal would arise only to be quickly framed as a political scandal to be taken advantage of in the media. An <a target="_blank" href="https://spynews.ro/actualitate/foto-inedite-andrei-baciu-din-chiloti-de-model-in-costum-de-ministru-85554.html">example</a> was given of a Romanian Minister-to-be who had political rivals “unearth” his modeling photos which they used in the media to discredit him. The scandal became entirely focused on the photos themselves and their political context and no mention was made of how the photos were obtained or whether that was a violation of someone’s (digital) privacy. Similar situations have occurred in <a target="_blank" href="https://balkaninsight.com/2020/05/21/bosnian-serb-chief-shrugs-off-illegal-wiretapping-charges/">Bosnia and Herzegovina</a>, <a target="_blank" href="https://www.nytimes.com/2015/06/22/world/europe/macedonia-government-is-blamed-for-wiretapping-scandal.html">North Macedonia</a>, and <a target="_blank" href="https://www.dw.com/en/curious-wiretapping-affair-rocks-polish-government/a-17730517">Poland</a>, where scandals of wiretapping and hacking were always construed as political scandals and no discussion was facilitated on the acts themselves as anything relating to digital privacy by the domestic news media. In Ukraine, however, the interviewee’s experience with digital privacy is <a target="_blank" href="https://voxukraine.org/en/quiet-revolution-how-ukraine-became-the-champion-of-digital-work/">intertwined</a> with the revolution and with the government's attempts to crack down on digital privacy during the pre-revolutionary period; people rallied together online, in part, to resist government surveillance and social manipulation, and when the government started to intrude on online platforms, that fueled the revolution more. The digital privacy debate was a part of the revolution ideology, still being hijacked in a way by a political context, albeit a revolutionary one.
+      </p>
+      <!-- font-size: 1.8vw -->
+      <h4 style="text-align: left; margin-top: 40px;"> But... what does this have to do with communism? </h4>
+
+
+      <p>As far as the questions on the possible influence of the communist heritage are concerned, there is a split of opinions. Some interviewees believe, and they are in the majority, that the communist mentality has little effect when it comes to these attitudes or the lack of them, and that it has more to do with the post-communist period being considered a corrupt failure. Others think that the communist “way of thinking” of relying on the government and trusting it too much makes people indifferent to asking questions about the consequences of the digital tools they are so frequently using.
+      </p>
+
+
+      <p>Thus, whether this indifference to digital privacy is a result of some sort of communist historical influence is neither straightforward nor widely agreed on. To recall, we have seen how figure 1 and conversations with the members of EPCD communities suggest a lack of concern or action when it comes to digital privacy among the EPCD public. Additionally, as seen in figure 3 below, nationals from most EPCD countries appear much less likely to act on any kind of digital dangers by, for example, using privacy software tools, compared to the EU average (entry with a blue dot under it). Since digital privacy is not discussed or developed in public and educational discourse and no scandals pertaining to it have ever developed in the digital privacy context, rather than only the political one, the public remains indifferent and unaware of the meaning and the importance of the term. The interview responses also support the findings of a recent <a target="_blank" href="https://www.oecd.org/els/soc/cope-divide-europe-2017-background-report.pdf">report</a> by the Organisation for Economic Co-operation and Development (OECD): that economic, social, and political inequality as well as lack of progress compared to the rest of Europe are constantly on people’s minds, thus making digital privacy less of a priority. Thereon, most of people’s time, focus, and discussion is spent on political deliberations and attacks. 
+      </p>
+
+      <!-- <div class = "info" style = "margin-right: 185px; margin-top: 30px">
+        <h4>Do you use software that prevents your online activities from being monitored? (%)</h4>
+      </div> -->
+      <!-- Chart4 -->
+      <div id="chart4" style="margin-top: 0px; margin-bottom: 0px;">
+
+      </div>
+      <!-- chart4 JavaScript -->
+      <script type="text/javascript" src = "munib/scripts/chart4.js"></script>
+
+      <p class="figure-caption" style="text-align: center;"><i><b>Figure 3.</b> Do you use software that prevents your online activities from being monitored?</i></p>
+
+      <p>These aforementioned problems in the post-communist society are perceived as coming from governmental inefficiency which leads to distrust. This necessitates more public focus on political instability than digital privacy which is perceived, as one interviewee put it, as a “first world problem.” Therefore, the common attitude among EPCD nationals towards digital privacy and the importance of it seems to come not from their shared communist heritage as much as from their collective post-communist challenges and current political instabilities. Even in the cases where communism enters the barely existent public discourse on digital privacy, such as in Poland, it is only used as a controversial word to stir up anti-communist animosity towards government involvement in general, thereby serving, once again, political opponents and the opposition rather than the digital rights of the people as such. 
+      </p>
+
+      <p>Similar arguments have been made trying to explain the pre-Snowden era in the US filled with a relatively general lack of concern over digital privacy which later exploded following several revelatory events. As Phillip Rogaway <a target="_blank" href="https://web.cs.ucdavis.edu/~rogaway/papers/moral-fn.pdf">notes,</a> “It wasn’t until Snowden that I finally internalized that the surveillance issue was grave,” noting that other problems such as the environment and sustainability were a larger concern that attracted more attention. 
+      </p>
+
+
+      <p>It seems that the attitude among EPCDs towards the importance of digital privacy is at a minimum and is deeply coupled with political narratives. The lack of discussion, information, and education on these issues and concerns necessarily means there is less pressure to create, adopt, and regulate laws that would help oversee and manage online activity and autonomy, which in the end, contributes to a lagging judiciary that is years behind contemporary technology and its dangers. What is missing is not just an Eastern European Snowden or anything similar, but also independent newspapers and portals, a strong political opposition, and an informed and involved public.
+      </p>
+
+
+
+      <p>Further, the term “digital privacy” and its meaning or connotations do not appear in news or public discourse more likely due to the post-communist political and economic lag than due to the communist period itself. The goal of this article is to highlight that conversations around digital privacy have a strong context outside of Western and Northern Europe and should be heavily considered when implementing European-wide digital policies and regulations. Well-founded hope remains that there will be heightened interest in the creation of similar resources in academia and public discourse in European post-communist democracies alongside other unheard voices on digital privacy around the world.
+      </p>
+
+
+      <hr style="width: 10vw; margin-top: 40px; margin-bottom: 40px; border: 1px solid black">
+      <p><i>We <a target="_blank" href="origin.html">believe</a> in furthering the conversation on digital privacy beyond this article. Here are a few resources from Munib to get that started:</i></p>
+      <p>
+        1. <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0261379413000887"> Communist socialization and post-communist economic and political attitudes |  G. Pop-Eleches & J. A. Tucker</a>
+      </p>
+      <p>2. 
+        <a target="_blank" href="https://www.youtube.com/watch?v=acijNEErf-c">GDPR explained: How the new data protection act could change your life | Channel 4 News</a>
+      </p>
+      <p>3. 
+       <a target="_blank" href="https://www.thehrdirector.com/features/big-data/international-gdpr-one-year-eastern-europe/">INTERNATIONAL
+       GDPR One Year On – Eastern Europe | Ius Laboris</a>
+     </p>
+     <p>4. 
+       <a target="_blank" href="https://www.twobirds.com/en/in-focus/general-data-protection-regulation/gdpr-tracker/hungary">GDPR Tracker in Hungary | Bird&Bird</a>
+     </p>
+     <p>5. 
+       <a target="_blank" href="https://datareportal.com/reports/tag/Eastern+Europe">Posts tagged "Eastern Europe" | DATAPORTAL</a>
+     </p>
+     <br>
+     <p>---</p>
+     <p><i>Map/chart credits to <a target="_blank" href="https://www.sohailbagheri.com/">Sohail Bagheri</a></i></p>
+   </div>
+
+ </div>
+</div>
+</div>
+  <footer id="sticky-footer" class="py-1 bg-light text-white" style="background-color:black !important">
+
+    <div class="container text-center">
+      <!-- <small> 2020</small> -->
+      <!-- <medium><a href="https://twitter.com/multiplicity_x"> Twitter </a>, <a href="https://www.instagram.com/multiplicity_x/"> Instagram </a>, and <a href="https://github.com/multiplicitytech/multiplicitytech.github.io"> GitHub</a></medium> -->
+      <a href="mailto:multiplicitytech@gmail.com" target="_blank"><img class="white-green-filter" src="../img/mail.png" style="height: 2.1rem;"></a>  &emsp;
+      <a href="https://twitter.com/multiplicity_x" target="_blank"><img class="white-green-filter" src="../img/twitter.png" style="height: 1.7rem;"></a> &emsp;
+      <a href="https://www.instagram.com/multiplicity_x/" target="_blank"><img class="white-green-filter" src="../img/instagram.png" style="height: 1.8rem;"></a> &emsp;
+      <a href="https://github.com/multiplicitytech/multiplicitytech.github.io" target="_blank"><img class="white-green-filter" src="../img/github.png" style="height: 2.3rem;"> 
+
+
+      </div>
+
+
+    </footer>
+
+
+</body>
+<script>
+// ——————————————————————————————————————————————————
+// TextScramble
+// ——————————————————————————————————————————————————
+
+class TextScramble {
+  constructor(el) {
+    this.el = el
+    this.chars = '!<>-_\\/[]{}—=+*^?#________'
+    this.update = this.update.bind(this)
+  }
+  setText(newText) {
+    const oldText = this.el.innerText
+    const length = Math.max(oldText.length, newText.length)
+    const promise = new Promise((resolve) => this.resolve = resolve)
+    this.queue = []
+    for (let i = 0; i < length; i++) {
+      const from = oldText[i] || ''
+      const to = newText[i] || ''
+      const start = Math.floor(Math.random() * 40)
+      const end = start + Math.floor(Math.random() * 40)
+      this.queue.push({ from, to, start, end })
+    }
+    cancelAnimationFrame(this.frameRequest)
+    this.frame = 0
+    this.update()
+    return promise
+  }
+  update() {
+    let output = ''
+    let complete = 0
+    for (let i = 0, n = this.queue.length; i < n; i++) {
+      let { from, to, start, end, char } = this.queue[i]
+      if (this.frame >= end) {
+        complete++
+        output += to
+      } else if (this.frame >= start) {
+        if (!char || Math.random() < 0.28) {
+          char = this.randomChar()
+          this.queue[i].char = char
+        }
+        output += `<span class="dud">${char}</span>`
+      } else {
+        output += from
+      }
+    }
+    this.el.innerHTML = output
+    if (complete === this.queue.length) {
+      this.resolve()
+    } else {
+      this.frameRequest = requestAnimationFrame(this.update)
+      this.frame++
+    }
+  }
+  randomChar() {
+    return this.chars[Math.floor(Math.random() * this.chars.length)]
+  }
+}
+
+// ——————————————————————————————————————————————————
+// Example
+// ——————————————————————————————————————————————————
+
+const phrases = [
+'Unheard Voices:',
+'Different Contexts:', 
+'Unexplored Discourse:'
+]
+
+const el = document.querySelector('.scramble')
+const fx = new TextScramble(el)
+
+var counter = 0
+const next = () => {
+  fx.setText(phrases[counter]).then(() => {
+    setTimeout(next, 3000)
+  })
+  counter = (counter + 1) % phrases.length
+}
+
+next()
+</script>
+
+</html>

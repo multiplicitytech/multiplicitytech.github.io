@@ -1,0 +1,204 @@
+body, html {
+    height: 100vh;
+    background-color: #fff;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.navbar-toggler-icon {
+ background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0,45,37,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;}
+
+blockquote {
+  font-family: ministry, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  border-left-style: dashed;
+  border-left-width: 3px;
+  border-left-color: #000cf5;
+  padding: 10px;
+  text-align:justify;
+}
+
+.author {
+  font-weight: 400;
+  color: #91e877;
+  text-align: center;
+  font-size: 1.5vw;
+  margin-top: 0px;
+}
+
+.byline {
+  color:#7cfcda;
+}
+
+.article-title {
+  color: #002d25;
+  /*text-align: center;*/
+  text-align: left !important;
+  font-weight: 300;
+  font-family: 'stenciletta-solid', sans-serif;
+  font-style: normal;
+  font-size: 2.2rem !important;
+  margin: 0px;
+  margin-bottom: 10px;
+
+}
+
+.text-center h1 {
+  text-align: left !important;
+}
+
+@media (max-width: 450px) {
+  .article-title {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1600px) {
+ .article-title {font-size: 2.5rem}
+}
+
+.date {
+  color: #7cfcda
+}
+
+#extras {
+  text-align: center;
+}
+
+.info {
+  padding: 6px 8px;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.info b {
+  font-weight: 400;
+}
+.info h4 {
+  display: block;
+  font-size: 1rem !important;
+  font-weight: bold;
+  font-family: 'stenciletta-solid';
+  margin: 0 0 5px;
+  color: black;
+}
+
+@media (min-width: 1200px) {
+  .info h4 {font-size: 1.125rem; !important}
+}
+
+@media (max-width: 450px) {
+    .leaflet-right .leaflet-control{
+/*    margin-right: 10px;
+    margin-left: 10px !important;*/
+    width: 35%;
+  }
+
+  .leaflet-touch .leaflet-control-attribution {
+    width: 100%;
+  }
+
+  .leaflet-left .leaflet-control  {
+    margin-bottom: 45px !important;
+  }
+}
+
+h4 {
+  /*font-size: 1.8vw;*/
+  font-weight: bold;
+  color: black;
+  font-family: 'stenciletta-solid';
+}
+
+.legend {
+  line-height: 18px;
+  color: #555;
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+.legend td {
+  opacity: 0.75;
+}
+
+.leaflet-tooltip{
+  width: 300px;
+  /*font-size: 1vw;*/
+  font-size: 1rem;
+  white-space: normal;
+  font-family: ministry;
+  font-style: normal;
+
+}
+
+
+h2 {
+    font-size: 20px; 
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+
+.content {
+  margin-top:50px; 
+  margin-left: 20vw; 
+  margin-right: 20vw; 
+  margin-bottom: 50px; 
+}
+
+.text {
+  text-align: justify;
+}
+
+
+#page-content a {
+    color: #008e71 !important;
+    text-decoration: none !important;
+    z-index: 1000;
+}
+
+#page-content a:hover {
+    color: #008e71 !important;
+    border-bottom: 1px dotted #008e71;
+}
+
+p {
+  font-family: ministry;
+  font-style: normal;
+  color: black;
+  font-weight: 300;
+  /*font-size: 1.3vw;*/
+  text-align:justify;
+}
+
+::selection {
+  background: #c5fff3; 
+}
+::-moz-selection {
+  background: #c5fff3; 
+}
+
+.navbar-brand {
+   color: #002d25 !important;
+}
+
+.navbar-brand:hover {
+  color: #008e71 !important;
+}
+
+.nav-link:hover {
+  color: #008e71 !important;
+}
+
+.leaflet-control {
+  margin-bottom: 20px;
+}
