@@ -66,6 +66,14 @@ blockquote {
   text-align: center;
 }
 
+
+@media (max-width: 500px) {
+  #map1, #map2, #map3 {
+    height: 55vh !important;
+  }
+}
+
+
 .info {
   padding: 6px 8px;
   font-family: ministry, sans-serif;
