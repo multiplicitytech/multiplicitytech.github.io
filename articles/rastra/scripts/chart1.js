@@ -5,7 +5,7 @@ var options = {
   }],
   chart: {
     fontFamily: 'ministry, sans-serif',
-    fontSize:'1.2rem',
+    // fontWeight: '300',
     type: 'bar',
     height: 380,
     toolbar: {
@@ -49,8 +49,8 @@ var options = {
   xaxis: {
     categories: ['Play outside less than once per week', "Do not know where milk comes from", "Have not been on a country walk in a year", "Have never been on a farm", "Have never climbed a tree"
     ],
-    max: 70,
-    tickAmount: 7,
+    max: 80,
+    tickAmount: 8,
     labels: {
       show: true,
       formatter: function (value) {
