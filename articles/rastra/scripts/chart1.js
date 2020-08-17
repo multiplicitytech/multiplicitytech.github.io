@@ -5,6 +5,7 @@ var options = {
   }],
   chart: {
     fontFamily: 'ministry, sans-serif',
+    fontSize:'1.2rem',
     type: 'bar',
     height: 380,
     toolbar: {

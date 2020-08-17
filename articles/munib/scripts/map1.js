@@ -4,7 +4,7 @@ var pastLocation1;
 var geojson1;
 
 
-const map1 = L.map('map1').setView([54, 13], 4); //europe
+const map1 = L.map('map1', {dragging: false}).setView([54, 13], 4); //europe
 
 map1.scrollWheelZoom.disable();
 

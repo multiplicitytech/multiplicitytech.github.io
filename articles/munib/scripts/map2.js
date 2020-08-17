@@ -142,19 +142,14 @@ var nationallayer = L.geoJson(europe_data, {
 
             },
             'click': function (e) {
-
-                if (bounded2 && pastLocation2 == e.target._bounds) {
-                    map2.setView([51.74739, 10], 4);
-                    bounded2 = false;
-                } 
-                else {
-                    e.target.setStyle({
-                        weight: 3,
-                        color: '#d7f7cf',
-                        dashArray: '',
-                        fillOpacity: 0.7
-                    });
-                    info2.update(feature.properties);  }
+                e.target.setStyle({
+                    weight: 3,
+                    color: '#d7f7cf',
+                    dashArray: '',
+                    fillOpacity: 0.7
+                });
+                info2.update(feature.properties);
+     }
             });
     }
 });
@@ -193,14 +188,15 @@ var companylayer = L.geoJson(europe_data, {
 
             },
             'click': function (e) {
-
                 e.target.setStyle({
                     weight: 3,
-                    color: '#d7f7cf',
+                    color: 'rgb(214, 254, 245)',
                     dashArray: '',
                     fillOpacity: 0.7
                 });
-                info2.update(feature.properties);  
+                info2.update(feature.properties);
+
+            }
         });
     }
 }).addTo(map2);
