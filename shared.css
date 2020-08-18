@@ -235,11 +235,20 @@ color: #00FFCE;
 }
 }
 
-@media screen and (max-width: 334px) {
+@media screen and (max-width: 350px) {
+  .navbar-toggler-icon {
+  margin-top: 0.1vh;
+}
+
+}
+
+@media screen and (max-width: 330px) {
   .navbar-toggler-icon {
   margin-top: 0vh;
 }
 }
+
+
 
 
 .nav-link {
