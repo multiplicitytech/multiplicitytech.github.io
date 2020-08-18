@@ -406,7 +406,11 @@ to {
         font-size: 1rem !important;
     }
 }
-
+@media screen and (min-width: 601px){
+    .authorname {
+        text-align: center !important;
+    }
+}
 
 @media screen and (max-width: 600px) {
     .column {
@@ -423,7 +427,7 @@ to {
         text-align: left;
     }
     .authorname {
-        text-align: left;
+        text-align: left !important;
         padding-right: 15px;
         padding-left: 15px;
     }
@@ -548,9 +552,7 @@ hr {
     color: black !important;
 }
 */
-.authorname {
-    text-align: center !important;
-}
+
 .article-title {
     color: #ff2238;
     text-align: center;
