@@ -13,6 +13,9 @@ body{
     width: 100%;
 
 }
+html {
+    overflow-x: hidden;
+}
 ::selection {
     background: #ffb7b7; 
 }
