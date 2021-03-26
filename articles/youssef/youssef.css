@@ -1,1 +1,7 @@
 @import url("https://use.typekit.net/grm6kxy.css");
+
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
