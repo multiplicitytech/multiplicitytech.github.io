@@ -14,7 +14,7 @@
 body, html {
     height: 100vh;
     display:block;
-    background-color: #01002d;
+    background-color: #301934;
     margin: 0;
 }
 
@@ -56,6 +56,11 @@ h4 {
 h3 {
     color:#bcaa73;
     font-size: 16px;
+}
+
+h2 {
+    color: #f200ff;
+    text-align: center;
 }
 
 blockquote {
@@ -298,8 +303,6 @@ p {
 	margin: 0 auto;
 }
 
-.sticky {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  bottom: 0;
+.music {
+  text-align: center;
 } 
