@@ -116,7 +116,6 @@ blockquote {
   text-align: left;
 }
 
-
 p {
   font-family: ministry;
   font-style: normal;
@@ -306,3 +305,12 @@ p {
 .music {
   text-align: center;
 } 
+
+#sideOne, #sideTwo, .switcheroo {
+  text-align: center;  
+}
+
+#sideOne p.subtitle, #sideTwo p.subtitle {
+  text-align: center;
+  font-size: .9rem;
+}
