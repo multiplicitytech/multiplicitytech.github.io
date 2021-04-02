@@ -14,7 +14,7 @@
 body, html {
     height: 100vh;
     display:block;
-    background-color: #301934;
+    background-color: black;
     margin: 0;
 }
 
@@ -306,11 +306,11 @@ p {
   text-align: center;
 } 
 
-#sideOne, #sideTwo, .switcheroo {
+#sideOne0, #sideTwo0, #sideOne1, #sideTwo1, .switcheroo {
   text-align: center;  
 }
 
-#sideOne p.subtitle, #sideTwo p.subtitle {
+#sideOne0 p.subtitle, #sideTwo0 p.subtitle, #sideOne1 p.subtitle, #sideTwo1 p.subtitle {
   text-align: center;
   font-size: .9rem;
 }
