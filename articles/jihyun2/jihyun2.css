@@ -23,8 +23,9 @@ body {
 }
 
 #page-content a {
-  color: #f200ff !important;
+  color: #00FF00 !important;
   text-decoration: none !important;
+  font-size: 1.1rem;
 }
 
 #page-content a:hover {
@@ -84,7 +85,7 @@ blockquote {
 }
 
 .articleTitle {
-  color: #00ffce;
+  color: #FFD700;
   text-align: left !important;
   font-weight: 300;
   font-family: 'stenciletta-solid', sans-serif;
@@ -139,51 +140,6 @@ p {
   animation: letter-flicker 2s linear infinite;
 }
 
-
-.tooltip-m {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-  color:#f200ff;
-}
-
-
-.tooltip-m .tooltiptext-m {
-  visibility: hidden;
-  width: 280px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 3px;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -140px;
-  opacity: 0;
-  transition: opacity 0.3s;
-  font-size: 1.2vw;
-}
-
-.tooltip-m .tooltiptext-m::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-  font-size: 1.2vw;
-}
-
-.tooltip-m:hover .tooltiptext-m {
-  visibility: visible;
-  opacity: 1;
-}
-
-
 .title-container {
   display: flex;
   justify-content: center;
@@ -208,7 +164,7 @@ p {
 }
 
 .nav-link:hover {
-  color: #f200ff !important;
+  color: #FFD700 !important;
 }
 @media (max-width: 450px) {
   .title-container p {
@@ -244,8 +200,8 @@ p {
 .tooltip-m {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted #f200ff;
-    color:#f200ff;
+    border-bottom: 1px dotted #00FF00;
+    color:#00FF00;
 }
 .tooltip-m .tooltiptext-m {
     visibility: hidden;
@@ -296,4 +252,10 @@ p {
 .source {
 	color: skyblue;
 	margin: 0 auto;
+}
+
+.graph {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
