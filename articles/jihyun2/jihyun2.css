@@ -25,11 +25,11 @@ body {
 #page-content a {
   color: #00FF00 !important;
   text-decoration: none !important;
-  font-size: 1.1rem;
+  font-size: 1.08rem;
 }
 
 #page-content a:hover {
-  border-bottom: 1px dotted #f200ff !important;
+  border-bottom: 1px dotted #00FF00 !important;
   text-decoration: none !important;
 } 
 
@@ -258,4 +258,9 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.figureText {
+  text-align: center !important;
+  font-style: italic;
 }
