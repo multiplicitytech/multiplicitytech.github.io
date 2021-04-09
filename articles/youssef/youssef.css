@@ -16,7 +16,7 @@ body, html {
   display: block;
   background-color：white !important;
 }
-/*
+
 body, html {
     height: 100vh;
     display:block;
@@ -43,7 +43,7 @@ hr {
     width: 10vw !important;  
     margin-top: 40px !important; 
     margin-bottom: 40px !important;
-    /*color: red;*/
+    color: red;
     border: 1px solid grey !important;
 }
 
@@ -319,4 +319,4 @@ p {
 #sideOne0 p.subtitle, #sideTwo0 p.subtitle, #sideOne1 p.subtitle, #sideTwo1 p.subtitle {
   text-align: center;
   font-size: .9rem;
-}*/
+}
