@@ -1,8 +1,11 @@
 var options = {
     series: [{
-      name: "Percentage of global stocks (holding for one year)",
-      data: [33, 78, 60, 51, 30, 21, 50, 40, 52, 42, 41, 23]
-  }],
+      name: "Hedge Funds",
+      data: [100000, 94520, 102318, 113696, 116970, 117017, 124143, 137538, 130538, 144466, 159982]
+    }, {
+      name: "S&P 500",
+      data: [100000, 102098, 118322, 156357, 177504, 179951, 201137, 244594, 234242, 308005, 364678]
+    }],
     chart: {
       height: 350,
       background: '#fff',
@@ -14,7 +17,7 @@ var options = {
         enabled: false
       }
   },
-  colors: ['#FF0000'],
+  colors: ['#FF0000', '#0000FF'],
   dataLabels: {
     enabled: false
   },
@@ -22,23 +25,8 @@ var options = {
     curve: 'straight'
   },
   title: {
-    text: 'Percentage of global stocks outperforming the S&P 500',
+    text: 'Payoff from $100,000 invested on January 1, 2011: S&P 500 index vs. average hedge fund',
     align: 'left'
-  },
-  annotations: {
-    yaxis: [{
-      strokeDashArray: 0,
-      y: 50,
-      borderColor: '#000',
-      label: {
-        text: '50%',        
-      }
-
-    }],
-    xaxis: [{
-      x: 0,
-      x2: null,
-    }],
   },
   grid: {
     row: {
@@ -47,17 +35,15 @@ var options = {
     },
   },
   xaxis: {
-    categories: ['Dec - 08', 'Dec - 09', 'Dec - 10', 'Dec - 11', 'Dec - 12', 'Dec - 13', 'Dec - 14', 'Dec - 15', 'Dec - 16', 'Dec - 17', 'Dec - 18', 'Dec - 19'],
+    categories: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
   },
   yaxis: {
-    min: 0,
-    max: 100,
     labels: {
       show: true,
       offsetX: -10,
       formatter: function (val) {
-        return val + "%";
-      }
+        return "$" + val;
+      },
     },
   },
 };
