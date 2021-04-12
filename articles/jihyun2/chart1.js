@@ -14,7 +14,6 @@ var options = {
   }
   ],
   chart: {
-    width: '60%',
     height: 350,
     background: '#fff',
     type: 'line',
@@ -32,12 +31,9 @@ var options = {
   },
   dataLabels: {
     enabled: true,
-      labels: {
-        show: true,
-        formatter: function (value) {
-          return value + "%";
-        }
-      },
+    formatter: function (val) {
+      return val + "%";
+    }
   },
   title: {
     text: 'Rising wealth inequality in the US',
@@ -61,8 +57,9 @@ var options = {
     max: 100,
     labels: {
       show: true,
-      formatter: function (value) {
-        return value + "%";
+      offsetX: -10,
+      formatter: function (val) {
+        return val + "%";
       }
     },
   },
@@ -70,7 +67,7 @@ var options = {
     position: 'top',
     horizontalAlign: 'right',
     floating: true,
-    offsetY: -25,
+    offsetY: -15,
     offsetX: -5
   }
 };

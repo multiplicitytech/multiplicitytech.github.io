@@ -49,6 +49,10 @@ var options = {
       enabled: true
     }
   },
+  title: {
+    text: 'Robinhood order routing revenue breakdowns (millions of dollars)',
+    align: 'left'
+  },
   responsive: [{
     breakpoint: 480,
     options: {
@@ -65,8 +69,24 @@ var options = {
       horizontal: false,
     },
   },
+  dataLabels: {
+    enabled: true,
+    formatter: function (val) {
+      return "$" + val;
+    }
+  },
   xaxis: {
     categories: ['Product Category', 'Order Type', 'Broker Dealer'],
+  },
+  yaxis: {
+    min: 0,
+    max: 100,
+    labels: {
+      show: true,
+      formatter: function (val) {
+        return "$" + val;
+      }
+    },
   },
   legend: {
     show: false
@@ -76,5 +96,5 @@ var options = {
   }
   };
 
-  var chart = new ApexCharts(document.querySelector("#chart2"), options);
-  chart.render();
+var chart = new ApexCharts(document.querySelector("#chart2"), options);
+chart.render();
