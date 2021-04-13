@@ -14,7 +14,7 @@
 body, html {
     height: 100vh;
     display:block;
-    background-color: white;
+    background-color: black;
     margin: 0;
 }
 
@@ -23,12 +23,12 @@ body {
 }
 
 #page-content a {
-  color: #ff4e5f !important;
+  color: #ff7987 !important;
   text-decoration: none !important;
 }
 
 #page-content a:hover {
-  border-bottom: 1px dotted #ff4e5f !important;
+  border-bottom: 1px dotted #ff7987 !important;
   text-decoration: none !important;
 } 
 
@@ -49,7 +49,7 @@ h4 {
     margin-top:40px;
     margin-bottom: 10px;
     font-family: 'stenciletta-solid';
-    color: #00cca4;
+    color: #f9ffcc;
 }
 
 
@@ -76,7 +76,7 @@ blockquote {
 
 .author {
   font-weight: 400;
-  color: #fbc5ff;
+  color: #ff7987;
 }
 
 .byline {
@@ -84,7 +84,7 @@ blockquote {
 }
 
 .articleTitle {
-  color: #00cca4;
+  color: #f9ffcc;
   text-align: left !important;
   font-weight: 300;
   font-family: 'stenciletta-solid', sans-serif;
@@ -115,7 +115,7 @@ blockquote {
 p {
   font-family: ministry;
   font-style: normal;
-  color: black;
+  color: white;
   font-weight: 300;
   /*font-size: 1.3vw;*/
   text-align:left;
@@ -144,7 +144,7 @@ p {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
-  color:#ff4e5f;
+  color:#ff7987;
 }
 
 
@@ -204,11 +204,11 @@ p {
 }
 
 .navbar-brand:hover {
-  color:#ff4e5f !important;
+  color:#ff7987 !important;
 }
 
 .nav-link:hover {
-  color: #ff4e5f !important;
+  color: #ff7987 !important;
 }
 @media (max-width: 450px) {
   .title-container p {
@@ -244,8 +244,8 @@ p {
 .tooltip-m {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted #ffa200;
-    color:#ff4e5f;
+    border-bottom: 1px dotted #ff7987;
+    color:#ffd2d6;
 }
 .tooltip-m .tooltiptext-m {
     visibility: hidden;
@@ -304,7 +304,7 @@ p {
 
 
 .jihyun img {
-width: 17%; border-radius: 25px; border: 5px solid #00cca4; margin: 15px;
+width: 17%; border-radius: 25px; border: 5px solid #f9ffcc; margin: 15px;
 }
 
 @media (max-width: 600px)  {

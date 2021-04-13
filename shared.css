@@ -66,6 +66,19 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(102deg) brightness(101%
 filter: invert(40%) sepia(98%) saturate(920%) hue-rotate(81deg) brightness(92%) contrast(103%);
 }
 
+.white-pink-filter {
+  filter: invert(98%) sepia(0%) saturate(763%) hue-rotate(59deg) brightness(119%) contrast(100%);}
+
+.white-pink-filter:hover {
+filter: invert(42%) sepia(91%) saturate(2134%) hue-rotate(326deg) brightness(101%) contrast(101%);
+}
+
+
+.black-pink-filter {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%);}
+.black-pink-filter:hover {
+filter: invert(42%) sepia(91%) saturate(2134%) hue-rotate(326deg) brightness(101%) contrast(101%);
+}
 
 
 #page-content p {
