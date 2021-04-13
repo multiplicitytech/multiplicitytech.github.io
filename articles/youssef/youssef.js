@@ -20,5 +20,16 @@ function switcheroo(val) {
 		sideTwo.style.display = (
 		   sideTwo.style.display == "none" ? "block" : "none"); 	
 	}
-
 }
+
+function btt() {
+	setTimeout(() => {
+		let boomTssTaks = document.getElementsByClassName('boomTssTak');
+		for (let i = 1; i < 8; i++) {
+			setTimeout(function() {boomTssTaks[i-1].style.visibility = 'visible'}, i*750);
+		}
+	}, 250);
+}
+
+document.addEventListener('DOMContentLoaded', btt);
+

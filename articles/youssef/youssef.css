@@ -12,9 +12,15 @@
 
 
 body, html {
+  height: 100vh;
+  display: block;
+  background-color：white !important;
+}
+
+body, html {
     height: 100vh;
     display:block;
-    background-color: black;
+    background-color: white;
     margin: 0;
 }
 
@@ -23,7 +29,7 @@ body {
 }
 
 #page-content a {
-  color: #f200ff !important;
+  color: #520A5E !important;
   text-decoration: none !important;
 }
 
@@ -37,7 +43,7 @@ hr {
     width: 10vw !important;  
     margin-top: 40px !important; 
     margin-bottom: 40px !important;
-    /*color: red;*/
+    color: red;
     border: 1px solid grey !important;
 }
 
@@ -68,7 +74,7 @@ blockquote {
     font-style: italic;
     font-weight: 300;
     /*font-size: 1.3vw;*/
-    color:white;
+    color: #520A5E;
     border-left-style: dashed;
     border-left-width: 4px;
     border-left-color: #00ffce;
@@ -119,7 +125,7 @@ blockquote {
 p {
   font-family: ministry;
   font-style: normal;
-  color: white;
+  color: black;
   font-weight: 300;
   /*font-size: 1.3vw;*/
   text-align:left;

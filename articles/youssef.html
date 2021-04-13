@@ -53,10 +53,9 @@
   <link href="../shared.css" rel="stylesheet">
 
 <!-- Add article specific css here -->
-  <link href="youssef/youssef.css" rel="stylesheet">
+  <link href="youssef/youssef-v2.css" rel="stylesheet">
 
-<!-- Article specific JS -->
-  <script src="youssef/youssef.js"></script> 
+
 </head>
 
 
@@ -66,14 +65,13 @@
   <div class="d-flex flex-grow-1"> 
   <span class="w-100 d-block"></span>
     <!-- change color here according to article color scheme -->
-    <a class="navbar-brand" href="../index.html" style="color:#00ffce ;">
-      multiplicity<span style="color: #f200ff;">.music</span>
+    <a class="navbar-brand" href="../index.html" id = 'logo'>
+      multiplicity<span id = 'suffix'>.music</span>
       </a>
 
 
     <!-- change color here according to article color scheme -->
       <div class="w-100 text-right">
-
         <button class="navbar-toggler flex-fill" type="button" data-toggle="collapse" data-target="#myNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -81,7 +79,7 @@
         <div class="collapse navbar-collapse text-right w-100" id="myNavbar">
           <ul class="navbar-nav ml-auto flex-nowrap">
             <li class="nav-item">
-              <a href="../about.html" class="nav-link" style="color: #00ffce">About</a>
+              <a href="../about.html" class="nav-link" id = 'abt'>About</a>
             </li>
           </ul>
         </div>
@@ -92,88 +90,107 @@
   <div style="margin-top: 3%;">
     <div class="container text-center">
       <div class="row justify-content-center">  
-        <div class="col-sm-12 col-md-8 col-xl-8">
-          <h1 class="articleTitle">Article Title</h1>
+        <!-- <div class="col-sm-12 col-md-8 col-xl-8"> -->
+
+          <h1 class = 'articleTitle'>*placeholder?*</h1>
 
           <div id="page-content">
 
-          <p><b><a target="_blank" href="../about.html#authorname">Youssef Azzam</a></b> | Article Date</p>
+          <p id = 'info' class="col-sm-12 col-md-8 col-xl-8"><b><a target="_blank" href="../about.html#authorname">Youssef Azzam</a></b> | Article Date</p>
 
-              <h2>Section 1 - Cairokee and the past</h2>
-              <div class="music"><iframe src="https://open.spotify.com/embed/track/7KXjTSCq5nL1LoYtL7XAwS" width="250" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+              <div class = 'asset-left'>
+                <h3 class="boomTssTak">Boom.</h3>
+                <h3 class="boomTssTak">Tss.</h3>
+                <h3 class="boomTssTak" display = 'block'>Tak.</h3>
+                <h3 class="boomTssTak">Boom.</h3>
+                <h3 class="boomTssTak">Boom.</h3>
+                <h3 class="boomTssTak">Tss.</h3>
+                <h3 class="boomTssTak">Tak.</h3>
+              </div>
+              <div class="music asset-right"><iframe src="https://open.spotify.com/embed/track/7KXjTSCq5nL1LoYtL7XAwS" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
 
-              <p>I swayed to the sounds of drum beats and guitar riffs echoing across the Sawy Culturewheel’s riverside concert hall. It was the spring of 2012 and the weekend of my 14th birthday. Being the music addict I am, and just like any other teenager getting introduced to the realm of music, I leveraged my birthday and dragged my brother to one of Cairo's local venues in an attempt to explore the local music scene and discover any hidden gems. Little did I know that this concert would be life-changing on various levels for my brother, myself and Cairokee, the band I was watching.</p>
-              
-              <p>Growing up in Cairo in the early 2000s, and with western influences playing a huge role in Egyptian and MENA societies, Arabic pop music was a trending genre. With artists such as Amr Diab, Nancy Ajram and Tamer Hosny mainly singing about love on modern pop beats, the first decade of the 21st century was characterized by Arabic pop music. It's worth noting that when a specific music genre is seen as a trend in the MENA region, it's usually maxed out by overconsumption amongst all classes through advertisements and publicity-related contexts. As a result, and with most of the pop artists signed to record labels, the MENA music business had imposed a strict pop-esque monopoly on the industry which in turn controlled the creativity of artists and contradicted everything an artist stands for; freedom of artistic expression.</p>
-
+              <p class="col-sm-12 col-md-8 col-xl-8">I swayed to the sounds of drum beats and guitar riffs echoing across the Sawy Culturewheel’s riverside concert hall. It was the spring of 2012 and the weekend of my 14th birthday. Being the music addict I am, and just like any other teenager getting introduced to the realm of music, I leveraged my birthday and dragged my brother to one of Cairo's local venues in an attempt to explore the local music scene and discover any hidden gems. Little did I know that this concert would be life-changing on various levels for my brother, myself and Cairokee, the band I was watching.</p>
+              <br></br>
+              <p class="col-sm-12 col-md-8 col-xl-8">Growing up in Cairo in the early 2000s, and with western influences playing a huge role in Egyptian and MENA societies, Arabic pop music was a trending genre. With artists such as Amr Diab, Nancy Ajram and Tamer Hosny mainly singing about love on modern pop beats, the first decade of the 21st century was characterized by Arabic pop music. It's worth noting that when a specific music genre is seen as a trend in the MENA region, it's usually maxed out by overconsumption amongst all classes through advertisements and publicity-related contexts. As a result, and with most of the pop artists signed to record labels, the MENA music business had imposed a strict pop-esque monopoly on the industry which in turn controlled the creativity of artists and contradicted everything an artist stands for; freedom of artistic expression.</p>
+              <br></br>
               <div class="switcheroo">
-                <div id="sideOne0">
-                  <iframe width="500" height="300" src="https://www.youtube.com/embed/HAYffxceyTA" title="YouTube video player" frameborder="0"></iframe>
+                <div id="sideOne0" class = 'switch-wrapper asset-left '>
+                  <div class = 'vid-wrapper'>
+                    <iframe class = 'vid' src="https://www.youtube.com/embed/HAYffxceyTA" title="YouTube video player" frameborder="0"></iframe>
+                  </div>
                   <p class="subtitle">Video of a Cairokee song</p>
                 </div>
-                <div id="sideTwo0" style="display:none;">
-                  <iframe width="500" height="300" src="https://www.youtube.com/embed/jdzbmbG8mys" title="YouTube video player" frameborder="0"></iframe>
+                <div id="sideTwo0" style="display:none;" class = 'asset-right switch-wrapper'>
+                  <div class = 'vid-wrapper'>
+                    <iframe class = 'vid-alt' src="https://www.youtube.com/embed/jdzbmbG8mys" title="YouTube video player" frameborder="0"></iframe>
+                  </div>
                   <p class="subtitle">Youssef's rendition of said song</p>
                 </div>
-
-                <button onclick="switcheroo(0)">Switch</button>   
+                <button onclick="switcheroo(0)">Switch</button>  
               </div>
-               
-              <p>That said, my brother and I stood in awe as we saw the rising, underground band, Cairokee, perform their singles by the Nile thus introducing us to Egyptian alternative-indie rock; a genre neither myself, my brother nor any young Arab of our age group had heard of before growing up. The concept of a band performing together as opposed to the pre-dominant model of a mainstream solo artist enticed us. The band's honest lyrics, driven by cultural identity and tackling various topics, depicted what Arab youth experience on a daily basis and made me curious to learn more about regional and international bands as well as the various genres of music that differ  from those I grew up listening to.</p>
-
-              <p>Cairokee happen to have a beautiful success story. Founded in 2003 with a name that means singing along with Cairo and originates from the play-on the words "Cairo" and "Karaoke", the band struggled for several years before becoming the nationwide breakthrough they are today. From distributing their songs on CDs for free on the streets to fighting for weekly slots to perform at local cafes and restaurants to refusing to sign with record labels that would dictate their vision and the type of music they wanted to play, it was difficult for Cairokee - or any artist at that point - to freely introduce new genres to the Egyptian music industry or receive any validation on what they are trying to do in the underground music scene.</p>
-
-              <p>It wasn’t until the introduction of the internet as a medium, and the increased globalization and influences of online portals that accompanied it, that Cairokee and other (now) notable bands in the MENA region went viral on social media (Facebook and YouTube in specific), became popular on streaming platforms (most notably SoundCloud, Anghami and Spotify) and started getting the recognition they deserved.</p>
-
-              <h2>Section 2 - modern music and TikTok</h2>
-              <div class="music"><iframe src="https://open.spotify.com/embed/track/7KXjTSCq5nL1LoYtL7XAwS" width="250" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-
-              <p>Over the past decade, and with the rise of social media, both artists and fans were introduced to new gateways that outline their intertwined relationship. With the gradual disinterest in record labels being the middleman between an artist and their fanbase, artists took to social media to announce new collaborations, releases and updates. They found platforms that bypass industry standards and allow them to share more (personal) content with their fans. On the other hand, fans too had greater access to their favorite artists’ lives. They easily knew what their artists were up to and gained access to use different social media platforms for different music-related activities. With personalized music stickers and stories introduced by Facebook and Instagram as well as the rise of music streaming platforms, people have become more creative in the way they share their music with each other and the world.</p>
-
+              <br></br>
+              <p class="col-sm-12 col-md-8 col-xl-8">That said, my brother and I stood in awe as we saw the rising, underground band, Cairokee, perform their singles by the Nile thus introducing us to Egyptian alternative-indie rock; a genre neither myself, my brother nor any young Arab of our age group had heard of before growing up. The concept of a band performing together as opposed to the pre-dominant model of a mainstream solo artist enticed us. The band's honest lyrics, driven by cultural identity and tackling various topics, depicted what Arab youth experience on a daily basis and made me curious to learn more about regional and international bands as well as the various genres of music that differ  from those I grew up listening to.</p>
+              <br></br>
+              <p class="col-sm-12 col-md-8 col-xl-8">Cairokee happen to have a beautiful success story. Founded in 2003 with a name that means singing along with Cairo and originates from the play-on the words "Cairo" and "Karaoke", the band struggled for several years before becoming the nationwide breakthrough they are today. From distributing their songs on CDs for free on the streets to fighting for weekly slots to perform at local cafes and restaurants to refusing to sign with record labels that would dictate their vision and the type of music they wanted to play, it was difficult for Cairokee - or any artist at that point - to freely introduce new genres to the Egyptian music industry or receive any validation on what they are trying to do in the underground music scene.</p>
+              <br></br>
+              <p class="col-sm-12 col-md-8 col-xl-8">It wasn’t until the introduction of the internet as a medium, and the increased globalization and influences of online portals that accompanied it, that Cairokee and other (now) notable bands in the MENA region went viral on social media (Facebook and YouTube in specific), became popular on streaming platforms (most notably SoundCloud, Anghami and Spotify) and started getting the recognition they deserved.</p>
+              <br></br> <br></br>
+              <h2 class = 'asset-left'>Modern music <br></br>and TikTok</h2>
+              <div class="music asset-right"><iframe src="https://open.spotify.com/embed/track/7KXjTSCq5nL1LoYtL7XAwS" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+              <p class="col-sm-12 col-md-8 col-xl-8">Over the past decade, and with the rise of social media, both artists and fans were introduced to new gateways that outline their intertwined relationship. With the gradual disinterest in record labels being the middleman between an artist and their fanbase, artists took to social media to announce new collaborations, releases and updates. They found platforms that bypass industry standards and allow them to share more (personal) content with their fans. On the other hand, fans too had greater access to their favorite artists’ lives. They easily knew what their artists were up to and gained access to use different social media platforms for different music-related activities. With personalized music stickers and stories introduced by Facebook and Instagram as well as the rise of music streaming platforms, people have become more creative in the way they share their music with each other and the world.</p>
+              <br></br>
               <div class="switcheroo">
-                <div id="sideOne1">
-                  <iframe width="500" height="300" src="https://www.youtube.com/embed/HAYffxceyTA" title="YouTube video player" frameborder="0"></iframe>
+                <div id="sideOne1" class = 'switch-wrapper asset-left'>
+                  <div class = 'vid-wrapper'>
+                    <iframe class = 'vid' width="100%" src="https://www.youtube.com/embed/HAYffxceyTA" title="YouTube video player" frameborder="0"></iframe>
+                  </div>
                   <p class="subtitle">Original song</p>
                 </div>
-                <div id="sideTwo1" style="display:none;">
-                  <iframe width="500" height="300" src="https://www.youtube.com/embed/jdzbmbG8mys" title="YouTube video player" frameborder="0"></iframe>
+                <div id="sideTwo1" style="display:none;" class = 'switch-wrapper asset-right'>
+                  <div class = 'vid-wrapper'>
+                    <iframe class = 'vid-alt' src="https://www.youtube.com/embed/jdzbmbG8mys" title="YouTube video player" frameborder="0"></iframe>
+                  </div>
                   <p class="subtitle">Slowed + reverb version</p>
                 </div>
 
                 <button onclick="switcheroo(1)">Switch</button>   
               </div>
-
-              <p>If we take a closer look at one particular social media application, TikTok, we notice how the application has become a goldmine for hits and emerging talent. From dance routines and magic tricks to comedy skits and lip-syncing, TikTok has given users the chance to be creative with their short videos by having songs or audio clips they admire play in the background. With around 62% of its active users being millenials and Gen Z, typically the music consuming demographic, artists and songs have had better chances at success by going viral as part of a TikTok video - sometimes without even trying. One quiet Sunday afternoon, the Jordanian artist Issam Alnajjar's released his debut single, Haddal Ahebbek. Little did he know that he would become an overnight success after TikTok users took out its melody, slowed down its tempo, applied reverb, then propelled it into stardom as the latest viral meme.</p>
-
+              <br></br>
+              <p class="col-sm-12 col-md-8 col-xl-8">If we take a closer look at one particular social media application, TikTok, we notice how the application has become a goldmine for hits and emerging talent. From dance routines and magic tricks to comedy skits and lip-syncing, TikTok has given users the chance to be creative with their short videos by having songs or audio clips they admire play in the background. With around 62% of its active users being millenials and Gen Z, typically the music consuming demographic, artists and songs have had better chances at success by going viral as part of a TikTok video - sometimes without even trying. One quiet Sunday afternoon, the Jordanian artist Issam Alnajjar's released his debut single, Haddal Ahebbek. Little did he know that he would become an overnight success after TikTok users took out its melody, slowed down its tempo, applied reverb, then propelled it into stardom as the latest viral meme.</p>
+              <br></br>
               <div class="flourish-embed flourish-table" data-src="visualisation/5757331"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+              <br></br>
+              <p class="col-sm-12 col-md-8 col-xl-8">However, as Uncle Ben from Spiderman once said, "with great power comes great responsibility". As the years progressed, social media transformed from being platforms solely focused on sharing and exchanging information between their users to a decisive factor in any artist's journey in terms of outreach, exposure, popularity and success. This in turn revolutionized the music industry as a whole, impacting the artistic and creative processes that accompany an artist on their journey. One notable and recent example is Olivia Rodrigo and her debut hit single, ‘driver's license’. Catching up with current trends, the 18-year-old artist made sure to include a piano hook in the form of a seventh note chord that would cue in TikTok users for the transition. Eight weeks of topping the billboard charts, two million TikTok videos and over 1 billion Spotify and Youtube combined streams later, driver's license stands as a testament to success in the modern day music industry  - much as Rodrigo had already anticipated. Consequently, artists are becoming more aware of how important it is to trend on social media platforms and how they can cater their music in hopes of the success that follows virality. Others however find  themselves stuck at the crossroads of sticking to their own artistic identities or giving in to the pressures of social media, trends and going viral.</p>
+              <br></br> <br></br>
+              <h2 class = 'asset-right'>Shaghaf</h2>
+              <div class="music"><iframe src="https://open.spotify.com/embed/track/7KXjTSCq5nL1LoYtL7XAwS" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>              
 
-              <p>However, as Uncle Ben from Spiderman once said, "with great power comes great responsibility". As the years progressed, social media transformed from being platforms solely focused on sharing and exchanging information between their users to a decisive factor in any artist's journey in terms of outreach, exposure, popularity and success. This in turn revolutionized the music industry as a whole, impacting the artistic and creative processes that accompany an artist on their journey. One notable and recent example is Olivia Rodrigo and her debut hit single, ‘driver's license’. Catching up with current trends, the 18-year-old artist made sure to include a piano hook in the form of a seventh note chord that would cue in TikTok users for the transition. Eight weeks of topping the billboard charts, two million TikTok videos and over 1 billion Spotify and Youtube combined streams later, driver's license stands as a testament to success in the modern day music industry  - much as Rodrigo had already anticipated. Consequently, artists are becoming more aware of how important it is to trend on social media platforms and how they can cater their music in hopes of the success that follows virality. Others however find  themselves stuck at the crossroads of sticking to their own artistic identities or giving in to the pressures of social media, trends and going viral.</p>
+              <p class="col-sm-12 col-md-8 col-xl-8">In 2016, my high school friends and I founded our own alternative-indie rock band, Shaghaf. We started Shagaf, which is Arabic for “passion”, as a means to communicate our thoughts, feelings, emotions, and identities through what we believe is the best medium to do so: music. . Fortunately, unlike many high school bands, we did not split up as we managed to all attend the same college, NYU Abu Dhabi. As the years progressed, and as our band members were completing different majors at different global sites with each having our own dreams and ambitions for life after graduation, we realized that distance and separation would be the bottlenecks to our artistic journey. Little did we know how negligible they both would be compared to the ever-changing trends of social media and their effects on our creative process.</p>
+              <br></br>
+              <p class="col-sm-12 col-md-8 col-xl-8">Instead of focusing on how we can better express ourselves through our instruments and word choice, we were forced to focus on keeping up with industry trends, analyzing key components that now make up hit MENA songs and deciding on whether there are any elements that resonate with our style of music before incorporating them into our songs. Not only was our creative process taking longer than usual, but our marketing and PR plans had to be reassessed. With trap, rap and shaabi artists releasing singles monthly as opposed to alternative-indie rock artists releasing full-length albums once every two years, Shaghaf became unsure whether releasing its debut EP album all at once would pay-off. In order for us to maximize our social media exposure and be present all year round as frequent as others, my bandmates and I decided to release a new single each month off our new album — a technique recently implemented by other indie artists such as Hamza Namira and Abdelrahman Roushdy who share our same fear.</p>
+              <br></br>             
 
-              <h2>Section 3 - Shaghaf</h2>
-              <div class="music"><iframe src="https://open.spotify.com/embed/track/7KXjTSCq5nL1LoYtL7XAwS" width="250" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>              
-
-              <p>In 2016, my high school friends and I founded our own alternative-indie rock band, Shaghaf. We started Shagaf, which is Arabic for “passion”, as a means to communicate our thoughts, feelings, emotions, and identities through what we believe is the best medium to do so: music. . Fortunately, unlike many high school bands, we did not split up as we managed to all attend the same college, NYU Abu Dhabi. As the years progressed, and as our band members were completing different majors at different global sites with each having our own dreams and ambitions for life after graduation, we realized that distance and separation would be the bottlenecks to our artistic journey. Little did we know how negligible they both would be compared to the ever-changing trends of social media and their effects on our creative process.</p>
-
-              <p>Instead of focusing on how we can better express ourselves through our instruments and word choice, we were forced to focus on keeping up with industry trends, analyzing key components that now make up hit MENA songs and deciding on whether there are any elements that resonate with our style of music before incorporating them into our songs. Not only was our creative process taking longer than usual, but our marketing and PR plans had to be reassessed. With trap, rap and shaabi artists releasing singles monthly as opposed to alternative-indie rock artists releasing full-length albums once every two years, Shaghaf became unsure whether releasing its debut EP album all at once would pay-off. In order for us to maximize our social media exposure and be present all year round as frequent as others, my bandmates and I decided to release a new single each month off our new album — a technique recently implemented by other indie artists such as Hamza Namira and Abdelrahman Roushdy who share our same fear.</p>              
-
-              <p>Streaming platforms have not only impacted the accessibility dynamic between artists and their fans, the range of music on offer or how an artist gets paid, but more importantly, and rather indirectly, impacted the artistic vision and process as a whole. Revenue models built off of royalty payments ensure that artists, producers and songwriters would profit off of every stream on the music platforms. This in turn, complemented by the shortening of attention spans and lack of patience, has notoriously affected not only the way artists profit from their songs, but also the musical (?) restrictions and limitations that would make songs profitable. For instance, artists have explored shortening the lengths of their songs in an attempt to retain their audience's attention spans as well as have them stream at a higher rate - and they weren't wrong about it. The average hit song nowadays lasts around 3 minutes and 30 seconds - shrinking by a fifth from what it used to be 20 years ago.</p>
-
+              <p class="col-sm-12 col-md-8 col-xl-8">Streaming platforms have not only impacted the accessibility dynamic between artists and their fans, the range of music on offer or how an artist gets paid, but more importantly, and rather indirectly, impacted the artistic vision and process as a whole. Revenue models built off of royalty payments ensure that artists, producers and songwriters would profit off of every stream on the music platforms. This in turn, complemented by the shortening of attention spans and lack of patience, has notoriously affected not only the way artists profit from their songs, but also the musical (?) restrictions and limitations that would make songs profitable. For instance, artists have explored shortening the lengths of their songs in an attempt to retain their audience's attention spans as well as have them stream at a higher rate - and they weren't wrong about it. The average hit song nowadays lasts around 3 minutes and 30 seconds - shrinking by a fifth from what it used to be 20 years ago.</p>
+              <br></br>
               <p style= "text-align: center">Here is a playlist of every single song mentioned in this article. Enjoy!</p>
               <div class="music">
-                <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="500" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
               </div>
 
           <!-- FURTHER RESOURCES -->
           <hr style="width: 10vw; margin-top: 40px; margin-bottom: 40px;">
-          <p><i>We <a target="_blank" href="origin.html">believe</a> in furthering the conversation on <b>article topic</b> beyond this article. Here are a few resources from <b>article author</b> to get that started:</i></p>
-          <p>1. <a target="_blank" href="">Resource 1 Title | Resource 1 Author</a></p>
-          <p>2. <a target="_blank" href="">Resource 2 Title | Resource 2 Author</a></p>
-          <p>3. <a target="_blank" href="">Resource 3 Title | Resource 3 Author</a></p>
-          <p>4. <a target="_blank" href="">Resource 4 Title | Resource 4 Author</a></p>
-          <p>5. <a target="_blank" href="">Resource 5 Title | Resource 5 Author</a></p>
+          <div id = 'flex-wrapper' class = 'col-sm-12 col-md-8 col-xl-8'>
+              <p><i>We <a target="_blank" href="origin.html">believe</a> in furthering the conversation on <b>article topic</b> beyond this article. Here are a few resources from <b>article author</b> to get that started:</i></p>
+              <br></br>
+              <p>1. <a target="_blank" href="">Resource 1 Title | Resource 1 Author</a></p>
+              <p>2. <a target="_blank" href="">Resource 2 Title | Resource 2 Author</a></p>
+              <p>3. <a target="_blank" href="">Resource 3 Title | Resource 3 Author</a></p>
+              <p>4. <a target="_blank" href="">Resource 4 Title | Resource 4 Author</a></p>
+              <p>5. <a target="_blank" href="">Resource 5 Title | Resource 5 Author</a></p>
+          </div>
   
 </div>
-        </div>
+        <!-- </div> -->
 
       </div>
     </div>
@@ -195,5 +212,7 @@
 
     </footer>
 
+<!-- Article specific JS -->
+  <script src="youssef/youssef.js"></script> 
 </body>
 </html>
