@@ -1,27 +1,3 @@
-function switcheroo(val) {
-
-	if(val == 0) {
-		console.log("val = 0");
-		var sideOne = document.getElementById("sideOne0"); 
-		var sideTwo = document.getElementById("sideTwo0");
-
-		sideOne.style.display = (
-		   sideOne.style.display == "none" ? "block" : "none"); 
-		sideTwo.style.display = (
-		   sideTwo.style.display == "none" ? "block" : "none"); 	
-	}
-	else if(val == 1) {
-		console.log("val = 1");
-		var sideOne = document.getElementById("sideOne1"); 
-		var sideTwo = document.getElementById("sideTwo1");
-
-		sideOne.style.display = (
-		   sideOne.style.display == "none" ? "block" : "none"); 
-		sideTwo.style.display = (
-		   sideTwo.style.display == "none" ? "block" : "none"); 	
-	}
-}
-
 function btt() {
 	setTimeout(() => {
 		let boomTssTaks = document.getElementsByClassName('boomTssTak');
@@ -31,5 +7,28 @@ function btt() {
 	}, 250);
 }
 
-document.addEventListener('DOMContentLoaded', btt);
+function playback() {
+	setInterval(() => {
+		let boomTssTaks = document.getElementsByClassName('boomTssTak');
+		for (let i = 0; i < 7; i++) {
+			boomTssTaks[i].style.visibility = 'hidden';
+		}
+		btt();
+	}, 10000);
+}
 
+var degree = 15;
+function spin(e) {
+	e.preventDefault();
+	degree += e.deltaY * 0.1;
+	if (degree >= 360) {
+		degree = degree % 360;
+	}
+  e.currentTarget.children[0].style.transform = `rotateX(${degree}deg)`;
+}
+
+document.addEventListener('DOMContentLoaded', btt);
+document.addEventListener('DOMContentLoaded', playback);
+document.querySelectorAll('.cube-wrap').forEach((wrap) => {
+	wrap.addEventListener('wheel', spin);
+});

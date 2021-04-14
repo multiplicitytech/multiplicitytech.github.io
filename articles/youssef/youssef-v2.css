@@ -10,12 +10,12 @@
 }
 
 :root {
-	--primary: rgb(235, 26, 201);
-	--secondary: white;
-	--background: #470374;
+	--secondary: rgb(235, 26, 201);
+	--background: white;
+	--primary: #470374;
 }
 ::selection {
-	background-color: yellow;
+	background-color: black;
 	color: var(--background);
 }
 
@@ -44,9 +44,10 @@ body {
 	visibility: hidden;
 	display: inline;
 	font-size: 120px;
+	font-family: ministry;
 }
 
-p, #flex-wrapper { margin: auto; }
+p, #flex-wrapper, .flourish-table{ margin: auto; }
 p.subtitle {
 	color: var(--secondary);
 }
@@ -60,37 +61,50 @@ a:hover {
 	text-decoration: none;
 }
 
-.switch-wrapper {
-	width: 50%;
-	margin-bottom: 10;
-}
-.vid-wrapper {
-	position: relative;
-	padding-bottom: 60.25%;
-}
-.vid, .vid-alt {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.music { float: right; }
-
-button {
-	background-color: var(--secondary);
-	color: var(--background);
-	border: none;
-	font-size: 27px;
-	display: block;
-	margin: 10 35 auto auto;
-}
-button:hover {
-	background-color: var(--primary);
-}
-
 h2 {
 	font-size: 80px;
 	color: var(secondary);
 	line-height: 45%
+}
+
+.music { float: right; }
+
+.cube-wrap {
+	height: 600px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	perspective: 1200px;
+}
+
+.cube {
+	width: 600px;
+	height: 360px;
+	margin-top: 100px;
+	transform-style: preserve-3d;
+	transform: rotateX(15deg);
+} 
+
+.face {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	border: 12px solid var(--primary);
+}
+
+.front {transform: translate3d(0, 0, 180px);}
+.back {transform: rotateX(180deg) translate3d(0, 0, 180px);}
+.top {transform: rotateX(90deg) translate3d(0, 0, 180px);}
+.bottom {transform: rotateX(-90deg) translate3d(0, 0, 180px);}
+
+.vid-wrapper {
+	position: relative;
+	padding-bottom: 60.25%;
+}
+.vid {
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
 }
