@@ -23,12 +23,12 @@ body {
 }
 
 #page-content a {
-  color: #f200ff !important;
+  color: #00ffce !important;
   text-decoration: none !important;
 }
 
 #page-content a:hover {
-  border-bottom: 1px dotted #f200ff !important;
+  border-bottom: 1px dotted #00ffce !important;
   text-decoration: none !important;
 } 
 
@@ -49,7 +49,7 @@ h4 {
     margin-top:40px;
     margin-bottom: 10px;
     font-family: 'stenciletta-solid';
-    color: #00ffce;
+    color: #3833ff;
 }
 
 
@@ -66,7 +66,7 @@ blockquote {
     color:white;
     border-left-style: dashed;
     border-left-width: 4px;
-    border-left-color: #00ffce;
+    border-left-color: #00cca4;
     padding: 15px !important;
     text-align:justify;
     margin-left: 2.5rem;
@@ -76,7 +76,7 @@ blockquote {
 
 .author {
   font-weight: 400;
-  color: #fbc5ff;
+  color: #ff7987;
 }
 
 .byline {
@@ -84,7 +84,7 @@ blockquote {
 }
 
 .articleTitle {
-  color: #00ffce;
+  color: #3833ff;
   text-align: left !important;
   font-weight: 300;
   font-family: 'stenciletta-solid', sans-serif;
@@ -129,11 +129,11 @@ p {
 }
 
 ::selection {
-  background: #fbc5ff; 
+  background: #edfffc; 
   color: black;
 }
 ::-moz-selection {
-  background: #fbc5ff; 
+  background: #edfffc; 
   color: black;
 }
 
@@ -146,7 +146,7 @@ p {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
-  color:#f200ff;
+  color:#00ffce;
 }
 
 
@@ -206,11 +206,11 @@ p {
 }
 
 .navbar-brand:hover {
-  color:#f200ff !important;
+  color:#00ffce !important;
 }
 
 .nav-link:hover {
-  color: #f200ff !important;
+  color: #00ffce !important;
 }
 @media (max-width: 450px) {
   .title-container p {
@@ -246,8 +246,8 @@ p {
 .tooltip-m {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted #f200ff;
-    color:#f200ff;
+    border-bottom: 1px dotted #00ffce;
+    color:#ffd2d6;
 }
 .tooltip-m .tooltiptext-m {
     visibility: hidden;
@@ -298,4 +298,30 @@ p {
 .source {
 	color: skyblue;
 	margin: 0 auto;
+}
+
+.jihyun {
+  text-align:center;
+}
+
+
+.jihyun img {
+width: 17%; border-radius: 25px; border: 5px solid #3833ff; margin: 15px;
+}
+
+@media (max-width: 600px)  {
+.jihyun img {
+  border-radius: 15px;
+}
+}
+@media (max-width: 400px) {
+.jihyun img {
+  width: 30%;
+  margin: 5px;
+  margin-bottom: 15px;
+}
+}
+
+img:hover { 
+  cursor: pointer;
 }

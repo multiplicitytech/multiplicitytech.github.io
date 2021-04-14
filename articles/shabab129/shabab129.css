@@ -130,9 +130,11 @@ p {
 
 ::selection {
   background: #ffd2d6; 
+  color: black;
 }
 ::-moz-selection {
   background: #ffd2d6; 
+  color: black;
 }
 
 #offset {
