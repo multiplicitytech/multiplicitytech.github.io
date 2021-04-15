@@ -33,8 +33,9 @@ plotOptions: {
 dataLabels: {
   enabled: true,
   offsetX: 0,
+  offsetY: -17,
   style: {
-    colors: ['#fff']
+    colors: ['#000']
   },
   formatter: function (val) {
     return "$" + val + "T";
