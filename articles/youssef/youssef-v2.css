@@ -50,6 +50,8 @@ body {
 p, #flex-wrapper, .flourish-table{ margin: auto; }
 p.subtitle {
 	color: var(--secondary);
+	text-align: center !important;
+	font-style: italic;
 }
 
 a {
@@ -107,4 +109,9 @@ h2 {
 	left:0;
 	width: 100%;
 	height: 100%;
+}
+
+.tab-table {
+	margin: auto;
+	width: 73%;
 }
