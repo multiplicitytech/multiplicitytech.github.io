@@ -69,7 +69,9 @@ h2 {
 	line-height: 45%
 }
 
-.music { float: right; }
+.music {
+	float: right;
+}
 
 .cube-wrap {
 	height: 600px;
