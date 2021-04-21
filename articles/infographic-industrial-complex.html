@@ -54,6 +54,7 @@
 
 <!-- Add article specific css here -->
   <link href="shabab129/shabab129.css" rel="stylesheet">  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 
@@ -93,8 +94,17 @@
           <h1 class="articleTitle">On Infographic Industrial Complex: Info-sharing in the Time of Instagram Activism</h1>
 
           <div id="page-content">
-
           <p><b><a target="_blank" href="../about.html#authorname">Shabab 12.9</a> | May 15, 2021</p>
+            <p> blah blah blah blah</p>
+            <div class="w3-content w3-display-container" style="width: 40% !important;">
+              <img class="mySlides" src="jihyun/three.png" style="width:100%">
+              <img class="mySlides" src="jihyun/two.png" style="width:100%">
+              <img class="mySlides" src="jihyun/three.png" style="width:100%">
+              <img class="mySlides" src="jihyun/two.png" style="width:100%">
+            
+              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
           <!-- FURTHER RESOURCES -->
           <hr style="width: 10vw; margin-top: 40px; margin-bottom: 40px;">
           <p><i>We <a target="_blank" href="origin.html">believe</a> in furthering the conversation on social media infographics beyond this article. Here are a few resources from Shabab 12.9 to get that started:</i></p>
@@ -123,7 +133,25 @@
 
 
     </footer>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
 </body>
 <script src="dana-deemah/dana-deemah.js"></script>
 </html>

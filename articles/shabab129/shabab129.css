@@ -321,7 +321,8 @@ width: 17%; border-radius: 25px; border: 5px solid #f9ffcc; margin: 15px;
   margin-bottom: 15px;
 }
 }
-
+/* 
 img:hover { 
   cursor: pointer;
-}
+} */
+button:focus {outline:0;}
