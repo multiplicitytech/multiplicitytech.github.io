@@ -86,13 +86,21 @@ blockquote {
 
 .articleTitle {
   color: #FFD700;
-  text-align: left !important;
+  text-align: center !important;
   font-weight: 300;
   font-family: 'stenciletta-solid', sans-serif;
   font-style: normal;
   font-size: 2.2rem !important;
   margin: 0px;
   margin-bottom: 10px;
+}
+
+.titleImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: auto;
+  width: 80%;
 }
 
 .date {
@@ -160,7 +168,7 @@ p {
 }
 
 .navbar-brand:hover {
-  color:#f200ff !important;
+  color: #00FF00 !important;
 }
 
 .nav-link:hover {
