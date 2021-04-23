@@ -47,7 +47,13 @@ body {
 	font-family: ministry;
 }
 
-p, #flex-wrapper, .flourish-table{ margin: auto; }
+#flex-wrapper, .flourish-table{ margin: auto; }
+
+p {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 p.subtitle {
 	color: var(--secondary);
 	text-align: center !important;
@@ -116,4 +122,12 @@ h2 {
 .tab-table {
 	margin: auto;
 	width: 73%;
+}
+
+.articleImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: auto;
+  width: 50%;
 }
