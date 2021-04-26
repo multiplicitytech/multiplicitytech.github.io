@@ -181,9 +181,22 @@ filter: invert(42%) sepia(91%) saturate(2134%) hue-rotate(326deg) brightness(101
 color: #00FFCE;
 /*padding-top: 5%;*/
 }
+.nav2-link {
+	font-weight: 500;
+	font-size: 1.2rem;
+	/*color: #010033;*/
+  /*color: #0600FF;*/
+color: #00FFCE;
+/*padding-top: 5%;*/
+}
+
 
 
 .nav-link:hover {
+  color:  white;
+  border-bottom: none !important;
+}
+.nav2-link:hover {
   color:  white;
   border-bottom: none !important;
 }
@@ -199,6 +212,9 @@ color: #00FFCE;
   .navbar-brand {
     font-size: 2.8rem;
   }
+  .navbar2-brand {
+    font-size: 2.8rem;
+  }
  }
 
  @media screen and (max-width: 750px) {
@@ -210,6 +226,9 @@ color: #00FFCE;
   .navbar-brand {
     font-size: 2.5rem;
   }
+  .navbar2-brand {
+    font-size: 2.5rem;
+  }
 
 }
 
@@ -217,10 +236,17 @@ color: #00FFCE;
   .navbar-brand {
     font-size: 1.8rem;
   }
+  .navbar2-brand {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (max-width: 390px) {
   .navbar-brand {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+  .navbar2-brand {
     font-size: 1.6rem;
     text-align: left;
   }
@@ -232,6 +258,9 @@ color: #00FFCE;
 
 @media screen and (max-width: 330px) {
   .navbar-brand {
+    font-size: 1.35rem;
+  }
+  .navbar2-brand {
     font-size: 1.35rem;
   }
 }
@@ -265,8 +294,21 @@ color: #00FFCE ;
 padding-top: 1.15rem !important;
 }
 
+.nav2-link {
+	font-weight: 500;
+	font-size: 1.2rem;
+	/*color: #010033;*/
+  /*color: #0600FF;*/
+color: #00FFCE ;
+/*padding: .8rem 1rem !important;*/
+padding-top: 1.15rem !important;
+}
+
 @media (max-width:960px) {
   .nav-link {
+    padding: 0rem !important; 
+  }
+  .nav2-link {
     padding: 0rem !important; 
   }
 }
@@ -288,13 +330,28 @@ padding-top: 1.15rem !important;
 	/*color: #0600FF;*/
   color: #00FFCE;
 }
-
+.navbar2-brand {
+	/*width: 10%;*/
+	text-decoration: none;
+	/*font-size: 3vw;*/
+	/*height: 100%;*/
+	padding: 0;
+	font-family: 'ministry', sans-serif;
+	font-weight: 700;
+	flex-shrink: 2;
+	/*color: #0600FF;*/
+  color: #00FFCE;
+}
 
 .navbar-brand:hover {
 color: white;
 border-bottom: none !important;
 }
-
+.navbar2-brand:hover {
+  color: white;
+  border-bottom: none !important;
+  }
+  
 .navbar-nav {
 	margin-left: 1rem;
 
