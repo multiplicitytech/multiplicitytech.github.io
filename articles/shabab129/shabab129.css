@@ -48,15 +48,15 @@ hr {
 h4 {
     margin-top:40px;
     margin-bottom: 10px;
-    font-family: 'stenciletta-solid';
+    font-family: 'stenciletta-solid', sans-serif !important;
     color: #f9ffcc;
 }
 
-
+/* 
 h3 {
     color:#bcaa73;
     font-size: 16px;
-}
+} */
 
 blockquote {
     font-family: ministry, sans-serif;
