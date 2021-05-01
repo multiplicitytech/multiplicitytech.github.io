@@ -19,7 +19,7 @@
 
  <!-- Facebook tags -->
   <meta property="og:title" content="How To Mute A Country - Multiplicity">
-  <meta property="og:description" content="One line description">
+  <meta property="og:description" content="We should stop allowing companies with very little democratic accountability to change the landscape and features of our public realm and, in turn, our shared conversations.">
   <meta property="og:image" content="https://www.multiplicity.tech/img/thumbnail.png"> 
   <meta property="og:url" content="https://www.multiplicity.tech"> 
   <meta property="og:site_name" content="multiplicity">
@@ -29,7 +29,7 @@
 
   <!-- Twitter tags -->
   <meta name="twitter:title" content="How To Mute A Country - Multiplicity">
-  <meta name="twitter:description" content="One line description">
+  <meta name="twitter:description" content="We should stop allowing companies with very little democratic accountability to change the landscape and features of our public realm and, in turn, our shared conversations.">
   <meta name="twitter:image" content="https://www.multiplicity.tech/img/thumbnail.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image:alt" content="multiplicity logo">
@@ -72,7 +72,7 @@
       <div class="w-100 text-right" >
 
         <button class="navbar-toggler flex-fill" type="button" data-toggle="collapse" data-target="#myNavbar">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon" id="toggle"></span>
         </button>
 
         <div class="collapse navbar-collapse text-right w-100" id="myNavbar">
@@ -90,13 +90,15 @@
     <div class="container text-center">
       <div class="row justify-content-center">  
         <div class="col-sm-12 col-md-8 col-xl-8">
-          <button class="button1" onclick="clicked();">Click</button>
+          <button class="button1" id="mute" onclick="mute();">mute</button>
+          <button class="button1" id= "unmute" onclick="unmute();" style="display: none;">unmute</button>
+
           <h1 class="articleTitle">How To Mute A Country</h1>
 
           <div id="page-content">
 
-          <p><b><a target="_blank" href="../about.html#authorname">Dervla O'Brien</a> | May 15, 2021</p></b>
-          <p><i><b>Note on the subtitles and American spelling:</b> these subtitles are in Irish and come from seanfhocail. A seanfhocal literally means an old phrase, but better translated as a proverb. These proverbs can perhaps highlight a different perspective on the world, I  include them here as a little indication of what the internet might look like if we had included more perspectives in conversations.</i>
+          <p><b><a target="_blank" href="../about.html#dervla">Dervla O'Brien</a> | May 15, 2021</p></b>
+          <p><i><b>Note on the subtitles:</b> these subtitles are in Irish and come from seanfhocail. A seanfhocal literally means an old phrase, but better translated as a proverb. These proverbs can perhaps highlight a different perspective on the world, I  include them here as a little indication of what the internet might look like if we had included more perspectives in conversations.</i>
             </p>
             <h4>Containers Shape Their Contents</h4>
             <h3><b><span class="mis">Imigh</span> <span class="mis">leis</span> an <span class="mis">saol</span> <span class="mis"></span>agus <span class="mis">tiocfaidh</span> <span class="mis">sé</span> <span class="mis">thart</span></b></h3>
@@ -110,7 +112,7 @@
               Why are there user base differences between increasingly <a href="https://knowyourmeme.com/memes/will-now-have-stories" target="_blank">similar</a> platforms? Branding, novelty, and company history play a part, but it also depends on the inner workings of the <a href="https://twitter.com/SofieHagen/status/1381004393923940353?s=20" target="_blank">mystical</a>, <a href="https://en.wikipedia.org/wiki/Black_box" target="_blank">black-box algorithms</a>. 
             </p>
             <p>
-              With ‘influencer’ fast becoming a <a href="https://irishtatler.com/lifestyle/huawei-influencer-dream-job" target="_blank">dream career</a> for <a href="https://www.cnbc.com/2019/07/19/more-children-dream-of-being-youtubers-than-astronauts-lego-says.html" target="_blank">young people</a>, content creators are keen to go viral so they can <a href="https://www.theverge.com/2017/4/6/15209220/youtube-partner-program-rule-change-monetize-ads-10000-views" target="_blank">monetise</a> their content, create Patreons or create passive income streams like “merch” and music, thus turning this work into a sustainable job. However, different platforms <a href="https://youtu.be/fHsa9DqmId8" target="_blank">reward</a> content in different forms. Anyone can technically post anything (within ToS), but when people rely on this content to make money, they of course become <a href="https://www.instagram.com/p/CLwuP9ynqz_/" target="_blank">strategic</a> about what <a href="https://blog.hootsuite.com/facebook-algorithm/" target="_blank">succeeds</a>. “Art <a href="https://en.wikipedia.org/wiki/Life_imitating_art" target="_blank">imitates</a> life, which imitates art”, but art also imitates what’s profitable.
+              With ‘influencer’ fast becoming a <a href="https://irishtatler.com/lifestyle/huawei-influencer-dream-job" target="_blank">dream career</a> for <a href="https://www.cnbc.com/2019/07/19/more-children-dream-of-being-youtubers-than-astronauts-lego-says.html" target="_blank">young people</a>, content creators are keen to go viral so they can <a href="https://www.theverge.com/2017/4/6/15209220/youtube-partner-program-rule-change-monetize-ads-10000-views" target="_blank">monetise</a> their content, create Patreons or create passive income streams like “merch” and music, thus turning this work into a sustainable job. However, different platforms <a href="https://youtu.be/fHsa9DqmId8" target="_blank">reward</a> content in different forms. Anyone can technically post anything (within ToS), but when people rely on this content to make money, they of course become <a href="https://www.instagram.com/p/CLwuP9ynqz_/" target="_blank">strategic</a> about what <a href="https://blog.hootsuite.com/facebook-algorithm/" target="_blank">succeeds</a>. “Art <a href="https://en.wikipedia.org/wiki/Life_imitating_art" target="_blank">imitates</a> life, which imitates art,” but art also imitates what’s profitable.
             </p>
             <p>
               When I downloaded Tiktok in my lockdown boredom, I was surprised to find this algorithm was different. While it <a href="https://twitter.com/SofieHagen/status/1381004393923940353?s=20" target="_blank">isn’t</a> <a href="https://www.washingtonpost.com/technology/2020/07/13/tiktok-privacy/" target="_blank">perfect</a>, it has an echo of the early days of youtube: the excitement and feeling of possibility, of something new. Something about the way the discovery <a href="https://mashable.com/article/how-to-avoid-algorithms-facebook-youtube-twitter-instagram/?europe=true" target="_blank">algorithm</a> works meant that for the first time I was seeing local content recommended to me. Between the larger user base and the unique emphasis on the “<a href="https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you/" target="_blank">for you</a>” recommendations, fame has been distributed so much that there seems to be no limit to the number of huge TikTokers. 
@@ -206,10 +208,10 @@
   <footer id="sticky-footer" class="py-1 bg-light text-white" style="background-color:white">
 
     <div class="container text-center">
-      <a href="mailto:multiplicitytech@gmail.com" target="_blank"><img id="social1" class="black-pink-filter" src="../img/mail.png" style="height: 2.1rem;"></a>  &emsp;
-      <a href="https://twitter.com/multiplicity_x" target="_blank"><img id="social2" class="black-pink-filter" src="../img/twitter.png" style="height: 1.7rem;"></a> &emsp;
-      <a href="https://www.instagram.com/multiplicity_x/" target="_blank"><img id="social3" class="black-pink-filter" src="../img/instagram.png" style="height: 1.8rem;"></a> &emsp;
-      <a href="https://github.com/multiplicitytech/multiplicitytech.github.io" target="_blank"><img id="social4" class="black-pink-filter" src="../img/github.png" style="height: 2.3rem;"> 
+      <a href="mailto:multiplicitytech@gmail.com" target="_blank"><img id="social1" class="black-blue-filter" src="../img/mail.png" style="height: 2.1rem;"></a>  &emsp;
+      <a href="https://twitter.com/multiplicity_x" target="_blank"><img id="social2" class="black-blue-filter" src="../img/twitter.png" style="height: 1.7rem;"></a> &emsp;
+      <a href="https://www.instagram.com/multiplicity_x/" target="_blank"><img id="social3" class="black-blue-filter" src="../img/instagram.png" style="height: 1.8rem;"></a> &emsp;
+      <a href="https://github.com/multiplicitytech/multiplicitytech.github.io" target="_blank"><img id="social4" class="black-blue-filter" src="../img/github.png" style="height: 2.3rem;"> 
 
 
       </div>
@@ -219,26 +221,6 @@
 
 </body>
 
-<script type='text/javascript'>
-var flag = true;
-function clicked(){
-  document.body.style.background = '#fffaf0';
-  $('#bigdiv').css('color', 'white');
-  $('p').css('color', 'black');
-  $('h4').css('color', '#098500');
-  $('.mis').css('text-decoration', 'none');
-  $('#about').css('color', '#098500');
-  $('#multi').css('color', '#098500');
-  $('#exten').css('color', '#ffa200');
-  document.getElementById('multi').setAttribute("class", "navbar2-brand");
-  document.getElementById('about').setAttribute("class", "nav2-link");
-  $('.articleTitle').css('color', '#098500');
-  document.getElementById('sticky-footer').style.cssText= 'background-color:black !important';
-  // document.getElementsById('mis').style.cssText= 'text-decoration:none';
-  document.getElementById('social1').setAttribute("class", "white-pink-filter");
-  document.getElementById('social2').setAttribute("class", "white-pink-filter");
-  document.getElementById('social3').setAttribute("class", "white-pink-filter");
-  document.getElementById('social4').setAttribute("class", "white-pink-filter");
-}  
-  </script>
+<script src="dervla/dervla.js"></script>
+
 </html>

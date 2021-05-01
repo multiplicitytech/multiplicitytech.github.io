@@ -314,7 +314,7 @@ width: 17%; border-radius: 25px; border: 5px solid #00cca4; margin: 15px;
 }
 @media (max-width: 400px) {
 .jihyun img {
-  width: 30%;
+  width: 20%;
   margin: 5px;
   margin-bottom: 15px;
 }
