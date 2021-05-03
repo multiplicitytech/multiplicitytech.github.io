@@ -352,7 +352,7 @@ img:hover {
   animation: shake 0.5s;
 
   /* When the animation is finished, start again */
-  animation-iteration-count: infinite;
+  animation-iteration-count: initial;
 }
 
 #unmute:hover {
