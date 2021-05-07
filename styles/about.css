@@ -147,9 +147,134 @@ body:after{
   background-image: url(../img/grace-nofilter.png);
 }
 
+#grace-2-img {
+  background: url(../img/grace.jpg);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
+#grace-2-img:hover {
+  background-image: url(../img/grace.jpg);
+}
 
+#mate-img:hover {
+  background-image: url(../img/mate.jpg);
+}
 
+#mate-img {
+  background: url(../img/mate.jpg);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
 
+#deemah-img:hover {
+  background-image: url(../img/deemah-nofilter);
+}
+
+#deemah-img {
+  background: url(../img/deemah-nofilter);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
+#dana-img:hover {
+  background-image: url(../img/dana.jpg);
+}
+
+#dana-img {
+  background: url(../img/dana.jpg);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
+
+#ethan-img:hover {
+  background-image: url(../img/ethan.jpg);
+}
+
+#ethan-img {
+  background: url(../img/ethan.jpg);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
+#youssef-img:hover {
+  background-image: url(../img/youssef.jpg);
+}
+
+#youssef-img {
+  background: url(../img/youssef.jpg);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
+
+#dervla-img:hover {
+  background-image: url(../img/dervla.jpg);
+}
+
+#dervla-img {
+  background: url(../img/dervla.jpg);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
+
+#ahmad-img:hover {
+  background-image: url(../img/ahmad.jpg);
+}
+
+#ahmad-img {
+  background: url(../img/ahmad.jpg);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
+
+#vatsa-img:hover {
+  background-image: url(../img/vatsa.jpg);
+}
+
+#vatsa-img {
+  background: url(../img/vatsa.jpg);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
+
+#jaime-img:hover {
+  background-image: url(../img/jaime.jpg);
+}
+
+#jaime-img {
+  background: url(../img/jaime.jpg);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
+
+#salma-img:hover {
+  background-image: url(../img/salma.jpg);
+}
+
+#salma-img {
+  background: url(../img/salma.jpg);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
 .team-container .team-card {
   font-size: .8rem;
   text-align: justify; 
