@@ -51,6 +51,9 @@ filter: invert(75%) sepia(99%) saturate(775%) hue-rotate(100deg) brightness(101%
 filter: invert(8%) sepia(100%) saturate(7120%) hue-rotate(250deg) brightness(103%) contrast(141%);
 }
 
+.green-filter:hover {
+   filter: invert(58%) sepia(69%) saturate(3112%) hue-rotate(76deg) brightness(106%) contrast(116%);
+ }
 
 .white-green-filter {
 filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(102deg) brightness(101%) contrast(101%);

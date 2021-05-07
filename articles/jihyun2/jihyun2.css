@@ -14,7 +14,9 @@
 body, html {
     height: 100vh;
     display:block;
-    background-color: #01002d;
+    /*background-color: #01002d;*/
+    /*background-color: #001203;*/
+    background-color: #000;
     margin: 0;
 }
 
@@ -23,13 +25,14 @@ body {
 }
 
 #page-content a {
-  color: #00FF00 !important;
+  /*color: #10dd00 !important;*/
+  color: #10dd00;
   text-decoration: none !important;
   font-size: 1.08rem;
 }
 
 #page-content a:hover {
-  border-bottom: 1px dotted #00FF00 !important;
+  border-bottom: 1px dotted #10dd00 !important;
   text-decoration: none !important;
 } 
 
@@ -86,7 +89,7 @@ blockquote {
 
 .articleTitle {
   color: #FFD700;
-  text-align: center !important;
+  /*text-align: center !important;*/
   font-weight: 300;
   font-family: 'stenciletta-solid', sans-serif;
   font-style: normal;
@@ -118,6 +121,66 @@ blockquote {
 
 *  {
   text-align: left;
+}
+
+@media (min-width: 550px) {
+  #chart1mobile {
+    display:none;
+  }
+  #chart1 {
+    display:block;
+  }
+}
+
+@media (max-width: 550px) {
+  #chart1 {
+    display:none;
+  }
+  #chart1mobile {
+    display:block;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+#chart1mobile tspan, span{
+  font-family: ministry !important;
+}
+
+#chart1mobile .apexcharts-title-text {
+  font-family: ministry !important;
+}
+
+#chart1 tspan, span{
+  font-family: ministry !important;
+
+}
+
+#chart1 .apexcharts-title-text {
+  font-family: ministry !important;
+}
+
+#chart2 tspan, span{
+  font-family: ministry !important;
+
+}
+
+#chart2 .apexcharts-title-text {
+  font-family: ministry !important;
+}
+
+
+#chart3 tspan, span{
+  font-family: ministry !important;
+
+}
+
+@media (max-width: 550px) {
+#chart3 .apexcharts-title-text {
+  font-family: ministry !important;
+  font-size: 13px;
+}
 }
 
 
@@ -168,11 +231,11 @@ p {
 }
 
 .navbar-brand:hover {
-  color: #00FF00 !important;
+  color: #10dd00 !important;
 }
 
 .nav-link:hover {
-  color: #FFD700 !important;
+  color: #10dd00 !important;
 }
 @media (max-width: 450px) {
   .title-container p {
@@ -208,8 +271,8 @@ p {
 .tooltip-m {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted #00FF00;
-    color:#00FF00;
+    border-bottom: 1px dotted #10dd00;
+    color:#10dd00;
 }
 .tooltip-m .tooltiptext-m {
     visibility: hidden;
@@ -268,7 +331,7 @@ p {
   margin-right: auto;
 }
 
-.figureText {
-  text-align: center !important;
-  font-style: italic;
+.figure-caption a {
+  /*font-size: 1rem !important;*/
+  font-size: 100% !important;
 }

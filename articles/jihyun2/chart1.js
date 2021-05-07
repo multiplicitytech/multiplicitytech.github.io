@@ -9,7 +9,7 @@ var options = {
 chart: {
   background: '#fff',
   type: 'bar',
-  height: 430,
+  height: 370,
   toolbar: {
     show: false
   },      
@@ -17,7 +17,7 @@ chart: {
     enabled: false
   }
 },
-colors: ['#000', '#0000FF'],
+colors: ['#10dd00', '#000'],
 title: {
   text: 'Total retirement savings gap by country (trillions of dollars)',
 },

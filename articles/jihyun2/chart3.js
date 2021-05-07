@@ -19,7 +19,7 @@ var options = {
         enabled: false
       }
   },
-  colors: ['#0000FF', '#FF0000'],
+  colors: ['#10dd00', '#000'],
   dataLabels: {
     enabled: false
   },
@@ -27,7 +27,7 @@ var options = {
     curve: 'straight'
   },
   title: {
-    text: 'Payoff from $100,000 invested on January 1, 2011: S&P 500 index vs. average hedge fund',
+    text: 'Payoff from $100k invested on January 1, 2011',
     align: 'left'
   },
   grid: {

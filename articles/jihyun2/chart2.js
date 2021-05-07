@@ -49,8 +49,9 @@ var options = {
       enabled: true
     }
   },
+  colors:['#FFD700', '#98ff8f', '#000', '#10dd00', '#d6ffda'],
   title: {
-    text: 'Robinhood order routing revenue breakdowns (millions of dollars)',
+    text: 'Robinhood revenue breakdowns (in USD millions)',
     align: 'left'
   },
   responsive: [{
