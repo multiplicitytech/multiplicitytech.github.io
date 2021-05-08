@@ -1,3 +1,9 @@
+ function switchsides(card) {
+    var card = document.querySelector(card);
+    card.classList.toggle('is-flipped');
+}
+
+
 function btt() {
 	setTimeout(() => {
 		let boomTssTaks = document.getElementsByClassName('boomTssTak');
@@ -20,7 +26,7 @@ function playback() {
 var degree = 15;
 function spin(e) {
 	e.preventDefault();
-	degree += e.deltaY * 0.1;
+	degree += e.deltaY * 0.10;
 	if (degree >= 360) {
 		degree = degree % 360;
 	}
@@ -40,29 +46,30 @@ var tabledata = [
 	{title:"Mood", artist:"24kGoldn & Iann Dior", year:2020, tiktok:3100000, billboard:1},
 ];
 
-//initialize table
-var table = new Tabulator("#example-table", {
-    data:tabledata, //assign data to table
-    responsiveLayout: true,
-    layout:"fitColumns", //fit columns to width of table (optional)
+// //initialize table
+// var table = new Tabulator("#example-table", {
+//     data:tabledata, //assign data to table
+//     responsiveLayout: true,
+//     layout:"fitColumns", //fit columns to width of table (optional)
 
-    columns:[ //Define Table Columns
-        {title:"Title", field:"title"},
-        {title:"Artist", field:"artist"},
-        {title:"Year", field:"year"},
-        {title:"TikTok Videos", field:"tiktok", formatter:"money", formatterParams:{
-			thousand:",",
-			precision:0,
-		}},
-        {title:"Billboard Hot 100 Peak Position", field:"billboard", formatter:"money", formatterParams:{
-			symbol:"#",
-			precision:0,
-		}},
-    ],
-});
+//     columns:[ //Define Table Columns
+//         {title:"Title", field:"title"},
+//         {title:"Artist", field:"artist"},
+//         {title:"Year", field:"year"},
+//         {title:"TikTok Videos", field:"tiktok", formatter:"money", formatterParams:{
+// 			thousand:",",
+// 			precision:0,
+// 		}},
+//         {title:"Billboard Hot 100 Peak Position", field:"billboard", formatter:"money", formatterParams:{
+// 			symbol:"#",
+// 			precision:0,
+// 		}},
+//     ],
+// });
 
 document.addEventListener('DOMContentLoaded', btt);
 document.addEventListener('DOMContentLoaded', playback);
+
 document.querySelectorAll('.cube-wrap').forEach((wrap) => {
 	wrap.addEventListener('wheel', spin);
 });
