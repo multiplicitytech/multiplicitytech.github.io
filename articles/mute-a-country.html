@@ -15,7 +15,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   <title>How To Mute A Country - Multiplicity</title>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
  <!-- Facebook tags -->
   <meta property="og:title" content="How To Mute A Country - Multiplicity">
@@ -222,5 +222,28 @@
 </body>
 
 <script src="dervla/dervla.js"></script>
-
+<script>
+jQuery.fn.shake = function() {
+    this.each(function(i) {
+        $(this).css({
+            "position" : "relative"
+        });
+        for (var x = 1; x <= 3; x++) {
+            $(this).animate({
+                left : -5
+            }, 10).animate({
+                left : 0
+            }, 50).animate({
+                left : 5
+            }, 10).animate({
+                left : 0
+            }, 50);
+        }
+    });
+    return this;
+}
+setInterval(function() {
+    $('#mute').shake();
+}, 4000);
+</script>
 </html>
