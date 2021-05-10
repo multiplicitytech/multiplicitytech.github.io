@@ -28,9 +28,18 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(102deg) brightness(101%
 
 }
 
+.white-purple-filter {
+filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(102deg) brightness(101%) contrast(101%);
+}
+
+.white-purple-filter:hover {
+filter: invert(15%) sepia(87%) saturate(3251%) hue-rotate(273deg) brightness(64%) contrast(130%);}
+
+
 .white-red-filter:hover {
 filter: invert(18%) sepia(49%) saturate(6834%) hue-rotate(346deg) brightness(82%) contrast(93%);
 }
+
 
 .white-teal-filter {
  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(194deg) brightness(104%) contrast(100%);
