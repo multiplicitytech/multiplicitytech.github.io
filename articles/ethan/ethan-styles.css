@@ -504,3 +504,9 @@ button:focus {
   border: none;
   outline: 0 !important;
 }
+
+@media (max-width: 550px) {
+  #examples h4 {
+    font-size: 1.2rem;
+  }
+}
