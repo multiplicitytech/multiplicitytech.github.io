@@ -85,7 +85,7 @@ body:after{
 
 
 #jihyun-img {
-  background: url(../img/jihyun.png);
+  background: url(../img/jihyun.jpg);
       background-repeat: no-repeat;
   background-size: 228px 228px;
   width: 228px;
@@ -93,7 +93,7 @@ body:after{
 }
 
 #jihyun-img:hover {
-  background-image: url(../img/jihyun-nofilter.png);
+  background-image: url(../img/jihyun-nofilter.jpg);
 }
 
 
@@ -159,7 +159,7 @@ body:after{
 }
 
 #mate-img:hover {
-  background-image: url(../img/mate.jpg);
+  background-image: url(../img/mate-nofilter.jpg);
 }
 
 #mate-img {
@@ -171,18 +171,18 @@ body:after{
 }
 
 #deemah-img:hover {
-  background-image: url(../img/deemah-nofilter);
+  background-image: url(../img/deemah-nofilter.jpg);
 }
 
 #deemah-img {
-  background: url(../img/deemah-nofilter);
+  background: url(../img/deemah.jpg);
       background-repeat: no-repeat;
   background-size: 228px 228px;
   width: 228px;
   height: 228px;
 }
 #dana-img:hover {
-  background-image: url(../img/dana.jpg);
+  background-image: url(../img/dana-nofilter.jpg);
 }
 
 #dana-img {
@@ -194,7 +194,7 @@ body:after{
 }
 
 #ethan-img:hover {
-  background-image: url(../img/ethan.jpg);
+  background-image: url(../img/ethan-nofilter.jpg);
 }
 
 #ethan-img {
@@ -205,7 +205,7 @@ body:after{
   height: 228px;
 }
 #youssef-img:hover {
-  background-image: url(../img/youssef.jpg);
+  background-image: url(../img/youssef-nofilter.jpg);
 }
 
 #youssef-img {
@@ -217,7 +217,7 @@ body:after{
 }
 
 #dervla-img:hover {
-  background-image: url(../img/dervla.jpg);
+  background-image: url(../img/dervla-nofilter.jpg);
 }
 
 #dervla-img {
@@ -229,7 +229,7 @@ body:after{
 }
 
 #ahmad-img:hover {
-  background-image: url(../img/ahmad.jpg);
+  background-image: url(../img/ahmad-nofilter.jpg);
 }
 
 #ahmad-img {
@@ -253,7 +253,7 @@ body:after{
 }
 
 #jaime-img:hover {
-  background-image: url(../img/jaime.jpg);
+  background-image: url(../img/jaime-nofilter.jpg);
 }
 
 #jaime-img {
