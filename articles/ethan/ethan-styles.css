@@ -10,21 +10,29 @@ body, html {
     width: 100%;
     /* display:block;
     /* background-color: #01002d; */
-    background-color: white;
+    background-color: #1c1c1c;
     margin: 0;
     overflow-x: hidden;
 }
 
+
+:root {
+  --secondary: #1DB954;
+  --primary: #9a1321;
+  --background: #1c1c1c;
+}
+
+
 #ethan-article a {
   /*color: #ffa300 !important;*/
   /*color: #cc1b2c !important;*/
-  color: #20b857 !important;
+  color: var(--secondary) !important;
   text-decoration: none !important;
 }
 
 #ethan-article a:hover {
   /*border-bottom: 1px dotted #ffa300;*/
-  border-bottom: 1px dotted #cc1b2c;
+  border-bottom: 1px dotted var(--secondary);
 } 
 
 h2 {
@@ -36,7 +44,8 @@ h2 {
 }
 
 h3 {
-    color:#bcaa73;
+    /*color:#bcaa73;*/
+    color: white;
     font-size: 16px;
 }
 
@@ -45,11 +54,18 @@ h4 {
     margin-top:40px;
     margin-bottom: 10px;
     font-family: 'stenciletta-solid';
-    color: black;
+    color: var(--primary);
+}
+
+#examples h4 {
+    font-family: 'stenciletta-solid';
+    color: var(--primary);
+    margin-top: 0px !important;
 }
 
 #header {
-  background-color: white;
+  /*background-color: white;*/
+  background-color: black;
 }
 
 .twitter-embed {
@@ -65,8 +81,8 @@ blockquote {
   font-size: 16px;
   border-left-style: dashed;
   border-left-width: 4px;
-  /*border-left-color: #0DB000;*/
-  color: black;
+  border-left-color: var(--secondary);
+  color: white;
   padding: 10px;
   text-align:justify;
 }
@@ -81,8 +97,7 @@ blockquote {
 }
 
 .article-title {
-  /*color: #0600ff;*/
-  color: black;
+  color: var(--primary);
   /*text-align: center;*/
   text-align: left !important;
   font-weight: 300;
@@ -111,7 +126,7 @@ blockquote {
 p {
   font-family: ministry;
   font-style: normal;
-  color: black;
+  color: white;
   font-weight: 300;
   /*font-size: 1.3vw;*/
   text-align:justify;
@@ -452,18 +467,19 @@ height: 65vh;
 }
 
 .navbar-brand {
-   /*color: #0600ff; !important;*/
-   color: black;
+   /*color: #cc1b2c;*/
+   color: var(--primary);
+
 }
 
 .navbar-brand:hover {
   /*color: #ffa300 !important;*/
-  color: #cc1b2c !important;
+  color: var(--secondary) !important;
 }
 
 .nav-link:hover {
   /*color: #ffa300  !important;*/
-  color: #cc1b2c !important;
+  color: var(--secondary) !important;
 }
 
 hr {
@@ -472,4 +488,19 @@ hr {
     margin-bottom: 40px !important;
     /*color: red;*/
     border: 1px solid grey !important;
+}
+
+#example2, #example3 {
+  display: none;
+}
+
+button {
+  background-color: var(--background);
+  border: none;
+  padding: 0px;
+}
+
+button:focus {
+  border: none;
+  outline: 0 !important;
 }
