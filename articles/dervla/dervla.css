@@ -212,6 +212,10 @@ p {
   color:#cc1b2c !important;
 }
 
+.nav2-link {
+  padding: 18.4px 8px 8px !important;
+}
+
 .nav2-link:hover {
   color:#ffa200 !important;
   text-decoration: none !important;
@@ -222,6 +226,10 @@ p {
   color:#ffa200 !important;
   border-bottom: none !important;
   text-decoration: none !important;
+}
+
+#myNavbar {
+  height: 100%;
 }
 
 @media (max-width: 450px) {
@@ -381,9 +389,7 @@ width: 17%; border-radius: 25px; border: 5px solid #3833ff; margin: 15px;
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 } */
 
-.nav2-link {
-  padding: 18.4px 8px 8px !important;
-}
+
 
 /* Create three equal columns that floats next to each other */
 .column {
