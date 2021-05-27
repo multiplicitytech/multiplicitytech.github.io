@@ -88,7 +88,7 @@ var options = {
   subtitle: {
   },
   tooltip: {
-    shared: true,
+    // shared: true,
     enabled: true,
     x: {
       show: false    
