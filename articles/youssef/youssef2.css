@@ -4,6 +4,9 @@
     .column {
       width: 100vh;
     }
+    .articleImage{
+      width: 95% !important;
+    }
 }
 
 .navbar-toggler-icon {
@@ -445,7 +448,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   cursor: auto;
-  width: 70%;
+  width: 80%;
 }
 
 

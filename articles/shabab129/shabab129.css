@@ -4,6 +4,12 @@
     .column {
       width: 100vh;
     }
+    .center2 {
+      width: 80% !important;
+    }
+    .center {
+      width: 90% !important;
+    }
 }
 
 .navbar-toggler-icon {

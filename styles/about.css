@@ -159,11 +159,11 @@ body:after{
 }
 
 #mate-img:hover {
-  background-image: url(../img/mate-nofilter.jpg);
+  background-image: url(../img/máté-nofilter.jpg);
 }
 
 #mate-img {
-  background: url(../img/mate.jpg);
+  background: url(../img/máté.jpg);
       background-repeat: no-repeat;
   background-size: 228px 228px;
   width: 228px;

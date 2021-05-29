@@ -338,12 +338,24 @@ width: 17%; border-radius: 25px; border: 5px solid #3833ff; margin: 15px;
 /*      margin-left: 2.5%;
   margin-right: 2.5%;*/
 }
+#mute img {
+  width: 25% !important;
+}
+#unmute img {
+  width: 25% !important;
+}
 }
 @media (max-width: 400px) {
 .jihyun img {
   width: 30%;
   margin: 5px;
   margin-bottom: 15px;
+}
+#mute img {
+  width: 25% !important;
+}
+#unmute img {
+  width: 25% !important;
 }
 }
 
