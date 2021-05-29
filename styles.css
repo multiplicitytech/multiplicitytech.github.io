@@ -27,16 +27,16 @@ body{
     margin-top: 3%;
   } 
 
-  #lujain-card .card-title {
+  #lujain-card #dervla-card.card-title {
     margin-left: 0%; margin-bottom:-2%; margin-right: 35%;
   }
 
-  #jihyun-card .card-title {
+  #azzam-card #jihyun-card .card-title {
     margin-left: 25%;
     margin-bottom: 45%;
   }
 
-  #rastra-card .card-title {
+  #dana-card #rastra-card .card-title {
     margin-right: 25%; margin-bottom: -5%;
   }
 
@@ -84,17 +84,20 @@ body{
     margin-left: 22%; margin-bottom: -7%;
   }
 
+
   #jihyun-card .card-title {
    margin-right: 30%; margin-bottom: -7%;
  }
 
- #rastra-card .card-title {
+
+#rastra-card .card-title {
   margin-right: 25%; margin-bottom: -5%;
 }
 
 #tona-card .card-title {
   margin-right: 20%;margin-bottom: -5%;
 }
+
 
 #tom-card .card-title {
  margin-left: 23%; margin-top: 38%; margin-bottom: -5%;
@@ -116,6 +119,41 @@ body{
   margin-left: 3% !important;
 }
 
+}
+
+
+#dervla-card .card-title {
+  background: black;
+}
+
+#azzam-card .card-title {
+  background: black;
+  margin-bottom: 40%;
+}
+
+#dana-card .card-title {
+  background: black;
+  margin-left: 40%;
+}
+
+#ethan-card .card-title {
+  background: black;
+  margin-bottom: 40%;
+  margin-left: 30%;
+}
+
+#shabab-card .card-title {
+  background: black;
+}
+
+#jihyun2-card .card-title {
+  background: black;
+  margin-bottom: 40%;
+}
+
+#jaime-card .card-title {
+  background: black;
+  margin-bottom: 50%;
 }
 
 #lujain-card .card-title {
@@ -321,6 +359,9 @@ body {
   box-shadow: 11px 11px 0px #6304b8;
   transition: 0.3s;
 }
+
+
+/*add hover colors here */
 
 
 .article-card .image1:hover {
