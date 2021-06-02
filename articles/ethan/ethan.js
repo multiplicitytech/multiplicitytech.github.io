@@ -20,7 +20,7 @@ function example1() {
 	$('#example2').css('display','none');
 	$('#example3').css('display','none');
 
-	$('#header1').css('color','#9a1321');
+	$('#header1').css('color','#1DB954');
 	$('#header2').css('color','grey');
 	$('#header3').css('color','grey');
 }
@@ -31,7 +31,7 @@ function example2() {
 	$('#example3').css('display','none');
 
 	$('#header1').css('color','grey');
-	$('#header2').css('color','#9a1321');
+	$('#header2').css('color','#1DB954');
 	$('#header3').css('color','grey');
 }
 
@@ -42,5 +42,5 @@ function example3() {
 
 	$('#header1').css('color','grey');
 	$('#header2').css('color','grey');
-	$('#header3').css('color','#9a1321');
+	$('#header3').css('color','#1DB954');
 }

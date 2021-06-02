@@ -17,8 +17,11 @@ body, html {
 
 
 :root {
-  --secondary: #1DB954;
-  --primary: #9a1321;
+  /*--primary: #1DB954;*/
+  --secondary:#1DB954;
+  --primary: #eb345b;
+  /*--primary: #9a1321;*/
+  /*--secondary: #ffcc7a;*/
   --background: #1c1c1c;
 }
 
@@ -59,7 +62,7 @@ h4 {
 
 #examples h4 {
     font-family: 'stenciletta-solid';
-    color: var(--primary);
+    color: var(--secondary);
     margin-top: 0px !important;
 }
 
