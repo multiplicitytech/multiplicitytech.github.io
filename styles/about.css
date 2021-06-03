@@ -155,7 +155,7 @@ body:after{
   height: 228px;
 }
 #grace-2-img:hover {
-  background-image: url(../img/grace.jpg);
+  background-image: url(../img/grace-nofilter.jpg);
 }
 
 #mate-img:hover {
@@ -241,7 +241,7 @@ body:after{
 }
 
 #vatsa-img:hover {
-  background-image: url(../img/vatsa.jpg);
+  background-image: url(../img/vatsa-nofilter.jpg);
 }
 
 #vatsa-img {
@@ -265,7 +265,7 @@ body:after{
 }
 
 #salma-img:hover {
-  background-image: url(../img/salma.jpg);
+  background-image: url(../img/salma-nofilter.jpg);
 }
 
 #salma-img {
