@@ -170,6 +170,18 @@ body:after{
   height: 228px;
 }
 
+#shabab-img:hover {
+  background-image: url(../img/shabab-nofilter.jpg);
+}
+
+#shabab-img {
+  background: url(../img/shabab.jpg);
+      background-repeat: no-repeat;
+  background-size: 228px 228px;
+  width: 228px;
+  height: 228px;
+}
+
 #deemah-img:hover {
   background-image: url(../img/deemah-nofilter.jpg);
 }
