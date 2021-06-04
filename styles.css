@@ -163,7 +163,7 @@ body{
 }
 
 #dana-card .card-title {
-  background: black;
+  background: #132922;
 }
 
 #ethan-card .card-title {
@@ -373,6 +373,10 @@ body {
   transition: 0.3s;
 }
 
+#dervla-card .image1:hover{
+  box-shadow: -11px 11px 0px #09006b;
+  transition: 0.3s;
+}
 
 
 #shabab-card .image2:hover{
@@ -427,6 +431,12 @@ body {
   box-shadow: -11px 11px 0px #0600ff;
   transition: 0.3s;
 }
+
+#dana-card .image1:hover{
+  box-shadow: -11px 11px 0px #132922;
+  transition: 0.3s;
+}
+
 
 /*add hover colors here */
 
