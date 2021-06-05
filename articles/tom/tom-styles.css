@@ -46,7 +46,19 @@ hr {
   background-color: #fff4ff;
 }
 
+/*
+h2 {
+    font-size: 2vw; 
+    margin-top:40px;
+    margin-bottom: 10px;
+    font-family: 'stenciletta-solid';
+    color: #5b1016;
+}
+*/
+
+
 h4 {
+    /*font-size: 2vw; */
     margin-top:40px;
     margin-bottom: 10px;
     font-family: 'stenciletta-solid';
@@ -58,6 +70,7 @@ h3 {
     color:#bcaa73;
     font-size: 16px;
 }
+
 
 blockquote {
     font-family: ministry, sans-serif;
@@ -131,11 +144,9 @@ p {
 
 ::selection {
   background: #fbc5ff; 
-  color: black;
 }
 ::-moz-selection {
   background: #fbc5ff; 
-  color: black;
 }
 
 #offset {
