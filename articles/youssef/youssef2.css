@@ -15,17 +15,14 @@
 
 
 body, html {
-    height: 100vh;
+  height: 100%;
+  width: 100%;
     display:block;
     /*background-color: #01002d;*/
     /*background-color: #001203;*/
     background-color: white;
     margin: 0;
-}
-
-body {
-  overflow-x: hidden;
-
+    overflow-x: hidden;
 }
 
 .asset-left {

@@ -9,15 +9,14 @@
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(6,9,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
  }
 
-body{
-    height: 100vh;
+body,html{
+    height: 100%;
+    width: 100%;
     display:block;
     background-color: #01002d;
     margin: 0;
-}
+    overflow-x: hidden;
 
-body {
-  overflow-x: hidden;
 }
 
 #page-content a {
