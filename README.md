@@ -1,6 +1,6 @@
 # Multiplicity
 
-[Multiplicity](http://www.multiplicitytech.tech) is an online curation examining the impact of tech on our youth & societies. 
+[Multiplicity](http://www.multiplicitytech.tech) is an online curation examining the impact of the internet on our youth & societies. 
 
 ### Usage
 
