@@ -4,6 +4,12 @@ body:after{
    content: url(../img/lujain-nofilter.png) url(../img/alia-nofilter.png) url(../img/tom-nofilter.png) url(../img/jihyun-nofilter.png) url(../img/tona-nofilter.png) url(../img/munib-nofilter.png) url(../img/rastra-nofilter.png) url(../img/grace-nofilter.png); 
 }
 
+::selection {
+  color: black;
+}
+::-moz-selection {
+  color: black;
+}
 
 
 .team {
