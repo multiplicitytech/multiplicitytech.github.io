@@ -81,12 +81,14 @@ filter: invert(33%) sepia(92%) saturate(3455%) hue-rotate(336deg) brightness(96%
 }
 
 
-.white-egreen-filter {
-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(102deg) brightness(101%) contrast(101%);
+.red-egreen-filter {
+filter: invert(34%) sepia(43%) saturate(1687%) hue-rotate(313deg) brightness(104%) contrast(100%);
 }
 
-.white-egreen-filter:hover {
-filter: invert(67%) sepia(13%) saturate(3662%) hue-rotate(88deg) brightness(86%) contrast(80%);}
+.red-egreen-filter:hover {
+filter: invert(100%) sepia(25%) saturate(5258%) hue-rotate(25deg) brightness(103%) contrast(78%);
+
+}
 
 
 .white-lightgreen-filter {
