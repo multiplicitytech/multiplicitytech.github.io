@@ -22,11 +22,12 @@ body, html {
     display:block;
     background-color: black;
     margin: 0;
+    overflow-x: hidden;
 }
 
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
 
 #page-content a {
   color: #ff7987 !important;
