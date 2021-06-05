@@ -31,11 +31,18 @@ body{
     margin-left: 0%; margin-bottom:-2%; margin-right: 35%;
   }
 
+  #ethan-card .card-title {
+      margin-left: 30%;
+  }
+
   #azzam-card .card-title {
     margin-left: 25%;
     margin-top: 45%;
   }
 
+#shabab-card .card-title {
+    margin-left: 40%;
+}
 #dervla-card .card-title {
   margin-bottom: 53%;
 }
@@ -104,7 +111,7 @@ body{
   }
 
   #shabab-card .card-title {
-    margin-left: 40%;
+    margin-left: 30%;
   }
   #jihyun-card .card-title {
    margin-right: 30%; margin-bottom: -7%;
@@ -150,6 +157,9 @@ body{
   margin-left: 3% !important;
 }
 
+#ethan-card .card-title {
+    margin-left: 20%;
+}
 }
 
 
@@ -169,12 +179,11 @@ body{
 #ethan-card .card-title {
   background: #d8465e;
   margin-top: 35%;
-  margin-left: 30%;
 }
 
 #shabab-card .card-title {
   background: #757575;
-  margin-left: 40%;
+
 }
 
 #jihyun2-card .card-title {
