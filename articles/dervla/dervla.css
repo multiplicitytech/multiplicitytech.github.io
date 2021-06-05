@@ -1,0 +1,426 @@
+
+@import url("https://use.typekit.net/grm6kxy.css");
+/* @media screen and (max-width: 600px) {
+    .column {
+      width: 100vh;
+    }
+} */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(6,9,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+ }
+
+body{
+    height: 100vh;
+    display:block;
+    background-color: #01002d;
+    margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#page-content a {
+  color:#1f87f0 !important;
+  text-decoration: none !important;
+}
+
+#page-content a:hover {
+  border-bottom: 1px dotted #1f87f0 !important;
+  text-decoration: none !important;
+} 
+
+
+hr {
+    width: 10vw !important;  
+    margin-top: 40px !important; 
+    margin-bottom: 40px !important;
+    /*color: red;*/
+    border: 1px solid grey !important;
+}
+
+#header {
+  background-color: #fff4ff;
+}
+
+h4 {
+    margin-top:40px;
+    margin-bottom: 10px;
+    font-family: 'stenciletta-solid';
+    color: #3833ff;
+}
+
+h3 {
+    color:#bcaa73;
+    font-size: 2rem;
+    text-align: center;
+    font-family: freight-big-pro, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+blockquote {
+    font-family: ministry, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    /*font-size: 1.3vw;*/
+    color:white;
+    border-left-style: dashed;
+    border-left-width: 4px;
+    border-left-color: #00cca4;
+    padding: 15px !important;
+    text-align:justify;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+
+.author {
+  font-weight: 400;
+  color: #ff7987;
+}
+
+.byline {
+  color: black;
+}
+
+.articleTitle {
+  color: #3833ff;
+  text-align: left !important;
+  font-weight: 300;
+  font-family: 'stenciletta-solid', sans-serif;
+  font-style: normal;
+  font-size: 2.2rem !important;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.date {
+  color: black
+}
+
+#sublogo {
+  font-weight: 300;
+
+}
+
+#extras {
+  text-align: center;
+}
+
+*  {
+  text-align: left;
+}
+
+
+p {
+  font-family: ministry;
+  font-style: normal;
+  color: white;
+  font-weight: 300;
+  /*font-size: 1.3vw;*/
+  text-align:left;
+}
+
+.content {
+  margin-top:50px; 
+  margin-left: 20vw; 
+  margin-right: 20vw; 
+  margin-bottom: 50px; 
+}
+
+::selection {
+  background:#ffeccc; 
+  color: black;
+}
+::-moz-selection {
+  background: #ffeccc; 
+  color: black;
+}
+
+#offset {
+  animation: letter-flicker 2s linear infinite;
+}
+
+
+.tooltip-m {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  color:#cc1b2c;
+}
+
+
+.tooltip-m .tooltiptext-m {
+  visibility: hidden;
+  width: 280px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 3px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -140px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 1.2vw;
+}
+
+.tooltip-m .tooltiptext-m::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+  font-size: 1.2vw;
+}
+
+.tooltip-m:hover .tooltiptext-m {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-container p {
+  color: #5b1016;
+  text-align: center;
+  font-weight: 300;
+  font-family: 'stenciletta-solid';
+  font-style: normal;
+  /*font-size: 2.5vw;*/
+  font-size: 2rem;
+  margin: 0px;
+  margin-bottom: 10px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.navbar-brand:hover {
+  color:#cc1b2c !important;
+}
+
+.nav-link:hover {
+  color:#cc1b2c !important;
+}
+
+.nav2-link {
+  padding: 18.4px 8px 8px !important;
+}
+
+.nav2-link:hover {
+  color:#ffa200 !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+.navbar2-brand:hover {
+  color:#ffa200 !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+
+#myNavbar {
+  height: 100%;
+}
+
+@media (max-width: 450px) {
+  .title-container p {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1600px) {
+  .title-container p {font-size: 2.5rem}
+}
+
+
+.title-container p span.typed-text {
+  font-weight: normal;
+}
+.title-container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.title-container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+.tooltip-m {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted#cc1b2c;
+    color:#ffd2d6;
+}
+.tooltip-m .tooltiptext-m {
+    visibility: hidden;
+    width: 280px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 3px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -140px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    /*font-size: 1.2vw;*/
+    font-size: .9rem;
+}
+
+.tooltip-m .tooltiptext-m::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    /*font-size: 1.2vw;*/
+    font-size: .9rem;
+}
+
+.tooltip-m:hover .tooltiptext-m {
+    visibility: visible;
+    opacity: 1;
+}
+.box {
+	max-width: 70vw;
+	padding: 30px;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	font-size: 30px;
+	line-height: 1.5;
+}
+
+.source {
+	color: skyblue;
+	margin: 0 auto;
+}
+
+.jihyun {
+  text-align:center;
+}
+
+
+.jihyun img {
+width: 17%; border-radius: 25px; border: 5px solid #3833ff; margin: 15px;
+}
+
+@media (max-width: 600px)  {
+.jihyun img {
+  border-radius: 15px;
+}
+.column {
+  width: 100% !important
+/*      margin-left: 2.5%;
+  margin-right: 2.5%;*/
+}
+#mute img {
+  width: 25% !important;
+}
+#unmute img {
+  width: 25% !important;
+}
+}
+@media (max-width: 400px) {
+.jihyun img {
+  width: 30%;
+  margin: 5px;
+  margin-bottom: 15px;
+}
+#mute img {
+  width: 25% !important;
+}
+#unmute img {
+  width: 25% !important;
+}
+}
+
+#mute { 
+  cursor: pointer !important;
+}
+#unmute { 
+  cursor: pointer !important;
+}
+
+
+.curly-underline {
+  background: url(underline.gif) bottom repeat-x;
+}
+
+.mis {
+  text-decoration: underline wavy #cc1b2c;
+  /* border-bottom: 1px dotted #ff0000;padding:1px; */
+}
+/* 
+#mute:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: initial;
+} */
+
+/* #unmute:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+} */
+
+
+/* @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+} */
+
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  /* height: 300px; Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
