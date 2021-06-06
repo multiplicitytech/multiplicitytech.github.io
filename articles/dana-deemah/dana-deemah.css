@@ -324,6 +324,17 @@ margin: 15px;
 }
 }
 
-img:hover { 
+#one:hover { 
+  cursor: pointer;
+}
+#two:hover { 
+  cursor: pointer;
+}
+
+#three:hover { 
+  cursor: pointer;
+}
+
+#four:hover { 
   cursor: pointer;
 }
