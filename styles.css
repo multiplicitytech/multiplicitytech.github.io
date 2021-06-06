@@ -192,7 +192,7 @@ body{
 }
 
 #jaime-card .card-title {
-  background: black;
+  background: #1f1f27;
   margin-bottom: 40%;
 }
 
@@ -405,6 +405,11 @@ body {
 
 #jihyun-card .image2:hover{
   box-shadow: 11px 11px 0px #0600ff;
+  transition: 0.3s;
+}
+
+#jaime-card .image1:hover{
+  box-shadow: -11px 11px 0px #1f1f27;
   transition: 0.3s;
 }
 
